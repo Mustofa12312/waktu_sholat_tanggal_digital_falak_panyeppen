@@ -2,6 +2,7 @@ import 'package:equatable/equatable.dart';
 
 /// Immutable entity representing the 5 daily prayer times for a given date.
 class PrayerTime extends Equatable {
+  final DateTime imsak;
   final DateTime fajr;
   final DateTime sunrise;
   final DateTime dhuhr;
@@ -11,6 +12,7 @@ class PrayerTime extends Equatable {
   final DateTime date;
 
   const PrayerTime({
+    required this.imsak,
     required this.fajr,
     required this.sunrise,
     required this.dhuhr,
@@ -21,6 +23,7 @@ class PrayerTime extends Equatable {
   });
 
   PrayerTime copyWith({
+    DateTime? imsak,
     DateTime? fajr,
     DateTime? sunrise,
     DateTime? dhuhr,
@@ -30,6 +33,7 @@ class PrayerTime extends Equatable {
     DateTime? date,
   }) {
     return PrayerTime(
+      imsak: imsak ?? this.imsak,
       fajr: fajr ?? this.fajr,
       sunrise: sunrise ?? this.sunrise,
       dhuhr: dhuhr ?? this.dhuhr,
@@ -41,5 +45,6 @@ class PrayerTime extends Equatable {
   }
 
   @override
-  List<Object?> get props => [fajr, sunrise, dhuhr, asr, maghrib, isha, date];
+  List<Object?> get props =>
+      [imsak, fajr, sunrise, dhuhr, asr, maghrib, isha, date];
 }

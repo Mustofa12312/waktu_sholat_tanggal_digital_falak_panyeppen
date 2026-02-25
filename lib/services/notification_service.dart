@@ -21,7 +21,14 @@ class NotificationService {
       requestBadgePermission: true,
       requestSoundPermission: true,
     );
-    const settings = InitializationSettings(android: android, iOS: iOS);
+    const linux = LinuxInitializationSettings(
+      defaultActionName: 'Buka',
+    );
+    const settings = InitializationSettings(
+      android: android,
+      iOS: iOS,
+      linux: linux,
+    );
 
     await _plugin.initialize(
       settings,

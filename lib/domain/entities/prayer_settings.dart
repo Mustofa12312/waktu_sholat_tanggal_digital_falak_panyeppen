@@ -1,0 +1,70 @@
+import 'package:equatable/equatable.dart';
+
+/// Calculation method IDs matching adhan package
+enum PrayerCalculationMethod {
+  kemenag, // Indonesian Ministry (most common in ID)
+  mwl, // Muslim World League
+  isna, // Islamic Society of North America
+  egypt, // Egyptian General Authority
+  makkah, // Umm al-Qura, Makkah
+  karachi, // University of Islamic Sciences, Karachi
+  tehran, // Institute of Geophysics, University of Tehran
+  singapore, // MUIS Singapore
+}
+
+/// User-configurable prayer time settings with minute adjustments.
+class PrayerSettings extends Equatable {
+  final PrayerCalculationMethod method;
+  final int fajrAdjustment;
+  final int dhuhrAdjustment;
+  final int asrAdjustment;
+  final int maghribAdjustment;
+  final int ishaAdjustment;
+  final double azanVolume;
+  final bool notificationsEnabled;
+
+  const PrayerSettings({
+    this.method = PrayerCalculationMethod.kemenag,
+    this.fajrAdjustment = 0,
+    this.dhuhrAdjustment = 0,
+    this.asrAdjustment = 0,
+    this.maghribAdjustment = 0,
+    this.ishaAdjustment = 0,
+    this.azanVolume = 0.8,
+    this.notificationsEnabled = true,
+  });
+
+  PrayerSettings copyWith({
+    PrayerCalculationMethod? method,
+    int? fajrAdjustment,
+    int? dhuhrAdjustment,
+    int? asrAdjustment,
+    int? maghribAdjustment,
+    int? ishaAdjustment,
+    double? azanVolume,
+    bool? notificationsEnabled,
+  }) {
+    return PrayerSettings(
+      method: method ?? this.method,
+      fajrAdjustment: fajrAdjustment ?? this.fajrAdjustment,
+      dhuhrAdjustment: dhuhrAdjustment ?? this.dhuhrAdjustment,
+      asrAdjustment: asrAdjustment ?? this.asrAdjustment,
+      maghribAdjustment: maghribAdjustment ?? this.maghribAdjustment,
+      ishaAdjustment: ishaAdjustment ?? this.ishaAdjustment,
+      azanVolume: azanVolume ?? this.azanVolume,
+      notificationsEnabled: notificationsEnabled ?? this.notificationsEnabled,
+    );
+  }
+
+  @override
+  List<Object?> get props => [
+    method,
+    fajrAdjustment,
+    dhuhrAdjustment,
+    asrAdjustment,
+    maghribAdjustment,
+    ishaAdjustment,
+    azanVolume,
+    notificationsEnabled,
+  ];
+}

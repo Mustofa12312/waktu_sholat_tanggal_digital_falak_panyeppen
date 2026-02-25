@@ -33,17 +33,22 @@ class SettingsScreen extends StatelessWidget {
               const SizedBox(height: 20),
 
               // ─── Prayer Adjustments ──────────────────────────────────
-              _SectionHeader(label: AppStrings.prayerAdjustments),
+              const _SectionHeader(label: AppStrings.prayerAdjustments),
               _AdjustmentCard(settings: settings),
               const SizedBox(height: 20),
 
+              // ─── Imsak Settings ──────────────────────────────────────
+              const _SectionHeader(label: 'Imsak'),
+              _ImsakCard(settings: settings),
+              const SizedBox(height: 20),
+
               // ─── Notifications ───────────────────────────────────────
-              _SectionHeader(label: AppStrings.notifications),
+              const _SectionHeader(label: AppStrings.notifications),
               _NotificationsCard(settings: settings),
               const SizedBox(height: 20),
 
               // ─── Azan Audio ──────────────────────────────────────────
-              _SectionHeader(label: AppStrings.azanSound),
+              const _SectionHeader(label: AppStrings.azanSound),
               _AudioCard(settings: settings),
               const SizedBox(height: 32),
 
@@ -334,6 +339,30 @@ class _AudioCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // Audio Selection List
+          ..._audioOptions.map((audio) {
+            final isSelected = settings.selectedAdhan == audio.$1;
+            return ListTile(
+              title: Text(
+                audio.$2,
+                style: AppTypography.bodyMedium.copyWith(
+                  color: isSelected ? AppColors.accent : AppColors.textPrimary,
+                  fontWeight: isSelected ? FontWeight.w600 : null,
+                ),
+              ),
+              trailing: isSelected
+                  ? const Icon(Icons.check_circle_rounded,
+                      color: AppColors.accent)
+                  : null,
+              onTap: () {
+                HapticFeedback.selectionClick();
+                context.read<SettingsCubit>().setSelectedAdhan(audio.$1);
+              },
+            );
+          }),
+
+          const Divider(color: AppColors.divider, height: 1),
+
           // Volume slider
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
@@ -379,7 +408,8 @@ class _AudioCard extends StatelessWidget {
             onTap: () async {
               HapticFeedback.mediumImpact();
               final audio = getIt<AudioService>();
-              await audio.playAzan();
+              await audio.playAzan(assetPath: settings.selectedAdhan);
+              if (!context.mounted) return;
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
                   content: Text(
@@ -420,5 +450,57 @@ class _Card extends StatelessWidget {
       clipBehavior: Clip.antiAlias,
       child: child,
     );
+  }
+}
+
+const _audioOptions = [
+  ('assets/audio/azan1.mp3', 'Azan Makkah'),
+  ('assets/audio/azan2.mp3', 'Azan Madinah'),
+  ('assets/audio/azan3.mp3', 'Azan Al-Aqsa'),
+  ('assets/audio/azan4.mp3', 'Azan Mesir'),
+];
+
+// ─── Imsak Card ───────────────────────────────────────────────────────────────
+
+class _ImsakCard extends StatelessWidget {
+  final PrayerSettings settings;
+  const _ImsakCard({required this.settings});
+
+  @override
+  Widget build(BuildContext context) {
+    return _Card(
+      child: Column(
+        children: [
+          SwitchListTile(
+            title: Text(
+              'Peringatan Imsak',
+              style: AppTypography.bodyMedium
+                  .copyWith(color: AppColors.textPrimary),
+            ),
+            subtitle: Text(
+              'Notifikasi dan alarm 10 menit sebelum Subuh',
+              style: AppTypography.bodySmall,
+            ),
+            value: settings.imsakEnabled,
+            onChanged: (v) {
+              HapticFeedback.selectionClick();
+              context.read<SettingsCubit>().setImsakEnabled(v);
+              context.read<PrayerBloc>().add(const LoadPrayerTimes());
+            },
+          ),
+          if (settings.imsakEnabled) ...[
+            const Divider(height: 1, color: AppColors.divider),
+            _AdjustmentRow(
+              label: 'Penyesuaian',
+              value: settings.imsakAdjustment,
+              onChanged: (v) {
+                context.read<SettingsCubit>().setImsakAdjustment(v);
+                context.read<PrayerBloc>().add(const LoadPrayerTimes());
+              },
+            ),
+          ]
+        ],
+      ),
+    ).animate().fadeIn(delay: 200.ms).slideY(begin: 0.05);
   }
 }

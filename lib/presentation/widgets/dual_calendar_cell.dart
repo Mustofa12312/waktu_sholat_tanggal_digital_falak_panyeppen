@@ -12,6 +12,7 @@ class DualCalendarCell extends StatelessWidget {
   final bool isToday;
   final bool isFocused;
   final bool isOutside;
+  final bool isHijriPrimary;
   final VoidCallback? onTap;
 
   const DualCalendarCell({
@@ -21,8 +22,18 @@ class DualCalendarCell extends StatelessWidget {
     this.isToday = false,
     this.isFocused = false,
     this.isOutside = false,
+    this.isHijriPrimary = false,
     this.onTap,
   });
+
+  String _toArabicDigits(String input) {
+    const english = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    const arabic = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
+    for (int i = 0; i < english.length; i++) {
+      input = input.replaceAll(english[i], arabic[i]);
+    }
+    return input;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -44,6 +55,15 @@ class DualCalendarCell extends StatelessWidget {
       hijriColor = AppColors.accent.withOpacity(0.7);
     }
 
+    // Determine primary and secondary texts
+    final masehiText = '${date.day}';
+    final hijriText = _toArabicDigits('${hijri.hDay}');
+
+    final String primaryText = isHijriPrimary ? hijriText : masehiText;
+    final String secondaryText = isHijriPrimary ? masehiText : hijriText;
+    final Color primaryColor = isHijriPrimary ? hijriColor : textColor;
+    final Color secondaryColor = isHijriPrimary ? textColor : hijriColor;
+
     return GestureDetector(
       onTap: onTap,
       child: AnimatedContainer(
@@ -59,21 +79,21 @@ class DualCalendarCell extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Gregorian day
+            // Primary date
             Text(
-              '${date.day}',
+              primaryText,
               style: AppTypography.titleSmall.copyWith(
-                color: textColor,
+                color: primaryColor,
                 fontWeight:
                     isToday || isSelected ? FontWeight.w700 : FontWeight.w400,
               ),
             ),
             const SizedBox(height: 1),
-            // Hijri day
+            // Secondary date
             Text(
-              '${hijri.hDay}',
+              secondaryText,
               style: AppTypography.labelSmall.copyWith(
-                color: hijriColor,
+                color: secondaryColor,
                 fontSize: 9,
               ),
             ),

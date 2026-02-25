@@ -9,14 +9,17 @@ class AudioService {
 
   Future<void> initialize() async {
     final box = Hive.box(AppStrings.prayerSettingsBox);
-    _volume = (box.get(AppStrings.volumeKey, defaultValue: 0.8) as num)
-        .toDouble();
+    _volume =
+        (box.get(AppStrings.volumeKey, defaultValue: 0.8) as num).toDouble();
     await _player.setVolume(_volume);
   }
 
   Future<void> playAzan({String? assetPath}) async {
     try {
-      final path = assetPath ?? 'assets/audio/azan.mp3';
+      final box = Hive.box(AppStrings.prayerSettingsBox);
+      final defaultAdhan = box.get(AppStrings.selectedAdhanKey,
+          defaultValue: 'assets/audio/azan1.mp3') as String;
+      final path = assetPath ?? defaultAdhan;
       await _player.stop();
       await _player.setAsset(path);
       await _player.setVolume(_volume);

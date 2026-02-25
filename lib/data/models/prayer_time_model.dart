@@ -2,6 +2,7 @@ import '../../domain/entities/prayer_time.dart';
 
 class PrayerTimeModel extends PrayerTime {
   const PrayerTimeModel({
+    required super.imsak,
     required super.fajr,
     required super.sunrise,
     required super.dhuhr,
@@ -13,6 +14,7 @@ class PrayerTimeModel extends PrayerTime {
 
   factory PrayerTimeModel.fromJson(Map<String, dynamic> json) {
     return PrayerTimeModel(
+      imsak: DateTime.parse(json['imsak'] as String),
       fajr: DateTime.parse(json['fajr'] as String),
       sunrise: DateTime.parse(json['sunrise'] as String),
       dhuhr: DateTime.parse(json['dhuhr'] as String),
@@ -24,17 +26,19 @@ class PrayerTimeModel extends PrayerTime {
   }
 
   Map<String, dynamic> toJson() => {
-    'fajr': fajr.toIso8601String(),
-    'sunrise': sunrise.toIso8601String(),
-    'dhuhr': dhuhr.toIso8601String(),
-    'asr': asr.toIso8601String(),
-    'maghrib': maghrib.toIso8601String(),
-    'isha': isha.toIso8601String(),
-    'date': date.toIso8601String(),
-  };
+        'imsak': imsak.toIso8601String(),
+        'fajr': fajr.toIso8601String(),
+        'sunrise': sunrise.toIso8601String(),
+        'dhuhr': dhuhr.toIso8601String(),
+        'asr': asr.toIso8601String(),
+        'maghrib': maghrib.toIso8601String(),
+        'isha': isha.toIso8601String(),
+        'date': date.toIso8601String(),
+      };
 
   factory PrayerTimeModel.fromEntity(PrayerTime entity) {
     return PrayerTimeModel(
+      imsak: entity.imsak,
       fajr: entity.fajr,
       sunrise: entity.sunrise,
       dhuhr: entity.dhuhr,

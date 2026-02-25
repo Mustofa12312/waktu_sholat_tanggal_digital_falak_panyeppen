@@ -207,6 +207,7 @@ class _LoadedView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final prayers = [
+      ('Imsak', 'الإمساك', state.prayerTime.imsak),
       (AppStrings.fajr, AppStrings.fajrArabic, state.prayerTime.fajr),
       (AppStrings.dhuhr, AppStrings.dhuhrArabic, state.prayerTime.dhuhr),
       (AppStrings.asr, AppStrings.asrArabic, state.prayerTime.asr),
@@ -290,6 +291,7 @@ class _LoadedView extends StatelessWidget {
   bool _isCurrentPrayer(PrayerLoaded state) {
     final now = DateTime.now();
     final t = state.prayerTime;
+    if (now.isAfter(t.imsak) && now.isBefore(t.fajr)) return true;
     if (now.isAfter(t.fajr) && now.isBefore(t.sunrise)) return true;
     if (now.isAfter(t.dhuhr) && now.isBefore(t.asr)) return true;
     if (now.isAfter(t.asr) && now.isBefore(t.maghrib)) return true;

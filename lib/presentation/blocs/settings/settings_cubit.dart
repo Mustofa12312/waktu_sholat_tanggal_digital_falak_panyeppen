@@ -52,6 +52,24 @@ class SettingsCubit extends Cubit<PrayerSettings> {
     await _localSource.saveSettings(updated);
   }
 
+  Future<void> setImsakAdjustment(int minutes) async {
+    final updated = state.copyWith(imsakAdjustment: minutes);
+    emit(updated);
+    await _localSource.saveSettings(updated);
+  }
+
+  Future<void> setImsakEnabled(bool enabled) async {
+    final updated = state.copyWith(imsakEnabled: enabled);
+    emit(updated);
+    await _localSource.saveSettings(updated);
+  }
+
+  Future<void> setSelectedAdhan(String adhanPath) async {
+    final updated = state.copyWith(selectedAdhan: adhanPath);
+    emit(updated);
+    await _localSource.saveSettings(updated);
+  }
+
   Future<void> setVolume(double volume) async {
     final updated = state.copyWith(azanVolume: volume);
     emit(updated);

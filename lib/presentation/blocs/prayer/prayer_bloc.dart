@@ -136,29 +136,32 @@ class PrayerBloc extends Bloc<PrayerEvent, PrayerState> {
 
   DateTime _computeNextPrayerTime(PrayerTime t) {
     final now = DateTime.now();
+    if (now.isBefore(t.imsak)) return t.imsak;
     if (now.isBefore(t.fajr)) return t.fajr;
     if (now.isBefore(t.sunrise)) return t.sunrise;
     if (now.isBefore(t.dhuhr)) return t.dhuhr;
     if (now.isBefore(t.asr)) return t.asr;
     if (now.isBefore(t.maghrib)) return t.maghrib;
     if (now.isBefore(t.isha)) return t.isha;
-    return t.fajr.add(const Duration(hours: 24));
+    return t.imsak.add(const Duration(hours: 24));
   }
 
   String _computeNextPrayerName(PrayerTime t) {
     final now = DateTime.now();
+    if (now.isBefore(t.imsak)) return 'Imsak';
     if (now.isBefore(t.fajr)) return 'Subuh';
     if (now.isBefore(t.sunrise)) return 'Syuruq';
     if (now.isBefore(t.dhuhr)) return 'Zuhur';
     if (now.isBefore(t.asr)) return 'Ashar';
     if (now.isBefore(t.maghrib)) return 'Maghrib';
     if (now.isBefore(t.isha)) return 'Isya';
-    return 'Subuh';
+    return 'Imsak';
   }
 
   String _computeCurrentPrayerName(PrayerTime t) {
     final now = DateTime.now();
-    if (now.isBefore(t.fajr)) return 'Isya';
+    if (now.isBefore(t.imsak)) return 'Isya';
+    if (now.isBefore(t.fajr)) return 'Imsak';
     if (now.isBefore(t.sunrise)) return 'Subuh';
     if (now.isBefore(t.dhuhr)) return 'Syuruq';
     if (now.isBefore(t.asr)) return 'Zuhur';

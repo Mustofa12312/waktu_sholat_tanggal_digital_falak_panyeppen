@@ -2,7 +2,7 @@ class AppStrings {
   AppStrings._();
 
   // App
-  static const String appName = 'An-Noor';
+  static const String appName = 'Al-Mustofa';
   static const String appTagline = 'Waktu Sholat & Kalender Islam';
 
   // Prayer Names (Indonesian)
@@ -89,4 +89,7 @@ class AppStrings {
   static const String asrAdjKey = 'asr_adj';
   static const String maghribAdjKey = 'maghrib_adj';
   static const String ishaAdjKey = 'isha_adj';
+  static const String imsakAdjKey = 'imsak_adj';
+  static const String imsakEnabledKey = 'imsak_enabled';
+  static const String selectedAdhanKey = 'selected_adhan';
 }

@@ -31,7 +31,7 @@ class BackgroundService {
 
         await localSource.cachePrayerTimes(times);
         await _notificationService.schedulePrayerNotifications(times);
-        await _alarmService.schedulePrayerAlarms(times);
+        await _alarmService.schedulePrayerAlarms(times, settings);
       } catch (_) {
         // Silently fail — will retry on next launch
       }

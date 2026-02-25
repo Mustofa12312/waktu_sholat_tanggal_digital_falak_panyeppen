@@ -35,7 +35,16 @@ class CalendarScreen extends StatelessWidget {
         ),
         actions: [
           IconButton(
-            icon: const Icon(Icons.today_rounded, color: AppColors.accent),
+            icon: const Icon(Icons.swap_calls_rounded, color: AppColors.accent),
+            onPressed: () {
+              HapticFeedback.lightImpact();
+              context.read<CalendarCubit>().toggleCalendarPrimary();
+            },
+            tooltip: 'Tukar Hijriah/Masehi',
+          ),
+          IconButton(
+            icon:
+                const Icon(Icons.today_rounded, color: AppColors.textSecondary),
             onPressed: () {
               HapticFeedback.lightImpact();
               context.read<CalendarCubit>().goToToday();
@@ -162,16 +171,26 @@ class CalendarScreen extends StatelessWidget {
         ),
       ),
       calendarBuilders: CalendarBuilders(
-        defaultBuilder: (ctx, day, focusedDay) => DualCalendarCell(date: day),
-        todayBuilder: (ctx, day, focusedDay) =>
-            DualCalendarCell(date: day, isToday: true),
+        defaultBuilder: (ctx, day, focusedDay) => DualCalendarCell(
+          date: day,
+          isHijriPrimary: calState.showHijriAsPrimary,
+        ),
+        todayBuilder: (ctx, day, focusedDay) => DualCalendarCell(
+          date: day,
+          isToday: true,
+          isHijriPrimary: calState.showHijriAsPrimary,
+        ),
         selectedBuilder: (ctx, day, focusedDay) => DualCalendarCell(
           date: day,
           isSelected: true,
           isToday: isSameDay(day, DateTime.now()),
+          isHijriPrimary: calState.showHijriAsPrimary,
         ),
-        outsideBuilder: (ctx, day, focusedDay) =>
-            DualCalendarCell(date: day, isOutside: true),
+        outsideBuilder: (ctx, day, focusedDay) => DualCalendarCell(
+          date: day,
+          isOutside: true,
+          isHijriPrimary: calState.showHijriAsPrimary,
+        ),
       ),
     );
   }

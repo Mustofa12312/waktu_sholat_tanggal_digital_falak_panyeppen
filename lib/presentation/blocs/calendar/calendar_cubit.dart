@@ -7,12 +7,14 @@ class CalendarState {
   final DateTime selectedDay;
   final CalendarFormat format;
   final Map<DateTime, List<dynamic>> events;
+  final bool showHijriAsPrimary;
 
   const CalendarState({
     required this.focusedDay,
     required this.selectedDay,
     this.format = CalendarFormat.month,
     this.events = const {},
+    this.showHijriAsPrimary = false,
   });
 
   CalendarState copyWith({
@@ -20,12 +22,14 @@ class CalendarState {
     DateTime? selectedDay,
     CalendarFormat? format,
     Map<DateTime, List<dynamic>>? events,
+    bool? showHijriAsPrimary,
   }) {
     return CalendarState(
       focusedDay: focusedDay ?? this.focusedDay,
       selectedDay: selectedDay ?? this.selectedDay,
       format: format ?? this.format,
       events: events ?? this.events,
+      showHijriAsPrimary: showHijriAsPrimary ?? this.showHijriAsPrimary,
     );
   }
 }
@@ -47,6 +51,10 @@ class CalendarCubit extends Cubit<CalendarState> {
 
   void changeFormat(CalendarFormat format) {
     emit(state.copyWith(format: format));
+  }
+
+  void toggleCalendarPrimary() {
+    emit(state.copyWith(showHijriAsPrimary: !state.showHijriAsPrimary));
   }
 
   void goToToday() {

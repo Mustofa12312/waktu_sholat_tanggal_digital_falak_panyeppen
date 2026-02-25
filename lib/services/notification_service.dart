@@ -81,33 +81,44 @@ class NotificationService {
   Future<void> _scheduleNotification(
     int id,
     String prayerName,
-    DateTime time,
-  ) async {
+    DateTime time, {
+    String? soundFileName,
+  }) async {
+    final androidChannelInfo = AndroidNotificationDetails(
+      AppStrings.notifChannelId,
+      AppStrings.notifChannelName,
+      channelDescription: AppStrings.notifChannelDesc,
+      importance: Importance.max,
+      priority: Priority.high,
+      ticker: 'Waktu $prayerName',
+      icon: '@mipmap/ic_launcher',
+      largeIcon: const DrawableResourceAndroidBitmap('@mipmap/ic_launcher'),
+      sound: soundFileName != null
+          ? RawResourceAndroidNotificationSound(
+              soundFileName.replaceAll('.mp3', ''))
+          : null,
+      playSound: true,
+      styleInformation: BigTextStyleInformation(
+        prayerName == 'Imsak'
+            ? 'Waktu Imsak telah tiba. Sebentar lagi Subuh.'
+            : 'Sudah masuk waktu $prayerName. Segera kerjakan sholat.',
+        summaryText: 'An-Noor',
+      ),
+    );
+
     await _plugin.zonedSchedule(
       id,
       AppStrings.notifTitle,
-      'Sudah masuk waktu $prayerName',
+      prayerName == 'Imsak' ? 'Waktu Imsak' : 'Sudah masuk waktu $prayerName',
       tz.TZDateTime.from(time, tz.local),
       NotificationDetails(
-        android: AndroidNotificationDetails(
-          AppStrings.notifChannelId,
-          AppStrings.notifChannelName,
-          channelDescription: AppStrings.notifChannelDesc,
-          importance: Importance.max,
-          priority: Priority.high,
-          ticker: 'Waktu $prayerName',
-          icon: '@mipmap/ic_launcher',
-          largeIcon: const DrawableResourceAndroidBitmap('@mipmap/ic_launcher'),
-          styleInformation: BigTextStyleInformation(
-            'Sudah masuk waktu $prayerName. Segera kerjakan sholat.',
-            summaryText: 'An-Noor',
-          ),
-        ),
+        android: androidChannelInfo,
         iOS: const DarwinNotificationDetails(
           presentAlert: true,
           presentSound: true,
           presentBadge: true,
         ),
+        linux: const LinuxNotificationDetails(),
       ),
       androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
       uiLocalNotificationDateInterpretation:
@@ -126,8 +137,9 @@ class NotificationService {
     required int id,
     required String name,
     required DateTime time,
+    String? soundFileName,
   }) async {
-    await _scheduleNotification(id, name, time);
+    await _scheduleNotification(id, name, time, soundFileName: soundFileName);
   }
 
   /// Cancel a single notification by ID

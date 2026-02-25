@@ -20,6 +20,9 @@ class PrayerSettings extends Equatable {
   final int asrAdjustment;
   final int maghribAdjustment;
   final int ishaAdjustment;
+  final int imsakAdjustment;
+  final bool imsakEnabled;
+  final String selectedAdhan;
   final double azanVolume;
   final bool notificationsEnabled;
 
@@ -30,6 +33,9 @@ class PrayerSettings extends Equatable {
     this.asrAdjustment = 0,
     this.maghribAdjustment = 0,
     this.ishaAdjustment = 0,
+    this.imsakAdjustment = 0,
+    this.imsakEnabled = true,
+    this.selectedAdhan = 'assets/audio/azan1.mp3',
     this.azanVolume = 0.8,
     this.notificationsEnabled = true,
   });
@@ -41,6 +47,9 @@ class PrayerSettings extends Equatable {
     int? asrAdjustment,
     int? maghribAdjustment,
     int? ishaAdjustment,
+    int? imsakAdjustment,
+    bool? imsakEnabled,
+    String? selectedAdhan,
     double? azanVolume,
     bool? notificationsEnabled,
   }) {
@@ -51,6 +60,9 @@ class PrayerSettings extends Equatable {
       asrAdjustment: asrAdjustment ?? this.asrAdjustment,
       maghribAdjustment: maghribAdjustment ?? this.maghribAdjustment,
       ishaAdjustment: ishaAdjustment ?? this.ishaAdjustment,
+      imsakAdjustment: imsakAdjustment ?? this.imsakAdjustment,
+      imsakEnabled: imsakEnabled ?? this.imsakEnabled,
+      selectedAdhan: selectedAdhan ?? this.selectedAdhan,
       azanVolume: azanVolume ?? this.azanVolume,
       notificationsEnabled: notificationsEnabled ?? this.notificationsEnabled,
     );
@@ -58,13 +70,16 @@ class PrayerSettings extends Equatable {
 
   @override
   List<Object?> get props => [
-    method,
-    fajrAdjustment,
-    dhuhrAdjustment,
-    asrAdjustment,
-    maghribAdjustment,
-    ishaAdjustment,
-    azanVolume,
-    notificationsEnabled,
-  ];
+        method,
+        fajrAdjustment,
+        dhuhrAdjustment,
+        asrAdjustment,
+        maghribAdjustment,
+        ishaAdjustment,
+        imsakAdjustment,
+        imsakEnabled,
+        selectedAdhan,
+        azanVolume,
+        notificationsEnabled,
+      ];
 }

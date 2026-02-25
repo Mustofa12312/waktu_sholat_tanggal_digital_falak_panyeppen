@@ -17,8 +17,12 @@ class PrayerCalculator {
     final dateComponents = DateComponents(date.year, date.month, date.day);
     final prayerTimes = PrayerTimes(coordinates, dateComponents, params);
 
+    // Calculate Imsak
+    final baseImsak = prayerTimes.fajr.subtract(const Duration(minutes: 10));
+
     // Apply minute adjustments
     return PrayerTimeModel(
+      imsak: baseImsak.add(Duration(minutes: settings.imsakAdjustment)),
       fajr: prayerTimes.fajr.add(Duration(minutes: settings.fajrAdjustment)),
       sunrise: prayerTimes.sunrise,
       dhuhr: prayerTimes.dhuhr.add(Duration(minutes: settings.dhuhrAdjustment)),

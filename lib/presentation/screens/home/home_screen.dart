@@ -28,7 +28,9 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    context.read<PrayerBloc>().add(const LoadPrayerTimes());
+    if (context.read<PrayerBloc>().state is! PrayerLoaded) {
+      context.read<PrayerBloc>().add(const LoadPrayerTimes());
+    }
   }
 
   @override
@@ -118,7 +120,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             );
-            context.read<PrayerBloc>().add(const LoadPrayerTimes());
+            context
+                .read<PrayerBloc>()
+                .add(const LoadPrayerTimes(forceLocationRefresh: true));
           },
           tooltip: 'Perbarui Lokasi',
         ),

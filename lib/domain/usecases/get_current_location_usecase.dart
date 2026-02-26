@@ -8,7 +8,7 @@ class GetCurrentLocationUseCase {
 
   GetCurrentLocationUseCase(this._repository);
 
-  Future<Either<Failure, LocationEntity>> call() {
-    return _repository.getCurrentLocation();
+  Future<Either<Failure, LocationEntity>> call({bool forceRefresh = false}) {
+    return _repository.getCurrentLocation(forceRefresh: forceRefresh);
   }
 }

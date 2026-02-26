@@ -10,7 +10,13 @@ import '../../core/constants/app_strings.dart';
 /// 3. Hive cached coordinates
 /// 4. Jakarta default (emergency fallback)
 class LocationService {
-  Future<LocationModel> getCurrentLocation() async {
+  Future<LocationModel> getCurrentLocation({bool forceRefresh = false}) async {
+    // If not forcing refresh, try to read from Hive cache first
+    if (!forceRefresh) {
+      final cached = _getCachedLocation();
+      if (cached != null) return cached;
+    }
+
     // Step 1: Check and request permission
     LocationPermission permission = await Geolocator.checkPermission();
     if (permission == LocationPermission.denied) {
@@ -71,6 +77,10 @@ class LocationService {
   }
 
   LocationModel _getCachedOrDefault() {
+    return _getCachedLocation() ?? LocationModel.defaultJakarta;
+  }
+
+  LocationModel? _getCachedLocation() {
     try {
       final box = Hive.box(AppStrings.locationBox);
       final lat = box.get(AppStrings.cachedLatKey) as double?;
@@ -85,7 +95,7 @@ class LocationService {
         );
       }
     } catch (_) {}
-    return LocationModel.defaultJakarta;
+    return null;
   }
 
   Future<LocationModel> getCachedLocation() async {

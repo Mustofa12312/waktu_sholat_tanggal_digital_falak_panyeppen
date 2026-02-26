@@ -25,7 +25,8 @@ class PrayerBloc extends Bloc<PrayerEvent, PrayerState> {
     emit(const PrayerLoading());
 
     // 1. Get location
-    final locationResult = await _getLocation();
+    final locationResult =
+        await _getLocation(forceRefresh: event.forceLocationRefresh);
     if (isClosed) return;
 
     await locationResult.fold(

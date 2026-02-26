@@ -9,7 +9,11 @@ abstract class PrayerEvent extends Equatable {
 
 /// Trigger initial load — fetches GPS location + calculates prayer times
 class LoadPrayerTimes extends PrayerEvent {
-  const LoadPrayerTimes();
+  final bool forceLocationRefresh;
+  const LoadPrayerTimes({this.forceLocationRefresh = false});
+
+  @override
+  List<Object?> get props => [forceLocationRefresh];
 }
 
 /// Refresh with new date (e.g., when day changes at midnight)

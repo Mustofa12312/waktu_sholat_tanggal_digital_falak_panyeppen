@@ -11,9 +11,11 @@ class LocationRepositoryImpl implements ILocationRepository {
   LocationRepositoryImpl(this._locationService);
 
   @override
-  Future<Either<Failure, LocationEntity>> getCurrentLocation() async {
+  Future<Either<Failure, LocationEntity>> getCurrentLocation(
+      {bool forceRefresh = false}) async {
     try {
-      final location = await _locationService.getCurrentLocation();
+      final location =
+          await _locationService.getCurrentLocation(forceRefresh: forceRefresh);
       return Right(location);
     } catch (e) {
       return Left(LocationFailure('Gagal mendapatkan lokasi: $e'));

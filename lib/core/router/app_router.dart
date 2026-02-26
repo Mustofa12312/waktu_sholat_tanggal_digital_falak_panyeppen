@@ -8,6 +8,7 @@ import '../../presentation/blocs/settings/settings_cubit.dart';
 import '../../presentation/blocs/theme/theme_cubit.dart';
 import '../../presentation/screens/calendar/calendar_screen.dart';
 import '../../presentation/screens/home/home_screen.dart';
+import '../../presentation/screens/qibla/qibla_screen.dart';
 import '../../presentation/screens/settings/settings_screen.dart';
 import '../../core/constants/app_colors.dart';
 import '../../core/constants/app_strings.dart';
@@ -25,6 +26,10 @@ class AppRouter {
           GoRoute(
             path: '/calendar',
             builder: (context, state) => const CalendarScreen(),
+          ),
+          GoRoute(
+            path: '/qibla',
+            builder: (context, state) => const QiblaScreen(),
           ),
           GoRoute(
             path: '/settings',
@@ -57,7 +62,8 @@ class _MainShell extends StatelessWidget {
           final location = GoRouterState.of(context).uri.toString();
           int currentIndex = 0;
           if (location.startsWith('/calendar')) currentIndex = 1;
-          if (location.startsWith('/settings')) currentIndex = 2;
+          if (location.startsWith('/qibla')) currentIndex = 2;
+          if (location.startsWith('/settings')) currentIndex = 3;
 
           return Scaffold(
             body: child,
@@ -93,9 +99,15 @@ class _MainShell extends StatelessWidget {
                 onTap: () => context.go('/calendar'),
               ),
               _NavItem(
+                icon: Icons.explore_rounded,
+                label: AppStrings.navQibla,
+                isActive: currentIndex == 2,
+                onTap: () => context.go('/qibla'),
+              ),
+              _NavItem(
                 icon: Icons.settings_rounded,
                 label: AppStrings.navSettings,
-                isActive: currentIndex == 2,
+                isActive: currentIndex == 3,
                 onTap: () => context.go('/settings'),
               ),
             ],

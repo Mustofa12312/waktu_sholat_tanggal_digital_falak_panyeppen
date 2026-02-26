@@ -69,11 +69,21 @@ class DualCalendarCell extends StatelessWidget {
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
         curve: Curves.easeInOut,
+        margin: const EdgeInsets.all(2),
         decoration: BoxDecoration(
           color: background,
-          borderRadius: BorderRadius.circular(10),
+          shape: BoxShape.circle,
           border: isToday && !isSelected
-              ? Border.all(color: AppColors.accent.withOpacity(0.6), width: 1.5)
+              ? Border.all(color: AppColors.primary, width: 2.0)
+              : null,
+          boxShadow: isSelected
+              ? [
+                  BoxShadow(
+                    color: AppColors.accent.withOpacity(0.3),
+                    blurRadius: 8,
+                    offset: const Offset(0, 4),
+                  )
+                ]
               : null,
         ),
         child: Column(
@@ -82,19 +92,21 @@ class DualCalendarCell extends StatelessWidget {
             // Primary date
             Text(
               primaryText,
-              style: AppTypography.titleSmall.copyWith(
+              style: TextStyle(
                 color: primaryColor,
+                fontSize: isHijriPrimary ? 20 : 16,
                 fontWeight:
-                    isToday || isSelected ? FontWeight.w700 : FontWeight.w400,
+                    isToday || isSelected ? FontWeight.w700 : FontWeight.w500,
+                height: 1.1,
               ),
             ),
-            const SizedBox(height: 1),
             // Secondary date
             Text(
               secondaryText,
               style: AppTypography.labelSmall.copyWith(
                 color: secondaryColor,
-                fontSize: 9,
+                fontSize: isHijriPrimary ? 10 : 12,
+                height: 1.1,
               ),
             ),
           ],

@@ -6,6 +6,7 @@ class AppStrings {
   static const String appTagline = 'Waktu Sholat & Kalender Islam';
 
   // Prayer Names (Indonesian)
+  static const String imsak = 'Imsak';
   static const String fajr = 'Subuh';
   static const String sunrise = 'Syuruq';
   static const String dhuhr = 'Zuhur';
@@ -14,6 +15,7 @@ class AppStrings {
   static const String isha = 'Isya';
 
   // Prayer Names (Arabic)
+  static const String imsakArabic = 'الإمساك';
   static const String fajrArabic = 'الفجر';
   static const String dhuhrArabic = 'الظهر';
   static const String asrArabic = 'العصر';
@@ -23,6 +25,7 @@ class AppStrings {
   // Navigation
   static const String navHome = 'Beranda';
   static const String navCalendar = 'Kalender';
+  static const String navQibla = 'Kiblat';
   static const String navSettings = 'Pengaturan';
 
   // Home Screen

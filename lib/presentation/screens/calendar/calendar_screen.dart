@@ -79,7 +79,9 @@ class CalendarScreen extends StatelessWidget {
                 ),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                  child: _buildCalendar(context, calState),
+                  child: calState.showHijriAsPrimary
+                      ? _buildHijriCalendar(context, calState)
+                      : _buildCalendar(context, calState),
                 ),
               );
             },
@@ -256,6 +258,136 @@ class CalendarScreen extends StatelessWidget {
             isHijriPrimary: calState.showHijriAsPrimary,
           ),
         ),
+      ),
+    );
+  }
+
+  Widget _buildHijriCalendar(BuildContext context, CalendarState calState) {
+    final focusHijri = HijriCalendar.fromDate(calState.focusedDay);
+    final int lengthOfMonth = focusHijri.lengthOfMonth;
+    final DateTime firstDayGregorian =
+        focusHijri.hijriToGregorian(focusHijri.hYear, focusHijri.hMonth, 1);
+
+    // Day 1 to 7 corresponding to Mon to Sun in Dart's DateTime.weekday
+    final int emptySlots = firstDayGregorian.weekday - 1;
+    final int totalSlots = emptySlots + lengthOfMonth;
+    final int rowCount = (totalSlots / 7).ceil();
+
+    final arabicMonths = [
+      '', // 1-indexed
+      'محرم', 'صفر', 'ربيع الأول', 'ربيع الآخر', 'جمادى الأولى', 'جمادى الآخرة',
+      'رجب', 'شعبان', 'رمضان', 'شوال', 'ذو القعدة', 'ذو الحجة'
+    ];
+    final arabicDays = [
+      'الإثنين',
+      'الثلاثاء',
+      'الأربعاء',
+      'الخميس',
+      'الجمعة',
+      'السبت',
+      'الأحد'
+    ]; // Monday to Sunday
+
+    return Directionality(
+      textDirection: ui.TextDirection.rtl,
+      child: Column(
+        children: [
+          // Header
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                IconButton(
+                  icon: const Icon(Icons.chevron_right_rounded,
+                      color: AppColors.textSecondary),
+                  onPressed: () {
+                    HapticFeedback.lightImpact();
+                    context.read<CalendarCubit>().goToPreviousMonth();
+                  },
+                ),
+                Text(
+                  '${arabicMonths[focusHijri.hMonth]} ${focusHijri.hYear}',
+                  style: AppTypography.titleMedium.copyWith(
+                    color: AppColors.textPrimary,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                IconButton(
+                  icon: const Icon(Icons.chevron_left_rounded,
+                      color: AppColors.textSecondary),
+                  onPressed: () {
+                    HapticFeedback.lightImpact();
+                    context.read<CalendarCubit>().goToNextMonth();
+                  },
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 8),
+          // Days of week
+          Row(
+            children: List.generate(7, (index) {
+              return Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: Center(
+                    child: Text(
+                      arabicDays[index],
+                      style: AppTypography.labelSmall.copyWith(
+                        color: (index == 5 || index == 6)
+                            ? AppColors.accent.withOpacity(0.8)
+                            : AppColors.textMuted,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+              );
+            }),
+          ),
+          const SizedBox(height: 8),
+          // Calendar Grid
+          GridView.builder(
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            itemCount: rowCount * 7,
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 7,
+              childAspectRatio: 1.0,
+            ),
+            itemBuilder: (context, index) {
+              if (index < emptySlots || index >= emptySlots + lengthOfMonth) {
+                final offset = index - emptySlots;
+                final date = firstDayGregorian.add(Duration(days: offset));
+                return DualCalendarCell(
+                  date: date,
+                  isOutside: true,
+                  isHijriPrimary: true,
+                  onTap: () {
+                    HapticFeedback.selectionClick();
+                    context.read<CalendarCubit>().selectDay(date, date);
+                  },
+                );
+              } else {
+                final offset = index - emptySlots;
+                final date = firstDayGregorian.add(Duration(days: offset));
+                return DualCalendarCell(
+                  date: date,
+                  isSelected: isSameDay(date, calState.selectedDay),
+                  isToday: isSameDay(date, DateTime.now()),
+                  isHijriPrimary: true,
+                  onTap: () {
+                    HapticFeedback.selectionClick();
+                    context
+                        .read<CalendarCubit>()
+                        .selectDay(date, calState.focusedDay);
+                  },
+                );
+              }
+            },
+          ),
+        ],
       ),
     );
   }

@@ -88,7 +88,7 @@ class SettingsScreen extends StatelessWidget {
                       ),
                     ).animate().fadeIn().slideX(begin: -0.1),
                   ),
-                  iconTheme: const IconThemeData(color: AppColors.textPrimary),
+                  iconTheme: IconThemeData(color: AppColors.textPrimary),
                 ),
                 SliverToBoxAdapter(
                   child: BlocBuilder<SettingsCubit, PrayerSettings>(
@@ -99,6 +99,14 @@ class SettingsScreen extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
+                            // ─── Theme Settings ──────────────────────────────────────
+                            const _SectionHeader(
+                              label: 'Tema Aplikasi',
+                              icon: Icons.palette_rounded,
+                            ),
+                            _ThemeCard(settings: settings),
+                            const SizedBox(height: 28),
+
                             // ─── Calculation Method ──────────────────────────────────
                             const _SectionHeader(
                               label: AppStrings.calculationMethod,
@@ -374,7 +382,7 @@ class _CalculationMethodCard extends StatelessWidget {
                       ),
                     ),
                     if (isSelected)
-                      const Icon(
+                      Icon(
                         Icons.check_circle_rounded,
                         color: AppColors.accent,
                         size: 24,
@@ -602,7 +610,7 @@ class _AudioCard extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
             child: Row(
               children: [
-                const Icon(Icons.volume_down_rounded,
+                Icon(Icons.volume_down_rounded,
                     color: AppColors.textSecondary, size: 24),
                 Expanded(
                   child: _CustomSlider(
@@ -613,7 +621,7 @@ class _AudioCard extends StatelessWidget {
                         context.read<SettingsCubit>().setVolume(v),
                   ),
                 ),
-                const Icon(Icons.volume_up_rounded,
+                Icon(Icons.volume_up_rounded,
                     color: AppColors.accent, size: 24),
               ],
             ),
@@ -640,8 +648,7 @@ class _AudioCard extends StatelessWidget {
                   SnackBar(
                     content: Row(
                       children: [
-                        const Icon(Icons.music_note_rounded,
-                            color: AppColors.accent),
+                        Icon(Icons.music_note_rounded, color: AppColors.accent),
                         const SizedBox(width: 12),
                         Text('Memutar azan...',
                             style: AppTypography.bodyMedium
@@ -662,7 +669,7 @@ class _AudioCard extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Icon(Icons.play_circle_fill_rounded,
+                    Icon(Icons.play_circle_fill_rounded,
                         color: AppColors.accent, size: 28),
                     const SizedBox(width: 12),
                     Text(
@@ -778,19 +785,72 @@ class _ResetButton extends StatelessWidget {
           HapticFeedback.mediumImpact();
           onTap();
         },
-        icon: const Icon(Icons.restore_rounded, color: AppColors.error),
+        icon: Icon(Icons.restore_rounded, color: AppColors.error),
         label: Text(
           'Reset ke Default',
           style: AppTypography.titleMedium.copyWith(color: AppColors.error),
         ),
         style: OutlinedButton.styleFrom(
           padding: const EdgeInsets.symmetric(vertical: 16),
-          side: const BorderSide(color: AppColors.error, width: 1.5),
+          side: BorderSide(color: AppColors.error, width: 1.5),
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
           backgroundColor: AppColors.error.withOpacity(0.05),
         ),
       ),
     ).animate().fadeIn(delay: 300.ms).slideY(begin: 0.1);
+  }
+}
+
+class _ThemeCard extends StatelessWidget {
+  final PrayerSettings settings;
+
+  const _ThemeCard({required this.settings});
+
+  @override
+  Widget build(BuildContext context) {
+    return _PremiumCard(
+      child: Column(
+        children: [
+          SwitchListTile(
+            title: Text(AppStrings.darkMode,
+                style: AppTypography.titleMedium
+                    .copyWith(color: AppColors.textPrimary)),
+            subtitle: Text('Gunakan tema gelap',
+                style: AppTypography.bodySmall
+                    .copyWith(color: AppColors.textSecondary)),
+            value: settings.isDarkMode,
+            activeColor: AppColors.accent,
+            onChanged: settings.autoThemeEnabled
+                ? null
+                : (val) {
+                    HapticFeedback.lightImpact();
+                    context.read<SettingsCubit>().setDarkMode(val);
+                  },
+            secondary: Icon(Icons.dark_mode_rounded,
+                color: settings.autoThemeEnabled
+                    ? AppColors.textMuted
+                    : AppColors.accent),
+          ),
+          Divider(color: AppColors.white.withOpacity(0.1), height: 1),
+          SwitchListTile(
+            title: Text(AppStrings.autoTheme,
+                style: AppTypography.titleMedium
+                    .copyWith(color: AppColors.textPrimary)),
+            subtitle: Text('Tema berubah mengikuti waktu pagi/malam',
+                style: AppTypography.bodySmall
+                    .copyWith(color: AppColors.textSecondary)),
+            value: settings.autoThemeEnabled,
+            activeColor: AppColors.accent,
+            onChanged: (val) {
+              HapticFeedback.lightImpact();
+              context.read<SettingsCubit>().setAutoThemeEnabled(val);
+            },
+            secondary:
+                Icon(Icons.brightness_auto_rounded, color: AppColors.accent),
+          ),
+        ],
+      ),
+    ).animate().fadeIn(delay: 100.ms).slideY(begin: 0.1);
   }
 }

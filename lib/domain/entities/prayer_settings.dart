@@ -25,6 +25,8 @@ class PrayerSettings extends Equatable {
   final String selectedAdhan;
   final double azanVolume;
   final bool notificationsEnabled;
+  final bool isDarkMode;
+  final bool autoThemeEnabled;
 
   const PrayerSettings({
     this.method = PrayerCalculationMethod.kemenag,
@@ -38,6 +40,8 @@ class PrayerSettings extends Equatable {
     this.selectedAdhan = 'assets/audio/azan1.mp3',
     this.azanVolume = 0.8,
     this.notificationsEnabled = true,
+    this.isDarkMode = true,
+    this.autoThemeEnabled = false,
   });
 
   PrayerSettings copyWith({
@@ -52,6 +56,8 @@ class PrayerSettings extends Equatable {
     String? selectedAdhan,
     double? azanVolume,
     bool? notificationsEnabled,
+    bool? isDarkMode,
+    bool? autoThemeEnabled,
   }) {
     return PrayerSettings(
       method: method ?? this.method,
@@ -65,6 +71,8 @@ class PrayerSettings extends Equatable {
       selectedAdhan: selectedAdhan ?? this.selectedAdhan,
       azanVolume: azanVolume ?? this.azanVolume,
       notificationsEnabled: notificationsEnabled ?? this.notificationsEnabled,
+      isDarkMode: isDarkMode ?? this.isDarkMode,
+      autoThemeEnabled: autoThemeEnabled ?? this.autoThemeEnabled,
     );
   }
 
@@ -81,5 +89,7 @@ class PrayerSettings extends Equatable {
         selectedAdhan,
         azanVolume,
         notificationsEnabled,
+        isDarkMode,
+        autoThemeEnabled,
       ];
 }

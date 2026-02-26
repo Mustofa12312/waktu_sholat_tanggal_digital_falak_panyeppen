@@ -26,6 +26,9 @@ class PrayerLocalSource {
           box.get(AppStrings.imsakEnabledKey, defaultValue: true) as bool,
       selectedAdhan: box.get(AppStrings.selectedAdhanKey,
           defaultValue: 'assets/audio/azan1.mp3') as String,
+      isDarkMode: box.get(AppStrings.isDarkModeKey, defaultValue: true) as bool,
+      autoThemeEnabled:
+          box.get(AppStrings.autoThemeEnabledKey, defaultValue: false) as bool,
     );
   }
 
@@ -42,6 +45,8 @@ class PrayerLocalSource {
     await box.put(AppStrings.imsakAdjKey, settings.imsakAdjustment);
     await box.put(AppStrings.imsakEnabledKey, settings.imsakEnabled);
     await box.put(AppStrings.selectedAdhanKey, settings.selectedAdhan);
+    await box.put(AppStrings.isDarkModeKey, settings.isDarkMode);
+    await box.put(AppStrings.autoThemeEnabledKey, settings.autoThemeEnabled);
   }
 
   PrayerTimeModel? loadCachedPrayerTimes(DateTime date) {

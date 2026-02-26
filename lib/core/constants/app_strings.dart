@@ -50,6 +50,8 @@ class AppStrings {
   static const String notifications = 'Notifikasi';
   static const String enableNotifications = 'Aktifkan Notifikasi';
   static const String testAzan = 'Tes Azan';
+  static const String darkMode = 'Mode Gelap';
+  static const String autoTheme = 'Otomatis Ikuti Waktu';
   static const String saveSettings = 'Simpan';
   static const String minutes = 'menit';
 
@@ -95,4 +97,6 @@ class AppStrings {
   static const String imsakAdjKey = 'imsak_adj';
   static const String imsakEnabledKey = 'imsak_enabled';
   static const String selectedAdhanKey = 'selected_adhan';
+  static const String isDarkModeKey = 'is_dark_mode';
+  static const String autoThemeEnabledKey = 'auto_theme_enabled';
 }

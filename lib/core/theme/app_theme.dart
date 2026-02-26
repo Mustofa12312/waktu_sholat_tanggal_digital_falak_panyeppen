@@ -6,12 +6,15 @@ import '../constants/app_colors.dart';
 class AppTheme {
   AppTheme._();
 
-  static ThemeData get dark => _buildDark();
+  static ThemeData get theme => _buildTheme();
 
-  static ThemeData _buildDark() {
-    final base = ThemeData.dark(useMaterial3: true);
+  static ThemeData _buildTheme() {
+    final isDark = ThemeConfig.isDark;
+    final base = isDark
+        ? ThemeData.dark(useMaterial3: true)
+        : ThemeData.light(useMaterial3: true);
     return base.copyWith(
-      colorScheme: ColorScheme.dark(
+      colorScheme: (isDark ? ColorScheme.dark : ColorScheme.light)(
         primary: AppColors.primary,
         primaryContainer: AppColors.primaryDark,
         secondary: AppColors.accent,
@@ -35,16 +38,18 @@ class AppTheme {
         backgroundColor: Colors.transparent,
         elevation: 0,
         scrolledUnderElevation: 0,
-        systemOverlayStyle: SystemUiOverlayStyle.light,
+        systemOverlayStyle: ThemeConfig.isDark
+            ? SystemUiOverlayStyle.light
+            : SystemUiOverlayStyle.dark,
         centerTitle: true,
         titleTextStyle: GoogleFonts.plusJakartaSans(
           fontSize: 18,
           fontWeight: FontWeight.w600,
           color: AppColors.white,
         ),
-        iconTheme: const IconThemeData(color: AppColors.white),
+        iconTheme: IconThemeData(color: AppColors.white),
       ),
-      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
         backgroundColor: AppColors.cardDark,
         selectedItemColor: AppColors.accent,
         unselectedItemColor: AppColors.textMuted,
@@ -56,7 +61,7 @@ class AppTheme {
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
-          side: const BorderSide(color: AppColors.glassBorder, width: 1),
+          side: BorderSide(color: AppColors.glassBorder, width: 1),
         ),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
@@ -91,7 +96,7 @@ class AppTheme {
           return AppColors.divider;
         }),
       ),
-      dividerTheme: const DividerThemeData(
+      dividerTheme: DividerThemeData(
         color: AppColors.divider,
         thickness: 1,
       ),
@@ -100,15 +105,15 @@ class AppTheme {
         fillColor: AppColors.surfaceLight,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: AppColors.divider),
+          borderSide: BorderSide(color: AppColors.divider),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: AppColors.divider),
+          borderSide: BorderSide(color: AppColors.divider),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: AppColors.accent, width: 2),
+          borderSide: BorderSide(color: AppColors.accent, width: 2),
         ),
         labelStyle: GoogleFonts.plusJakartaSans(color: AppColors.textSecondary),
         hintStyle: GoogleFonts.plusJakartaSans(color: AppColors.textMuted),

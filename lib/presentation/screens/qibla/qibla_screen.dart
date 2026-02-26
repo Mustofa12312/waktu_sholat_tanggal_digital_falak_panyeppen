@@ -31,7 +31,7 @@ class _QiblaScreenState extends State<QiblaScreen> {
       body: BlocBuilder<PrayerBloc, PrayerState>(
         builder: (context, state) {
           if (state is! PrayerLoaded) {
-            return const Center(
+            return Center(
                 child: CircularProgressIndicator(color: AppColors.accent));
           }
 
@@ -53,7 +53,7 @@ class _QiblaScreenState extends State<QiblaScreen> {
               }
 
               if (snapshot.connectionState == ConnectionState.waiting) {
-                return const Center(
+                return Center(
                     child: CircularProgressIndicator(color: AppColors.accent));
               }
 
@@ -123,7 +123,7 @@ class _QiblaScreenState extends State<QiblaScreen> {
                             Container(
                               height: 16,
                               width: 16,
-                              decoration: const BoxDecoration(
+                              decoration: BoxDecoration(
                                 shape: BoxShape.circle,
                                 color: AppColors.accent,
                               ),
@@ -153,7 +153,7 @@ class _QiblaScreenState extends State<QiblaScreen> {
         alignment: Alignment.center,
         children: [
           // N S E W Markers
-          const Positioned(
+          Positioned(
             top: 10,
             child: Text('U',
                 style: TextStyle(
@@ -161,7 +161,7 @@ class _QiblaScreenState extends State<QiblaScreen> {
                     fontWeight: FontWeight.bold,
                     fontSize: 20)),
           ),
-          const Positioned(
+          Positioned(
             bottom: 10,
             child: Text('S',
                 style: TextStyle(
@@ -169,7 +169,7 @@ class _QiblaScreenState extends State<QiblaScreen> {
                     fontWeight: FontWeight.bold,
                     fontSize: 16)),
           ),
-          const Positioned(
+          Positioned(
             right: 15,
             child: Text('T',
                 style: TextStyle(
@@ -177,7 +177,7 @@ class _QiblaScreenState extends State<QiblaScreen> {
                     fontWeight: FontWeight.bold,
                     fontSize: 16)),
           ),
-          const Positioned(
+          Positioned(
             left: 15,
             child: Text('B',
                 style: TextStyle(

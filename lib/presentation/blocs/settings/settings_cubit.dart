@@ -87,4 +87,16 @@ class SettingsCubit extends Cubit<PrayerSettings> {
     emit(defaults);
     await _localSource.saveSettings(defaults);
   }
+
+  Future<void> setDarkMode(bool isDark) async {
+    final updated = state.copyWith(isDarkMode: isDark);
+    emit(updated);
+    await _localSource.saveSettings(updated);
+  }
+
+  Future<void> setAutoThemeEnabled(bool enabled) async {
+    final updated = state.copyWith(autoThemeEnabled: enabled);
+    emit(updated);
+    await _localSource.saveSettings(updated);
+  }
 }

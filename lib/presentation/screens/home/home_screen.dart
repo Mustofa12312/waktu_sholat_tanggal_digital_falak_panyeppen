@@ -142,7 +142,7 @@ class _LoadingView extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const CircularProgressIndicator(
+          CircularProgressIndicator(
             color: AppColors.accent,
             strokeWidth: 2,
           ),
@@ -174,7 +174,7 @@ class _ErrorView extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(
+            Icon(
               Icons.location_off_rounded,
               size: 64,
               color: AppColors.error,
@@ -323,7 +323,7 @@ class _LocationBar extends StatelessWidget {
       ),
       child: Row(
         children: [
-          const Icon(
+          Icon(
             Icons.location_on_rounded,
             size: 16,
             color: AppColors.accent,

@@ -1,11 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import '../../presentation/blocs/calendar/calendar_cubit.dart';
-import '../../presentation/blocs/prayer/prayer_bloc.dart';
-import '../../presentation/blocs/prayer/prayer_event.dart';
-import '../../presentation/blocs/settings/settings_cubit.dart';
-import '../../presentation/blocs/theme/theme_cubit.dart';
 import '../../presentation/screens/calendar/calendar_screen.dart';
 import '../../presentation/screens/home/home_screen.dart';
 import '../../presentation/screens/qibla/qibla_screen.dart';
@@ -13,16 +7,22 @@ import '../../presentation/screens/settings/settings_screen.dart';
 import '../../core/constants/app_colors.dart';
 import '../../core/constants/app_strings.dart';
 import '../../core/constants/app_typography.dart';
-import '../../core/di/injection.dart';
+
+import '../../presentation/screens/splash/splash_screen.dart';
 
 class AppRouter {
   static final GoRouter router = GoRouter(
-    initialLocation: '/',
+    initialLocation: '/splash',
     routes: [
+      GoRoute(
+        path: '/splash',
+        builder: (context, state) => const SplashScreen(),
+      ),
       ShellRoute(
         builder: (context, state, child) => _MainShell(child: child),
         routes: [
-          GoRoute(path: '/', builder: (context, state) => const HomeScreen()),
+          GoRoute(
+              path: '/home', builder: (context, state) => const HomeScreen()),
           GoRoute(
             path: '/calendar',
             builder: (context, state) => const CalendarScreen(),
@@ -48,35 +48,26 @@ class _MainShell extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MultiBlocProvider(
-      providers: [
-        BlocProvider<PrayerBloc>(
-          create: (_) => getIt<PrayerBloc>()..add(const LoadPrayerTimes()),
-        ),
-        BlocProvider<CalendarCubit>(create: (_) => getIt<CalendarCubit>()),
-        BlocProvider<ThemeCubit>(create: (_) => getIt<ThemeCubit>()),
-        BlocProvider<SettingsCubit>(create: (_) => getIt<SettingsCubit>()),
-      ],
-      child: Builder(
-        builder: (context) {
-          final location = GoRouterState.of(context).uri.toString();
-          int currentIndex = 0;
-          if (location.startsWith('/calendar')) currentIndex = 1;
-          if (location.startsWith('/qibla')) currentIndex = 2;
-          if (location.startsWith('/settings')) currentIndex = 3;
+    return Builder(
+      builder: (context) {
+        final location = GoRouterState.of(context).uri.toString();
+        int currentIndex = 0;
+        if (location.startsWith('/home')) currentIndex = 0;
+        if (location.startsWith('/calendar')) currentIndex = 1;
+        if (location.startsWith('/qibla')) currentIndex = 2;
+        if (location.startsWith('/settings')) currentIndex = 3;
 
-          return Scaffold(
-            body: child,
-            bottomNavigationBar: _buildBottomNav(context, currentIndex),
-          );
-        },
-      ),
+        return Scaffold(
+          body: child,
+          bottomNavigationBar: _buildBottomNav(context, currentIndex),
+        );
+      },
     );
   }
 
   Widget _buildBottomNav(BuildContext context, int currentIndex) {
     return Container(
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         color: AppColors.cardDark,
         border: Border(top: BorderSide(color: AppColors.divider, width: 1)),
       ),
@@ -90,7 +81,7 @@ class _MainShell extends StatelessWidget {
                 icon: Icons.home_rounded,
                 label: AppStrings.navHome,
                 isActive: currentIndex == 0,
-                onTap: () => context.go('/'),
+                onTap: () => context.go('/home'),
               ),
               _NavItem(
                 icon: Icons.calendar_month_rounded,

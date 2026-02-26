@@ -1,0 +1,74 @@
+Analyzing kalender_azan...                                      
+
+   info • Don't invoke 'print' in production code • fix_const.dart:24:17 • avoid_print
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/core/router/app_router.dart:152:34 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/core/theme/app_theme.dart:45:20 • prefer_const_constructors
+  error • Invalid constant value • lib/core/theme/app_theme.dart:48:26 • invalid_constant
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/core/theme/app_theme.dart:80:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/core/theme/app_theme.dart:89:37 • deprecated_member_use
+  error • Invalid constant value • lib/core/theme/app_theme.dart:95:16 • invalid_constant
+  error • Invalid constant value • lib/main.dart:25:33 • invalid_constant
+  error • Invalid constant value • lib/presentation/screens/calendar/calendar_screen.dart:107:28 • invalid_constant
+  error • Invalid constant value • lib/presentation/screens/calendar/calendar_screen.dart:164:46 • invalid_constant
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/calendar/calendar_screen.dart:184:56 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/calendar/calendar_screen.dart:202:37 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/calendar/calendar_screen.dart:230:44 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/calendar/calendar_screen.dart:338:48 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/calendar/calendar_screen.dart:421:33 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/calendar/calendar_screen.dart:432:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/calendar/calendar_screen.dart:499:57 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/calendar/calendar_screen.dart:502:37 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/home/widgets/next_prayer_countdown.dart:27:33 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/home/widgets/prayer_card.dart:36:32 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/home/widgets/prayer_card.dart:45:43 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/home/widgets/prayer_card.dart:69:50 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/home/widgets/prayer_card.dart:97:44 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/home/widgets/prayer_card.dart:122:45 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/home/widgets/prayer_card.dart:130:46 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/qibla/qibla_screen.dart:100:51 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/qibla/qibla_screen.dart:150:51 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/qibla/qibla_screen.dart:196:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/qibla/qibla_screen.dart:224:41 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/settings/settings_screen.dart:34:42 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/settings/settings_screen.dart:52:41 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/settings/settings_screen.dart:189:48 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/settings/settings_screen.dart:245:39 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/settings/settings_screen.dart:248:34 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/settings/settings_screen.dart:253:33 • deprecated_member_use
+   info • 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor or activeTrackColor instead. This feature was deprecated after v3.31.0-2.0.pre • lib/presentation/screens/settings/settings_screen.dart:279:7 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/settings/settings_screen.dart:280:42 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/settings/settings_screen.dart:282:45 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/settings/settings_screen.dart:307:47 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/settings/settings_screen.dart:310:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/settings/settings_screen.dart:360:40 • deprecated_member_use
+  error • Invalid constant value • lib/presentation/screens/settings/settings_screen.dart:379:32 • invalid_constant
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/settings/settings_screen.dart:479:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/settings/settings_screen.dart:480:41 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/settings/settings_screen.dart:600:42 • deprecated_member_use
+  error • Invalid constant value • lib/presentation/screens/settings/settings_screen.dart:606:28 • invalid_constant
+  error • Invalid constant value • lib/presentation/screens/settings/settings_screen.dart:617:28 • invalid_constant
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/settings/settings_screen.dart:621:42 • deprecated_member_use
+  error • Invalid constant value • lib/presentation/screens/settings/settings_screen.dart:644:36 • invalid_constant
+  error • Invalid constant value • lib/presentation/screens/settings/settings_screen.dart:666:32 • invalid_constant
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/settings/settings_screen.dart:734:61 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/settings/settings_screen.dart:770:36 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/settings/settings_screen.dart:791:44 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/splash/splash_screen.dart:53:46 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/splash/splash_screen.dart:56:50 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/splash/splash_screen.dart:75:46 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/splash/splash_screen.dart:78:49 • deprecated_member_use
+  error • Invalid constant value • lib/presentation/screens/splash/splash_screen.dart:83:28 • invalid_constant
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/screens/splash/splash_screen.dart:96:63 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/widgets/azan_lottie_indicator.dart:84:45 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/widgets/azan_lottie_indicator.dart:102:51 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/widgets/dual_calendar_cell.dart:45:31 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/widgets/dual_calendar_cell.dart:51:36 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/widgets/dual_calendar_cell.dart:53:37 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/widgets/dual_calendar_cell.dart:55:37 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/widgets/dual_calendar_cell.dart:82:45 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/presentation/widgets/dual_calendar_cell.dart:90:49 • deprecated_member_use
+   info • Don't invoke 'print' in production code • test_hijri.dart:4:3 • avoid_print
+   info • Don't invoke 'print' in production code • test_hijri.dart:5:3 • avoid_print
+   info • Don't invoke 'print' in production code • test_hijri.dart:6:3 • avoid_print
+   info • Don't invoke 'print' in production code • test_hijri.dart:8:3 • avoid_print
+

@@ -10,6 +10,14 @@ import 'core/theme/app_theme.dart';
 import 'services/notification_service.dart';
 import 'services/background_service.dart';
 
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'presentation/blocs/calendar/calendar_cubit.dart';
+import 'presentation/blocs/prayer/prayer_bloc.dart';
+import 'presentation/blocs/prayer/prayer_event.dart';
+import 'presentation/blocs/settings/settings_cubit.dart';
+import 'presentation/blocs/theme/theme_cubit.dart';
+import 'domain/entities/prayer_settings.dart';
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
@@ -19,10 +27,10 @@ Future<void> main() async {
     DeviceOrientation.portraitDown,
   ]);
   SystemChrome.setSystemUIOverlayStyle(
-    const SystemUiOverlayStyle(
+    SystemUiOverlayStyle(
       statusBarColor: Colors.transparent,
       statusBarIconBrightness: Brightness.light,
-      systemNavigationBarColor: AppColors.cardDark,
+      systemNavigationBarColor: Colors.transparent,
       systemNavigationBarIconBrightness: Brightness.light,
     ),
   );
@@ -55,11 +63,45 @@ class AnNoorApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      title: AppStrings.appName,
-      debugShowCheckedModeBanner: false,
-      theme: AppTheme.dark,
-      routerConfig: AppRouter.router,
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider<PrayerBloc>(
+          create: (_) => getIt<PrayerBloc>()..add(const LoadPrayerTimes()),
+        ),
+        BlocProvider<CalendarCubit>(create: (_) => getIt<CalendarCubit>()),
+        BlocProvider<ThemeCubit>(create: (_) => getIt<ThemeCubit>()),
+        BlocProvider<SettingsCubit>(create: (_) => getIt<SettingsCubit>()),
+      ],
+      child: BlocBuilder<SettingsCubit, PrayerSettings>(
+        builder: (context, settings) {
+          // Automatic theme switching based on time logic
+          bool currentDarkState = settings.isDarkMode;
+          if (settings.autoThemeEnabled) {
+            final now = DateTime.now();
+            final isNight = now.hour < 5 || now.hour >= 18;
+            currentDarkState = isNight;
+          }
+          ThemeConfig.isDark = currentDarkState;
+
+          SystemChrome.setSystemUIOverlayStyle(
+            SystemUiOverlayStyle(
+              statusBarColor: Colors.transparent,
+              statusBarIconBrightness:
+                  currentDarkState ? Brightness.light : Brightness.dark,
+              systemNavigationBarColor: AppColors.surface,
+              systemNavigationBarIconBrightness:
+                  currentDarkState ? Brightness.light : Brightness.dark,
+            ),
+          );
+
+          return MaterialApp.router(
+            title: AppStrings.appName,
+            debugShowCheckedModeBanner: false,
+            theme: AppTheme.theme,
+            routerConfig: AppRouter.router,
+          );
+        },
+      ),
     );
   }
 }

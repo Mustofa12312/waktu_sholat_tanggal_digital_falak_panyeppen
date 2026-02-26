@@ -41,7 +41,7 @@ class CalendarScreen extends StatelessWidget {
         centerTitle: true,
         actions: [
           IconButton(
-            icon: const Icon(Icons.swap_calls_rounded, color: AppColors.accent),
+            icon: Icon(Icons.swap_calls_rounded, color: AppColors.accent),
             onPressed: () {
               HapticFeedback.lightImpact();
               context.read<CalendarCubit>().toggleCalendarPrimary();
@@ -49,8 +49,7 @@ class CalendarScreen extends StatelessWidget {
             tooltip: 'Tukar Hijriah/Masehi',
           ),
           IconButton(
-            icon:
-                const Icon(Icons.today_rounded, color: AppColors.textSecondary),
+            icon: Icon(Icons.today_rounded, color: AppColors.textSecondary),
             onPressed: () {
               HapticFeedback.lightImpact();
               context.read<CalendarCubit>().goToToday();
@@ -103,7 +102,7 @@ class CalendarScreen extends StatelessWidget {
                 if (state is PrayerLoaded) {
                   return _PrayerListForDay(prayerTime: state.prayerTime);
                 }
-                return const Center(
+                return Center(
                   child: CircularProgressIndicator(
                     color: AppColors.accent,
                     strokeWidth: 2,
@@ -161,7 +160,7 @@ class CalendarScreen extends StatelessWidget {
         onFormatChanged: (format) {
           context.read<CalendarCubit>().changeFormat(format);
         },
-        calendarStyle: const CalendarStyle(
+        calendarStyle: CalendarStyle(
           defaultTextStyle: TextStyle(color: AppColors.textPrimary),
           weekendTextStyle: TextStyle(color: AppColors.textSecondary),
           outsideTextStyle: TextStyle(color: AppColors.textMuted),
@@ -185,11 +184,11 @@ class CalendarScreen extends StatelessWidget {
             border: Border.all(color: AppColors.accent.withOpacity(0.5)),
             borderRadius: BorderRadius.circular(20),
           ),
-          leftChevronIcon: const Icon(
+          leftChevronIcon: Icon(
             Icons.chevron_left_rounded,
             color: AppColors.textSecondary,
           ),
-          rightChevronIcon: const Icon(
+          rightChevronIcon: Icon(
             Icons.chevron_right_rounded,
             color: AppColors.textSecondary,
           ),
@@ -299,7 +298,7 @@ class CalendarScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 IconButton(
-                  icon: const Icon(Icons.chevron_right_rounded,
+                  icon: Icon(Icons.chevron_right_rounded,
                       color: AppColors.textSecondary),
                   onPressed: () {
                     HapticFeedback.lightImpact();
@@ -314,7 +313,7 @@ class CalendarScreen extends StatelessWidget {
                   ),
                 ),
                 IconButton(
-                  icon: const Icon(Icons.chevron_left_rounded,
+                  icon: Icon(Icons.chevron_left_rounded,
                       color: AppColors.textSecondary),
                   onPressed: () {
                     HapticFeedback.lightImpact();
@@ -433,7 +432,7 @@ class _DayInfoPanel extends StatelessWidget {
               color: AppColors.primary.withOpacity(0.15),
               shape: BoxShape.circle,
             ),
-            child: const Icon(
+            child: Icon(
               Icons.event_note_rounded,
               color: AppColors.accent,
               size: 24,

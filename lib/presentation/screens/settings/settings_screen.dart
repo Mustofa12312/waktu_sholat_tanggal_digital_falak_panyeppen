@@ -18,82 +18,64 @@ class SettingsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColors.surface,
-      body: Stack(
-        children: [
-          // ─── Ambient Background Effects ─────────────────────────────────
-          Positioned(
-            top: -50,
-            right: -50,
-            child: Container(
-              width: 250,
-              height: 250,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: AppColors.primary.withOpacity(0.15),
-              ),
-            )
-                .animate(
-                    onPlay: (controller) => controller.repeat(reverse: true))
-                .scale(
-                    duration: 4.seconds,
-                    begin: const Offset(1, 1),
-                    end: const Offset(1.1, 1.1)),
-          ),
-          Positioned(
-            bottom: -100,
-            left: -100,
-            child: Container(
-              width: 300,
-              height: 300,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: AppColors.accent.withOpacity(0.08),
-              ),
-            )
-                .animate(
-                    onPlay: (controller) => controller.repeat(reverse: true))
-                .scale(
-                    duration: 5.seconds,
-                    begin: const Offset(1, 1),
-                    end: const Offset(1.1, 1.1)),
-          ),
-          Positioned.fill(
-            child: BackdropFilter(
-              filter: ui.ImageFilter.blur(sigmaX: 60, sigmaY: 60),
-              child: const SizedBox(),
-            ),
-          ),
-
-          // ─── Main Content ──────────────────────────────────────────────
-          SafeArea(
-            child: CustomScrollView(
-              physics: const BouncingScrollPhysics(),
-              slivers: [
-                SliverAppBar(
-                  expandedHeight: 120,
-                  backgroundColor: Colors.transparent,
-                  elevation: 0,
-                  scrolledUnderElevation: 0,
-                  flexibleSpace: FlexibleSpaceBar(
-                    titlePadding: const EdgeInsets.symmetric(
-                        horizontal: 24, vertical: 16),
-                    title: Text(
-                      AppStrings.settings,
-                      style: AppTypography.headlineMedium.copyWith(
-                        color: AppColors.textPrimary,
-                        fontWeight: FontWeight.w700,
-                        fontSize: 28,
-                      ),
-                    ).animate().fadeIn().slideX(begin: -0.1),
+    return BlocBuilder<SettingsCubit, PrayerSettings>(
+      builder: (context, settings) {
+        return Scaffold(
+          backgroundColor: AppColors.surface,
+          body: Stack(
+            children: [
+              // ─── Ambient Background Effects ─────────────────────────────────
+              Positioned(
+                top: -50,
+                right: -50,
+                child: Container(
+                  width: 250,
+                  height: 250,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: AppColors.primary.withOpacity(0.05),
                   ),
-                  iconTheme: IconThemeData(color: AppColors.textPrimary),
                 ),
-                SliverToBoxAdapter(
-                  child: BlocBuilder<SettingsCubit, PrayerSettings>(
-                    builder: (context, settings) {
-                      return Padding(
+              ),
+              Positioned(
+                bottom: -100,
+                left: -100,
+                child: Container(
+                  width: 300,
+                  height: 300,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: AppColors.accent.withOpacity(0.05),
+                  ),
+                ),
+              ),
+
+              // ─── Main Content ──────────────────────────────────────────────
+              SafeArea(
+                child: CustomScrollView(
+                  physics: const BouncingScrollPhysics(),
+                  slivers: [
+                    SliverAppBar(
+                      expandedHeight: 120,
+                      backgroundColor: Colors.transparent,
+                      elevation: 0,
+                      scrolledUnderElevation: 0,
+                      flexibleSpace: FlexibleSpaceBar(
+                        titlePadding: const EdgeInsets.symmetric(
+                            horizontal: 24, vertical: 16),
+                        title: Text(
+                          AppStrings.settings,
+                          style: AppTypography.headlineMedium.copyWith(
+                            color: AppColors.textPrimary,
+                            fontWeight: FontWeight.w700,
+                            fontSize: 28,
+                          ),
+                        ).animate().fadeIn().slideX(begin: -0.1),
+                      ),
+                      iconTheme: IconThemeData(color: AppColors.textPrimary),
+                    ),
+                    SliverToBoxAdapter(
+                      child: Padding(
                         padding: const EdgeInsets.symmetric(
                             horizontal: 24, vertical: 8),
                         child: Column(
@@ -153,15 +135,15 @@ class SettingsScreen extends StatelessWidget {
                             const SizedBox(height: 40),
                           ],
                         ),
-                      );
-                    },
-                  ),
+                      ),
+                    ),
+                  ],
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
-        ],
-      ),
+        );
+      },
     );
   }
 

@@ -13,6 +13,7 @@ import '../../blocs/prayer/prayer_state.dart';
 import '../../widgets/dual_calendar_cell.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_strings.dart';
+import '../../blocs/settings/settings_cubit.dart';
 import '../../../core/constants/app_typography.dart';
 import '../../../core/utils/extensions.dart';
 import '../../../domain/entities/prayer_time.dart';
@@ -22,6 +23,8 @@ class CalendarScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    context.watch<SettingsCubit>();
+
     return Scaffold(
       backgroundColor: AppColors.surface,
       appBar: AppBar(

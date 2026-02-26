@@ -6,6 +6,7 @@ import 'package:adhan/adhan.dart';
 import '../../blocs/prayer/prayer_bloc.dart';
 import '../../blocs/prayer/prayer_state.dart';
 import '../../../core/constants/app_colors.dart';
+import '../../blocs/settings/settings_cubit.dart';
 import '../../../core/constants/app_typography.dart';
 
 class QiblaScreen extends StatefulWidget {
@@ -18,6 +19,8 @@ class QiblaScreen extends StatefulWidget {
 class _QiblaScreenState extends State<QiblaScreen> {
   @override
   Widget build(BuildContext context) {
+    context.watch<SettingsCubit>();
+
     return Scaffold(
       backgroundColor: AppColors.surface,
       appBar: AppBar(

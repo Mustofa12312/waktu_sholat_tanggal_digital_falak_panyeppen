@@ -13,6 +13,7 @@ import 'widgets/solar_gradient_bg.dart';
 import 'widgets/next_prayer_countdown.dart';
 import 'widgets/prayer_card.dart';
 import '../../../core/constants/app_colors.dart';
+import '../../blocs/settings/settings_cubit.dart';
 import '../../../core/constants/app_strings.dart';
 import '../../../core/constants/app_typography.dart';
 import '../../../core/utils/extensions.dart';
@@ -35,6 +36,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    // Force complete screen rebuilding when theme globally changes
+    context.watch<SettingsCubit>();
+
     return BlocListener<PrayerBloc, PrayerState>(
       listener: (context, state) {
         if (state is PrayerLoaded) {

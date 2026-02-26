@@ -50,9 +50,9 @@ class DualCalendarCell extends StatelessWidget {
       textColor = AppColors.black;
       hijriColor = AppColors.black.withOpacity(0.6);
     } else if (isToday) {
-      background = AppColors.primary.withOpacity(0.3);
+      background = AppColors.accent.withOpacity(0.25);
       textColor = AppColors.accent;
-      hijriColor = AppColors.accent.withOpacity(0.7);
+      hijriColor = AppColors.accent.withOpacity(0.8);
     }
 
     // Determine primary and secondary texts
@@ -74,17 +74,25 @@ class DualCalendarCell extends StatelessWidget {
           color: background,
           shape: BoxShape.circle,
           border: isToday && !isSelected
-              ? Border.all(color: AppColors.primary, width: 2.0)
+              ? Border.all(color: AppColors.accent, width: 2.0)
               : null,
           boxShadow: isSelected
               ? [
                   BoxShadow(
-                    color: AppColors.accent.withOpacity(0.3),
+                    color: AppColors.accent.withOpacity(0.4),
                     blurRadius: 8,
                     offset: const Offset(0, 4),
                   )
                 ]
-              : null,
+              : isToday
+                  ? [
+                      BoxShadow(
+                        color: AppColors.accent.withOpacity(0.15),
+                        blurRadius: 12,
+                        spreadRadius: 2,
+                      )
+                    ]
+                  : null,
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -94,9 +102,11 @@ class DualCalendarCell extends StatelessWidget {
               primaryText,
               style: TextStyle(
                 color: primaryColor,
-                fontSize: isHijriPrimary ? 20 : 16,
+                fontSize: isToday && !isSelected
+                    ? (isHijriPrimary ? 22 : 18)
+                    : (isHijriPrimary ? 20 : 16),
                 fontWeight:
-                    isToday || isSelected ? FontWeight.w700 : FontWeight.w500,
+                    isToday || isSelected ? FontWeight.w800 : FontWeight.w500,
                 height: 1.1,
               ),
             ),
@@ -105,7 +115,9 @@ class DualCalendarCell extends StatelessWidget {
               secondaryText,
               style: AppTypography.labelSmall.copyWith(
                 color: secondaryColor,
-                fontSize: isHijriPrimary ? 10 : 12,
+                fontSize: isToday && !isSelected
+                    ? (isHijriPrimary ? 11 : 13)
+                    : (isHijriPrimary ? 10 : 12),
                 height: 1.1,
               ),
             ),

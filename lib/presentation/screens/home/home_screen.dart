@@ -9,7 +9,7 @@ import '../../blocs/prayer/prayer_event.dart';
 import '../../blocs/prayer/prayer_state.dart';
 import '../../blocs/theme/theme_cubit.dart';
 import '../../widgets/azan_lottie_indicator.dart';
-import 'widgets/solar_gradient_bg.dart';
+// import 'widgets/solar_gradient_bg.dart';
 import 'widgets/next_prayer_countdown.dart';
 import 'widgets/prayer_card.dart';
 import '../../../core/constants/app_colors.dart';
@@ -45,36 +45,28 @@ class _HomeScreenState extends State<HomeScreen> {
           context.read<ThemeCubit>().updateFromPrayerTime(state.prayerTime);
         }
       },
-      child: BlocBuilder<ThemeCubit, List<Color>>(
-        builder: (context, gradientColors) {
-          return SolarGradientBg(
-            colors: gradientColors,
-            child: Scaffold(
-              backgroundColor: Colors.transparent,
-              extendBodyBehindAppBar: true,
-              appBar: _buildAppBar(context),
-              body: BlocBuilder<PrayerBloc, PrayerState>(
-                builder: (context, state) {
-                  if (state is PrayerLoading) {
-                    return const _LoadingView();
-                  }
-                  if (state is PrayerError) {
-                    return _ErrorView(
-                      message: state.message,
-                      onRetry: () => context.read<PrayerBloc>().add(
-                            const LoadPrayerTimes(),
-                          ),
-                    );
-                  }
-                  if (state is PrayerLoaded) {
-                    return _LoadedView(state: state);
-                  }
-                  return const SizedBox.shrink();
-                },
-              ),
-            ),
-          );
-        },
+      child: Scaffold(
+        backgroundColor: AppColors.surface,
+        appBar: _buildAppBar(context),
+        body: BlocBuilder<PrayerBloc, PrayerState>(
+          builder: (context, state) {
+            if (state is PrayerLoading) {
+              return const _LoadingView();
+            }
+            if (state is PrayerError) {
+              return _ErrorView(
+                message: state.message,
+                onRetry: () => context.read<PrayerBloc>().add(
+                      const LoadPrayerTimes(),
+                    ),
+              );
+            }
+            if (state is PrayerLoaded) {
+              return _LoadedView(state: state);
+            }
+            return const SizedBox.shrink();
+          },
+        ),
       ),
     );
   }
@@ -87,19 +79,21 @@ class _HomeScreenState extends State<HomeScreen> {
     return AppBar(
       backgroundColor: Colors.transparent,
       elevation: 0,
+      centerTitle: true,
       title: Column(
         children: [
           Text(
             AppStrings.appName,
             style: AppTypography.titleLarge.copyWith(
-              color: Colors.white,
-              letterSpacing: 2,
+              color: AppColors.textPrimary,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 1.2,
             ),
           ),
           Text(
             hijriStr,
             style: AppTypography.bodySmall.copyWith(
-              color: Colors.white70,
+              color: AppColors.textSecondary,
               fontSize: 11,
             ),
           ),
@@ -107,7 +101,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       actions: [
         IconButton(
-          icon: const Icon(Icons.my_location_rounded, color: Colors.white70),
+          icon: Icon(Icons.my_location_rounded, color: AppColors.textSecondary),
           onPressed: () {
             HapticFeedback.lightImpact();
             ScaffoldMessenger.of(context).showSnackBar(
@@ -116,7 +110,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   'Memperbarui lokasi GPS...',
                   style: AppTypography.bodySmall.copyWith(color: Colors.white),
                 ),
-                backgroundColor: AppColors.primaryDark,
+                backgroundColor: AppColors.primary,
                 behavior: SnackBarBehavior.floating,
                 duration: const Duration(seconds: 2),
                 shape: RoundedRectangleBorder(
@@ -130,6 +124,7 @@ class _HomeScreenState extends State<HomeScreen> {
           },
           tooltip: 'Perbarui Lokasi',
         ),
+        const SizedBox(width: 8),
       ],
     );
   }
@@ -154,7 +149,8 @@ class _LoadingView extends StatelessWidget {
           Text(
             'Mencari lokasi & menghitung\nwaktu sholat...',
             textAlign: TextAlign.center,
-            style: AppTypography.bodyMedium.copyWith(color: Colors.white70),
+            style: AppTypography.bodyMedium
+                .copyWith(color: AppColors.textSecondary),
           ),
         ],
       ).animate().fadeIn(duration: 300.ms),
@@ -187,7 +183,8 @@ class _ErrorView extends StatelessWidget {
             Text(
               message,
               textAlign: TextAlign.center,
-              style: AppTypography.bodyMedium.copyWith(color: Colors.white70),
+              style: AppTypography.bodyMedium
+                  .copyWith(color: AppColors.textSecondary),
             ),
             const SizedBox(height: 24),
             ElevatedButton.icon(
@@ -264,7 +261,7 @@ class _LoadedView extends StatelessWidget {
             Text(
               AppStrings.todayPrayers,
               style: AppTypography.titleMedium.copyWith(
-                color: Colors.white70,
+                color: AppColors.textSecondary,
                 fontSize: 13,
                 letterSpacing: 1.5,
               ),
@@ -336,13 +333,15 @@ class _LocationBar extends StatelessWidget {
           Expanded(
             child: Text(
               city.isEmpty ? 'Jakarta, Indonesia' : city,
-              style: AppTypography.labelMedium.copyWith(color: Colors.white),
+              style: AppTypography.labelMedium
+                  .copyWith(color: AppColors.textPrimary),
               overflow: TextOverflow.ellipsis,
             ),
           ),
           Text(
             DateFormat('EEE, d MMM', 'id').format(date),
-            style: AppTypography.labelSmall.copyWith(color: Colors.white60),
+            style:
+                AppTypography.labelSmall.copyWith(color: AppColors.textMuted),
           ),
         ],
       ),

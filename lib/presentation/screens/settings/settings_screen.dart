@@ -235,7 +235,7 @@ class _PremiumCard extends StatelessWidget {
         color: AppColors.surfaceLight.withOpacity(0.4),
         borderRadius: BorderRadius.circular(24),
         border: Border.all(
-          color: AppColors.white.withOpacity(0.08),
+          color: AppColors.textPrimary.withOpacity(0.08),
           width: 1.5,
         ),
         boxShadow: [
@@ -575,7 +575,7 @@ class _AudioCard extends StatelessWidget {
                         audio.$2,
                         style: AppTypography.bodyLarge.copyWith(
                           color: isSelected
-                              ? AppColors.white
+                              ? AppColors.accent
                               : AppColors.textPrimary,
                           fontWeight:
                               isSelected ? FontWeight.w600 : FontWeight.w400,
@@ -587,7 +587,7 @@ class _AudioCard extends StatelessWidget {
               ),
             );
           }),
-          Divider(color: AppColors.white.withOpacity(0.1), height: 1),
+          Divider(color: AppColors.divider.withOpacity(0.5), height: 1),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
             child: Row(
@@ -608,7 +608,7 @@ class _AudioCard extends StatelessWidget {
               ],
             ),
           ),
-          Divider(color: AppColors.white.withOpacity(0.1), height: 1),
+          Divider(color: AppColors.divider.withOpacity(0.5), height: 1),
           Material(
             color: Colors.transparent,
             child: InkWell(
@@ -720,7 +720,7 @@ class _ImsakCard extends StatelessWidget {
                 ? Column(
                     children: [
                       Divider(
-                          height: 1, color: AppColors.white.withOpacity(0.1)),
+                          height: 1, color: AppColors.divider.withOpacity(0.5)),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: _AdjustmentRow(
@@ -814,7 +814,7 @@ class _ThemeCard extends StatelessWidget {
                     ? AppColors.textMuted
                     : AppColors.accent),
           ),
-          Divider(color: AppColors.white.withOpacity(0.1), height: 1),
+          Divider(color: AppColors.divider.withOpacity(0.5), height: 1),
           SwitchListTile(
             title: Text(AppStrings.autoTheme,
                 style: AppTypography.titleMedium

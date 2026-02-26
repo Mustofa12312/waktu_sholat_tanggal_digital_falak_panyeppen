@@ -625,8 +625,17 @@ class _AudioCard extends StatelessWidget {
               onTap: () async {
                 HapticFeedback.mediumImpact();
                 final audio = getIt<AudioService>();
+
+                if (audio.isPlaying) {
+                  await audio.stopAzan();
+                  if (!context.mounted) return;
+                  ScaffoldMessenger.of(context).clearSnackBars();
+                  return;
+                }
+
                 await audio.playAzan(assetPath: settings.selectedAdhan);
                 if (!context.mounted) return;
+                ScaffoldMessenger.of(context).clearSnackBars();
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Row(

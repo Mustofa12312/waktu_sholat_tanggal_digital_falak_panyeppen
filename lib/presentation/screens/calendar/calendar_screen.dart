@@ -23,7 +23,7 @@ class CalendarScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    context.watch<SettingsCubit>();
+    final settings = context.watch<SettingsCubit>().state;
 
     return Scaffold(
       backgroundColor: AppColors.surface,
@@ -95,8 +95,8 @@ class CalendarScreen extends StatelessWidget {
                     ],
                   ),
                   child: calState.showHijriAsPrimary
-                      ? _buildHijriCalendar(context, calState)
-                      : _buildCalendar(context, calState),
+                      ? _buildHijriCalendar(context, calState, settings.hijriOffset)
+                      : _buildCalendar(context, calState, settings.hijriOffset),
                 ),
               );
             },
@@ -107,7 +107,10 @@ class CalendarScreen extends StatelessWidget {
           // Selected day info
           BlocBuilder<CalendarCubit, CalendarState>(
             builder: (context, calState) {
-              return _DayInfoPanel(selectedDay: calState.selectedDay);
+              return _DayInfoPanel(
+                selectedDay: calState.selectedDay,
+                hijriOffset: settings.hijriOffset,
+              );
             },
           ),
 
@@ -132,7 +135,7 @@ class CalendarScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildCalendar(BuildContext context, CalendarState calState) {
+  Widget _buildCalendar(BuildContext context, CalendarState calState, int hijriOffset) {
     final arabicMonths = [
       '', // 1-indexed
       'محرم', 'صفر', 'ربيع الأول', 'ربيع الآخر', 'جمادى الأولى', 'جمادى الآخرة',
@@ -241,7 +244,8 @@ class CalendarScreen extends StatelessWidget {
         calendarBuilders: CalendarBuilders(
           headerTitleBuilder: (context, day) {
             if (calState.showHijriAsPrimary) {
-              final hijri = HijriCalendar.fromDate(day);
+              final adjustedDate = day.add(Duration(days: hijriOffset));
+              final hijri = HijriCalendar.fromDate(adjustedDate);
               final hijriMonthName = arabicMonths[hijri.hMonth];
               return Text(
                 '$hijriMonthName ${hijri.hYear}',
@@ -274,30 +278,35 @@ class CalendarScreen extends StatelessWidget {
           defaultBuilder: (ctx, day, focusedDay) => DualCalendarCell(
             date: day,
             isHijriPrimary: calState.showHijriAsPrimary,
+            hijriOffset: hijriOffset,
           ),
           todayBuilder: (ctx, day, focusedDay) => DualCalendarCell(
             date: day,
             isToday: true,
             isHijriPrimary: calState.showHijriAsPrimary,
+            hijriOffset: hijriOffset,
           ),
           selectedBuilder: (ctx, day, focusedDay) => DualCalendarCell(
             date: day,
             isSelected: true,
             isToday: isSameDay(day, DateTime.now()),
             isHijriPrimary: calState.showHijriAsPrimary,
+            hijriOffset: hijriOffset,
           ),
           outsideBuilder: (ctx, day, focusedDay) => DualCalendarCell(
             date: day,
             isOutside: true,
             isHijriPrimary: calState.showHijriAsPrimary,
+            hijriOffset: hijriOffset,
           ),
         ),
       ),
     );
   }
 
-  Widget _buildHijriCalendar(BuildContext context, CalendarState calState) {
-    final focusHijri = HijriCalendar.fromDate(calState.focusedDay);
+  Widget _buildHijriCalendar(BuildContext context, CalendarState calState, int hijriOffset) {
+    final adjustedDate = calState.focusedDay.add(Duration(days: hijriOffset));
+    final focusHijri = HijriCalendar.fromDate(adjustedDate);
     final int lengthOfMonth = focusHijri.lengthOfMonth;
     final DateTime firstDayGregorian =
         focusHijri.hijriToGregorian(focusHijri.hYear, focusHijri.hMonth, 1);
@@ -419,6 +428,7 @@ class CalendarScreen extends StatelessWidget {
                   date: date,
                   isOutside: true,
                   isHijriPrimary: true,
+                  hijriOffset: hijriOffset,
                   onTap: () {
                     HapticFeedback.selectionClick();
                     context.read<CalendarCubit>().selectDay(date, date);
@@ -432,6 +442,7 @@ class CalendarScreen extends StatelessWidget {
                   isSelected: isSameDay(date, calState.selectedDay),
                   isToday: isSameDay(date, DateTime.now()),
                   isHijriPrimary: true,
+                  hijriOffset: hijriOffset,
                   onTap: () {
                     HapticFeedback.selectionClick();
                     context
@@ -452,12 +463,14 @@ class CalendarScreen extends StatelessWidget {
 
 class _DayInfoPanel extends StatelessWidget {
   final DateTime selectedDay;
+  final int hijriOffset;
 
-  const _DayInfoPanel({required this.selectedDay});
+  const _DayInfoPanel({required this.selectedDay, this.hijriOffset = 0});
 
   @override
   Widget build(BuildContext context) {
-    final hijri = HijriCalendar.fromDate(selectedDay);
+    final adjustedDate = selectedDay.add(Duration(days: hijriOffset));
+    final hijri = HijriCalendar.fromDate(adjustedDate);
     final gregorianStr = DateFormat(
       'EEEE, d MMMM yyyy',
       'id',

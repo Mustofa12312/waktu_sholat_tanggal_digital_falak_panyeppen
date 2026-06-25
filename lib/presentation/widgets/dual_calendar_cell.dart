@@ -13,6 +13,7 @@ class DualCalendarCell extends StatelessWidget {
   final bool isFocused;
   final bool isOutside;
   final bool isHijriPrimary;
+  final int hijriOffset;
   final VoidCallback? onTap;
 
   const DualCalendarCell({
@@ -23,6 +24,7 @@ class DualCalendarCell extends StatelessWidget {
     this.isFocused = false,
     this.isOutside = false,
     this.isHijriPrimary = false,
+    this.hijriOffset = 0,
     this.onTap,
   });
 
@@ -37,7 +39,8 @@ class DualCalendarCell extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final hijri = HijriCalendar.fromDate(date);
+    final adjustedDate = date.add(Duration(days: hijriOffset));
+    final hijri = HijriCalendar.fromDate(adjustedDate);
 
     BoxDecoration decoration;
     Color textColor = isOutside ? AppColors.textMuted : AppColors.textPrimary;

@@ -69,52 +69,56 @@ class _AzanLottieIndicatorState extends State<AzanLottieIndicator>
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Stack(
-          alignment: Alignment.center,
-          children: [
-            // Pulse ring
-            if (widget.isActive)
-              AnimatedBuilder(
-                animation: _controller,
-                builder: (_, __) => Container(
-                  width: widget.size * _pulse.value,
-                  height: widget.size * _pulse.value,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: AppColors.accent.withOpacity(_opacity.value * 0.3),
+        SizedBox(
+          width: widget.size * 1.3,
+          height: widget.size * 1.3,
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              // Pulse ring
+              if (widget.isActive)
+                AnimatedBuilder(
+                  animation: _controller,
+                  builder: (_, __) => Container(
+                    width: widget.size * _pulse.value,
+                    height: widget.size * _pulse.value,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: AppColors.accent.withOpacity(_opacity.value * 0.3),
+                    ),
                   ),
                 ),
-              ),
-            // Main circle
-            Container(
-              width: widget.size,
-              height: widget.size,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                gradient: RadialGradient(
-                  colors: widget.isActive
-                      ? [AppColors.accent, AppColors.accentDark]
-                      : [AppColors.glassWhite, AppColors.glassBorder],
+              // Main circle
+              Container(
+                width: widget.size,
+                height: widget.size,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  gradient: RadialGradient(
+                    colors: widget.isActive
+                        ? [AppColors.accent, AppColors.accentDark]
+                        : [AppColors.glassWhite, AppColors.glassBorder],
+                  ),
+                  boxShadow: widget.isActive
+                      ? [
+                          BoxShadow(
+                            color: AppColors.accent.withOpacity(0.4),
+                            blurRadius: 20,
+                            spreadRadius: 5,
+                          ),
+                        ]
+                      : null,
                 ),
-                boxShadow: widget.isActive
-                    ? [
-                        BoxShadow(
-                          color: AppColors.accent.withOpacity(0.4),
-                          blurRadius: 20,
-                          spreadRadius: 5,
-                        ),
-                      ]
-                    : null,
+                child: Icon(
+                  Icons.mosque_rounded,
+                  size: widget.size * 0.45,
+                  color: widget.isActive
+                      ? AppColors.black
+                      : AppColors.textSecondary,
+                ),
               ),
-              child: Icon(
-                Icons.mosque_rounded,
-                size: widget.size * 0.45,
-                color: widget.isActive
-                    ? AppColors.black
-                    : AppColors.textSecondary,
-              ),
-            ),
-          ],
+            ],
+          ),
         ),
         if (widget.isActive) ...[
           const SizedBox(height: 8),

@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../../../../core/constants/app_colors.dart';
@@ -108,7 +109,15 @@ class _DigitBox extends StatelessWidget {
         child: Text(
           value,
           key: ValueKey(value),
-          style: AppTypography.countdown.copyWith(fontSize: 32),
+          style: AppTypography.countdown.copyWith(
+            fontSize: 32,
+            height: 1.0,
+            fontFeatures: const [FontFeature.tabularFigures()],
+          ),
+          textHeightBehavior: const TextHeightBehavior(
+            applyHeightToFirstAscent: false,
+            applyHeightToLastDescent: false,
+          ),
         ),
       ),
     );

@@ -39,20 +39,50 @@ class DualCalendarCell extends StatelessWidget {
   Widget build(BuildContext context) {
     final hijri = HijriCalendar.fromDate(date);
 
-    Color background = Colors.transparent;
+    BoxDecoration decoration;
     Color textColor = isOutside ? AppColors.textMuted : AppColors.textPrimary;
     Color hijriColor = isOutside
         ? AppColors.textMuted.withOpacity(0.5)
         : AppColors.textSecondary;
 
     if (isSelected) {
-      background = AppColors.accent;
+      decoration = BoxDecoration(
+        gradient: LinearGradient(
+          colors: [AppColors.accent, AppColors.accentDark],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+        shape: BoxShape.circle,
+        boxShadow: [
+          BoxShadow(
+            color: AppColors.accent.withOpacity(0.4),
+            blurRadius: 12,
+            offset: const Offset(0, 4),
+          )
+        ],
+      );
       textColor = AppColors.black;
-      hijriColor = AppColors.black.withOpacity(0.6);
+      hijriColor = AppColors.black.withOpacity(0.7);
     } else if (isToday) {
-      background = AppColors.accent.withOpacity(0.25);
+      decoration = BoxDecoration(
+        color: AppColors.accent.withOpacity(0.15),
+        shape: BoxShape.circle,
+        border: Border.all(color: AppColors.accent.withOpacity(0.5), width: 1.5),
+        boxShadow: [
+          BoxShadow(
+            color: AppColors.accent.withOpacity(0.05),
+            blurRadius: 8,
+            spreadRadius: 1,
+          )
+        ],
+      );
       textColor = AppColors.accent;
       hijriColor = AppColors.accent.withOpacity(0.8);
+    } else {
+      decoration = BoxDecoration(
+        color: Colors.transparent,
+        shape: BoxShape.circle,
+      );
     }
 
     // Determine primary and secondary texts
@@ -67,33 +97,10 @@ class DualCalendarCell extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: AnimatedContainer(
-        duration: const Duration(milliseconds: 200),
-        curve: Curves.easeInOut,
-        margin: const EdgeInsets.all(2),
-        decoration: BoxDecoration(
-          color: background,
-          shape: BoxShape.circle,
-          border: isToday && !isSelected
-              ? Border.all(color: AppColors.accent, width: 2.0)
-              : null,
-          boxShadow: isSelected
-              ? [
-                  BoxShadow(
-                    color: AppColors.accent.withOpacity(0.4),
-                    blurRadius: 8,
-                    offset: const Offset(0, 4),
-                  )
-                ]
-              : isToday
-                  ? [
-                      BoxShadow(
-                        color: AppColors.accent.withOpacity(0.15),
-                        blurRadius: 12,
-                        spreadRadius: 2,
-                      )
-                    ]
-                  : null,
-        ),
+        duration: const Duration(milliseconds: 300),
+        curve: Curves.easeOutCubic,
+        margin: const EdgeInsets.all(4),
+        decoration: decoration,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -106,18 +113,20 @@ class DualCalendarCell extends StatelessWidget {
                     ? (isHijriPrimary ? 22 : 18)
                     : (isHijriPrimary ? 20 : 16),
                 fontWeight:
-                    isToday || isSelected ? FontWeight.w800 : FontWeight.w500,
+                    isToday || isSelected ? FontWeight.w800 : FontWeight.w600,
                 height: 1.1,
               ),
             ),
             // Secondary date
+            const SizedBox(height: 2),
             Text(
               secondaryText,
               style: AppTypography.labelSmall.copyWith(
                 color: secondaryColor,
                 fontSize: isToday && !isSelected
-                    ? (isHijriPrimary ? 11 : 13)
-                    : (isHijriPrimary ? 10 : 12),
+                    ? (isHijriPrimary ? 12 : 14)
+                    : (isHijriPrimary ? 11 : 13),
+                fontWeight: FontWeight.w500,
                 height: 1.1,
               ),
             ),

@@ -79,8 +79,21 @@ class CalendarScreen extends StatelessWidget {
                     child: child,
                   ),
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                child: Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+                  padding: const EdgeInsets.all(8.0),
+                  decoration: BoxDecoration(
+                    color: AppColors.cardDark,
+                    borderRadius: BorderRadius.circular(28),
+                    border: Border.all(color: AppColors.glassBorder),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.2),
+                        blurRadius: 20,
+                        offset: const Offset(0, 10),
+                      ),
+                    ],
+                  ),
                   child: calState.showHijriAsPrimary
                       ? _buildHijriCalendar(context, calState)
                       : _buildCalendar(context, calState),
@@ -167,33 +180,52 @@ class CalendarScreen extends StatelessWidget {
           defaultTextStyle: TextStyle(color: AppColors.textPrimary),
           weekendTextStyle: TextStyle(color: AppColors.textSecondary),
           outsideTextStyle: TextStyle(color: AppColors.textMuted),
-          todayDecoration: BoxDecoration(shape: BoxShape.circle),
-          selectedDecoration: BoxDecoration(shape: BoxShape.circle),
+          todayDecoration: const BoxDecoration(color: Colors.transparent),
+          selectedDecoration: const BoxDecoration(color: Colors.transparent),
           markerDecoration: BoxDecoration(
             color: AppColors.accent,
             shape: BoxShape.circle,
           ),
         ),
         headerStyle: HeaderStyle(
+          titleCentered: true,
           titleTextStyle: AppTypography.titleMedium.copyWith(
             color: AppColors.textPrimary,
-            fontWeight: FontWeight.w600,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 0.5,
           ),
           formatButtonTextStyle: AppTypography.labelSmall.copyWith(
             color: AppColors.accent,
-            fontWeight: FontWeight.w600,
+            fontWeight: FontWeight.w700,
           ),
           formatButtonDecoration: BoxDecoration(
+            color: AppColors.accent.withOpacity(0.1),
             border: Border.all(color: AppColors.accent.withOpacity(0.5)),
             borderRadius: BorderRadius.circular(20),
           ),
-          leftChevronIcon: Icon(
-            Icons.chevron_left_rounded,
-            color: AppColors.textSecondary,
+          leftChevronIcon: Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              color: AppColors.surfaceLight,
+              shape: BoxShape.circle,
+            ),
+            child: Icon(
+              Icons.chevron_left_rounded,
+              color: AppColors.textPrimary,
+              size: 20,
+            ),
           ),
-          rightChevronIcon: Icon(
-            Icons.chevron_right_rounded,
-            color: AppColors.textSecondary,
+          rightChevronIcon: Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              color: AppColors.surfaceLight,
+              shape: BoxShape.circle,
+            ),
+            child: Icon(
+              Icons.chevron_right_rounded,
+              color: AppColors.textPrimary,
+              size: 20,
+            ),
           ),
         ),
         daysOfWeekStyle: DaysOfWeekStyle(
@@ -296,32 +328,53 @@ class CalendarScreen extends StatelessWidget {
         children: [
           // Header
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                IconButton(
-                  icon: Icon(Icons.chevron_right_rounded,
-                      color: AppColors.textSecondary),
-                  onPressed: () {
+                GestureDetector(
+                  onTap: () {
                     HapticFeedback.lightImpact();
                     context.read<CalendarCubit>().goToPreviousMonth();
                   },
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                      color: AppColors.surfaceLight,
+                      shape: BoxShape.circle,
+                    ),
+                    child: Icon(
+                      Icons.chevron_right_rounded,
+                      color: AppColors.textPrimary,
+                      size: 20,
+                    ),
+                  ),
                 ),
                 Text(
                   '${arabicMonths[focusHijri.hMonth]} ${focusHijri.hYear}',
                   style: AppTypography.titleMedium.copyWith(
                     color: AppColors.textPrimary,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 0.5,
                   ),
                 ),
-                IconButton(
-                  icon: Icon(Icons.chevron_left_rounded,
-                      color: AppColors.textSecondary),
-                  onPressed: () {
+                GestureDetector(
+                  onTap: () {
                     HapticFeedback.lightImpact();
                     context.read<CalendarCubit>().goToNextMonth();
                   },
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                      color: AppColors.surfaceLight,
+                      shape: BoxShape.circle,
+                    ),
+                    child: Icon(
+                      Icons.chevron_left_rounded,
+                      color: AppColors.textPrimary,
+                      size: 20,
+                    ),
+                  ),
                 ),
               ],
             ),

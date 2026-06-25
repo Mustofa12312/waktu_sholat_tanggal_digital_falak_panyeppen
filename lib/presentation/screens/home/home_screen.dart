@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     // Force complete screen rebuilding when theme globally changes
-    context.watch<SettingsCubit>();
+    final settings = context.watch<SettingsCubit>().state;
 
     return BlocListener<PrayerBloc, PrayerState>(
       listener: (context, state) {
@@ -47,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
       },
       child: Scaffold(
         backgroundColor: AppColors.surface,
-        appBar: _buildAppBar(context),
+        appBar: _buildAppBar(context, settings.hijriOffset),
         body: BlocBuilder<PrayerBloc, PrayerState>(
           builder: (context, state) {
             if (state is PrayerLoading) {
@@ -71,8 +71,10 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  PreferredSizeWidget _buildAppBar(BuildContext context) {
-    final hijri = HijriCalendar.now();
+  PreferredSizeWidget _buildAppBar(BuildContext context, int hijriOffset) {
+    final now = DateTime.now();
+    final adjustedDate = now.add(Duration(days: hijriOffset));
+    final hijri = HijriCalendar.fromDate(adjustedDate);
     final hijriStr =
         '${hijri.hDay} ${hijri.longMonthNameIndo} ${hijri.hYear} H';
 

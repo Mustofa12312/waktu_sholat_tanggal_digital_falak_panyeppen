@@ -97,6 +97,14 @@ class SettingsScreen extends StatelessWidget {
                             _CalculationMethodCard(settings: settings),
                             const SizedBox(height: 28),
 
+                            // ─── Hijri Calendar Adjustment ───────────────────────────
+                            const _SectionHeader(
+                              label: 'Koreksi Tanggal Hijriah',
+                              icon: Icons.calendar_month_rounded,
+                            ),
+                            _HijriAdjustmentCard(settings: settings),
+                            const SizedBox(height: 28),
+
                             // ─── Prayer Adjustments ──────────────────────────────────
                             const _SectionHeader(
                               label: AppStrings.prayerAdjustments,
@@ -382,6 +390,42 @@ class _CalculationMethodCard extends StatelessWidget {
   }
 }
 
+class _HijriAdjustmentCard extends StatelessWidget {
+  final PrayerSettings settings;
+  const _HijriAdjustmentCard({required this.settings});
+
+  @override
+  Widget build(BuildContext context) {
+    return _PremiumCard(
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              child: Text(
+                'Sesuaikan penanggalan Hijriah jika terjadi perbedaan dengan rukyat lokal.',
+                style: AppTypography.bodySmall,
+                textAlign: TextAlign.center,
+              ),
+            ),
+            _AdjustmentRow(
+              label: 'Koreksi',
+              value: settings.hijriOffset,
+              min: -2,
+              max: 2,
+              divisions: 4,
+              suffix: 'h',
+              onChanged: (v) =>
+                  context.read<SettingsCubit>().setHijriOffset(v),
+            ),
+          ],
+        ),
+      ),
+    ).animate().fadeIn(delay: 120.ms).slideY(begin: 0.1);
+  }
+}
+
 class _AdjustmentCard extends StatelessWidget {
   final PrayerSettings settings;
   const _AdjustmentCard({required this.settings});
@@ -433,11 +477,19 @@ class _AdjustmentCard extends StatelessWidget {
 class _AdjustmentRow extends StatelessWidget {
   final String label;
   final int value;
+  final double min;
+  final double max;
+  final int divisions;
+  final String suffix;
   final ValueChanged<int> onChanged;
 
   const _AdjustmentRow({
     required this.label,
     required this.value,
+    this.min = -30,
+    this.max = 30,
+    this.divisions = 60,
+    this.suffix = 'm',
     required this.onChanged,
   });
 
@@ -454,9 +506,9 @@ class _AdjustmentRow extends StatelessWidget {
           Expanded(
             child: _CustomSlider(
               value: value.toDouble(),
-              min: -30,
-              max: 30,
-              divisions: 60,
+              min: min,
+              max: max,
+              divisions: divisions,
               onChanged: (v) => onChanged(v.round()),
             ),
           ),
@@ -471,7 +523,7 @@ class _AdjustmentRow extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Text(
-                '${value > 0 ? '+' : ''}$value m',
+                '${value > 0 ? '+' : ''}$value $suffix',
                 style: AppTypography.labelMedium.copyWith(
                   color:
                       value != 0 ? AppColors.accent : AppColors.textSecondary,

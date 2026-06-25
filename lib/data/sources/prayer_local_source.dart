@@ -29,6 +29,7 @@ class PrayerLocalSource {
       isDarkMode: box.get(AppStrings.isDarkModeKey, defaultValue: true) as bool,
       autoThemeEnabled:
           box.get(AppStrings.autoThemeEnabledKey, defaultValue: false) as bool,
+      hijriOffset: box.get(AppStrings.hijriOffsetKey, defaultValue: 0) as int,
     );
   }
 
@@ -47,6 +48,7 @@ class PrayerLocalSource {
     await box.put(AppStrings.selectedAdhanKey, settings.selectedAdhan);
     await box.put(AppStrings.isDarkModeKey, settings.isDarkMode);
     await box.put(AppStrings.autoThemeEnabledKey, settings.autoThemeEnabled);
+    await box.put(AppStrings.hijriOffsetKey, settings.hijriOffset);
   }
 
   PrayerTimeModel? loadCachedPrayerTimes(DateTime date) {

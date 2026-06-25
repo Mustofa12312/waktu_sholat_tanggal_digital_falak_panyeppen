@@ -99,4 +99,5 @@ class AppStrings {
   static const String selectedAdhanKey = 'selected_adhan';
   static const String isDarkModeKey = 'is_dark_mode';
   static const String autoThemeEnabledKey = 'auto_theme_enabled';
+  static const String hijriOffsetKey = 'hijri_offset';
 }

@@ -46,26 +46,32 @@ class _HomeScreenState extends State<HomeScreen> {
         }
       },
       child: Scaffold(
-        backgroundColor: AppColors.surface,
+        backgroundColor: Colors.transparent,
+        extendBodyBehindAppBar: true,
         appBar: _buildAppBar(context, settings.hijriOffset),
-        body: BlocBuilder<PrayerBloc, PrayerState>(
-          builder: (context, state) {
-            if (state is PrayerLoading) {
-              return const _LoadingView();
-            }
-            if (state is PrayerError) {
-              return _ErrorView(
-                message: state.message,
-                onRetry: () => context.read<PrayerBloc>().add(
-                      const LoadPrayerTimes(),
-                    ),
-              );
-            }
-            if (state is PrayerLoaded) {
-              return _LoadedView(state: state);
-            }
-            return const SizedBox.shrink();
-          },
+        body: Container(
+          decoration: BoxDecoration(
+            gradient: _getDynamicGradient(),
+          ),
+          child: BlocBuilder<PrayerBloc, PrayerState>(
+            builder: (context, state) {
+              if (state is PrayerLoading) {
+                return const _LoadingView();
+              }
+              if (state is PrayerError) {
+                return _ErrorView(
+                  message: state.message,
+                  onRetry: () => context.read<PrayerBloc>().add(
+                        const LoadPrayerTimes(),
+                      ),
+                );
+              }
+              if (state is PrayerLoaded) {
+                return _LoadedView(state: state);
+              }
+              return const SizedBox.shrink();
+            },
+          ),
         ),
       ),
     );
@@ -129,6 +135,60 @@ class _HomeScreenState extends State<HomeScreen> {
         const SizedBox(width: 8),
       ],
     );
+  }
+
+  LinearGradient _getDynamicGradient() {
+    final now = DateTime.now();
+    final hour = now.hour;
+
+    // Dawn (Subuh)
+    if (hour >= 4 && hour < 6) {
+      return LinearGradient(
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+        colors: [
+          const Color(0xFF2C3E50),
+          const Color(0xFF3498DB).withOpacity(0.5),
+          AppColors.surface,
+        ],
+      );
+    }
+    // Morning/Day (Dhuha/Dzuhur)
+    else if (hour >= 6 && hour < 15) {
+      return LinearGradient(
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+        colors: [
+          const Color(0xFF5D9FFF),
+          const Color(0xFFB1D8FF).withOpacity(0.3),
+          AppColors.surface,
+        ],
+      );
+    }
+    // Afternoon/Sunset (Ashar/Maghrib)
+    else if (hour >= 15 && hour < 19) {
+      return LinearGradient(
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+        colors: [
+          const Color(0xFFFF7E5F),
+          const Color(0xFFFEB47B).withOpacity(0.5),
+          AppColors.surface,
+        ],
+      );
+    }
+    // Night (Isya)
+    else {
+      return LinearGradient(
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+        colors: [
+          const Color(0xFF0F2027),
+          const Color(0xFF203A43).withOpacity(0.8),
+          AppColors.surface,
+        ],
+      );
+    }
   }
 }
 

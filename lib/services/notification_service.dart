@@ -49,6 +49,7 @@ class NotificationService {
       importance: Importance.max,
       playSound: true,
       enableVibration: true,
+      audioAttributesUsage: AudioAttributesUsage.alarm,
     );
     await androidPlugin?.createNotificationChannel(channel);
 
@@ -105,6 +106,8 @@ class NotificationService {
           ? RawResourceAndroidNotificationSound(soundName)
           : null,
       playSound: true,
+      audioAttributesUsage: AudioAttributesUsage.alarm, // Bypass silent mode
+      fullScreenIntent: true, // Wakes up screen and shows popup
       styleInformation: BigTextStyleInformation(
         prayerName == 'Imsak'
             ? 'Waktu Imsak telah tiba. Sebentar lagi Subuh.'

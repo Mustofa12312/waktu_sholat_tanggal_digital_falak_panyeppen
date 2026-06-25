@@ -43,12 +43,39 @@ class NextPrayerCountdown extends StatelessWidget {
               fontSize: 13,
             ),
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: 16),
 
-          // Countdown digits
-          _CountdownDisplay(timeUntilNext: timeUntilNext),
+          // Circular Countdown
+          Stack(
+            alignment: Alignment.center,
+            children: [
+              SizedBox(
+                width: 220,
+                height: 220,
+                child: CircularProgressIndicator(
+                  value: null, // Indeterminate spinning
+                  strokeWidth: 3,
+                  color: AppColors.accent,
+                  backgroundColor: Colors.transparent,
+                ).animate(onPlay: (controller) => controller.repeat()).rotate(
+                      duration: const Duration(seconds: 10),
+                      curve: Curves.linear,
+                    ),
+              ),
+              SizedBox(
+                width: 200,
+                height: 200,
+                child: CircularProgressIndicator(
+                  value: 1.0, // Static background ring
+                  strokeWidth: 1,
+                  color: AppColors.divider.withOpacity(0.3),
+                ),
+              ),
+              _CountdownDisplay(timeUntilNext: timeUntilNext),
+            ],
+          ),
 
-          const SizedBox(height: 8),
+          const SizedBox(height: 16),
 
           // Subtitle
           Text(
@@ -102,15 +129,14 @@ class _DigitBox extends StatelessWidget {
       height: 64,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
-        color: AppColors.glassWhite,
-        border: Border.all(color: AppColors.glassBorder),
+        color: Colors.transparent, // Removed glassWhite to fit in circle
       ),
       child: Center(
         child: Text(
           value,
           key: ValueKey(value),
           style: AppTypography.countdown.copyWith(
-            fontSize: 32,
+            fontSize: 28,
             height: 1.0,
             fontFeatures: const [FontFeature.tabularFigures()],
           ),

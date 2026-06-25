@@ -51,8 +51,9 @@ Future<void> main() async {
   final notifService = getIt<NotificationService>();
   await notifService.initialize();
 
-  // Refresh prayer times for tomorrow in background (microtask)
+  // Initialize background tasks (WorkManager)
   final bgService = getIt<BackgroundService>();
+  bgService.initialize();
   await bgService.scheduleMidnightRefresh();
 
   runApp(const AnNoorApp());

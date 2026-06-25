@@ -27,6 +27,7 @@ class PrayerSettings extends Equatable {
   final bool notificationsEnabled;
   final bool isDarkMode;
   final bool autoThemeEnabled;
+  final int hijriOffset;
 
   const PrayerSettings({
     this.method = PrayerCalculationMethod.kemenag,
@@ -42,6 +43,7 @@ class PrayerSettings extends Equatable {
     this.notificationsEnabled = true,
     this.isDarkMode = true,
     this.autoThemeEnabled = false,
+    this.hijriOffset = 0,
   });
 
   PrayerSettings copyWith({
@@ -58,6 +60,7 @@ class PrayerSettings extends Equatable {
     bool? notificationsEnabled,
     bool? isDarkMode,
     bool? autoThemeEnabled,
+    int? hijriOffset,
   }) {
     return PrayerSettings(
       method: method ?? this.method,
@@ -73,6 +76,7 @@ class PrayerSettings extends Equatable {
       notificationsEnabled: notificationsEnabled ?? this.notificationsEnabled,
       isDarkMode: isDarkMode ?? this.isDarkMode,
       autoThemeEnabled: autoThemeEnabled ?? this.autoThemeEnabled,
+      hijriOffset: hijriOffset ?? this.hijriOffset,
     );
   }
 
@@ -91,5 +95,6 @@ class PrayerSettings extends Equatable {
         notificationsEnabled,
         isDarkMode,
         autoThemeEnabled,
+        hijriOffset,
       ];
 }

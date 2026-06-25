@@ -99,4 +99,10 @@ class SettingsCubit extends Cubit<PrayerSettings> {
     emit(updated);
     await _localSource.saveSettings(updated);
   }
+
+  Future<void> setHijriOffset(int offset) async {
+    final updated = state.copyWith(hijriOffset: offset);
+    emit(updated);
+    await _localSource.saveSettings(updated);
+  }
 }

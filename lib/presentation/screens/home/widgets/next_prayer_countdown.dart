@@ -45,35 +45,29 @@ class NextPrayerCountdown extends StatelessWidget {
           ),
           const SizedBox(height: 16),
 
-          // Circular Countdown
-          Stack(
-            alignment: Alignment.center,
-            children: [
-              SizedBox(
-                width: 220,
-                height: 220,
-                child: CircularProgressIndicator(
-                  value: null, // Indeterminate spinning
-                  strokeWidth: 3,
-                  color: AppColors.accent,
-                  backgroundColor: Colors.transparent,
-                ).animate(onPlay: (controller) => controller.repeat()).rotate(
-                      duration: const Duration(seconds: 10),
-                      curve: Curves.linear,
-                    ),
+          // Glowing capsule countdown
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(40), // Capsule shape
+              color: AppColors.glassWhite,
+              border: Border.all(
+                color: AppColors.accent.withOpacity(0.4),
+                width: 1.5,
               ),
-              SizedBox(
-                width: 200,
-                height: 200,
-                child: CircularProgressIndicator(
-                  value: 1.0, // Static background ring
-                  strokeWidth: 1,
-                  color: AppColors.divider.withOpacity(0.3),
+              boxShadow: [
+                BoxShadow(
+                  color: AppColors.accent.withOpacity(0.15),
+                  blurRadius: 24,
+                  spreadRadius: 2,
                 ),
+              ],
+            ),
+            child: _CountdownDisplay(timeUntilNext: timeUntilNext),
+          ).animate(onPlay: (controller) => controller.repeat(reverse: true)).shimmer(
+                duration: const Duration(seconds: 3),
+                color: AppColors.accent.withOpacity(0.2),
               ),
-              _CountdownDisplay(timeUntilNext: timeUntilNext),
-            ],
-          ),
 
           const SizedBox(height: 16),
 
@@ -105,46 +99,39 @@ class _CountdownDisplay extends StatelessWidget {
         timeUntilNext.inSeconds.remainder(60).toString().padLeft(2, '0');
 
     return Row(
+      mainAxisSize: MainAxisSize.min,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        _DigitBox(value: hours),
+        _DigitText(value: hours),
         _Separator(),
-        _DigitBox(value: mins),
+        _DigitText(value: mins),
         _Separator(),
-        _DigitBox(value: secs),
+        _DigitText(value: secs),
       ],
     );
   }
 }
 
-class _DigitBox extends StatelessWidget {
+class _DigitText extends StatelessWidget {
   final String value;
 
-  const _DigitBox({required this.value});
+  const _DigitText({required this.value});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 72,
-      height: 64,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(12),
-        color: Colors.transparent, // Removed glassWhite to fit in circle
+    return Text(
+      value,
+      key: ValueKey(value),
+      style: AppTypography.countdown.copyWith(
+        fontSize: 36,
+        height: 1.0,
+        color: AppColors.textPrimary,
+        fontWeight: FontWeight.bold,
+        fontFeatures: const [FontFeature.tabularFigures()],
       ),
-      child: Center(
-        child: Text(
-          value,
-          key: ValueKey(value),
-          style: AppTypography.countdown.copyWith(
-            fontSize: 28,
-            height: 1.0,
-            fontFeatures: const [FontFeature.tabularFigures()],
-          ),
-          textHeightBehavior: const TextHeightBehavior(
-            applyHeightToFirstAscent: false,
-            applyHeightToLastDescent: false,
-          ),
-        ),
+      textHeightBehavior: const TextHeightBehavior(
+        applyHeightToFirstAscent: false,
+        applyHeightToLastDescent: false,
       ),
     );
   }
@@ -154,12 +141,13 @@ class _Separator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 6),
+      padding: const EdgeInsets.symmetric(horizontal: 8),
       child: Text(
         ':',
         style: AppTypography.countdown.copyWith(
-          fontSize: 28,
+          fontSize: 32,
           color: AppColors.accent,
+          fontWeight: FontWeight.w300,
         ),
       ),
     );

@@ -54,9 +54,16 @@ Future<void> main() async {
   // Initialize background tasks (WorkManager)
   final bgService = getIt<BackgroundService>();
   bgService.initialize();
-  await bgService.scheduleMidnightRefresh();
+  
+  // Do not await this to prevent blocking runApp if it asks for location permission
+  bgService.scheduleMidnightRefresh();
 
   runApp(const AnNoorApp());
+
+  // Request notification permissions after UI has started
+  Future.delayed(const Duration(seconds: 1), () {
+    notifService.requestPermissions();
+  });
 }
 
 class AnNoorApp extends StatelessWidget {

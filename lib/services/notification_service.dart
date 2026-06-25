@@ -38,8 +38,7 @@ class NotificationService {
     final androidPlugin = _plugin.resolvePlatformSpecificImplementation<
         AndroidFlutterLocalNotificationsPlugin>();
 
-    await androidPlugin?.requestNotificationsPermission();
-    await androidPlugin?.requestExactAlarmsPermission();
+    // Permissions will be requested later to prevent blocking the splash screen
 
     // Create default high-priority channel
     const channel = AndroidNotificationChannel(
@@ -55,6 +54,14 @@ class NotificationService {
 
     _initialized = true;
   }
+
+  Future<void> requestPermissions() async {
+    final androidPlugin = _plugin.resolvePlatformSpecificImplementation<
+        AndroidFlutterLocalNotificationsPlugin>();
+    await androidPlugin?.requestNotificationsPermission();
+    await androidPlugin?.requestExactAlarmsPermission();
+  }
+
 
   static void _onNotificationTap(NotificationResponse response) {
     // Navigate to home screen — handled by app router

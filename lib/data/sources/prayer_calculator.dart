@@ -2,7 +2,6 @@ import 'package:adhan/adhan.dart';
 import '../models/prayer_time_model.dart';
 import '../../domain/entities/location.dart';
 import '../../domain/entities/prayer_settings.dart';
-import '../../domain/calculators/panyeppen_hisab_calculator.dart';
 
 /// Wraps the `adhan` package with calculation method selection
 /// and per-prayer minute adjustments from [PrayerSettings].
@@ -12,9 +11,6 @@ class PrayerCalculator {
     DateTime date,
     PrayerSettings settings,
   ) {
-    if (settings.method == PrayerCalculationMethod.panyeppen) {
-      return PanyeppenHisabCalculator().calculate(location, date, settings);
-    }
 
     final coordinates = Coordinates(location.latitude, location.longitude);
     final params = _buildParameters(settings);
@@ -22,20 +18,28 @@ class PrayerCalculator {
     final dateComponents = DateComponents(date.year, date.month, date.day);
     final prayerTimes = PrayerTimes(coordinates, dateComponents, params);
 
+    // Panyeppen specific Ihtiyat (3 minutes for all prayers)
+    final int ihtiyat =
+        settings.method == PrayerCalculationMethod.panyeppen ? 3 : 0;
+
     // Calculate Imsak
     final baseImsak = prayerTimes.fajr.subtract(const Duration(minutes: 10));
 
     // Apply minute adjustments
     return PrayerTimeModel(
-      imsak: baseImsak.add(Duration(minutes: settings.imsakAdjustment)),
-      fajr: prayerTimes.fajr.add(Duration(minutes: settings.fajrAdjustment)),
+      imsak: baseImsak
+          .add(Duration(minutes: settings.imsakAdjustment + ihtiyat)),
+      fajr: prayerTimes.fajr
+          .add(Duration(minutes: settings.fajrAdjustment + ihtiyat)),
       sunrise: prayerTimes.sunrise,
-      dhuhr: prayerTimes.dhuhr.add(Duration(minutes: settings.dhuhrAdjustment)),
-      asr: prayerTimes.asr.add(Duration(minutes: settings.asrAdjustment)),
-      maghrib: prayerTimes.maghrib.add(
-        Duration(minutes: settings.maghribAdjustment),
-      ),
-      isha: prayerTimes.isha.add(Duration(minutes: settings.ishaAdjustment)),
+      dhuhr: prayerTimes.dhuhr
+          .add(Duration(minutes: settings.dhuhrAdjustment + ihtiyat)),
+      asr: prayerTimes.asr
+          .add(Duration(minutes: settings.asrAdjustment + ihtiyat)),
+      maghrib: prayerTimes.maghrib
+          .add(Duration(minutes: settings.maghribAdjustment + ihtiyat)),
+      isha: prayerTimes.isha
+          .add(Duration(minutes: settings.ishaAdjustment + ihtiyat)),
       date: date,
     );
   }
@@ -77,8 +81,11 @@ class PrayerCalculator {
       case PrayerCalculationMethod.singapore:
         return CalculationMethod.singapore.getParameters();
       case PrayerCalculationMethod.panyeppen:
-        // Fallback for params since calculate() intercepts this earlier
-        return CalculationMethod.karachi.getParameters();
+        // Hisab Panyeppen (Nurul Anwar)
+        final params = CalculationMethod.other.getParameters();
+        params.fajrAngle = 19.8;
+        params.ishaAngle = 17.8;
+        return params;
     }
   }
 }

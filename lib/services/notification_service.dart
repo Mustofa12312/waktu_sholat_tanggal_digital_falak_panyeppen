@@ -35,7 +35,13 @@ class NotificationService {
       onDidReceiveNotificationResponse: _onNotificationTap,
     );
 
-    // Create high-priority channel
+    final androidPlugin = _plugin.resolvePlatformSpecificImplementation<
+        AndroidFlutterLocalNotificationsPlugin>();
+
+    await androidPlugin?.requestNotificationsPermission();
+    await androidPlugin?.requestExactAlarmsPermission();
+
+    // Create default high-priority channel
     const channel = AndroidNotificationChannel(
       AppStrings.notifChannelId,
       AppStrings.notifChannelName,
@@ -44,10 +50,7 @@ class NotificationService {
       playSound: true,
       enableVibration: true,
     );
-    await _plugin
-        .resolvePlatformSpecificImplementation<
-            AndroidFlutterLocalNotificationsPlugin>()
-        ?.createNotificationChannel(channel);
+    await androidPlugin?.createNotificationChannel(channel);
 
     _initialized = true;
   }
@@ -84,8 +87,13 @@ class NotificationService {
     DateTime time, {
     String? soundFileName,
   }) async {
+    final String soundName = soundFileName?.replaceAll('.mp3', '') ?? '';
+    final String channelId = soundName.isNotEmpty 
+        ? '${AppStrings.notifChannelId}_$soundName' 
+        : AppStrings.notifChannelId;
+
     final androidChannelInfo = AndroidNotificationDetails(
-      AppStrings.notifChannelId,
+      channelId,
       AppStrings.notifChannelName,
       channelDescription: AppStrings.notifChannelDesc,
       importance: Importance.max,
@@ -93,9 +101,8 @@ class NotificationService {
       ticker: 'Waktu $prayerName',
       icon: '@mipmap/ic_launcher',
       largeIcon: const DrawableResourceAndroidBitmap('@mipmap/ic_launcher'),
-      sound: soundFileName != null
-          ? RawResourceAndroidNotificationSound(
-              soundFileName.replaceAll('.mp3', ''))
+      sound: soundName.isNotEmpty
+          ? RawResourceAndroidNotificationSound(soundName)
           : null,
       playSound: true,
       styleInformation: BigTextStyleInformation(

@@ -52,7 +52,7 @@ class DualCalendarCell extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
-        shape: BoxShape.circle,
+        borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
             color: AppColors.accent.withOpacity(0.4),
@@ -66,7 +66,7 @@ class DualCalendarCell extends StatelessWidget {
     } else if (isToday) {
       decoration = BoxDecoration(
         color: AppColors.accent.withOpacity(0.15),
-        shape: BoxShape.circle,
+        borderRadius: BorderRadius.circular(16),
         border: Border.all(color: AppColors.accent.withOpacity(0.5), width: 1.5),
         boxShadow: [
           BoxShadow(
@@ -81,7 +81,7 @@ class DualCalendarCell extends StatelessWidget {
     } else {
       decoration = BoxDecoration(
         color: Colors.transparent,
-        shape: BoxShape.circle,
+        borderRadius: BorderRadius.circular(16),
       );
     }
 

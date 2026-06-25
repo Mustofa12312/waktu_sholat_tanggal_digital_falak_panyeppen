@@ -334,6 +334,7 @@ class _CalculationMethodCard extends StatelessWidget {
     (PrayerCalculationMethod.makkah, AppStrings.makkah),
     (PrayerCalculationMethod.karachi, AppStrings.karachi),
     (PrayerCalculationMethod.singapore, 'Singapore (MUIS)'),
+    (PrayerCalculationMethod.panyeppen, 'Hisab Panyeppen (Nurul Anwar)'),
   ];
 
   @override

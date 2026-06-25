@@ -10,6 +10,7 @@ enum PrayerCalculationMethod {
   karachi, // University of Islamic Sciences, Karachi
   tehran, // Institute of Geophysics, University of Tehran
   singapore, // MUIS Singapore
+  panyeppen, // Hisab Panyeppen (Kitab Nurul Anwar)
 }
 
 /// User-configurable prayer time settings with minute adjustments.

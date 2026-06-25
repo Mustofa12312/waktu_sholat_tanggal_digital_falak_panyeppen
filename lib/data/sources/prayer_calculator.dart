@@ -2,6 +2,7 @@ import 'package:adhan/adhan.dart';
 import '../models/prayer_time_model.dart';
 import '../../domain/entities/location.dart';
 import '../../domain/entities/prayer_settings.dart';
+import '../../domain/calculators/panyeppen_hisab_calculator.dart';
 
 /// Wraps the `adhan` package with calculation method selection
 /// and per-prayer minute adjustments from [PrayerSettings].
@@ -11,6 +12,10 @@ class PrayerCalculator {
     DateTime date,
     PrayerSettings settings,
   ) {
+    if (settings.method == PrayerCalculationMethod.panyeppen) {
+      return PanyeppenHisabCalculator().calculate(location, date, settings);
+    }
+
     final coordinates = Coordinates(location.latitude, location.longitude);
     final params = _buildParameters(settings);
 
@@ -71,6 +76,9 @@ class PrayerCalculator {
         return CalculationMethod.tehran.getParameters();
       case PrayerCalculationMethod.singapore:
         return CalculationMethod.singapore.getParameters();
+      case PrayerCalculationMethod.panyeppen:
+        // Fallback for params since calculate() intercepts this earlier
+        return CalculationMethod.karachi.getParameters();
     }
   }
 }

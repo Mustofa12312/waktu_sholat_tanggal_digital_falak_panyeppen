@@ -536,6 +536,7 @@ const _audioOptions = [
   ('assets/audio/azan2.mp3', 'Azan Madinah'),
   ('assets/audio/azan3.mp3', 'Azan Al-Aqsa'),
   ('assets/audio/azan4.mp3', 'Azan Mesir'),
+  ('assets/audio/azan_panyeppen.mp3', 'Azan Panyeppen'),
 ];
 
 class _AudioCard extends StatelessWidget {

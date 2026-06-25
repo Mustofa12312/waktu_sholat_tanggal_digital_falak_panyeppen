@@ -135,9 +135,6 @@ class PrayerCard extends StatelessWidget {
           ),
         ],
       ),
-    )
-        .animate()
-        .fadeIn(duration: 400.ms, delay: 100.ms)
-        .slideX(begin: 0.1, end: 0, duration: 400.ms, curve: Curves.easeOut);
+    );
   }
 }

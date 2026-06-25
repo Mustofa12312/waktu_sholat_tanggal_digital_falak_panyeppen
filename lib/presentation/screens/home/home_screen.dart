@@ -231,7 +231,7 @@ class _LoadedView extends StatelessWidget {
             _LocationBar(
               city: state.location.city,
               date: state.date,
-            ).animate().fadeIn(delay: 50.ms),
+            ),
 
             const SizedBox(height: 20),
 
@@ -241,11 +241,7 @@ class _LoadedView extends StatelessWidget {
                 isActive: _isCurrentPrayer(state),
                 prayerName: state.currentPrayerName,
               ),
-            ).animate().scale(
-                  begin: const Offset(0.8, 0.8),
-                  duration: 600.ms,
-                  curve: Curves.elasticOut,
-                ),
+            ),
 
             const SizedBox(height: 24),
 
@@ -265,7 +261,7 @@ class _LoadedView extends StatelessWidget {
                 fontSize: 13,
                 letterSpacing: 1.5,
               ),
-            ).animate().fadeIn(delay: 200.ms),
+            ),
 
             const SizedBox(height: 12),
 
@@ -283,7 +279,7 @@ class _LoadedView extends StatelessWidget {
                 time: p.$3,
                 isNext: isNext,
                 isCurrent: isCurrent,
-              ).animate(delay: Duration(milliseconds: 100 * i));
+              );
             }),
 
             const SizedBox(height: 24),

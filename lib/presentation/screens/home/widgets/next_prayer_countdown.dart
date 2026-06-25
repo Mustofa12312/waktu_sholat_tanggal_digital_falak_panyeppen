@@ -59,10 +59,7 @@ class NextPrayerCountdown extends StatelessWidget {
           ),
         ],
       ),
-    )
-        .animate()
-        .fadeIn(duration: 600.ms)
-        .scale(begin: const Offset(0.95, 0.95), duration: 500.ms);
+    );
   }
 }
 
@@ -108,23 +105,10 @@ class _DigitBox extends StatelessWidget {
         border: Border.all(color: AppColors.glassBorder),
       ),
       child: Center(
-        child: AnimatedSwitcher(
-          duration: const Duration(milliseconds: 300),
-          transitionBuilder: (child, animation) => FadeTransition(
-            opacity: animation,
-            child: SlideTransition(
-              position: Tween<Offset>(
-                begin: const Offset(0, 0.3),
-                end: Offset.zero,
-              ).animate(animation),
-              child: child,
-            ),
-          ),
-          child: Text(
-            value,
-            key: ValueKey(value),
-            style: AppTypography.countdown.copyWith(fontSize: 32),
-          ),
+        child: Text(
+          value,
+          key: ValueKey(value),
+          style: AppTypography.countdown.copyWith(fontSize: 32),
         ),
       ),
     );

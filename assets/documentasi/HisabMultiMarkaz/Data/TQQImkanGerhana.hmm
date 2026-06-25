@@ -1,0 +1,102 @@
+<xml xmlns:s='uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882'
+	xmlns:dt='uuid:C2F41010-65B3-11d1-A29F-00AA00C14882'
+	xmlns:rs='urn:schemas-microsoft-com:rowset'
+	xmlns:z='#RowsetSchema'>
+<s:Schema id='RowsetSchema'>
+	<s:ElementType name='row' content='eltOnly' rs:updatable='true'>
+		<s:AttributeType name='Cari' rs:number='1' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='BurjGMab' rs:number='2' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='MabGJah' rs:number='3' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='MabGQoh' rs:number='4' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='BurjGBSyhr' rs:number='5' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='SyhrGBJah' rs:number='6' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='SyhrGBQoh' rs:number='7' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='BurjGMSyhr' rs:number='8' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='SyhrGMJah' rs:number='9' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='SyhrGMQoh' rs:number='10' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:extends type='rs:rowbase'/>
+	</s:ElementType>
+</s:Schema>
+<rs:data>
+	<z:row Cari='1' BurjGMab='0' MabGJah='8' MabGQoh='3' BurjGBSyhr='0' SyhrGBJah='15' SyhrGBQoh='20' BurjGMSyhr='1'
+		 SyhrGMJah='0' SyhrGMQoh='47'/>
+	<z:row Cari='2' BurjGMab='0' MabGJah='16' MabGQoh='6' BurjGBSyhr='1' SyhrGBJah='16' SyhrGBQoh='0' BurjGMSyhr='2'
+		 SyhrGMJah='1' SyhrGMQoh='20'/>
+	<z:row Cari='3' BurjGMab='0' MabGJah='24' MabGQoh='8' BurjGBSyhr='2' SyhrGBJah='16' SyhrGBQoh='41' BurjGMSyhr='3'
+		 SyhrGMJah='2' SyhrGMQoh='1'/>
+	<z:row Cari='4' BurjGMab='1' MabGJah='2' MabGQoh='11' BurjGBSyhr='3' SyhrGBJah='17' SyhrGBQoh='21' BurjGMSyhr='4'
+		 SyhrGMJah='2' SyhrGMQoh='41'/>
+	<z:row Cari='5' BurjGMab='1' MabGJah='10' MabGQoh='14' BurjGBSyhr='4' SyhrGBJah='18' SyhrGBQoh='1' BurjGMSyhr='5'
+		 SyhrGMJah='3' SyhrGMQoh='21'/>
+	<z:row Cari='6' BurjGMab='1' MabGJah='18' MabGQoh='17' BurjGBSyhr='5' SyhrGBJah='18' SyhrGBQoh='41' BurjGMSyhr='6'
+		 SyhrGMJah='4' SyhrGMQoh='1'/>
+	<z:row Cari='7' BurjGMab='1' MabGJah='26' MabGQoh='20' BurjGBSyhr='6' SyhrGBJah='19' SyhrGBQoh='22' BurjGMSyhr='7'
+		 SyhrGMJah='4' SyhrGMQoh='42'/>
+	<z:row Cari='8' BurjGMab='2' MabGJah='4' MabGQoh='22' BurjGBSyhr='7' SyhrGBJah='20' SyhrGBQoh='2' BurjGMSyhr='8'
+		 SyhrGMJah='5' SyhrGMQoh='22'/>
+	<z:row Cari='9' BurjGMab='2' MabGJah='12' MabGQoh='25' BurjGBSyhr='8' SyhrGBJah='20' SyhrGBQoh='12' BurjGMSyhr='9'
+		 SyhrGMJah='6' SyhrGMQoh='2'/>
+	<z:row Cari='10' BurjGMab='2' MabGJah='20' MabGQoh='28' BurjGBSyhr='9' SyhrGBJah='21' SyhrGBQoh='23' BurjGMSyhr='10'
+		 SyhrGMJah='6' SyhrGMQoh='42'/>
+	<z:row Cari='11' BurjGMab='2' MabGJah='28' MabGQoh='31' BurjGBSyhr='10' SyhrGBJah='22' SyhrGBQoh='2' BurjGMSyhr='11'
+		 SyhrGMJah='7' SyhrGMQoh='23'/>
+	<z:row Cari='12' BurjGMab='3' MabGJah='6' MabGQoh='34' BurjGBSyhr='11' SyhrGBJah='22' SyhrGBQoh='43' BurjGMSyhr='0'
+		 SyhrGMJah='8' SyhrGMQoh='3'/>
+	<z:row Cari='13' BurjGMab='3' MabGJah='14' MabGQoh='36' BurjGBSyhr='0' SyhrGBJah='0' SyhrGBQoh='0' BurjGMSyhr='0'
+		 SyhrGMJah='0' SyhrGMQoh='0'/>
+	<z:row Cari='14' BurjGMab='3' MabGJah='22' MabGQoh='39' BurjGBSyhr='0' SyhrGBJah='0' SyhrGBQoh='0' BurjGMSyhr='0'
+		 SyhrGMJah='0' SyhrGMQoh='0'/>
+	<z:row Cari='15' BurjGMab='4' MabGJah='0' MabGQoh='42' BurjGBSyhr='0' SyhrGBJah='0' SyhrGBQoh='0' BurjGMSyhr='0'
+		 SyhrGMJah='0' SyhrGMQoh='0'/>
+	<z:row Cari='16' BurjGMab='4' MabGJah='8' MabGQoh='45' BurjGBSyhr='0' SyhrGBJah='0' SyhrGBQoh='0' BurjGMSyhr='0'
+		 SyhrGMJah='0' SyhrGMQoh='0'/>
+	<z:row Cari='17' BurjGMab='4' MabGJah='16' MabGQoh='48' BurjGBSyhr='0' SyhrGBJah='0' SyhrGBQoh='0' BurjGMSyhr='0'
+		 SyhrGMJah='0' SyhrGMQoh='0'/>
+	<z:row Cari='18' BurjGMab='4' MabGJah='24' MabGQoh='50' BurjGBSyhr='0' SyhrGBJah='0' SyhrGBQoh='0' BurjGMSyhr='0'
+		 SyhrGMJah='0' SyhrGMQoh='0'/>
+	<z:row Cari='19' BurjGMab='5' MabGJah='2' MabGQoh='53' BurjGBSyhr='0' SyhrGBJah='0' SyhrGBQoh='0' BurjGMSyhr='0'
+		 SyhrGMJah='0' SyhrGMQoh='0'/>
+	<z:row Cari='20' BurjGMab='5' MabGJah='10' MabGQoh='56' BurjGBSyhr='0' SyhrGBJah='0' SyhrGBQoh='0' BurjGMSyhr='0'
+		 SyhrGMJah='0' SyhrGMQoh='0'/>
+	<z:row Cari='21' BurjGMab='5' MabGJah='18' MabGQoh='59' BurjGBSyhr='0' SyhrGBJah='0' SyhrGBQoh='0' BurjGMSyhr='0'
+		 SyhrGMJah='0' SyhrGMQoh='0'/>
+	<z:row Cari='22' BurjGMab='5' MabGJah='27' MabGQoh='2' BurjGBSyhr='0' SyhrGBJah='0' SyhrGBQoh='0' BurjGMSyhr='0'
+		 SyhrGMJah='0' SyhrGMQoh='0'/>
+	<z:row Cari='23' BurjGMab='6' MabGJah='5' MabGQoh='4' BurjGBSyhr='0' SyhrGBJah='0' SyhrGBQoh='0' BurjGMSyhr='0'
+		 SyhrGMJah='0' SyhrGMQoh='0'/>
+	<z:row Cari='24' BurjGMab='6' MabGJah='13' MabGQoh='7' BurjGBSyhr='0' SyhrGBJah='0' SyhrGBQoh='0' BurjGMSyhr='0'
+		 SyhrGMJah='0' SyhrGMQoh='0'/>
+	<z:row Cari='25' BurjGMab='6' MabGJah='21' MabGQoh='10' BurjGBSyhr='0' SyhrGBJah='0' SyhrGBQoh='0' BurjGMSyhr='0'
+		 SyhrGMJah='0' SyhrGMQoh='0'/>
+	<z:row Cari='26' BurjGMab='6' MabGJah='29' MabGQoh='13' BurjGBSyhr='0' SyhrGBJah='0' SyhrGBQoh='0' BurjGMSyhr='0'
+		 SyhrGMJah='0' SyhrGMQoh='0'/>
+	<z:row Cari='27' BurjGMab='7' MabGJah='7' MabGQoh='16' BurjGBSyhr='0' SyhrGBJah='0' SyhrGBQoh='0' BurjGMSyhr='0'
+		 SyhrGMJah='0' SyhrGMQoh='0'/>
+	<z:row Cari='28' BurjGMab='7' MabGJah='15' MabGQoh='18' BurjGBSyhr='0' SyhrGBJah='0' SyhrGBQoh='0' BurjGMSyhr='0'
+		 SyhrGMJah='0' SyhrGMQoh='0'/>
+	<z:row Cari='29' BurjGMab='7' MabGJah='23' MabGQoh='21' BurjGBSyhr='0' SyhrGBJah='0' SyhrGBQoh='0' BurjGMSyhr='0'
+		 SyhrGMJah='0' SyhrGMQoh='0'/>
+	<z:row Cari='30' BurjGMab='8' MabGJah='1' MabGQoh='24' BurjGBSyhr='0' SyhrGBJah='0' SyhrGBQoh='0' BurjGMSyhr='0'
+		 SyhrGMJah='0' SyhrGMQoh='0'/>
+</rs:data>
+</xml>

@@ -1,0 +1,1137 @@
+<xml xmlns:s='uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882'
+	xmlns:dt='uuid:C2F41010-65B3-11d1-A29F-00AA00C14882'
+	xmlns:rs='urn:schemas-microsoft-com:rowset'
+	xmlns:z='#RowsetSchema'>
+<s:Schema id='RowsetSchema'>
+	<s:ElementType name='row' content='eltOnly' rs:updatable='true'>
+		<s:AttributeType name='Cari' rs:number='1' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='3' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Tdl01' rs:number='2' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Tdl02' rs:number='3' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Tdl03' rs:number='4' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Tdl04' rs:number='5' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Tdl05' rs:number='6' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Tdl06' rs:number='7' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Tdl07' rs:number='8' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Tdl08' rs:number='9' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='KorekGer' rs:number='10' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Tdl09' rs:number='11' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='ShrA' rs:number='12' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='ShrF' rs:number='13' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='ShrN' rs:number='14' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='ShrM' rs:number='15' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:extends type='rs:rowbase'/>
+	</s:ElementType>
+</s:Schema>
+<rs:data>
+	<z:row Cari='1  ' Tdl01='0.003     ' Tdl02='0         ' Tdl03='-0.0071   ' Tdl04='0.0003    ' Tdl05='-0.0001   '
+		 Tdl06='-0.0001   ' Tdl07='0.0002    ' Tdl08='0         ' KorekGer='-0.0002   ' Tdl09='0         ' ShrA='29.5306   '
+		 ShrF='30.6705   ' ShrN='25.8169   ' ShrM='29.1054   '/>
+	<z:row Cari='2  ' Tdl01='0.0061    ' Tdl02='0.0001    ' Tdl03='-0.0142   ' Tdl04='0.0006    ' Tdl05='-0.0002   '
+		 Tdl06='-0.0003   ' Tdl07='0.0004    ' Tdl08='0         ' KorekGer='-0.0004   ' Tdl09='0         ' ShrA='59.0612   '
+		 ShrF='61.341    ' ShrN='51.6338   ' ShrM='58.2107   '/>
+	<z:row Cari='3  ' Tdl01='0.0091    ' Tdl02='0.0001    ' Tdl03='-0.0213   ' Tdl04='0.0008    ' Tdl05='-0.0003   '
+		 Tdl06='-0.0004   ' Tdl07='0.0005    ' Tdl08='0         ' KorekGer='-0.0005   ' Tdl09='0.0001    ' ShrA='88.5918   '
+		 ShrF='92.0115   ' ShrN='77.4508   ' ShrM='87.3161   '/>
+	<z:row Cari='4  ' Tdl01='0.0121    ' Tdl02='0.0001    ' Tdl03='-0.0284   ' Tdl04='0.0011    ' Tdl05='-0.0004   '
+		 Tdl06='-0.0005   ' Tdl07='0.0007    ' Tdl08='0         ' KorekGer='-0.0007   ' Tdl09='0.0001    ' ShrA='118.1224  '
+		 ShrF='122.682   ' ShrN='103.2677  ' ShrM='116.4214  '/>
+	<z:row Cari='5  ' Tdl01='0.0151    ' Tdl02='0.0002    ' Tdl03='-0.0355   ' Tdl04='0.0014    ' Tdl05='-0.0004   '
+		 Tdl06='-0.0006   ' Tdl07='0.0009    ' Tdl08='-0.0001   ' KorekGer='-0.0009   ' Tdl09='0.0001    ' ShrA='147.6529  '
+		 ShrF='153.3525  ' ShrN='129.0846  ' ShrM='145.5268  '/>
+	<z:row Cari='6  ' Tdl01='0.0181    ' Tdl02='0.0002    ' Tdl03='-0.0425   ' Tdl04='0.0017    ' Tdl05='-0.0005   '
+		 Tdl06='-0.0008   ' Tdl07='0.0011    ' Tdl08='-0.0001   ' KorekGer='-0.0011   ' Tdl09='0.0001    ' ShrA='177.1835  '
+		 ShrF='184.023   ' ShrN='154.9015  ' ShrM='174.6321  '/>
+	<z:row Cari='7  ' Tdl01='0.0211    ' Tdl02='0.0003    ' Tdl03='-0.0496   ' Tdl04='0.002     ' Tdl05='-0.0006   '
+		 Tdl06='-0.0009   ' Tdl07='0.0013    ' Tdl08='-0.0001   ' KorekGer='-0.0013   ' Tdl09='0.0001    ' ShrA='206.7141  '
+		 ShrF='214.6935  ' ShrN='180.7184  ' ShrM='203.7375  '/>
+	<z:row Cari='8  ' Tdl01='0.0241    ' Tdl02='0.0003    ' Tdl03='-0.0566   ' Tdl04='0.0022    ' Tdl05='-0.0007   '
+		 Tdl06='-0.001    ' Tdl07='0.0014    ' Tdl08='-0.0001   ' KorekGer='-0.0014   ' Tdl09='0.0001    ' ShrA='236.2447  '
+		 ShrF='245.3641  ' ShrN='206.5353  ' ShrM='232.8428  '/>
+	<z:row Cari='9  ' Tdl01='0.0271    ' Tdl02='0.0003    ' Tdl03='-0.0636   ' Tdl04='0.0025    ' Tdl05='-0.0008   '
+		 Tdl06='-0.0012   ' Tdl07='0.0016    ' Tdl08='-0.0001   ' KorekGer='-0.0016   ' Tdl09='0.0002    ' ShrA='265.7753  '
+		 ShrF='276.0346  ' ShrN='232.3523  ' ShrM='261.9482  '/>
+	<z:row Cari='10 ' Tdl01='0.0301    ' Tdl02='0.0004    ' Tdl03='-0.0706   ' Tdl04='0.0028    ' Tdl05='-0.0009   '
+		 Tdl06='-0.0013   ' Tdl07='0.0018    ' Tdl08='-0.0001   ' KorekGer='-0.0018   ' Tdl09='0.0002    ' ShrA='295.3059  '
+		 ShrF='306.7051  ' ShrN='258.1692  ' ShrM='291.0536  '/>
+	<z:row Cari='11 ' Tdl01='0.0331    ' Tdl02='0.0004    ' Tdl03='-0.0776   ' Tdl04='0.0031    ' Tdl05='-0.001    '
+		 Tdl06='-0.0014   ' Tdl07='0.002     ' Tdl08='-0.0001   ' KorekGer='-0.002    ' Tdl09='0.0002    ' ShrA='324.8365  '
+		 ShrF='337.3756  ' ShrN='283.9861  ' ShrM='320.1589  '/>
+	<z:row Cari='12 ' Tdl01='0.0361    ' Tdl02='0.0004    ' Tdl03='-0.0846   ' Tdl04='0.0033    ' Tdl05='-0.0011   '
+		 Tdl06='-0.0015   ' Tdl07='0.0022    ' Tdl08='-0.0001   ' KorekGer='-0.0022   ' Tdl09='0.0002    ' ShrA='354.3671  '
+		 ShrF='8.0461    ' ShrN='309.803   ' ShrM='349.2643  '/>
+	<z:row Cari='13 ' Tdl01='0.039     ' Tdl02='0.0005    ' Tdl03='-0.0915   ' Tdl04='0.0036    ' Tdl05='-0.0011   '
+		 Tdl06='-0.0017   ' Tdl07='0.0023    ' Tdl08='-0.0001   ' KorekGer='-0.0023   ' Tdl09='0.0002    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='14 ' Tdl01='0.0419    ' Tdl02='0.0005    ' Tdl03='-0.0984   ' Tdl04='0.0039    ' Tdl05='-0.0012   '
+		 Tdl06='-0.0018   ' Tdl07='0.0025    ' Tdl08='-0.0001   ' KorekGer='-0.0025   ' Tdl09='0.0002    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='15 ' Tdl01='0.0449    ' Tdl02='0.0005    ' Tdl03='-0.1053   ' Tdl04='0.0042    ' Tdl05='-0.0013   '
+		 Tdl06='-0.0019   ' Tdl07='0.0027    ' Tdl08='-0.0002   ' KorekGer='-0.0027   ' Tdl09='0.0003    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='16 ' Tdl01='0.0478    ' Tdl02='0.0006    ' Tdl03='-0.1121   ' Tdl04='0.0044    ' Tdl05='-0.0014   '
+		 Tdl06='-0.002    ' Tdl07='0.0029    ' Tdl08='-0.0002   ' KorekGer='-0.0029   ' Tdl09='0.0003    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='17 ' Tdl01='0.0507    ' Tdl02='0.0006    ' Tdl03='-0.1189   ' Tdl04='0.0047    ' Tdl05='-0.0015   '
+		 Tdl06='-0.0022   ' Tdl07='0.003     ' Tdl08='-0.0002   ' KorekGer='-0.003    ' Tdl09='0.0003    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='18 ' Tdl01='0.0536    ' Tdl02='0.0006    ' Tdl03='-0.1257   ' Tdl04='0.005     ' Tdl05='-0.0016   '
+		 Tdl06='-0.0023   ' Tdl07='0.0032    ' Tdl08='-0.0002   ' KorekGer='-0.0032   ' Tdl09='0.0003    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='19 ' Tdl01='0.0565    ' Tdl02='0.0007    ' Tdl03='-0.1324   ' Tdl04='0.0052    ' Tdl05='-0.0017   '
+		 Tdl06='-0.0024   ' Tdl07='0.0034    ' Tdl08='-0.0002   ' KorekGer='-0.0034   ' Tdl09='0.0003    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='20 ' Tdl01='0.0593    ' Tdl02='0.0007    ' Tdl03='-0.1391   ' Tdl04='0.0055    ' Tdl05='-0.0017   '
+		 Tdl06='-0.0025   ' Tdl07='0.0036    ' Tdl08='-0.0002   ' KorekGer='-0.0036   ' Tdl09='0.0003    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='21 ' Tdl01='0.0621    ' Tdl02='0.0008    ' Tdl03='-0.1458   ' Tdl04='0.0058    ' Tdl05='-0.0018   '
+		 Tdl06='-0.0027   ' Tdl07='0.0037    ' Tdl08='-0.0002   ' KorekGer='-0.0037   ' Tdl09='0.0004    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='22 ' Tdl01='0.065     ' Tdl02='0.0008    ' Tdl03='-0.1524   ' Tdl04='0.006     ' Tdl05='-0.0019   '
+		 Tdl06='-0.0028   ' Tdl07='0.0039    ' Tdl08='-0.0002   ' KorekGer='-0.0039   ' Tdl09='0.0004    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='23 ' Tdl01='0.0678    ' Tdl02='0.0008    ' Tdl03='-0.1589   ' Tdl04='0.0063    ' Tdl05='-0.002    '
+		 Tdl06='-0.0029   ' Tdl07='0.0041    ' Tdl08='-0.0002   ' KorekGer='-0.0041   ' Tdl09='0.0004    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='24 ' Tdl01='0.0705    ' Tdl02='0.0009    ' Tdl03='-0.1655   ' Tdl04='0.0065    ' Tdl05='-0.0021   '
+		 Tdl06='-0.003    ' Tdl07='0.0042    ' Tdl08='-0.0002   ' KorekGer='-0.0042   ' Tdl09='0.0004    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='25 ' Tdl01='0.0733    ' Tdl02='0.0009    ' Tdl03='-0.1719   ' Tdl04='0.0068    ' Tdl05='-0.0022   '
+		 Tdl06='-0.0031   ' Tdl07='0.0044    ' Tdl08='-0.0003   ' KorekGer='-0.0044   ' Tdl09='0.0004    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='26 ' Tdl01='0.076     ' Tdl02='0.0009    ' Tdl03='-0.1783   ' Tdl04='0.0071    ' Tdl05='-0.0022   '
+		 Tdl06='-0.0032   ' Tdl07='0.0046    ' Tdl08='-0.0003   ' KorekGer='-0.0046   ' Tdl09='0.0004    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='27 ' Tdl01='0.0787    ' Tdl02='0.001     ' Tdl03='-0.1847   ' Tdl04='0.0073    ' Tdl05='-0.0023   '
+		 Tdl06='-0.0034   ' Tdl07='0.0047    ' Tdl08='-0.0003   ' KorekGer='-0.0047   ' Tdl09='0.0005    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='28 ' Tdl01='0.0814    ' Tdl02='0.001     ' Tdl03='-0.191    ' Tdl04='0.0076    ' Tdl05='-0.0024   '
+		 Tdl06='-0.0035   ' Tdl07='0.0049    ' Tdl08='-0.0003   ' KorekGer='-0.0049   ' Tdl09='0.0005    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='29 ' Tdl01='0.0841    ' Tdl02='0.001     ' Tdl03='-0.1972   ' Tdl04='0.0078    ' Tdl05='-0.0025   '
+		 Tdl06='-0.0036   ' Tdl07='0.005     ' Tdl08='-0.0003   ' KorekGer='-0.005    ' Tdl09='0.0005    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='30 ' Tdl01='0.0867    ' Tdl02='0.0011    ' Tdl03='-0.2034   ' Tdl04='0.0081    ' Tdl05='-0.0026   '
+		 Tdl06='-0.0037   ' Tdl07='0.0052    ' Tdl08='-0.0003   ' KorekGer='-0.0052   ' Tdl09='0.0005    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='31 ' Tdl01='0.0893    ' Tdl02='0.0011    ' Tdl03='-0.2095   ' Tdl04='0.0083    ' Tdl05='-0.0026   '
+		 Tdl06='-0.0038   ' Tdl07='0.0054    ' Tdl08='-0.0003   ' KorekGer='-0.0054   ' Tdl09='0.0005    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='32 ' Tdl01='0.0919    ' Tdl02='0.0011    ' Tdl03='-0.2156   ' Tdl04='0.0085    ' Tdl05='-0.0027   '
+		 Tdl06='-0.0039   ' Tdl07='0.0055    ' Tdl08='-0.0003   ' KorekGer='-0.0055   ' Tdl09='0.0005    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='33 ' Tdl01='0.0944    ' Tdl02='0.0011    ' Tdl03='-0.2216   ' Tdl04='0.0088    ' Tdl05='-0.0028   '
+		 Tdl06='-0.004    ' Tdl07='0.0057    ' Tdl08='-0.0003   ' KorekGer='-0.0057   ' Tdl09='0.0005    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='34 ' Tdl01='0.097     ' Tdl02='0.0012    ' Tdl03='-0.2275   ' Tdl04='0.009     ' Tdl05='-0.0029   '
+		 Tdl06='-0.0041   ' Tdl07='0.0058    ' Tdl08='-0.0003   ' KorekGer='-0.0058   ' Tdl09='0.0006    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='35 ' Tdl01='0.0995    ' Tdl02='0.0012    ' Tdl03='-0.2333   ' Tdl04='0.0092    ' Tdl05='-0.0029   '
+		 Tdl06='-0.0042   ' Tdl07='0.006     ' Tdl08='-0.0003   ' KorekGer='-0.006    ' Tdl09='0.0006    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='36 ' Tdl01='0.1019    ' Tdl02='0.0012    ' Tdl03='-0.2391   ' Tdl04='0.0095    ' Tdl05='-0.003    '
+		 Tdl06='-0.0043   ' Tdl07='0.0061    ' Tdl08='-0.0004   ' KorekGer='-0.0061   ' Tdl09='0.0006    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='37 ' Tdl01='0.1044    ' Tdl02='0.0013    ' Tdl03='-0.2448   ' Tdl04='0.0097    ' Tdl05='-0.0031   '
+		 Tdl06='-0.0045   ' Tdl07='0.0063    ' Tdl08='-0.0004   ' KorekGer='-0.0063   ' Tdl09='0.0006    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='38 ' Tdl01='0.1068    ' Tdl02='0.0013    ' Tdl03='-0.2505   ' Tdl04='0.0099    ' Tdl05='-0.0031   '
+		 Tdl06='-0.0046   ' Tdl07='0.0064    ' Tdl08='-0.0004   ' KorekGer='-0.0064   ' Tdl09='0.0006    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='39 ' Tdl01='0.1091    ' Tdl02='0.0013    ' Tdl03='-0.256    ' Tdl04='0.0101    ' Tdl05='-0.0032   '
+		 Tdl06='-0.0047   ' Tdl07='0.0065    ' Tdl08='-0.0004   ' KorekGer='-0.0065   ' Tdl09='0.0006    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='40 ' Tdl01='0.1115    ' Tdl02='0.0013    ' Tdl03='-0.2615   ' Tdl04='0.0103    ' Tdl05='-0.0033   '
+		 Tdl06='-0.0048   ' Tdl07='0.0067    ' Tdl08='-0.0004   ' KorekGer='-0.0067   ' Tdl09='0.0006    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='41 ' Tdl01='0.1138    ' Tdl02='0.0014    ' Tdl03='-0.2669   ' Tdl04='0.0106    ' Tdl05='-0.0033   '
+		 Tdl06='-0.0049   ' Tdl07='0.0068    ' Tdl08='-0.0004   ' KorekGer='-0.0068   ' Tdl09='0.0007    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='42 ' Tdl01='0.116     ' Tdl02='0.0014    ' Tdl03='-0.2722   ' Tdl04='0.0108    ' Tdl05='-0.0034   '
+		 Tdl06='-0.005    ' Tdl07='0.007     ' Tdl08='-0.0004   ' KorekGer='-0.007    ' Tdl09='0.0007    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='43 ' Tdl01='0.1183    ' Tdl02='0.0014    ' Tdl03='-0.2774   ' Tdl04='0.011     ' Tdl05='-0.0035   '
+		 Tdl06='-0.005    ' Tdl07='0.0071    ' Tdl08='-0.0004   ' KorekGer='-0.0071   ' Tdl09='0.0007    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='44 ' Tdl01='0.1205    ' Tdl02='0.0015    ' Tdl03='-0.2826   ' Tdl04='0.0112    ' Tdl05='-0.0035   '
+		 Tdl06='-0.0051   ' Tdl07='0.0072    ' Tdl08='-0.0004   ' KorekGer='-0.0072   ' Tdl09='0.0007    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='45 ' Tdl01='0.1226    ' Tdl02='0.0015    ' Tdl03='-0.2877   ' Tdl04='0.0114    ' Tdl05='-0.0036   '
+		 Tdl06='-0.0052   ' Tdl07='0.0074    ' Tdl08='-0.0004   ' KorekGer='-0.0074   ' Tdl09='0.0007    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='46 ' Tdl01='0.1247    ' Tdl02='0.0015    ' Tdl03='-0.2926   ' Tdl04='0.0116    ' Tdl05='-0.0037   '
+		 Tdl06='-0.0053   ' Tdl07='0.0075    ' Tdl08='-0.0004   ' KorekGer='-0.0075   ' Tdl09='0.0007    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='47 ' Tdl01='0.1268    ' Tdl02='0.0015    ' Tdl03='-0.2975   ' Tdl04='0.0118    ' Tdl05='-0.0037   '
+		 Tdl06='-0.0054   ' Tdl07='0.0076    ' Tdl08='-0.0004   ' KorekGer='-0.0076   ' Tdl09='0.0007    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='48 ' Tdl01='0.1289    ' Tdl02='0.0016    ' Tdl03='-0.3023   ' Tdl04='0.012     ' Tdl05='-0.0038   '
+		 Tdl06='-0.0055   ' Tdl07='0.0077    ' Tdl08='-0.0004   ' KorekGer='-0.0077   ' Tdl09='0.0007    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='49 ' Tdl01='0.1309    ' Tdl02='0.0016    ' Tdl03='-0.307    ' Tdl04='0.0122    ' Tdl05='-0.0038   '
+		 Tdl06='-0.0056   ' Tdl07='0.0078    ' Tdl08='-0.0005   ' KorekGer='-0.0078   ' Tdl09='0.0008    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='50 ' Tdl01='0.1328    ' Tdl02='0.0016    ' Tdl03='-0.3116   ' Tdl04='0.0123    ' Tdl05='-0.0039   '
+		 Tdl06='-0.0057   ' Tdl07='0.008     ' Tdl08='-0.0005   ' KorekGer='-0.008    ' Tdl09='0.0008    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='51 ' Tdl01='0.1348    ' Tdl02='0.0016    ' Tdl03='-0.3161   ' Tdl04='0.0125    ' Tdl05='-0.004    '
+		 Tdl06='-0.0058   ' Tdl07='0.0081    ' Tdl08='-0.0005   ' KorekGer='-0.0081   ' Tdl09='0.0008    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='52 ' Tdl01='0.1366    ' Tdl02='0.0017    ' Tdl03='-0.3206   ' Tdl04='0.0127    ' Tdl05='-0.004    '
+		 Tdl06='-0.0058   ' Tdl07='0.0082    ' Tdl08='-0.0005   ' KorekGer='-0.0082   ' Tdl09='0.0008    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='53 ' Tdl01='0.1385    ' Tdl02='0.0017    ' Tdl03='-0.3249   ' Tdl04='0.0129    ' Tdl05='-0.0041   '
+		 Tdl06='-0.0059   ' Tdl07='0.0083    ' Tdl08='-0.0005   ' KorekGer='-0.0083   ' Tdl09='0.0008    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='54 ' Tdl01='0.1403    ' Tdl02='0.0017    ' Tdl03='-0.3291   ' Tdl04='0.013     ' Tdl05='-0.0041   '
+		 Tdl06='-0.006    ' Tdl07='0.0084    ' Tdl08='-0.0005   ' KorekGer='-0.0084   ' Tdl09='0.0008    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='55 ' Tdl01='0.142     ' Tdl02='0.0017    ' Tdl03='-0.3332   ' Tdl04='0.0132    ' Tdl05='-0.0042   '
+		 Tdl06='-0.0061   ' Tdl07='0.0085    ' Tdl08='-0.0005   ' KorekGer='-0.0085   ' Tdl09='0.0008    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='56 ' Tdl01='0.1438    ' Tdl02='0.0017    ' Tdl03='-0.3373   ' Tdl04='0.0133    ' Tdl05='-0.0042   '
+		 Tdl06='-0.0061   ' Tdl07='0.0086    ' Tdl08='-0.0005   ' KorekGer='-0.0086   ' Tdl09='0.0008    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='57 ' Tdl01='0.1454    ' Tdl02='0.0018    ' Tdl03='-0.3412   ' Tdl04='0.0135    ' Tdl05='-0.0043   '
+		 Tdl06='-0.0062   ' Tdl07='0.0087    ' Tdl08='-0.0005   ' KorekGer='-0.0087   ' Tdl09='0.0008    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='58 ' Tdl01='0.1471    ' Tdl02='0.0018    ' Tdl03='-0.345    ' Tdl04='0.0137    ' Tdl05='-0.0043   '
+		 Tdl06='-0.0063   ' Tdl07='0.0088    ' Tdl08='-0.0005   ' KorekGer='-0.0088   ' Tdl09='0.0008    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='59 ' Tdl01='0.1486    ' Tdl02='0.0018    ' Tdl03='-0.3487   ' Tdl04='0.0138    ' Tdl05='-0.0044   '
+		 Tdl06='-0.0063   ' Tdl07='0.0089    ' Tdl08='-0.0005   ' KorekGer='-0.0089   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='60 ' Tdl01='0.1502    ' Tdl02='0.0018    ' Tdl03='-0.3523   ' Tdl04='0.0139    ' Tdl05='-0.0044   '
+		 Tdl06='-0.0064   ' Tdl07='0.009     ' Tdl08='-0.0005   ' KorekGer='-0.009    ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='61 ' Tdl01='0.1517    ' Tdl02='0.0018    ' Tdl03='-0.3558   ' Tdl04='0.0141    ' Tdl05='-0.0045   '
+		 Tdl06='-0.0065   ' Tdl07='0.0091    ' Tdl08='-0.0005   ' KorekGer='-0.0091   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='62 ' Tdl01='0.1531    ' Tdl02='0.0019    ' Tdl03='-0.3592   ' Tdl04='0.0142    ' Tdl05='-0.0045   '
+		 Tdl06='-0.0065   ' Tdl07='0.0092    ' Tdl08='-0.0005   ' KorekGer='-0.0092   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='63 ' Tdl01='0.1545    ' Tdl02='0.0019    ' Tdl03='-0.3625   ' Tdl04='0.0143    ' Tdl05='-0.0045   '
+		 Tdl06='-0.0066   ' Tdl07='0.0093    ' Tdl08='-0.0005   ' KorekGer='-0.0093   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='64 ' Tdl01='0.1559    ' Tdl02='0.0019    ' Tdl03='-0.3656   ' Tdl04='0.0145    ' Tdl05='-0.0046   '
+		 Tdl06='-0.0067   ' Tdl07='0.0093    ' Tdl08='-0.0005   ' KorekGer='-0.0093   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='65 ' Tdl01='0.1572    ' Tdl02='0.0019    ' Tdl03='-0.3687   ' Tdl04='0.0146    ' Tdl05='-0.0046   '
+		 Tdl06='-0.0067   ' Tdl07='0.0094    ' Tdl08='-0.0005   ' KorekGer='-0.0094   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='66 ' Tdl01='0.1584    ' Tdl02='0.0019    ' Tdl03='-0.3716   ' Tdl04='0.0147    ' Tdl05='-0.0047   '
+		 Tdl06='-0.0068   ' Tdl07='0.0095    ' Tdl08='-0.0005   ' KorekGer='-0.0095   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='67 ' Tdl01='0.1596    ' Tdl02='0.0019    ' Tdl03='-0.3745   ' Tdl04='0.0148    ' Tdl05='-0.0047   '
+		 Tdl06='-0.0068   ' Tdl07='0.0096    ' Tdl08='-0.0006   ' KorekGer='-0.0096   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='68 ' Tdl01='0.1608    ' Tdl02='0.0019    ' Tdl03='-0.3772   ' Tdl04='0.0149    ' Tdl05='-0.0047   '
+		 Tdl06='-0.0069   ' Tdl07='0.0096    ' Tdl08='-0.0006   ' KorekGer='-0.0096   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='69 ' Tdl01='0.1619    ' Tdl02='0.002     ' Tdl03='-0.3798   ' Tdl04='0.015     ' Tdl05='-0.0048   '
+		 Tdl06='-0.0069   ' Tdl07='0.0097    ' Tdl08='-0.0006   ' KorekGer='-0.0097   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='70 ' Tdl01='0.1629    ' Tdl02='0.002     ' Tdl03='-0.3823   ' Tdl04='0.0151    ' Tdl05='-0.0048   '
+		 Tdl06='-0.007    ' Tdl07='0.0098    ' Tdl08='-0.0006   ' KorekGer='-0.0098   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='71 ' Tdl01='0.164     ' Tdl02='0.002     ' Tdl03='-0.3846   ' Tdl04='0.0152    ' Tdl05='-0.0048   '
+		 Tdl06='-0.007    ' Tdl07='0.0098    ' Tdl08='-0.0006   ' KorekGer='-0.0098   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='72 ' Tdl01='0.1649    ' Tdl02='0.002     ' Tdl03='-0.3869   ' Tdl04='0.0153    ' Tdl05='-0.0049   '
+		 Tdl06='-0.007    ' Tdl07='0.0099    ' Tdl08='-0.0006   ' KorekGer='-0.0099   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='73 ' Tdl01='0.1658    ' Tdl02='0.002     ' Tdl03='-0.389    ' Tdl04='0.0154    ' Tdl05='-0.0049   '
+		 Tdl06='-0.0071   ' Tdl07='0.0099    ' Tdl08='-0.0006   ' KorekGer='-0.0099   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='74 ' Tdl01='0.1667    ' Tdl02='0.002     ' Tdl03='-0.391    ' Tdl04='0.0155    ' Tdl05='-0.0049   '
+		 Tdl06='-0.0071   ' Tdl07='0.01      ' Tdl08='-0.0006   ' KorekGer='-0.01     ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='75 ' Tdl01='0.1675    ' Tdl02='0.002     ' Tdl03='-0.3929   ' Tdl04='0.0156    ' Tdl05='-0.0049   '
+		 Tdl06='-0.0071   ' Tdl07='0.01      ' Tdl08='-0.0006   ' KorekGer='-0.01     ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='76 ' Tdl01='0.1682    ' Tdl02='0.002     ' Tdl03='-0.3947   ' Tdl04='0.0156    ' Tdl05='-0.0049   '
+		 Tdl06='-0.0072   ' Tdl07='0.0101    ' Tdl08='-0.0006   ' KorekGer='-0.0101   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='77 ' Tdl01='0.169     ' Tdl02='0.002     ' Tdl03='-0.3964   ' Tdl04='0.0157    ' Tdl05='-0.005    '
+		 Tdl06='-0.0072   ' Tdl07='0.0101    ' Tdl08='-0.0006   ' KorekGer='-0.0101   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='78 ' Tdl01='0.1696    ' Tdl02='0.0021    ' Tdl03='-0.3979   ' Tdl04='0.0157    ' Tdl05='-0.005    '
+		 Tdl06='-0.0072   ' Tdl07='0.0102    ' Tdl08='-0.0006   ' KorekGer='-0.0102   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='79 ' Tdl01='0.1702    ' Tdl02='0.0021    ' Tdl03='-0.3993   ' Tdl04='0.0158    ' Tdl05='-0.005    '
+		 Tdl06='-0.0073   ' Tdl07='0.0102    ' Tdl08='-0.0006   ' KorekGer='-0.0102   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='80 ' Tdl01='0.1708    ' Tdl02='0.0021    ' Tdl03='-0.4006   ' Tdl04='0.0159    ' Tdl05='-0.005    '
+		 Tdl06='-0.0073   ' Tdl07='0.0102    ' Tdl08='-0.0006   ' KorekGer='-0.0102   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='81 ' Tdl01='0.1713    ' Tdl02='0.0021    ' Tdl03='-0.4018   ' Tdl04='0.0159    ' Tdl05='-0.005    '
+		 Tdl06='-0.0073   ' Tdl07='0.0103    ' Tdl08='-0.0006   ' KorekGer='-0.0103   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='82 ' Tdl01='0.1717    ' Tdl02='0.0021    ' Tdl03='-0.4028   ' Tdl04='0.0159    ' Tdl05='-0.0051   '
+		 Tdl06='-0.0073   ' Tdl07='0.0103    ' Tdl08='-0.0006   ' KorekGer='-0.0103   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='83 ' Tdl01='0.1721    ' Tdl02='0.0021    ' Tdl03='-0.4038   ' Tdl04='0.016     ' Tdl05='-0.0051   '
+		 Tdl06='-0.0073   ' Tdl07='0.0103    ' Tdl08='-0.0006   ' KorekGer='-0.0103   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='84 ' Tdl01='0.1725    ' Tdl02='0.0021    ' Tdl03='-0.4046   ' Tdl04='0.016     ' Tdl05='-0.0051   '
+		 Tdl06='-0.0074   ' Tdl07='0.0103    ' Tdl08='-0.0006   ' KorekGer='-0.0103   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='85 ' Tdl01='0.1727    ' Tdl02='0.0021    ' Tdl03='-0.4053   ' Tdl04='0.016     ' Tdl05='-0.0051   '
+		 Tdl06='-0.0074   ' Tdl07='0.0104    ' Tdl08='-0.0006   ' KorekGer='-0.0104   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='86 ' Tdl01='0.173     ' Tdl02='0.0021    ' Tdl03='-0.4058   ' Tdl04='0.0161    ' Tdl05='-0.0051   '
+		 Tdl06='-0.0074   ' Tdl07='0.0104    ' Tdl08='-0.0006   ' KorekGer='-0.0104   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='87 ' Tdl01='0.1732    ' Tdl02='0.0021    ' Tdl03='-0.4062   ' Tdl04='0.0161    ' Tdl05='-0.0051   '
+		 Tdl06='-0.0074   ' Tdl07='0.0104    ' Tdl08='-0.0006   ' KorekGer='-0.0104   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='88 ' Tdl01='0.1733    ' Tdl02='0.0021    ' Tdl03='-0.4066   ' Tdl04='0.0161    ' Tdl05='-0.0051   '
+		 Tdl06='-0.0074   ' Tdl07='0.0104    ' Tdl08='-0.0006   ' KorekGer='-0.0104   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='89 ' Tdl01='0.1734    ' Tdl02='0.0021    ' Tdl03='-0.4067   ' Tdl04='0.0161    ' Tdl05='-0.0051   '
+		 Tdl06='-0.0074   ' Tdl07='0.0104    ' Tdl08='-0.0006   ' KorekGer='-0.0104   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='90 ' Tdl01='0.1734    ' Tdl02='0.0021    ' Tdl03='-0.4068   ' Tdl04='0.0161    ' Tdl05='-0.0051   '
+		 Tdl06='-0.0074   ' Tdl07='0.0104    ' Tdl08='-0.0006   ' KorekGer='-0.0104   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='91 ' Tdl01='0.1734    ' Tdl02='0.0021    ' Tdl03='-0.4067   ' Tdl04='0.0161    ' Tdl05='-0.0051   '
+		 Tdl06='-0.0074   ' Tdl07='0.0104    ' Tdl08='-0.0006   ' KorekGer='-0.0104   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='92 ' Tdl01='0.1733    ' Tdl02='0.0021    ' Tdl03='-0.4066   ' Tdl04='0.0161    ' Tdl05='-0.0051   '
+		 Tdl06='-0.0074   ' Tdl07='0.0104    ' Tdl08='-0.0006   ' KorekGer='-0.0104   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='93 ' Tdl01='0.1732    ' Tdl02='0.0021    ' Tdl03='-0.4062   ' Tdl04='0.0161    ' Tdl05='-0.0051   '
+		 Tdl06='-0.0074   ' Tdl07='0.0104    ' Tdl08='-0.0006   ' KorekGer='-0.0104   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='94 ' Tdl01='0.173     ' Tdl02='0.0021    ' Tdl03='-0.4058   ' Tdl04='0.0161    ' Tdl05='-0.0051   '
+		 Tdl06='-0.0074   ' Tdl07='0.0104    ' Tdl08='-0.0006   ' KorekGer='-0.0104   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='95 ' Tdl01='0.1727    ' Tdl02='0.0021    ' Tdl03='-0.4053   ' Tdl04='0.016     ' Tdl05='-0.0051   '
+		 Tdl06='-0.0074   ' Tdl07='0.0104    ' Tdl08='-0.0006   ' KorekGer='-0.0104   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='96 ' Tdl01='0.1725    ' Tdl02='0.0021    ' Tdl03='-0.4046   ' Tdl04='0.016     ' Tdl05='-0.0051   '
+		 Tdl06='-0.0074   ' Tdl07='0.0103    ' Tdl08='-0.0006   ' KorekGer='-0.0103   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='97 ' Tdl01='0.1721    ' Tdl02='0.0021    ' Tdl03='-0.4038   ' Tdl04='0.016     ' Tdl05='-0.0051   '
+		 Tdl06='-0.0073   ' Tdl07='0.0103    ' Tdl08='-0.0006   ' KorekGer='-0.0103   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='98 ' Tdl01='0.1717    ' Tdl02='0.0021    ' Tdl03='-0.4028   ' Tdl04='0.0159    ' Tdl05='-0.0051   '
+		 Tdl06='-0.0073   ' Tdl07='0.0103    ' Tdl08='-0.0006   ' KorekGer='-0.0103   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='99 ' Tdl01='0.1713    ' Tdl02='0.0021    ' Tdl03='-0.4018   ' Tdl04='0.0159    ' Tdl05='-0.005    '
+		 Tdl06='-0.0073   ' Tdl07='0.0103    ' Tdl08='-0.0006   ' KorekGer='-0.0103   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='100' Tdl01='0.1708    ' Tdl02='0.0021    ' Tdl03='-0.4006   ' Tdl04='0.0159    ' Tdl05='-0.005    '
+		 Tdl06='-0.0073   ' Tdl07='0.0102    ' Tdl08='-0.0006   ' KorekGer='-0.0102   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='101' Tdl01='0.1702    ' Tdl02='0.0021    ' Tdl03='-0.3993   ' Tdl04='0.0158    ' Tdl05='-0.005    '
+		 Tdl06='-0.0073   ' Tdl07='0.0102    ' Tdl08='-0.0006   ' KorekGer='-0.0102   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='102' Tdl01='0.1696    ' Tdl02='0.0021    ' Tdl03='-0.3979   ' Tdl04='0.0157    ' Tdl05='-0.005    '
+		 Tdl06='-0.0072   ' Tdl07='0.0102    ' Tdl08='-0.0006   ' KorekGer='-0.0102   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='103' Tdl01='0.169     ' Tdl02='0.002     ' Tdl03='-0.3964   ' Tdl04='0.0157    ' Tdl05='-0.005    '
+		 Tdl06='-0.0072   ' Tdl07='0.0101    ' Tdl08='-0.0006   ' KorekGer='-0.0101   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='104' Tdl01='0.1682    ' Tdl02='0.002     ' Tdl03='-0.3947   ' Tdl04='0.0156    ' Tdl05='-0.0049   '
+		 Tdl06='-0.0072   ' Tdl07='0.0101    ' Tdl08='-0.0006   ' KorekGer='-0.0101   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='105' Tdl01='0.1675    ' Tdl02='0.002     ' Tdl03='-0.3929   ' Tdl04='0.0156    ' Tdl05='-0.0049   '
+		 Tdl06='-0.0071   ' Tdl07='0.01      ' Tdl08='-0.0006   ' KorekGer='-0.01     ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='106' Tdl01='0.1667    ' Tdl02='0.002     ' Tdl03='-0.391    ' Tdl04='0.0155    ' Tdl05='-0.0049   '
+		 Tdl06='-0.0071   ' Tdl07='0.01      ' Tdl08='-0.0006   ' KorekGer='-0.01     ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='107' Tdl01='0.1658    ' Tdl02='0.002     ' Tdl03='-0.389    ' Tdl04='0.0154    ' Tdl05='-0.0049   '
+		 Tdl06='-0.0071   ' Tdl07='0.0099    ' Tdl08='-0.0006   ' KorekGer='-0.0099   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='108' Tdl01='0.1649    ' Tdl02='0.002     ' Tdl03='-0.3869   ' Tdl04='0.0153    ' Tdl05='-0.0049   '
+		 Tdl06='-0.007    ' Tdl07='0.0099    ' Tdl08='-0.0006   ' KorekGer='-0.0099   ' Tdl09='0.001     ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='109' Tdl01='0.164     ' Tdl02='0.002     ' Tdl03='-0.3846   ' Tdl04='0.0152    ' Tdl05='-0.0048   '
+		 Tdl06='-0.007    ' Tdl07='0.0098    ' Tdl08='-0.0006   ' KorekGer='-0.0098   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='110' Tdl01='0.1629    ' Tdl02='0.002     ' Tdl03='-0.3823   ' Tdl04='0.0151    ' Tdl05='-0.0048   '
+		 Tdl06='-0.007    ' Tdl07='0.0098    ' Tdl08='-0.0006   ' KorekGer='-0.0098   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='111' Tdl01='0.1619    ' Tdl02='0.002     ' Tdl03='-0.3798   ' Tdl04='0.015     ' Tdl05='-0.0048   '
+		 Tdl06='-0.0069   ' Tdl07='0.0097    ' Tdl08='-0.0006   ' KorekGer='-0.0097   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='112' Tdl01='0.1608    ' Tdl02='0.0019    ' Tdl03='-0.3772   ' Tdl04='0.0149    ' Tdl05='-0.0047   '
+		 Tdl06='-0.0069   ' Tdl07='0.0096    ' Tdl08='-0.0006   ' KorekGer='-0.0096   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='113' Tdl01='0.1596    ' Tdl02='0.0019    ' Tdl03='-0.3745   ' Tdl04='0.0148    ' Tdl05='-0.0047   '
+		 Tdl06='-0.0068   ' Tdl07='0.0096    ' Tdl08='-0.0006   ' KorekGer='-0.0096   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='114' Tdl01='0.1584    ' Tdl02='0.0019    ' Tdl03='-0.3716   ' Tdl04='0.0147    ' Tdl05='-0.0047   '
+		 Tdl06='-0.0068   ' Tdl07='0.0095    ' Tdl08='-0.0005   ' KorekGer='-0.0095   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='115' Tdl01='0.1572    ' Tdl02='0.0019    ' Tdl03='-0.3687   ' Tdl04='0.0146    ' Tdl05='-0.0046   '
+		 Tdl06='-0.0067   ' Tdl07='0.0094    ' Tdl08='-0.0005   ' KorekGer='-0.0094   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='116' Tdl01='0.1559    ' Tdl02='0.0019    ' Tdl03='-0.3656   ' Tdl04='0.0145    ' Tdl05='-0.0046   '
+		 Tdl06='-0.0067   ' Tdl07='0.0093    ' Tdl08='-0.0005   ' KorekGer='-0.0093   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='117' Tdl01='0.1545    ' Tdl02='0.0019    ' Tdl03='-0.3625   ' Tdl04='0.0143    ' Tdl05='-0.0045   '
+		 Tdl06='-0.0066   ' Tdl07='0.0093    ' Tdl08='-0.0005   ' KorekGer='-0.0093   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='118' Tdl01='0.1531    ' Tdl02='0.0019    ' Tdl03='-0.3592   ' Tdl04='0.0142    ' Tdl05='-0.0045   '
+		 Tdl06='-0.0065   ' Tdl07='0.0092    ' Tdl08='-0.0005   ' KorekGer='-0.0092   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='119' Tdl01='0.1517    ' Tdl02='0.0018    ' Tdl03='-0.3558   ' Tdl04='0.0141    ' Tdl05='-0.0045   '
+		 Tdl06='-0.0065   ' Tdl07='0.0091    ' Tdl08='-0.0005   ' KorekGer='-0.0091   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='120' Tdl01='0.1502    ' Tdl02='0.0018    ' Tdl03='-0.3523   ' Tdl04='0.0139    ' Tdl05='-0.0044   '
+		 Tdl06='-0.0064   ' Tdl07='0.009     ' Tdl08='-0.0005   ' KorekGer='-0.009    ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='121' Tdl01='0.1486    ' Tdl02='0.0018    ' Tdl03='-0.3487   ' Tdl04='0.0138    ' Tdl05='-0.0044   '
+		 Tdl06='-0.0063   ' Tdl07='0.0089    ' Tdl08='-0.0005   ' KorekGer='-0.0089   ' Tdl09='0.0009    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='122' Tdl01='0.1471    ' Tdl02='0.0018    ' Tdl03='-0.345    ' Tdl04='0.0137    ' Tdl05='-0.0043   '
+		 Tdl06='-0.0063   ' Tdl07='0.0088    ' Tdl08='-0.0005   ' KorekGer='-0.0088   ' Tdl09='0.0008    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='123' Tdl01='0.1454    ' Tdl02='0.0018    ' Tdl03='-0.3412   ' Tdl04='0.0135    ' Tdl05='-0.0043   '
+		 Tdl06='-0.0062   ' Tdl07='0.0087    ' Tdl08='-0.0005   ' KorekGer='-0.0087   ' Tdl09='0.0008    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='124' Tdl01='0.1438    ' Tdl02='0.0017    ' Tdl03='-0.3373   ' Tdl04='0.0133    ' Tdl05='-0.0042   '
+		 Tdl06='-0.0061   ' Tdl07='0.0086    ' Tdl08='-0.0005   ' KorekGer='-0.0086   ' Tdl09='0.0008    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='125' Tdl01='0.142     ' Tdl02='0.0017    ' Tdl03='-0.3332   ' Tdl04='0.0132    ' Tdl05='-0.0042   '
+		 Tdl06='-0.0061   ' Tdl07='0.0085    ' Tdl08='-0.0005   ' KorekGer='-0.0085   ' Tdl09='0.0008    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='126' Tdl01='0.1403    ' Tdl02='0.0017    ' Tdl03='-0.3291   ' Tdl04='0.013     ' Tdl05='-0.0041   '
+		 Tdl06='-0.006    ' Tdl07='0.0084    ' Tdl08='-0.0005   ' KorekGer='-0.0084   ' Tdl09='0.0008    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='127' Tdl01='0.1385    ' Tdl02='0.0017    ' Tdl03='-0.3249   ' Tdl04='0.0129    ' Tdl05='-0.0041   '
+		 Tdl06='-0.0059   ' Tdl07='0.0083    ' Tdl08='-0.0005   ' KorekGer='-0.0083   ' Tdl09='0.0008    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='128' Tdl01='0.1366    ' Tdl02='0.0017    ' Tdl03='-0.3206   ' Tdl04='0.0127    ' Tdl05='-0.004    '
+		 Tdl06='-0.0058   ' Tdl07='0.0082    ' Tdl08='-0.0005   ' KorekGer='-0.0082   ' Tdl09='0.0008    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='129' Tdl01='0.1348    ' Tdl02='0.0016    ' Tdl03='-0.3161   ' Tdl04='0.0125    ' Tdl05='-0.004    '
+		 Tdl06='-0.0058   ' Tdl07='0.0081    ' Tdl08='-0.0005   ' KorekGer='-0.0081   ' Tdl09='0.0008    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='130' Tdl01='0.1328    ' Tdl02='0.0016    ' Tdl03='-0.3116   ' Tdl04='0.0123    ' Tdl05='-0.0039   '
+		 Tdl06='-0.0057   ' Tdl07='0.008     ' Tdl08='-0.0005   ' KorekGer='-0.008    ' Tdl09='0.0008    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='131' Tdl01='0.1309    ' Tdl02='0.0016    ' Tdl03='-0.307    ' Tdl04='0.0122    ' Tdl05='-0.0038   '
+		 Tdl06='-0.0056   ' Tdl07='0.0078    ' Tdl08='-0.0005   ' KorekGer='-0.0078   ' Tdl09='0.0008    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='132' Tdl01='0.1289    ' Tdl02='0.0016    ' Tdl03='-0.3023   ' Tdl04='0.012     ' Tdl05='-0.0038   '
+		 Tdl06='-0.0055   ' Tdl07='0.0077    ' Tdl08='-0.0004   ' KorekGer='-0.0077   ' Tdl09='0.0007    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='133' Tdl01='0.1268    ' Tdl02='0.0015    ' Tdl03='-0.2975   ' Tdl04='0.0118    ' Tdl05='-0.0037   '
+		 Tdl06='-0.0054   ' Tdl07='0.0076    ' Tdl08='-0.0004   ' KorekGer='-0.0076   ' Tdl09='0.0007    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='134' Tdl01='0.1247    ' Tdl02='0.0015    ' Tdl03='-0.2926   ' Tdl04='0.0116    ' Tdl05='-0.0037   '
+		 Tdl06='-0.0053   ' Tdl07='0.0075    ' Tdl08='-0.0004   ' KorekGer='-0.0075   ' Tdl09='0.0007    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='135' Tdl01='0.1226    ' Tdl02='0.0015    ' Tdl03='-0.2877   ' Tdl04='0.0114    ' Tdl05='-0.0036   '
+		 Tdl06='-0.0052   ' Tdl07='0.0074    ' Tdl08='-0.0004   ' KorekGer='-0.0074   ' Tdl09='0.0007    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='136' Tdl01='0.1205    ' Tdl02='0.0015    ' Tdl03='-0.2826   ' Tdl04='0.0112    ' Tdl05='-0.0035   '
+		 Tdl06='-0.0051   ' Tdl07='0.0072    ' Tdl08='-0.0004   ' KorekGer='-0.0072   ' Tdl09='0.0007    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='137' Tdl01='0.1183    ' Tdl02='0.0014    ' Tdl03='-0.2774   ' Tdl04='0.011     ' Tdl05='-0.0035   '
+		 Tdl06='-0.005    ' Tdl07='0.0071    ' Tdl08='-0.0004   ' KorekGer='-0.0071   ' Tdl09='0.0007    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='138' Tdl01='0.116     ' Tdl02='0.0014    ' Tdl03='-0.2722   ' Tdl04='0.0108    ' Tdl05='-0.0034   '
+		 Tdl06='-0.005    ' Tdl07='0.007     ' Tdl08='-0.0004   ' KorekGer='-0.007    ' Tdl09='0.0007    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='139' Tdl01='0.1138    ' Tdl02='0.0014    ' Tdl03='-0.2669   ' Tdl04='0.0106    ' Tdl05='-0.0033   '
+		 Tdl06='-0.0049   ' Tdl07='0.0068    ' Tdl08='-0.0004   ' KorekGer='-0.0068   ' Tdl09='0.0007    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='140' Tdl01='0.1115    ' Tdl02='0.0013    ' Tdl03='-0.2615   ' Tdl04='0.0103    ' Tdl05='-0.0033   '
+		 Tdl06='-0.0048   ' Tdl07='0.0067    ' Tdl08='-0.0004   ' KorekGer='-0.0067   ' Tdl09='0.0006    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='141' Tdl01='0.1091    ' Tdl02='0.0013    ' Tdl03='-0.256    ' Tdl04='0.0101    ' Tdl05='-0.0032   '
+		 Tdl06='-0.0047   ' Tdl07='0.0065    ' Tdl08='-0.0004   ' KorekGer='-0.0065   ' Tdl09='0.0006    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='142' Tdl01='0.1068    ' Tdl02='0.0013    ' Tdl03='-0.2505   ' Tdl04='0.0099    ' Tdl05='-0.0031   '
+		 Tdl06='-0.0046   ' Tdl07='0.0064    ' Tdl08='-0.0004   ' KorekGer='-0.0064   ' Tdl09='0.0006    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='143' Tdl01='0.1044    ' Tdl02='0.0013    ' Tdl03='-0.2448   ' Tdl04='0.0097    ' Tdl05='-0.0031   '
+		 Tdl06='-0.0045   ' Tdl07='0.0063    ' Tdl08='-0.0004   ' KorekGer='-0.0063   ' Tdl09='0.0006    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='144' Tdl01='0.1019    ' Tdl02='0.0012    ' Tdl03='-0.2391   ' Tdl04='0.0095    ' Tdl05='-0.003    '
+		 Tdl06='-0.0043   ' Tdl07='0.0061    ' Tdl08='-0.0004   ' KorekGer='-0.0061   ' Tdl09='0.0006    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='145' Tdl01='0.0995    ' Tdl02='0.0012    ' Tdl03='-0.2333   ' Tdl04='0.0092    ' Tdl05='-0.0029   '
+		 Tdl06='-0.0042   ' Tdl07='0.006     ' Tdl08='-0.0003   ' KorekGer='-0.006    ' Tdl09='0.0006    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='146' Tdl01='0.097     ' Tdl02='0.0012    ' Tdl03='-0.2275   ' Tdl04='0.009     ' Tdl05='-0.0029   '
+		 Tdl06='-0.0041   ' Tdl07='0.0058    ' Tdl08='-0.0003   ' KorekGer='-0.0058   ' Tdl09='0.0006    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='147' Tdl01='0.0944    ' Tdl02='0.0011    ' Tdl03='-0.2216   ' Tdl04='0.0088    ' Tdl05='-0.0028   '
+		 Tdl06='-0.004    ' Tdl07='0.0057    ' Tdl08='-0.0003   ' KorekGer='-0.0057   ' Tdl09='0.0005    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='148' Tdl01='0.0919    ' Tdl02='0.0011    ' Tdl03='-0.2156   ' Tdl04='0.0085    ' Tdl05='-0.0027   '
+		 Tdl06='-0.0039   ' Tdl07='0.0055    ' Tdl08='-0.0003   ' KorekGer='-0.0055   ' Tdl09='0.0005    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='149' Tdl01='0.0893    ' Tdl02='0.0011    ' Tdl03='-0.2095   ' Tdl04='0.0083    ' Tdl05='-0.0026   '
+		 Tdl06='-0.0038   ' Tdl07='0.0054    ' Tdl08='-0.0003   ' KorekGer='-0.0054   ' Tdl09='0.0005    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='150' Tdl01='0.0867    ' Tdl02='0.0011    ' Tdl03='-0.2034   ' Tdl04='0.0081    ' Tdl05='-0.0026   '
+		 Tdl06='-0.0037   ' Tdl07='0.0052    ' Tdl08='-0.0003   ' KorekGer='-0.0052   ' Tdl09='0.0005    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='151' Tdl01='0.0841    ' Tdl02='0.001     ' Tdl03='-0.1972   ' Tdl04='0.0078    ' Tdl05='-0.0025   '
+		 Tdl06='-0.0036   ' Tdl07='0.005     ' Tdl08='-0.0003   ' KorekGer='-0.005    ' Tdl09='0.0005    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='152' Tdl01='0.0814    ' Tdl02='0.001     ' Tdl03='-0.191    ' Tdl04='0.0076    ' Tdl05='-0.0024   '
+		 Tdl06='-0.0035   ' Tdl07='0.0049    ' Tdl08='-0.0003   ' KorekGer='-0.0049   ' Tdl09='0.0005    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='153' Tdl01='0.0787    ' Tdl02='0.001     ' Tdl03='-0.1847   ' Tdl04='0.0073    ' Tdl05='-0.0023   '
+		 Tdl06='-0.0034   ' Tdl07='0.0047    ' Tdl08='-0.0003   ' KorekGer='-0.0047   ' Tdl09='0.0005    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='154' Tdl01='0.076     ' Tdl02='0.0009    ' Tdl03='-0.1783   ' Tdl04='0.0071    ' Tdl05='-0.0022   '
+		 Tdl06='-0.0032   ' Tdl07='0.0046    ' Tdl08='-0.0003   ' KorekGer='-0.0046   ' Tdl09='0.0004    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='155' Tdl01='0.0733    ' Tdl02='0.0009    ' Tdl03='-0.1719   ' Tdl04='0.0068    ' Tdl05='-0.0022   '
+		 Tdl06='-0.0031   ' Tdl07='0.0044    ' Tdl08='-0.0003   ' KorekGer='-0.0044   ' Tdl09='0.0004    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='156' Tdl01='0.0705    ' Tdl02='0.0009    ' Tdl03='-0.1655   ' Tdl04='0.0065    ' Tdl05='-0.0021   '
+		 Tdl06='-0.003    ' Tdl07='0.0042    ' Tdl08='-0.0002   ' KorekGer='-0.0042   ' Tdl09='0.0004    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='157' Tdl01='0.0678    ' Tdl02='0.0008    ' Tdl03='-0.1589   ' Tdl04='0.0063    ' Tdl05='-0.002    '
+		 Tdl06='-0.0029   ' Tdl07='0.0041    ' Tdl08='-0.0002   ' KorekGer='-0.0041   ' Tdl09='0.0004    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='158' Tdl01='0.065     ' Tdl02='0.0008    ' Tdl03='-0.1524   ' Tdl04='0.006     ' Tdl05='-0.0019   '
+		 Tdl06='-0.0028   ' Tdl07='0.0039    ' Tdl08='-0.0002   ' KorekGer='-0.0039   ' Tdl09='0.0004    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='159' Tdl01='0.0621    ' Tdl02='0.0008    ' Tdl03='-0.1458   ' Tdl04='0.0058    ' Tdl05='-0.0018   '
+		 Tdl06='-0.0027   ' Tdl07='0.0037    ' Tdl08='-0.0002   ' KorekGer='-0.0037   ' Tdl09='0.0004    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='160' Tdl01='0.0593    ' Tdl02='0.0007    ' Tdl03='-0.1391   ' Tdl04='0.0055    ' Tdl05='-0.0017   '
+		 Tdl06='-0.0025   ' Tdl07='0.0036    ' Tdl08='-0.0002   ' KorekGer='-0.0036   ' Tdl09='0.0003    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='161' Tdl01='0.0565    ' Tdl02='0.0007    ' Tdl03='-0.1324   ' Tdl04='0.0052    ' Tdl05='-0.0017   '
+		 Tdl06='-0.0024   ' Tdl07='0.0034    ' Tdl08='-0.0002   ' KorekGer='-0.0034   ' Tdl09='0.0003    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='162' Tdl01='0.0536    ' Tdl02='0.0006    ' Tdl03='-0.1257   ' Tdl04='0.005     ' Tdl05='-0.0016   '
+		 Tdl06='-0.0023   ' Tdl07='0.0032    ' Tdl08='-0.0002   ' KorekGer='-0.0032   ' Tdl09='0.0003    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='163' Tdl01='0.0507    ' Tdl02='0.0006    ' Tdl03='-0.1189   ' Tdl04='0.0047    ' Tdl05='-0.0015   '
+		 Tdl06='-0.0022   ' Tdl07='0.003     ' Tdl08='-0.0002   ' KorekGer='-0.003    ' Tdl09='0.0003    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='164' Tdl01='0.0478    ' Tdl02='0.0006    ' Tdl03='-0.1121   ' Tdl04='0.0044    ' Tdl05='-0.0014   '
+		 Tdl06='-0.002    ' Tdl07='0.0029    ' Tdl08='-0.0002   ' KorekGer='-0.0029   ' Tdl09='0.0003    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='165' Tdl01='0.0449    ' Tdl02='0.0005    ' Tdl03='-0.1053   ' Tdl04='0.0042    ' Tdl05='-0.0013   '
+		 Tdl06='-0.0019   ' Tdl07='0.0027    ' Tdl08='-0.0002   ' KorekGer='-0.0027   ' Tdl09='0.0003    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='166' Tdl01='0.0419    ' Tdl02='0.0005    ' Tdl03='-0.0984   ' Tdl04='0.0039    ' Tdl05='-0.0012   '
+		 Tdl06='-0.0018   ' Tdl07='0.0025    ' Tdl08='-0.0001   ' KorekGer='-0.0025   ' Tdl09='0.0002    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='167' Tdl01='0.039     ' Tdl02='0.0005    ' Tdl03='-0.0915   ' Tdl04='0.0036    ' Tdl05='-0.0011   '
+		 Tdl06='-0.0017   ' Tdl07='0.0023    ' Tdl08='-0.0001   ' KorekGer='-0.0023   ' Tdl09='0.0002    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='168' Tdl01='0.0361    ' Tdl02='0.0004    ' Tdl03='-0.0846   ' Tdl04='0.0033    ' Tdl05='-0.0011   '
+		 Tdl06='-0.0015   ' Tdl07='0.0022    ' Tdl08='-0.0001   ' KorekGer='-0.0022   ' Tdl09='0.0002    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='169' Tdl01='0.0331    ' Tdl02='0.0004    ' Tdl03='-0.0776   ' Tdl04='0.0031    ' Tdl05='-0.001    '
+		 Tdl06='-0.0014   ' Tdl07='0.002     ' Tdl08='-0.0001   ' KorekGer='-0.002    ' Tdl09='0.0002    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='170' Tdl01='0.0301    ' Tdl02='0.0004    ' Tdl03='-0.0706   ' Tdl04='0.0028    ' Tdl05='-0.0009   '
+		 Tdl06='-0.0013   ' Tdl07='0.0018    ' Tdl08='-0.0001   ' KorekGer='-0.0018   ' Tdl09='0.0002    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='171' Tdl01='0.0271    ' Tdl02='0.0003    ' Tdl03='-0.0636   ' Tdl04='0.0025    ' Tdl05='-0.0008   '
+		 Tdl06='-0.0012   ' Tdl07='0.0016    ' Tdl08='-0.0001   ' KorekGer='-0.0016   ' Tdl09='0.0002    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='172' Tdl01='0.0241    ' Tdl02='0.0003    ' Tdl03='-0.0566   ' Tdl04='0.0022    ' Tdl05='-0.0007   '
+		 Tdl06='-0.001    ' Tdl07='0.0014    ' Tdl08='-0.0001   ' KorekGer='-0.0014   ' Tdl09='0.0001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='173' Tdl01='0.0211    ' Tdl02='0.0003    ' Tdl03='-0.0496   ' Tdl04='0.002     ' Tdl05='-0.0006   '
+		 Tdl06='-0.0009   ' Tdl07='0.0013    ' Tdl08='-0.0001   ' KorekGer='-0.0013   ' Tdl09='0.0001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='174' Tdl01='0.0181    ' Tdl02='0.0002    ' Tdl03='-0.0425   ' Tdl04='0.0017    ' Tdl05='-0.0005   '
+		 Tdl06='-0.0008   ' Tdl07='0.0011    ' Tdl08='-0.0001   ' KorekGer='-0.0011   ' Tdl09='0.0001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='175' Tdl01='0.0151    ' Tdl02='0.0002    ' Tdl03='-0.0355   ' Tdl04='0.0014    ' Tdl05='-0.0004   '
+		 Tdl06='-0.0006   ' Tdl07='0.0009    ' Tdl08='-0.0001   ' KorekGer='-0.0009   ' Tdl09='0.0001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='176' Tdl01='0.0121    ' Tdl02='0.0001    ' Tdl03='-0.0284   ' Tdl04='0.0011    ' Tdl05='-0.0004   '
+		 Tdl06='-0.0005   ' Tdl07='0.0007    ' Tdl08='0         ' KorekGer='-0.0007   ' Tdl09='0.0001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='177' Tdl01='0.0091    ' Tdl02='0.0001    ' Tdl03='-0.0213   ' Tdl04='0.0008    ' Tdl05='-0.0003   '
+		 Tdl06='-0.0004   ' Tdl07='0.0005    ' Tdl08='0         ' KorekGer='-0.0005   ' Tdl09='0.0001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='178' Tdl01='0.0061    ' Tdl02='0.0001    ' Tdl03='-0.0142   ' Tdl04='0.0006    ' Tdl05='-0.0002   '
+		 Tdl06='-0.0003   ' Tdl07='0.0004    ' Tdl08='0         ' KorekGer='-0.0004   ' Tdl09='0         ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='179' Tdl01='0.003     ' Tdl02='0         ' Tdl03='-0.0071   ' Tdl04='0.0003    ' Tdl05='-0.0001   '
+		 Tdl06='-0.0001   ' Tdl07='0.0002    ' Tdl08='0         ' KorekGer='-0.0002   ' Tdl09='0         ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='180' Tdl01='0         ' Tdl02='0         ' Tdl03='0         ' Tdl04='0         ' Tdl05='0         '
+		 Tdl06='0         ' Tdl07='0         ' Tdl08='0         ' KorekGer='0         ' Tdl09='0         ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='181' Tdl01='-0.003    ' Tdl02='0         ' Tdl03='0.0071    ' Tdl04='-0.0003   ' Tdl05='0.0001    '
+		 Tdl06='0.0001    ' Tdl07='-0.0002   ' Tdl08='0         ' KorekGer='0.0002    ' Tdl09='0         ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='182' Tdl01='-0.0061   ' Tdl02='-0.0001   ' Tdl03='0.0142    ' Tdl04='-0.0006   ' Tdl05='0.0002    '
+		 Tdl06='0.0003    ' Tdl07='-0.0004   ' Tdl08='0         ' KorekGer='0.0004    ' Tdl09='0         ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='183' Tdl01='-0.0091   ' Tdl02='-0.0001   ' Tdl03='0.0213    ' Tdl04='-0.0008   ' Tdl05='0.0003    '
+		 Tdl06='0.0004    ' Tdl07='-0.0005   ' Tdl08='0         ' KorekGer='0.0005    ' Tdl09='-0.0001   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='184' Tdl01='-0.0121   ' Tdl02='-0.0001   ' Tdl03='0.0284    ' Tdl04='-0.0011   ' Tdl05='0.0004    '
+		 Tdl06='0.0005    ' Tdl07='-0.0007   ' Tdl08='0         ' KorekGer='0.0007    ' Tdl09='-0.0001   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='185' Tdl01='-0.0151   ' Tdl02='-0.0002   ' Tdl03='0.0355    ' Tdl04='-0.0014   ' Tdl05='0.0004    '
+		 Tdl06='0.0006    ' Tdl07='-0.0009   ' Tdl08='0.0001    ' KorekGer='0.0009    ' Tdl09='-0.0001   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='186' Tdl01='-0.0181   ' Tdl02='-0.0002   ' Tdl03='0.0425    ' Tdl04='-0.0017   ' Tdl05='0.0005    '
+		 Tdl06='0.0008    ' Tdl07='-0.0011   ' Tdl08='0.0001    ' KorekGer='0.0011    ' Tdl09='-0.0001   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='187' Tdl01='-0.0211   ' Tdl02='-0.0003   ' Tdl03='0.0496    ' Tdl04='-0.002    ' Tdl05='0.0006    '
+		 Tdl06='0.0009    ' Tdl07='-0.0013   ' Tdl08='0.0001    ' KorekGer='0.0013    ' Tdl09='-0.0001   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='188' Tdl01='-0.0241   ' Tdl02='-0.0003   ' Tdl03='0.0566    ' Tdl04='-0.0022   ' Tdl05='0.0007    '
+		 Tdl06='0.001     ' Tdl07='-0.0014   ' Tdl08='0.0001    ' KorekGer='0.0014    ' Tdl09='-0.0001   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='189' Tdl01='-0.0271   ' Tdl02='-0.0003   ' Tdl03='0.0636    ' Tdl04='-0.0025   ' Tdl05='0.0008    '
+		 Tdl06='0.0012    ' Tdl07='-0.0016   ' Tdl08='0.0001    ' KorekGer='0.0016    ' Tdl09='-0.0002   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='190' Tdl01='-0.0301   ' Tdl02='-0.0004   ' Tdl03='0.0706    ' Tdl04='-0.0028   ' Tdl05='0.0009    '
+		 Tdl06='0.0013    ' Tdl07='-0.0018   ' Tdl08='0.0001    ' KorekGer='0.0018    ' Tdl09='-0.0002   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='191' Tdl01='-0.0331   ' Tdl02='-0.0004   ' Tdl03='0.0776    ' Tdl04='-0.0031   ' Tdl05='0.001     '
+		 Tdl06='0.0014    ' Tdl07='-0.002    ' Tdl08='0.0001    ' KorekGer='0.002     ' Tdl09='-0.0002   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='192' Tdl01='-0.0361   ' Tdl02='-0.0004   ' Tdl03='0.0846    ' Tdl04='-0.0033   ' Tdl05='0.0011    '
+		 Tdl06='0.0015    ' Tdl07='-0.0022   ' Tdl08='0.0001    ' KorekGer='0.0022    ' Tdl09='-0.0002   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='193' Tdl01='-0.039    ' Tdl02='-0.0005   ' Tdl03='0.0915    ' Tdl04='-0.0036   ' Tdl05='0.0011    '
+		 Tdl06='0.0017    ' Tdl07='-0.0023   ' Tdl08='0.0001    ' KorekGer='0.0023    ' Tdl09='-0.0002   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='194' Tdl01='-0.0419   ' Tdl02='-0.0005   ' Tdl03='0.0984    ' Tdl04='-0.0039   ' Tdl05='0.0012    '
+		 Tdl06='0.0018    ' Tdl07='-0.0025   ' Tdl08='0.0001    ' KorekGer='0.0025    ' Tdl09='-0.0002   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='195' Tdl01='-0.0449   ' Tdl02='-0.0005   ' Tdl03='0.1053    ' Tdl04='-0.0042   ' Tdl05='0.0013    '
+		 Tdl06='0.0019    ' Tdl07='-0.0027   ' Tdl08='0.0002    ' KorekGer='0.0027    ' Tdl09='-0.0003   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='196' Tdl01='-0.0478   ' Tdl02='-0.0006   ' Tdl03='0.1121    ' Tdl04='-0.0044   ' Tdl05='0.0014    '
+		 Tdl06='0.002     ' Tdl07='-0.0029   ' Tdl08='0.0002    ' KorekGer='0.0029    ' Tdl09='-0.0003   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='197' Tdl01='-0.0507   ' Tdl02='-0.0006   ' Tdl03='0.1189    ' Tdl04='-0.0047   ' Tdl05='0.0015    '
+		 Tdl06='0.0022    ' Tdl07='-0.003    ' Tdl08='0.0002    ' KorekGer='0.003     ' Tdl09='-0.0003   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='198' Tdl01='-0.0536   ' Tdl02='-0.0006   ' Tdl03='0.1257    ' Tdl04='-0.005    ' Tdl05='0.0016    '
+		 Tdl06='0.0023    ' Tdl07='-0.0032   ' Tdl08='0.0002    ' KorekGer='0.0032    ' Tdl09='-0.0003   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='199' Tdl01='-0.0565   ' Tdl02='-0.0007   ' Tdl03='0.1324    ' Tdl04='-0.0052   ' Tdl05='0.0017    '
+		 Tdl06='0.0024    ' Tdl07='-0.0034   ' Tdl08='0.0002    ' KorekGer='0.0034    ' Tdl09='-0.0003   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='200' Tdl01='-0.0593   ' Tdl02='-0.0007   ' Tdl03='0.1391    ' Tdl04='-0.0055   ' Tdl05='0.0017    '
+		 Tdl06='0.0025    ' Tdl07='-0.0036   ' Tdl08='0.0002    ' KorekGer='0.0036    ' Tdl09='-0.0003   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='201' Tdl01='-0.0621   ' Tdl02='-0.0008   ' Tdl03='0.1458    ' Tdl04='-0.0058   ' Tdl05='0.0018    '
+		 Tdl06='0.0027    ' Tdl07='-0.0037   ' Tdl08='0.0002    ' KorekGer='0.0037    ' Tdl09='-0.0004   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='202' Tdl01='-0.065    ' Tdl02='-0.0008   ' Tdl03='0.1524    ' Tdl04='-0.006    ' Tdl05='0.0019    '
+		 Tdl06='0.0028    ' Tdl07='-0.0039   ' Tdl08='0.0002    ' KorekGer='0.0039    ' Tdl09='-0.0004   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='203' Tdl01='-0.0678   ' Tdl02='-0.0008   ' Tdl03='0.1589    ' Tdl04='-0.0063   ' Tdl05='0.002     '
+		 Tdl06='0.0029    ' Tdl07='-0.0041   ' Tdl08='0.0002    ' KorekGer='0.0041    ' Tdl09='-0.0004   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='204' Tdl01='-0.0705   ' Tdl02='-0.0009   ' Tdl03='0.1655    ' Tdl04='-0.0065   ' Tdl05='0.0021    '
+		 Tdl06='0.003     ' Tdl07='-0.0042   ' Tdl08='0.0002    ' KorekGer='0.0042    ' Tdl09='-0.0004   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='205' Tdl01='-0.0733   ' Tdl02='-0.0009   ' Tdl03='0.1719    ' Tdl04='-0.0068   ' Tdl05='0.0022    '
+		 Tdl06='0.0031    ' Tdl07='-0.0044   ' Tdl08='0.0003    ' KorekGer='0.0044    ' Tdl09='-0.0004   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='206' Tdl01='-0.076    ' Tdl02='-0.0009   ' Tdl03='0.1783    ' Tdl04='-0.0071   ' Tdl05='0.0022    '
+		 Tdl06='0.0032    ' Tdl07='-0.0046   ' Tdl08='0.0003    ' KorekGer='0.0046    ' Tdl09='-0.0004   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='207' Tdl01='-0.0787   ' Tdl02='-0.001    ' Tdl03='0.1847    ' Tdl04='-0.0073   ' Tdl05='0.0023    '
+		 Tdl06='0.0034    ' Tdl07='-0.0047   ' Tdl08='0.0003    ' KorekGer='0.0047    ' Tdl09='-0.0005   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='208' Tdl01='-0.0814   ' Tdl02='-0.001    ' Tdl03='0.191     ' Tdl04='-0.0076   ' Tdl05='0.0024    '
+		 Tdl06='0.0035    ' Tdl07='-0.0049   ' Tdl08='0.0003    ' KorekGer='0.0049    ' Tdl09='-0.0005   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='209' Tdl01='-0.0841   ' Tdl02='-0.001    ' Tdl03='0.1972    ' Tdl04='-0.0078   ' Tdl05='0.0025    '
+		 Tdl06='0.0036    ' Tdl07='-0.005    ' Tdl08='0.0003    ' KorekGer='0.005     ' Tdl09='-0.0005   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='210' Tdl01='-0.0867   ' Tdl02='-0.0011   ' Tdl03='0.2034    ' Tdl04='-0.0081   ' Tdl05='0.0026    '
+		 Tdl06='0.0037    ' Tdl07='-0.0052   ' Tdl08='0.0003    ' KorekGer='0.0052    ' Tdl09='-0.0005   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='211' Tdl01='-0.0893   ' Tdl02='-0.0011   ' Tdl03='0.2095    ' Tdl04='-0.0083   ' Tdl05='0.0026    '
+		 Tdl06='0.0038    ' Tdl07='-0.0054   ' Tdl08='0.0003    ' KorekGer='0.0054    ' Tdl09='-0.0005   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='212' Tdl01='-0.0919   ' Tdl02='-0.0011   ' Tdl03='0.2156    ' Tdl04='-0.0085   ' Tdl05='0.0027    '
+		 Tdl06='0.0039    ' Tdl07='-0.0055   ' Tdl08='0.0003    ' KorekGer='0.0055    ' Tdl09='-0.0005   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='213' Tdl01='-0.0944   ' Tdl02='-0.0011   ' Tdl03='0.2216    ' Tdl04='-0.0088   ' Tdl05='0.0028    '
+		 Tdl06='0.004     ' Tdl07='-0.0057   ' Tdl08='0.0003    ' KorekGer='0.0057    ' Tdl09='-0.0005   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='214' Tdl01='-0.097    ' Tdl02='-0.0012   ' Tdl03='0.2275    ' Tdl04='-0.009    ' Tdl05='0.0029    '
+		 Tdl06='0.0041    ' Tdl07='-0.0058   ' Tdl08='0.0003    ' KorekGer='0.0058    ' Tdl09='-0.0006   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='215' Tdl01='-0.0995   ' Tdl02='-0.0012   ' Tdl03='0.2333    ' Tdl04='-0.0092   ' Tdl05='0.0029    '
+		 Tdl06='0.0042    ' Tdl07='-0.006    ' Tdl08='0.0003    ' KorekGer='0.006     ' Tdl09='-0.0006   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='216' Tdl01='-0.1019   ' Tdl02='-0.0012   ' Tdl03='0.2391    ' Tdl04='-0.0095   ' Tdl05='0.003     '
+		 Tdl06='0.0043    ' Tdl07='-0.0061   ' Tdl08='0.0004    ' KorekGer='0.0061    ' Tdl09='-0.0006   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='217' Tdl01='-0.1044   ' Tdl02='-0.0013   ' Tdl03='0.2448    ' Tdl04='-0.0097   ' Tdl05='0.0031    '
+		 Tdl06='0.0045    ' Tdl07='-0.0063   ' Tdl08='0.0004    ' KorekGer='0.0063    ' Tdl09='-0.0006   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='218' Tdl01='-0.1068   ' Tdl02='-0.0013   ' Tdl03='0.2505    ' Tdl04='-0.0099   ' Tdl05='0.0031    '
+		 Tdl06='0.0046    ' Tdl07='-0.0064   ' Tdl08='0.0004    ' KorekGer='0.0064    ' Tdl09='-0.0006   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='219' Tdl01='-0.1091   ' Tdl02='-0.0013   ' Tdl03='0.256     ' Tdl04='-0.0101   ' Tdl05='0.0032    '
+		 Tdl06='0.0047    ' Tdl07='-0.0065   ' Tdl08='0.0004    ' KorekGer='0.0065    ' Tdl09='-0.0006   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='220' Tdl01='-0.1115   ' Tdl02='-0.0013   ' Tdl03='0.2615    ' Tdl04='-0.0103   ' Tdl05='0.0033    '
+		 Tdl06='0.0048    ' Tdl07='-0.0067   ' Tdl08='0.0004    ' KorekGer='0.0067    ' Tdl09='-0.0006   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='221' Tdl01='-0.1138   ' Tdl02='-0.0014   ' Tdl03='0.2669    ' Tdl04='-0.0106   ' Tdl05='0.0033    '
+		 Tdl06='0.0049    ' Tdl07='-0.0068   ' Tdl08='0.0004    ' KorekGer='0.0068    ' Tdl09='-0.0007   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='222' Tdl01='-0.116    ' Tdl02='-0.0014   ' Tdl03='0.2722    ' Tdl04='-0.0108   ' Tdl05='0.0034    '
+		 Tdl06='0.005     ' Tdl07='-0.007    ' Tdl08='0.0004    ' KorekGer='0.007     ' Tdl09='-0.0007   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='223' Tdl01='-0.1183   ' Tdl02='-0.0014   ' Tdl03='0.2774    ' Tdl04='-0.011    ' Tdl05='0.0035    '
+		 Tdl06='0.005     ' Tdl07='-0.0071   ' Tdl08='0.0004    ' KorekGer='0.0071    ' Tdl09='-0.0007   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='224' Tdl01='-0.1205   ' Tdl02='-0.0015   ' Tdl03='0.2826    ' Tdl04='-0.0112   ' Tdl05='0.0035    '
+		 Tdl06='0.0051    ' Tdl07='-0.0072   ' Tdl08='0.0004    ' KorekGer='0.0072    ' Tdl09='-0.0007   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='225' Tdl01='-0.1226   ' Tdl02='-0.0015   ' Tdl03='0.2877    ' Tdl04='-0.0114   ' Tdl05='0.0036    '
+		 Tdl06='0.0052    ' Tdl07='-0.0074   ' Tdl08='0.0004    ' KorekGer='0.0074    ' Tdl09='-0.0007   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='226' Tdl01='-0.1247   ' Tdl02='-0.0015   ' Tdl03='0.2926    ' Tdl04='-0.0116   ' Tdl05='0.0037    '
+		 Tdl06='0.0053    ' Tdl07='-0.0075   ' Tdl08='0.0004    ' KorekGer='0.0075    ' Tdl09='-0.0007   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='227' Tdl01='-0.1268   ' Tdl02='-0.0015   ' Tdl03='0.2975    ' Tdl04='-0.0118   ' Tdl05='0.0037    '
+		 Tdl06='0.0054    ' Tdl07='-0.0076   ' Tdl08='0.0004    ' KorekGer='0.0076    ' Tdl09='-0.0007   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='228' Tdl01='-0.1289   ' Tdl02='-0.0016   ' Tdl03='0.3023    ' Tdl04='-0.012    ' Tdl05='0.0038    '
+		 Tdl06='0.0055    ' Tdl07='-0.0077   ' Tdl08='0.0004    ' KorekGer='0.0077    ' Tdl09='-0.0007   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='229' Tdl01='-0.1309   ' Tdl02='-0.0016   ' Tdl03='0.307     ' Tdl04='-0.0122   ' Tdl05='0.0038    '
+		 Tdl06='0.0056    ' Tdl07='-0.0078   ' Tdl08='0.0005    ' KorekGer='0.0078    ' Tdl09='-0.0008   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='230' Tdl01='-0.1328   ' Tdl02='-0.0016   ' Tdl03='0.3116    ' Tdl04='-0.0123   ' Tdl05='0.0039    '
+		 Tdl06='0.0057    ' Tdl07='-0.008    ' Tdl08='0.0005    ' KorekGer='0.008     ' Tdl09='-0.0008   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='231' Tdl01='-0.1348   ' Tdl02='-0.0016   ' Tdl03='0.3161    ' Tdl04='-0.0125   ' Tdl05='0.004     '
+		 Tdl06='0.0058    ' Tdl07='-0.0081   ' Tdl08='0.0005    ' KorekGer='0.0081    ' Tdl09='-0.0008   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='232' Tdl01='-0.1366   ' Tdl02='-0.0017   ' Tdl03='0.3206    ' Tdl04='-0.0127   ' Tdl05='0.004     '
+		 Tdl06='0.0058    ' Tdl07='-0.0082   ' Tdl08='0.0005    ' KorekGer='0.0082    ' Tdl09='-0.0008   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='233' Tdl01='-0.1385   ' Tdl02='-0.0017   ' Tdl03='0.3249    ' Tdl04='-0.0129   ' Tdl05='0.0041    '
+		 Tdl06='0.0059    ' Tdl07='-0.0083   ' Tdl08='0.0005    ' KorekGer='0.0083    ' Tdl09='-0.0008   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='234' Tdl01='-0.1403   ' Tdl02='-0.0017   ' Tdl03='0.3291    ' Tdl04='-0.013    ' Tdl05='0.0041    '
+		 Tdl06='0.006     ' Tdl07='-0.0084   ' Tdl08='0.0005    ' KorekGer='0.0084    ' Tdl09='-0.0008   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='235' Tdl01='-0.142    ' Tdl02='-0.0017   ' Tdl03='0.3332    ' Tdl04='-0.0132   ' Tdl05='0.0042    '
+		 Tdl06='0.0061    ' Tdl07='-0.0085   ' Tdl08='0.0005    ' KorekGer='0.0085    ' Tdl09='-0.0008   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='236' Tdl01='-0.1438   ' Tdl02='-0.0017   ' Tdl03='0.3373    ' Tdl04='-0.0133   ' Tdl05='0.0042    '
+		 Tdl06='0.0061    ' Tdl07='-0.0086   ' Tdl08='0.0005    ' KorekGer='0.0086    ' Tdl09='-0.0008   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='237' Tdl01='-0.1454   ' Tdl02='-0.0018   ' Tdl03='0.3412    ' Tdl04='-0.0135   ' Tdl05='0.0043    '
+		 Tdl06='0.0062    ' Tdl07='-0.0087   ' Tdl08='0.0005    ' KorekGer='0.0087    ' Tdl09='-0.0008   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='238' Tdl01='-0.1471   ' Tdl02='-0.0018   ' Tdl03='0.345     ' Tdl04='-0.0137   ' Tdl05='0.0043    '
+		 Tdl06='0.0063    ' Tdl07='-0.0088   ' Tdl08='0.0005    ' KorekGer='0.0088    ' Tdl09='-0.0008   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='239' Tdl01='-0.1486   ' Tdl02='-0.0018   ' Tdl03='0.3487    ' Tdl04='-0.0138   ' Tdl05='0.0044    '
+		 Tdl06='0.0063    ' Tdl07='-0.0089   ' Tdl08='0.0005    ' KorekGer='0.0089    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='240' Tdl01='-0.1502   ' Tdl02='-0.0018   ' Tdl03='0.3523    ' Tdl04='-0.0139   ' Tdl05='0.0044    '
+		 Tdl06='0.0064    ' Tdl07='-0.009    ' Tdl08='0.0005    ' KorekGer='0.009     ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='241' Tdl01='-0.1517   ' Tdl02='-0.0018   ' Tdl03='0.3558    ' Tdl04='-0.0141   ' Tdl05='0.0045    '
+		 Tdl06='0.0065    ' Tdl07='-0.0091   ' Tdl08='0.0005    ' KorekGer='0.0091    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='242' Tdl01='-0.1531   ' Tdl02='-0.0019   ' Tdl03='0.3592    ' Tdl04='-0.0142   ' Tdl05='0.0045    '
+		 Tdl06='0.0065    ' Tdl07='-0.0092   ' Tdl08='0.0005    ' KorekGer='0.0092    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='243' Tdl01='-0.1545   ' Tdl02='-0.0019   ' Tdl03='0.3625    ' Tdl04='-0.0143   ' Tdl05='0.0045    '
+		 Tdl06='0.0066    ' Tdl07='-0.0093   ' Tdl08='0.0005    ' KorekGer='0.0093    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='244' Tdl01='-0.1559   ' Tdl02='-0.0019   ' Tdl03='0.3656    ' Tdl04='-0.0145   ' Tdl05='0.0046    '
+		 Tdl06='0.0067    ' Tdl07='-0.0093   ' Tdl08='0.0005    ' KorekGer='0.0093    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='245' Tdl01='-0.1572   ' Tdl02='-0.0019   ' Tdl03='0.3687    ' Tdl04='-0.0146   ' Tdl05='0.0046    '
+		 Tdl06='0.0067    ' Tdl07='-0.0094   ' Tdl08='0.0005    ' KorekGer='0.0094    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='246' Tdl01='-0.1584   ' Tdl02='-0.0019   ' Tdl03='0.3716    ' Tdl04='-0.0147   ' Tdl05='0.0047    '
+		 Tdl06='0.0068    ' Tdl07='-0.0095   ' Tdl08='0.0005    ' KorekGer='0.0095    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='247' Tdl01='-0.1596   ' Tdl02='-0.0019   ' Tdl03='0.3745    ' Tdl04='-0.0148   ' Tdl05='0.0047    '
+		 Tdl06='0.0068    ' Tdl07='-0.0096   ' Tdl08='0.0006    ' KorekGer='0.0096    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='248' Tdl01='-0.1608   ' Tdl02='-0.0019   ' Tdl03='0.3772    ' Tdl04='-0.0149   ' Tdl05='0.0047    '
+		 Tdl06='0.0069    ' Tdl07='-0.0096   ' Tdl08='0.0006    ' KorekGer='0.0096    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='249' Tdl01='-0.1619   ' Tdl02='-0.002    ' Tdl03='0.3798    ' Tdl04='-0.015    ' Tdl05='0.0048    '
+		 Tdl06='0.0069    ' Tdl07='-0.0097   ' Tdl08='0.0006    ' KorekGer='0.0097    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='250' Tdl01='-0.1629   ' Tdl02='-0.002    ' Tdl03='0.3823    ' Tdl04='-0.0151   ' Tdl05='0.0048    '
+		 Tdl06='0.007     ' Tdl07='-0.0098   ' Tdl08='0.0006    ' KorekGer='0.0098    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='251' Tdl01='-0.164    ' Tdl02='-0.002    ' Tdl03='0.3846    ' Tdl04='-0.0152   ' Tdl05='0.0048    '
+		 Tdl06='0.007     ' Tdl07='-0.0098   ' Tdl08='0.0006    ' KorekGer='0.0098    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='252' Tdl01='-0.1649   ' Tdl02='-0.002    ' Tdl03='0.3869    ' Tdl04='-0.0153   ' Tdl05='0.0049    '
+		 Tdl06='0.007     ' Tdl07='-0.0099   ' Tdl08='0.0006    ' KorekGer='0.0099    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='253' Tdl01='-0.1658   ' Tdl02='-0.002    ' Tdl03='0.389     ' Tdl04='-0.0154   ' Tdl05='0.0049    '
+		 Tdl06='0.0071    ' Tdl07='-0.0099   ' Tdl08='0.0006    ' KorekGer='0.0099    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='254' Tdl01='-0.1667   ' Tdl02='-0.002    ' Tdl03='0.391     ' Tdl04='-0.0155   ' Tdl05='0.0049    '
+		 Tdl06='0.0071    ' Tdl07='-0.01     ' Tdl08='0.0006    ' KorekGer='0.01      ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='255' Tdl01='-0.1675   ' Tdl02='-0.002    ' Tdl03='0.3929    ' Tdl04='-0.0156   ' Tdl05='0.0049    '
+		 Tdl06='0.0071    ' Tdl07='-0.01     ' Tdl08='0.0006    ' KorekGer='0.01      ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='256' Tdl01='-0.1682   ' Tdl02='-0.002    ' Tdl03='0.3947    ' Tdl04='-0.0156   ' Tdl05='0.0049    '
+		 Tdl06='0.0072    ' Tdl07='-0.0101   ' Tdl08='0.0006    ' KorekGer='0.0101    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='257' Tdl01='-0.169    ' Tdl02='-0.002    ' Tdl03='0.3964    ' Tdl04='-0.0157   ' Tdl05='0.005     '
+		 Tdl06='0.0072    ' Tdl07='-0.0101   ' Tdl08='0.0006    ' KorekGer='0.0101    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='258' Tdl01='-0.1696   ' Tdl02='-0.0021   ' Tdl03='0.3979    ' Tdl04='-0.0157   ' Tdl05='0.005     '
+		 Tdl06='0.0072    ' Tdl07='-0.0102   ' Tdl08='0.0006    ' KorekGer='0.0102    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='259' Tdl01='-0.1702   ' Tdl02='-0.0021   ' Tdl03='0.3993    ' Tdl04='-0.0158   ' Tdl05='0.005     '
+		 Tdl06='0.0073    ' Tdl07='-0.0102   ' Tdl08='0.0006    ' KorekGer='0.0102    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='260' Tdl01='-0.1708   ' Tdl02='-0.0021   ' Tdl03='0.4006    ' Tdl04='-0.0159   ' Tdl05='0.005     '
+		 Tdl06='0.0073    ' Tdl07='-0.0102   ' Tdl08='0.0006    ' KorekGer='0.0102    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='261' Tdl01='-0.1713   ' Tdl02='-0.0021   ' Tdl03='0.4018    ' Tdl04='-0.0159   ' Tdl05='0.005     '
+		 Tdl06='0.0073    ' Tdl07='-0.0103   ' Tdl08='0.0006    ' KorekGer='0.0103    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='262' Tdl01='-0.1717   ' Tdl02='-0.0021   ' Tdl03='0.4028    ' Tdl04='-0.0159   ' Tdl05='0.0051    '
+		 Tdl06='0.0073    ' Tdl07='-0.0103   ' Tdl08='0.0006    ' KorekGer='0.0103    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='263' Tdl01='-0.1721   ' Tdl02='-0.0021   ' Tdl03='0.4038    ' Tdl04='-0.016    ' Tdl05='0.0051    '
+		 Tdl06='0.0073    ' Tdl07='-0.0103   ' Tdl08='0.0006    ' KorekGer='0.0103    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='264' Tdl01='-0.1725   ' Tdl02='-0.0021   ' Tdl03='0.4046    ' Tdl04='-0.016    ' Tdl05='0.0051    '
+		 Tdl06='0.0074    ' Tdl07='-0.0103   ' Tdl08='0.0006    ' KorekGer='0.0103    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='265' Tdl01='-0.1727   ' Tdl02='-0.0021   ' Tdl03='0.4053    ' Tdl04='-0.016    ' Tdl05='0.0051    '
+		 Tdl06='0.0074    ' Tdl07='-0.0104   ' Tdl08='0.0006    ' KorekGer='0.0104    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='266' Tdl01='-0.173    ' Tdl02='-0.0021   ' Tdl03='0.4058    ' Tdl04='-0.0161   ' Tdl05='0.0051    '
+		 Tdl06='0.0074    ' Tdl07='-0.0104   ' Tdl08='0.0006    ' KorekGer='0.0104    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='267' Tdl01='-0.1732   ' Tdl02='-0.0021   ' Tdl03='0.4062    ' Tdl04='-0.0161   ' Tdl05='0.0051    '
+		 Tdl06='0.0074    ' Tdl07='-0.0104   ' Tdl08='0.0006    ' KorekGer='0.0104    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='268' Tdl01='-0.1733   ' Tdl02='-0.0021   ' Tdl03='0.4066    ' Tdl04='-0.0161   ' Tdl05='0.0051    '
+		 Tdl06='0.0074    ' Tdl07='-0.0104   ' Tdl08='0.0006    ' KorekGer='0.0104    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='269' Tdl01='-0.1734   ' Tdl02='-0.0021   ' Tdl03='0.4067    ' Tdl04='-0.0161   ' Tdl05='0.0051    '
+		 Tdl06='0.0074    ' Tdl07='-0.0104   ' Tdl08='0.0006    ' KorekGer='0.0104    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='270' Tdl01='-0.1734   ' Tdl02='-0.0021   ' Tdl03='0.4068    ' Tdl04='-0.0161   ' Tdl05='0.0051    '
+		 Tdl06='0.0074    ' Tdl07='-0.0104   ' Tdl08='0.0006    ' KorekGer='0.0104    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='271' Tdl01='-0.1734   ' Tdl02='-0.0021   ' Tdl03='0.4067    ' Tdl04='-0.0161   ' Tdl05='0.0051    '
+		 Tdl06='0.0074    ' Tdl07='-0.0104   ' Tdl08='0.0006    ' KorekGer='0.0104    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='272' Tdl01='-0.1733   ' Tdl02='-0.0021   ' Tdl03='0.4066    ' Tdl04='-0.0161   ' Tdl05='0.0051    '
+		 Tdl06='0.0074    ' Tdl07='-0.0104   ' Tdl08='0.0006    ' KorekGer='0.0104    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='273' Tdl01='-0.1732   ' Tdl02='-0.0021   ' Tdl03='0.4062    ' Tdl04='-0.0161   ' Tdl05='0.0051    '
+		 Tdl06='0.0074    ' Tdl07='-0.0104   ' Tdl08='0.0006    ' KorekGer='0.0104    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='274' Tdl01='-0.173    ' Tdl02='-0.0021   ' Tdl03='0.4058    ' Tdl04='-0.0161   ' Tdl05='0.0051    '
+		 Tdl06='0.0074    ' Tdl07='-0.0104   ' Tdl08='0.0006    ' KorekGer='0.0104    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='275' Tdl01='-0.1727   ' Tdl02='-0.0021   ' Tdl03='0.4053    ' Tdl04='-0.016    ' Tdl05='0.0051    '
+		 Tdl06='0.0074    ' Tdl07='-0.0104   ' Tdl08='0.0006    ' KorekGer='0.0104    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='276' Tdl01='-0.1725   ' Tdl02='-0.0021   ' Tdl03='0.4046    ' Tdl04='-0.016    ' Tdl05='0.0051    '
+		 Tdl06='0.0074    ' Tdl07='-0.0103   ' Tdl08='0.0006    ' KorekGer='0.0103    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='277' Tdl01='-0.1721   ' Tdl02='-0.0021   ' Tdl03='0.4038    ' Tdl04='-0.016    ' Tdl05='0.0051    '
+		 Tdl06='0.0073    ' Tdl07='-0.0103   ' Tdl08='0.0006    ' KorekGer='0.0103    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='278' Tdl01='-0.1717   ' Tdl02='-0.0021   ' Tdl03='0.4028    ' Tdl04='-0.0159   ' Tdl05='0.0051    '
+		 Tdl06='0.0073    ' Tdl07='-0.0103   ' Tdl08='0.0006    ' KorekGer='0.0103    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='279' Tdl01='-0.1713   ' Tdl02='-0.0021   ' Tdl03='0.4018    ' Tdl04='-0.0159   ' Tdl05='0.005     '
+		 Tdl06='0.0073    ' Tdl07='-0.0103   ' Tdl08='0.0006    ' KorekGer='0.0103    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='280' Tdl01='-0.1708   ' Tdl02='-0.0021   ' Tdl03='0.4006    ' Tdl04='-0.0159   ' Tdl05='0.005     '
+		 Tdl06='0.0073    ' Tdl07='-0.0102   ' Tdl08='0.0006    ' KorekGer='0.0102    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='281' Tdl01='-0.1702   ' Tdl02='-0.0021   ' Tdl03='0.3993    ' Tdl04='-0.0158   ' Tdl05='0.005     '
+		 Tdl06='0.0073    ' Tdl07='-0.0102   ' Tdl08='0.0006    ' KorekGer='0.0102    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='282' Tdl01='-0.1696   ' Tdl02='-0.0021   ' Tdl03='0.3979    ' Tdl04='-0.0157   ' Tdl05='0.005     '
+		 Tdl06='0.0072    ' Tdl07='-0.0102   ' Tdl08='0.0006    ' KorekGer='0.0102    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='283' Tdl01='-0.169    ' Tdl02='-0.002    ' Tdl03='0.3964    ' Tdl04='-0.0157   ' Tdl05='0.005     '
+		 Tdl06='0.0072    ' Tdl07='-0.0101   ' Tdl08='0.0006    ' KorekGer='0.0101    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='284' Tdl01='-0.1682   ' Tdl02='-0.002    ' Tdl03='0.3947    ' Tdl04='-0.0156   ' Tdl05='0.0049    '
+		 Tdl06='0.0072    ' Tdl07='-0.0101   ' Tdl08='0.0006    ' KorekGer='0.0101    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='285' Tdl01='-0.1675   ' Tdl02='-0.002    ' Tdl03='0.3929    ' Tdl04='-0.0156   ' Tdl05='0.0049    '
+		 Tdl06='0.0071    ' Tdl07='-0.01     ' Tdl08='0.0006    ' KorekGer='0.01      ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='286' Tdl01='-0.1667   ' Tdl02='-0.002    ' Tdl03='0.391     ' Tdl04='-0.0155   ' Tdl05='0.0049    '
+		 Tdl06='0.0071    ' Tdl07='-0.01     ' Tdl08='0.0006    ' KorekGer='0.01      ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='287' Tdl01='-0.1658   ' Tdl02='-0.002    ' Tdl03='0.389     ' Tdl04='-0.0154   ' Tdl05='0.0049    '
+		 Tdl06='0.0071    ' Tdl07='-0.0099   ' Tdl08='0.0006    ' KorekGer='0.0099    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='288' Tdl01='-0.1649   ' Tdl02='-0.002    ' Tdl03='0.3869    ' Tdl04='-0.0153   ' Tdl05='0.0049    '
+		 Tdl06='0.007     ' Tdl07='-0.0099   ' Tdl08='0.0006    ' KorekGer='0.0099    ' Tdl09='-0.001    ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='289' Tdl01='-0.164    ' Tdl02='-0.002    ' Tdl03='0.3846    ' Tdl04='-0.0152   ' Tdl05='0.0048    '
+		 Tdl06='0.007     ' Tdl07='-0.0098   ' Tdl08='0.0006    ' KorekGer='0.0098    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='290' Tdl01='-0.1629   ' Tdl02='-0.002    ' Tdl03='0.3823    ' Tdl04='-0.0151   ' Tdl05='0.0048    '
+		 Tdl06='0.007     ' Tdl07='-0.0098   ' Tdl08='0.0006    ' KorekGer='0.0098    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='291' Tdl01='-0.1619   ' Tdl02='-0.002    ' Tdl03='0.3798    ' Tdl04='-0.015    ' Tdl05='0.0048    '
+		 Tdl06='0.0069    ' Tdl07='-0.0097   ' Tdl08='0.0006    ' KorekGer='0.0097    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='292' Tdl01='-0.1608   ' Tdl02='-0.0019   ' Tdl03='0.3772    ' Tdl04='-0.0149   ' Tdl05='0.0047    '
+		 Tdl06='0.0069    ' Tdl07='-0.0096   ' Tdl08='0.0006    ' KorekGer='0.0096    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='293' Tdl01='-0.1596   ' Tdl02='-0.0019   ' Tdl03='0.3745    ' Tdl04='-0.0148   ' Tdl05='0.0047    '
+		 Tdl06='0.0068    ' Tdl07='-0.0096   ' Tdl08='0.0006    ' KorekGer='0.0096    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='294' Tdl01='-0.1584   ' Tdl02='-0.0019   ' Tdl03='0.3716    ' Tdl04='-0.0147   ' Tdl05='0.0047    '
+		 Tdl06='0.0068    ' Tdl07='-0.0095   ' Tdl08='0.0005    ' KorekGer='0.0095    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='295' Tdl01='-0.1572   ' Tdl02='-0.0019   ' Tdl03='0.3687    ' Tdl04='-0.0146   ' Tdl05='0.0046    '
+		 Tdl06='0.0067    ' Tdl07='-0.0094   ' Tdl08='0.0005    ' KorekGer='0.0094    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='296' Tdl01='-0.1559   ' Tdl02='-0.0019   ' Tdl03='0.3656    ' Tdl04='-0.0145   ' Tdl05='0.0046    '
+		 Tdl06='0.0067    ' Tdl07='-0.0093   ' Tdl08='0.0005    ' KorekGer='0.0093    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='297' Tdl01='-0.1545   ' Tdl02='-0.0019   ' Tdl03='0.3625    ' Tdl04='-0.0143   ' Tdl05='0.0045    '
+		 Tdl06='0.0066    ' Tdl07='-0.0093   ' Tdl08='0.0005    ' KorekGer='0.0093    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='298' Tdl01='-0.1531   ' Tdl02='-0.0019   ' Tdl03='0.3592    ' Tdl04='-0.0142   ' Tdl05='0.0045    '
+		 Tdl06='0.0065    ' Tdl07='-0.0092   ' Tdl08='0.0005    ' KorekGer='0.0092    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='299' Tdl01='-0.1517   ' Tdl02='-0.0018   ' Tdl03='0.3558    ' Tdl04='-0.0141   ' Tdl05='0.0045    '
+		 Tdl06='0.0065    ' Tdl07='-0.0091   ' Tdl08='0.0005    ' KorekGer='0.0091    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='300' Tdl01='-0.1502   ' Tdl02='-0.0018   ' Tdl03='0.3523    ' Tdl04='-0.0139   ' Tdl05='0.0044    '
+		 Tdl06='0.0064    ' Tdl07='-0.009    ' Tdl08='0.0005    ' KorekGer='0.009     ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='301' Tdl01='-0.1486   ' Tdl02='-0.0018   ' Tdl03='0.3487    ' Tdl04='-0.0138   ' Tdl05='0.0044    '
+		 Tdl06='0.0063    ' Tdl07='-0.0089   ' Tdl08='0.0005    ' KorekGer='0.0089    ' Tdl09='-0.0009   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='302' Tdl01='-0.1471   ' Tdl02='-0.0018   ' Tdl03='0.345     ' Tdl04='-0.0137   ' Tdl05='0.0043    '
+		 Tdl06='0.0063    ' Tdl07='-0.0088   ' Tdl08='0.0005    ' KorekGer='0.0088    ' Tdl09='-0.0008   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='303' Tdl01='-0.1454   ' Tdl02='-0.0018   ' Tdl03='0.3412    ' Tdl04='-0.0135   ' Tdl05='0.0043    '
+		 Tdl06='0.0062    ' Tdl07='-0.0087   ' Tdl08='0.0005    ' KorekGer='0.0087    ' Tdl09='-0.0008   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='304' Tdl01='-0.1438   ' Tdl02='-0.0017   ' Tdl03='0.3373    ' Tdl04='-0.0133   ' Tdl05='0.0042    '
+		 Tdl06='0.0061    ' Tdl07='-0.0086   ' Tdl08='0.0005    ' KorekGer='0.0086    ' Tdl09='-0.0008   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='305' Tdl01='-0.142    ' Tdl02='-0.0017   ' Tdl03='0.3332    ' Tdl04='-0.0132   ' Tdl05='0.0042    '
+		 Tdl06='0.0061    ' Tdl07='-0.0085   ' Tdl08='0.0005    ' KorekGer='0.0085    ' Tdl09='-0.0008   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='306' Tdl01='-0.1403   ' Tdl02='-0.0017   ' Tdl03='0.3291    ' Tdl04='-0.013    ' Tdl05='0.0041    '
+		 Tdl06='0.006     ' Tdl07='-0.0084   ' Tdl08='0.0005    ' KorekGer='0.0084    ' Tdl09='-0.0008   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='307' Tdl01='-0.1385   ' Tdl02='-0.0017   ' Tdl03='0.3249    ' Tdl04='-0.0129   ' Tdl05='0.0041    '
+		 Tdl06='0.0059    ' Tdl07='-0.0083   ' Tdl08='0.0005    ' KorekGer='0.0083    ' Tdl09='-0.0008   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='308' Tdl01='-0.1366   ' Tdl02='-0.0017   ' Tdl03='0.3206    ' Tdl04='-0.0127   ' Tdl05='0.004     '
+		 Tdl06='0.0058    ' Tdl07='-0.0082   ' Tdl08='0.0005    ' KorekGer='0.0082    ' Tdl09='-0.0008   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='309' Tdl01='-0.1348   ' Tdl02='-0.0016   ' Tdl03='0.3161    ' Tdl04='-0.0125   ' Tdl05='0.004     '
+		 Tdl06='0.0058    ' Tdl07='-0.0081   ' Tdl08='0.0005    ' KorekGer='0.0081    ' Tdl09='-0.0008   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='310' Tdl01='-0.1328   ' Tdl02='-0.0016   ' Tdl03='0.3116    ' Tdl04='-0.0123   ' Tdl05='0.0039    '
+		 Tdl06='0.0057    ' Tdl07='-0.008    ' Tdl08='0.0005    ' KorekGer='0.008     ' Tdl09='-0.0008   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='311' Tdl01='-0.1309   ' Tdl02='-0.0016   ' Tdl03='0.307     ' Tdl04='-0.0122   ' Tdl05='0.0038    '
+		 Tdl06='0.0056    ' Tdl07='-0.0078   ' Tdl08='0.0005    ' KorekGer='0.0078    ' Tdl09='-0.0008   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='312' Tdl01='-0.1289   ' Tdl02='-0.0016   ' Tdl03='0.3023    ' Tdl04='-0.012    ' Tdl05='0.0038    '
+		 Tdl06='0.0055    ' Tdl07='-0.0077   ' Tdl08='0.0004    ' KorekGer='0.0077    ' Tdl09='-0.0007   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='313' Tdl01='-0.1268   ' Tdl02='-0.0015   ' Tdl03='0.2975    ' Tdl04='-0.0118   ' Tdl05='0.0037    '
+		 Tdl06='0.0054    ' Tdl07='-0.0076   ' Tdl08='0.0004    ' KorekGer='0.0076    ' Tdl09='-0.0007   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='314' Tdl01='-0.1247   ' Tdl02='-0.0015   ' Tdl03='0.2926    ' Tdl04='-0.0116   ' Tdl05='0.0037    '
+		 Tdl06='0.0053    ' Tdl07='-0.0075   ' Tdl08='0.0004    ' KorekGer='0.0075    ' Tdl09='-0.0007   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='315' Tdl01='-0.1226   ' Tdl02='-0.0015   ' Tdl03='0.2877    ' Tdl04='-0.0114   ' Tdl05='0.0036    '
+		 Tdl06='0.0052    ' Tdl07='-0.0074   ' Tdl08='0.0004    ' KorekGer='0.0074    ' Tdl09='-0.0007   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='316' Tdl01='-0.1205   ' Tdl02='-0.0015   ' Tdl03='0.2826    ' Tdl04='-0.0112   ' Tdl05='0.0035    '
+		 Tdl06='0.0051    ' Tdl07='-0.0072   ' Tdl08='0.0004    ' KorekGer='0.0072    ' Tdl09='-0.0007   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='317' Tdl01='-0.1183   ' Tdl02='-0.0014   ' Tdl03='0.2774    ' Tdl04='-0.011    ' Tdl05='0.0035    '
+		 Tdl06='0.005     ' Tdl07='-0.0071   ' Tdl08='0.0004    ' KorekGer='0.0071    ' Tdl09='-0.0007   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='318' Tdl01='-0.116    ' Tdl02='-0.0014   ' Tdl03='0.2722    ' Tdl04='-0.0108   ' Tdl05='0.0034    '
+		 Tdl06='0.005     ' Tdl07='-0.007    ' Tdl08='0.0004    ' KorekGer='0.007     ' Tdl09='-0.0007   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='319' Tdl01='-0.1138   ' Tdl02='-0.0014   ' Tdl03='0.2669    ' Tdl04='-0.0106   ' Tdl05='0.0033    '
+		 Tdl06='0.0049    ' Tdl07='-0.0068   ' Tdl08='0.0004    ' KorekGer='0.0068    ' Tdl09='-0.0007   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='320' Tdl01='-0.1115   ' Tdl02='-0.0013   ' Tdl03='0.2615    ' Tdl04='-0.0103   ' Tdl05='0.0033    '
+		 Tdl06='0.0048    ' Tdl07='-0.0067   ' Tdl08='0.0004    ' KorekGer='0.0067    ' Tdl09='-0.0006   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='321' Tdl01='-0.1091   ' Tdl02='-0.0013   ' Tdl03='0.256     ' Tdl04='-0.0101   ' Tdl05='0.0032    '
+		 Tdl06='0.0047    ' Tdl07='-0.0065   ' Tdl08='0.0004    ' KorekGer='0.0065    ' Tdl09='-0.0006   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='322' Tdl01='-0.1068   ' Tdl02='-0.0013   ' Tdl03='0.2505    ' Tdl04='-0.0099   ' Tdl05='0.0031    '
+		 Tdl06='0.0046    ' Tdl07='-0.0064   ' Tdl08='0.0004    ' KorekGer='0.0064    ' Tdl09='-0.0006   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='323' Tdl01='-0.1044   ' Tdl02='-0.0013   ' Tdl03='0.2448    ' Tdl04='-0.0097   ' Tdl05='0.0031    '
+		 Tdl06='0.0045    ' Tdl07='-0.0063   ' Tdl08='0.0004    ' KorekGer='0.0063    ' Tdl09='-0.0006   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='324' Tdl01='-0.1019   ' Tdl02='-0.0012   ' Tdl03='0.2391    ' Tdl04='-0.0095   ' Tdl05='0.003     '
+		 Tdl06='0.0043    ' Tdl07='-0.0061   ' Tdl08='0.0004    ' KorekGer='0.0061    ' Tdl09='-0.0006   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='325' Tdl01='-0.0995   ' Tdl02='-0.0012   ' Tdl03='0.2333    ' Tdl04='-0.0092   ' Tdl05='0.0029    '
+		 Tdl06='0.0042    ' Tdl07='-0.006    ' Tdl08='0.0003    ' KorekGer='0.006     ' Tdl09='-0.0006   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='326' Tdl01='-0.097    ' Tdl02='-0.0012   ' Tdl03='0.2275    ' Tdl04='-0.009    ' Tdl05='0.0029    '
+		 Tdl06='0.0041    ' Tdl07='-0.0058   ' Tdl08='0.0003    ' KorekGer='0.0058    ' Tdl09='-0.0006   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='327' Tdl01='-0.0944   ' Tdl02='-0.0011   ' Tdl03='0.2216    ' Tdl04='-0.0088   ' Tdl05='0.0028    '
+		 Tdl06='0.004     ' Tdl07='-0.0057   ' Tdl08='0.0003    ' KorekGer='0.0057    ' Tdl09='-0.0005   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='328' Tdl01='-0.0919   ' Tdl02='-0.0011   ' Tdl03='0.2156    ' Tdl04='-0.0085   ' Tdl05='0.0027    '
+		 Tdl06='0.0039    ' Tdl07='-0.0055   ' Tdl08='0.0003    ' KorekGer='0.0055    ' Tdl09='-0.0005   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='329' Tdl01='-0.0893   ' Tdl02='-0.0011   ' Tdl03='0.2095    ' Tdl04='-0.0083   ' Tdl05='0.0026    '
+		 Tdl06='0.0038    ' Tdl07='-0.0054   ' Tdl08='0.0003    ' KorekGer='0.0054    ' Tdl09='-0.0005   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='330' Tdl01='-0.0867   ' Tdl02='-0.0011   ' Tdl03='0.2034    ' Tdl04='-0.0081   ' Tdl05='0.0026    '
+		 Tdl06='0.0037    ' Tdl07='-0.0052   ' Tdl08='0.0003    ' KorekGer='0.0052    ' Tdl09='-0.0005   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='331' Tdl01='-0.0841   ' Tdl02='-0.001    ' Tdl03='0.1972    ' Tdl04='-0.0078   ' Tdl05='0.0025    '
+		 Tdl06='0.0036    ' Tdl07='-0.005    ' Tdl08='0.0003    ' KorekGer='0.005     ' Tdl09='-0.0005   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='332' Tdl01='-0.0814   ' Tdl02='-0.001    ' Tdl03='0.191     ' Tdl04='-0.0076   ' Tdl05='0.0024    '
+		 Tdl06='0.0035    ' Tdl07='-0.0049   ' Tdl08='0.0003    ' KorekGer='0.0049    ' Tdl09='-0.0005   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='333' Tdl01='-0.0787   ' Tdl02='-0.001    ' Tdl03='0.1847    ' Tdl04='-0.0073   ' Tdl05='0.0023    '
+		 Tdl06='0.0034    ' Tdl07='-0.0047   ' Tdl08='0.0003    ' KorekGer='0.0047    ' Tdl09='-0.0005   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='334' Tdl01='-0.076    ' Tdl02='-0.0009   ' Tdl03='0.1783    ' Tdl04='-0.0071   ' Tdl05='0.0022    '
+		 Tdl06='0.0032    ' Tdl07='-0.0046   ' Tdl08='0.0003    ' KorekGer='0.0046    ' Tdl09='-0.0004   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='335' Tdl01='-0.0733   ' Tdl02='-0.0009   ' Tdl03='0.1719    ' Tdl04='-0.0068   ' Tdl05='0.0022    '
+		 Tdl06='0.0031    ' Tdl07='-0.0044   ' Tdl08='0.0003    ' KorekGer='0.0044    ' Tdl09='-0.0004   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='336' Tdl01='-0.0705   ' Tdl02='-0.0009   ' Tdl03='0.1655    ' Tdl04='-0.0065   ' Tdl05='0.0021    '
+		 Tdl06='0.003     ' Tdl07='-0.0042   ' Tdl08='0.0002    ' KorekGer='0.0042    ' Tdl09='-0.0004   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='337' Tdl01='-0.0678   ' Tdl02='-0.0008   ' Tdl03='0.1589    ' Tdl04='-0.0063   ' Tdl05='0.002     '
+		 Tdl06='0.0029    ' Tdl07='-0.0041   ' Tdl08='0.0002    ' KorekGer='0.0041    ' Tdl09='-0.0004   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='338' Tdl01='-0.065    ' Tdl02='-0.0008   ' Tdl03='0.1524    ' Tdl04='-0.006    ' Tdl05='0.0019    '
+		 Tdl06='0.0028    ' Tdl07='-0.0039   ' Tdl08='0.0002    ' KorekGer='0.0039    ' Tdl09='-0.0004   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='339' Tdl01='-0.0621   ' Tdl02='-0.0008   ' Tdl03='0.1458    ' Tdl04='-0.0058   ' Tdl05='0.0018    '
+		 Tdl06='0.0027    ' Tdl07='-0.0037   ' Tdl08='0.0002    ' KorekGer='0.0037    ' Tdl09='-0.0004   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='340' Tdl01='-0.0593   ' Tdl02='-0.0007   ' Tdl03='0.1391    ' Tdl04='-0.0055   ' Tdl05='0.0017    '
+		 Tdl06='0.0025    ' Tdl07='-0.0036   ' Tdl08='0.0002    ' KorekGer='0.0036    ' Tdl09='-0.0003   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='341' Tdl01='-0.0565   ' Tdl02='-0.0007   ' Tdl03='0.1324    ' Tdl04='-0.0052   ' Tdl05='0.0017    '
+		 Tdl06='0.0024    ' Tdl07='-0.0034   ' Tdl08='0.0002    ' KorekGer='0.0034    ' Tdl09='-0.0003   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='342' Tdl01='-0.0536   ' Tdl02='-0.0006   ' Tdl03='0.1257    ' Tdl04='-0.005    ' Tdl05='0.0016    '
+		 Tdl06='0.0023    ' Tdl07='-0.0032   ' Tdl08='0.0002    ' KorekGer='0.0032    ' Tdl09='-0.0003   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='343' Tdl01='-0.0507   ' Tdl02='-0.0006   ' Tdl03='0.1189    ' Tdl04='-0.0047   ' Tdl05='0.0015    '
+		 Tdl06='0.0022    ' Tdl07='-0.003    ' Tdl08='0.0002    ' KorekGer='0.003     ' Tdl09='-0.0003   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='344' Tdl01='-0.0478   ' Tdl02='-0.0006   ' Tdl03='0.1121    ' Tdl04='-0.0044   ' Tdl05='0.0014    '
+		 Tdl06='0.002     ' Tdl07='-0.0029   ' Tdl08='0.0002    ' KorekGer='0.0029    ' Tdl09='-0.0003   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='345' Tdl01='-0.0449   ' Tdl02='-0.0005   ' Tdl03='0.1053    ' Tdl04='-0.0042   ' Tdl05='0.0013    '
+		 Tdl06='0.0019    ' Tdl07='-0.0027   ' Tdl08='0.0002    ' KorekGer='0.0027    ' Tdl09='-0.0003   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='346' Tdl01='-0.0419   ' Tdl02='-0.0005   ' Tdl03='0.0984    ' Tdl04='-0.0039   ' Tdl05='0.0012    '
+		 Tdl06='0.0018    ' Tdl07='-0.0025   ' Tdl08='0.0001    ' KorekGer='0.0025    ' Tdl09='-0.0002   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='347' Tdl01='-0.039    ' Tdl02='-0.0005   ' Tdl03='0.0915    ' Tdl04='-0.0036   ' Tdl05='0.0011    '
+		 Tdl06='0.0017    ' Tdl07='-0.0023   ' Tdl08='0.0001    ' KorekGer='0.0023    ' Tdl09='-0.0002   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='348' Tdl01='-0.0361   ' Tdl02='-0.0004   ' Tdl03='0.0846    ' Tdl04='-0.0033   ' Tdl05='0.0011    '
+		 Tdl06='0.0015    ' Tdl07='-0.0022   ' Tdl08='0.0001    ' KorekGer='0.0022    ' Tdl09='-0.0002   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='349' Tdl01='-0.0331   ' Tdl02='-0.0004   ' Tdl03='0.0776    ' Tdl04='-0.0031   ' Tdl05='0.001     '
+		 Tdl06='0.0014    ' Tdl07='-0.002    ' Tdl08='0.0001    ' KorekGer='0.002     ' Tdl09='-0.0002   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='350' Tdl01='-0.0301   ' Tdl02='-0.0004   ' Tdl03='0.0706    ' Tdl04='-0.0028   ' Tdl05='0.0009    '
+		 Tdl06='0.0013    ' Tdl07='-0.0018   ' Tdl08='0.0001    ' KorekGer='0.0018    ' Tdl09='-0.0002   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='351' Tdl01='-0.0271   ' Tdl02='-0.0003   ' Tdl03='0.0636    ' Tdl04='-0.0025   ' Tdl05='0.0008    '
+		 Tdl06='0.0012    ' Tdl07='-0.0016   ' Tdl08='0.0001    ' KorekGer='0.0016    ' Tdl09='-0.0002   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='352' Tdl01='-0.0241   ' Tdl02='-0.0003   ' Tdl03='0.0566    ' Tdl04='-0.0022   ' Tdl05='0.0007    '
+		 Tdl06='0.001     ' Tdl07='-0.0014   ' Tdl08='0.0001    ' KorekGer='0.0014    ' Tdl09='-0.0001   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='353' Tdl01='-0.0211   ' Tdl02='-0.0003   ' Tdl03='0.0496    ' Tdl04='-0.002    ' Tdl05='0.0006    '
+		 Tdl06='0.0009    ' Tdl07='-0.0013   ' Tdl08='0.0001    ' KorekGer='0.0013    ' Tdl09='-0.0001   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='354' Tdl01='-0.0181   ' Tdl02='-0.0002   ' Tdl03='0.0425    ' Tdl04='-0.0017   ' Tdl05='0.0005    '
+		 Tdl06='0.0008    ' Tdl07='-0.0011   ' Tdl08='0.0001    ' KorekGer='0.0011    ' Tdl09='-0.0001   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='355' Tdl01='-0.0151   ' Tdl02='-0.0002   ' Tdl03='0.0355    ' Tdl04='-0.0014   ' Tdl05='0.0004    '
+		 Tdl06='0.0006    ' Tdl07='-0.0009   ' Tdl08='0.0001    ' KorekGer='0.0009    ' Tdl09='-0.0001   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='356' Tdl01='-0.0121   ' Tdl02='-0.0001   ' Tdl03='0.0284    ' Tdl04='-0.0011   ' Tdl05='0.0004    '
+		 Tdl06='0.0005    ' Tdl07='-0.0007   ' Tdl08='0         ' KorekGer='0.0007    ' Tdl09='-0.0001   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='357' Tdl01='-0.0091   ' Tdl02='-0.0001   ' Tdl03='0.0213    ' Tdl04='-0.0008   ' Tdl05='0.0003    '
+		 Tdl06='0.0004    ' Tdl07='-0.0005   ' Tdl08='0         ' KorekGer='0.0005    ' Tdl09='-0.0001   ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='358' Tdl01='-0.0061   ' Tdl02='-0.0001   ' Tdl03='0.0142    ' Tdl04='-0.0006   ' Tdl05='0.0002    '
+		 Tdl06='0.0003    ' Tdl07='-0.0004   ' Tdl08='0         ' KorekGer='0.0004    ' Tdl09='0         ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='359' Tdl01='-0.003    ' Tdl02='0         ' Tdl03='0.0071    ' Tdl04='-0.0003   ' Tdl05='0.0001    '
+		 Tdl06='0.0001    ' Tdl07='-0.0002   ' Tdl08='0         ' KorekGer='0.0002    ' Tdl09='0         ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+	<z:row Cari='360' Tdl01='0         ' Tdl02='0         ' Tdl03='0         ' Tdl04='0         ' Tdl05='0         '
+		 Tdl06='0         ' Tdl07='0         ' Tdl08='0         ' KorekGer='0         ' Tdl09='0         ' ShrA='          '
+		 ShrF='          ' ShrN='          ' ShrM='          '/>
+</rs:data>
+</xml>

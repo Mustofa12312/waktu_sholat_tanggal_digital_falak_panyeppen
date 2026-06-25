@@ -1,0 +1,906 @@
+<xml xmlns:s='uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882'
+	xmlns:dt='uuid:C2F41010-65B3-11d1-A29F-00AA00C14882'
+	xmlns:rs='urn:schemas-microsoft-com:rowset'
+	xmlns:z='#RowsetSchema'>
+<s:Schema id='RowsetSchema'>
+	<s:ElementType name='row' content='eltOnly' rs:updatable='true'>
+		<s:AttributeType name='BaladIN' rs:number='1' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='50' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='BaladAR' rs:number='2' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='100' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DarojatArdlu' rs:number='3' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DaqiqohArdlu' rs:number='4' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='ArahArdlu' rs:number='5' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='2' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DarojatThul' rs:number='6' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DaqiqohThul' rs:number='7' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='ArahThul' rs:number='8' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='2' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='ZonaTime' rs:number='9' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Ketinggian' rs:number='10' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:extends type='rs:rowbase'/>
+	</s:ElementType>
+</s:Schema>
+<rs:data>
+	<z:row BaladIN='Aileu                                             ' BaladAR='205|211|191|210|&#x3c;                                                                                   '
+		 DarojatArdlu='8' DaqiqohArdlu='40' ArahArdlu='LS' DarojatThul='125' DaqiqohThul='35' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Ainaro                                            ' BaladAR='Hh205|199|210|&#x3c;                                                                                     '
+		 DarojatArdlu='8' DaqiqohArdlu='59' ArahArdlu='LS' DarojatThul='125' DaqiqohThul='26' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Ambon                                             ' BaladAR='196|205|M194|&#x3c;                                                                                      '
+		 DarojatArdlu='3' DaqiqohArdlu='42' ArahArdlu='LS' DarojatThul='128' DaqiqohThul='14' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Amuntai                                           ' BaladAR='208|IS198|205|194|&#x3c;                                                                                 '
+		 DarojatArdlu='2' DaqiqohArdlu='24' ArahArdlu='LS' DarojatThul='115' DaqiqohThul='18' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Atambua                                           ' BaladAR='H205|M194|IR&#x3c;                                                                                       '
+		 DarojatArdlu='9' DaqiqohArdlu='6' ArahArdlu='LS' DarojatThul='124' DaqiqohThul='54' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Bajawa                                            ' BaladAR='196|I203|210|204|IL                                                                                 '
+		 DarojatArdlu='8' DaqiqohArdlu='51' ArahArdlu='LS' DarojatThul='121' DaqiqohThul='1' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Balikpapan                                        ' BaladAR='196|I245|I240|»211|¾IL                                                                              '
+		 DarojatArdlu='1' DaqiqohArdlu='13' ArahArdlu='LS' DarojatThul='116' DaqiqohThul='51' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Banda aceh                                        ' BaladAR='201|211|#&#x3c; He198|IL                                                                                 '
+		 DarojatArdlu='5' DaqiqohArdlu='35' ArahArdlu='LU' DarojatThul='95' DaqiqohThul='20' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Bandumg                                           ' BaladAR='154|204|e199|L                                                                                      '
+		 DarojatArdlu='6' DaqiqohArdlu='55' ArahArdlu='LS' DarojatThul='107' DaqiqohThul='36' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Bangkalan                                         ' BaladAR='196|216|I»–IL                                                                                       '
+		 DarojatArdlu='7' DaqiqohArdlu='3' ArahArdlu='LS' DarojatThul='112' DaqiqohThul='46' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Bangkinang                                        ' BaladAR='196|I199|211|»–IL                                                                                   '
+		 DarojatArdlu='0' DaqiqohArdlu='22' ArahArdlu='LU' DarojatThul='101' DaqiqohThul='2' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Bangko                                            ' BaladAR='¸205|»–IL                                                                                           '
+		 DarojatArdlu='2' DaqiqohArdlu='46' ArahArdlu='LS' DarojatThul='102' DaqiqohThul='25' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Bangli                                            ' BaladAR='½211|–IL                                                                                            '
+		 DarojatArdlu='8' DaqiqohArdlu='28' ArahArdlu='LS' DarojatThul='115' DaqiqohThul='21' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Banjarmasin                                       ' BaladAR='ënI194|hIˆIL                                                                                        '
+		 DarojatArdlu='3' DaqiqohArdlu='22' ArahArdlu='LS' DarojatThul='114' DaqiqohThul='40' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Banjarnegara                                      ' BaladAR='HhI­198|hIˆIL                                                                                       '
+		 DarojatArdlu='6' DaqiqohArdlu='24' ArahArdlu='LS' DarojatThul='109' DaqiqohThul='40' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Bantaeng                                          ' BaladAR='152|210|IS198|IL                                                                                    '
+		 DarojatArdlu='5' DaqiqohArdlu='34' ArahArdlu='LS' DarojatThul='119' DaqiqohThul='57' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Banten                                            ' BaladAR='ëS198|IL                                                                                            '
+		 DarojatArdlu='6' DaqiqohArdlu='3' ArahArdlu='LS' DarojatThul='106' DaqiqohThul='8' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Bantul                                            ' BaladAR='¼205|S198|IL                                                                                        '
+		 DarojatArdlu='7' DaqiqohArdlu='56' ArahArdlu='LS' DarojatThul='110' DaqiqohThul='20' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Banyuangi                                         ' BaladAR='209|–H205|210|IL                                                                                    '
+		 DarojatArdlu='8' DaqiqohArdlu='13' ArahArdlu='LS' DarojatThul='114' DaqiqohThul='24' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Barru                                             ' BaladAR='204|hhIL                                                                                            '
+		 DarojatArdlu='4' DaqiqohArdlu='28' ArahArdlu='LS' DarojatThul='119' DaqiqohThul='39' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Batang                                            ' BaladAR='154|IRIL                                                                                            '
+		 DarojatArdlu='6' DaqiqohArdlu='54' ArahArdlu='LS' DarojatThul='109' DaqiqohThul='45' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Baturaja                                          ' BaladAR='IZHh205|RIL                                                                                         '
+		 DarojatArdlu='4' DaqiqohArdlu='7' ArahArdlu='LS' DarojatThul='104' DaqiqohThul='12' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Batusangkar                                       ' BaladAR='hI»–In205|RIL                                                                                       '
+		 DarojatArdlu='0' DaqiqohArdlu='27' ArahArdlu='LS' DarojatThul='100' DaqiqohThul='34' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Baubau                                            ' BaladAR='204|IL204|IL                                                                                        '
+		 DarojatArdlu='5' DaqiqohArdlu='30' ArahArdlu='LS' DarojatThul='122' DaqiqohThul='39' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Baucau                                            ' BaladAR='204|IZ204|IL                                                                                        '
+		 DarojatArdlu='8' DaqiqohArdlu='26' ArahArdlu='LS' DarojatThul='126' DaqiqohThul='27' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Bekasi                                            ' BaladAR='209|nI»L                                                                                            '
+		 DarojatArdlu='6' DaqiqohArdlu='19' ArahArdlu='LS' DarojatThul='107' DaqiqohThul='0' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Bengkalis                                         ' BaladAR='m211|¾I»—L                                                                                          '
+		 DarojatArdlu='1' DaqiqohArdlu='31' ArahArdlu='LU' DarojatThul='102' DaqiqohThul='8' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Bengkulu                                          ' BaladAR='205|¾205|»—L                                                                                        '
+		 DarojatArdlu='3' DaqiqohArdlu='48' ArahArdlu='LS' DarojatThul='102' DaqiqohThul='15' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Bima                                              ' BaladAR='I195|211|L                                                                                          '
+		 DarojatArdlu='8' DaqiqohArdlu='27' ArahArdlu='LS' DarojatThul='118' DaqiqohThul='45' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Binjai                                            ' BaladAR='208|I[199|211|L                                                                                     '
+		 DarojatArdlu='3' DaqiqohArdlu='39' ArahArdlu='LU' DarojatThul='98' DaqiqohThul='27' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Bitung                                            ' BaladAR='154|205|S211|L                                                                                      '
+		 DarojatArdlu='1' DaqiqohArdlu='27' ArahArdlu='LU' DarojatThul='125' DaqiqohThul='8' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Blitar                                            ' BaladAR='hIS211|191|L                                                                                        '
+		 DarojatArdlu='8' DaqiqohArdlu='6' ArahArdlu='LS' DarojatThul='112' DaqiqohThul='9' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Bluro                                             ' BaladAR='204|h205|191|L                                                                                      '
+		 DarojatArdlu='6' DaqiqohArdlu='58' ArahArdlu='LS' DarojatThul='111' DaqiqohThul='25' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Bogor                                             ' BaladAR='h205|•205|L                                                                                         '
+		 DarojatArdlu='6' DaqiqohArdlu='36' ArahArdlu='LS' DarojatThul='106' DaqiqohThul='49' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Bojonegoro                                        ' BaladAR='204|h205|­198|205|Z205|L                                                                            '
+		 DarojatArdlu='7' DaqiqohArdlu='10' ArahArdlu='LS' DarojatThul='111' DaqiqohThul='53' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Bondowoso                                         ' BaladAR='205|n204|204|e198|205|L                                                                             '
+		 DarojatArdlu='7' DaqiqohArdlu='55' ArahArdlu='LS' DarojatThul='113' DaqiqohThul='50' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Boyolali                                          ' BaladAR='â216|205|210|205|L                                                                                  '
+		 DarojatArdlu='7' DaqiqohArdlu='33' ArahArdlu='LS' DarojatThul='110' DaqiqohThul='35' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Brabai                                            ' BaladAR='208|IL217|L                                                                                         '
+		 DarojatArdlu='2' DaqiqohArdlu='32' ArahArdlu='LS' DarojatThul='115' DaqiqohThul='24' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Brebes                                            ' BaladAR='mM210|iL                                                                                            '
+		 DarojatArdlu='6' DaqiqohArdlu='51' ArahArdlu='LS' DarojatThul='109' DaqiqohThul='3' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Bukittingi                                        ' BaladAR='209|­—211|SS211|186|205|L                                                                           '
+		 DarojatArdlu='0' DaqiqohArdlu='18' ArahArdlu='LS' DarojatThul='100' DaqiqohThul='22' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Bulukumba                                         ' BaladAR='IM194|205|186|205|¾205|L                                                                            '
+		 DarojatArdlu='5' DaqiqohArdlu='33' ArahArdlu='LS' DarojatThul='120' DaqiqohThul='12' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Bungah                                            ' BaladAR='I–205|L                                                                                             '
+		 DarojatArdlu='7' DaqiqohArdlu='3' ArahArdlu='LS' DarojatThul='112' DaqiqohThul='36' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Buntok                                            ' BaladAR='‘205|S198|205|L                                                                                     '
+		 DarojatArdlu='1' DaqiqohArdlu='37' ArahArdlu='LS' DarojatThul='114' DaqiqohThul='49' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Cepu                                              ' BaladAR='200|205|240|#                                                                                       '
+		 DarojatArdlu='7' DaqiqohArdlu='10' ArahArdlu='LS' DarojatThul='111' DaqiqohThul='35' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Ciamis                                            ' BaladAR='m211|194|&#x3e;211|#                                                                                     '
+		 DarojatArdlu='7' DaqiqohArdlu='21' ArahArdlu='LS' DarojatThul='108' DaqiqohThul='27' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Cianjur                                           ' BaladAR='h205|ˆ&#x3e;211|#                                                                                        '
+		 DarojatArdlu='6' DaqiqohArdlu='51' ArahArdlu='LS' DarojatThul='107' DaqiqohThul='8' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Cibinang                                          ' BaladAR='152|211|199|211|M211|#                                                                              '
+		 DarojatArdlu='6' DaqiqohArdlu='29' ArahArdlu='LS' DarojatThul='106' DaqiqohThul='51' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Cilacap                                           ' BaladAR='‡I#217|211|#                                                                                        '
+		 DarojatArdlu='7' DaqiqohArdlu='44' ArahArdlu='LS' DarojatThul='109' DaqiqohThul='2' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Cirebon                                           ' BaladAR='196|205|Lê#                                                                                         '
+		 DarojatArdlu='6' DaqiqohArdlu='45' ArahArdlu='LS' DarojatThul='108' DaqiqohThul='33' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Curup                                             ' BaladAR='‡204|h205|#                                                                                         '
+		 DarojatArdlu='3' DaqiqohArdlu='25' ArahArdlu='LS' DarojatThul='102' DaqiqohThul='30' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Demak                                             ' BaladAR='¸I194|d                                                                                             '
+		 DarojatArdlu='6' DaqiqohArdlu='53' ArahArdlu='LS' DarojatThul='110' DaqiqohThul='37' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Denpasar                                          ' BaladAR='hInI240|199|210|d                                                                                   '
+		 DarojatArdlu='8' DaqiqohArdlu='37' ArahArdlu='LS' DarojatThul='115' DaqiqohThul='13' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Depok                                             ' BaladAR='¸205|245|d                                                                                          '
+		 DarojatArdlu='6' DaqiqohArdlu='2' ArahArdlu='LS' DarojatThul='106' DaqiqohThul='5' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Dilli                                             ' BaladAR='209|191|191|210|d                                                                                   '
+		 DarojatArdlu='8' DaqiqohArdlu='38' ArahArdlu='LS' DarojatThul='125' DaqiqohThul='35' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Dompu                                             ' BaladAR='205|240|194|204|d                                                                                   '
+		 DarojatArdlu='8' DaqiqohArdlu='30' ArahArdlu='LS' DarojatThul='118' DaqiqohThul='28' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Dumai                                             ' BaladAR='208|I194|204|d                                                                                      '
+		 DarojatArdlu='1' DaqiqohArdlu='40' ArahArdlu='LU' DarojatThul='101' DaqiqohThul='25' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Enarotali                                         ' BaladAR='âIR204|hI198|B                                                                                      '
+		 DarojatArdlu='4' DaqiqohArdlu='7' ArahArdlu='LS' DarojatThul='136' DaqiqohThul='13' ArahThul='BT' ZonaTime='9'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Endeh                                             ' BaladAR='201|210|e198|B                                                                                      '
+		 DarojatArdlu='8' DaqiqohArdlu='49' ArahArdlu='LS' DarojatThul='121' DaqiqohThul='40' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Enrekang                                          ' BaladAR='154|I186|i198|B                                                                                     '
+		 DarojatArdlu='3' DaqiqohArdlu='35' ArahArdlu='LS' DarojatThul='119' DaqiqohThul='47' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Ermera                                            ' BaladAR='Hê194|hB                                                                                            '
+		 DarojatArdlu='8' DaqiqohArdlu='41' ArahArdlu='LS' DarojatThul='125' DaqiqohThul='22' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Fakfak                                            ' BaladAR='¸I240|186|I245|                                                                                     '
+		 DarojatArdlu='2' DaqiqohArdlu='52' ArahArdlu='LS' DarojatThul='132' DaqiqohThul='20' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Garut                                             ' BaladAR='P204|hI•                                                                                            '
+		 DarojatArdlu='7' DaqiqohArdlu='13' ArahArdlu='LS' DarojatThul='107' DaqiqohThul='54' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Gianyar                                           ' BaladAR='hI210|&#x3e;211|•                                                                                        '
+		 DarojatArdlu='8' DaqiqohArdlu='33' ArahArdlu='LS' DarojatThul='115' DaqiqohThul='20' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Gresik                                            ' BaladAR='¹211|ni•                                                                                            '
+		 DarojatArdlu='7' DaqiqohArdlu='10' ArahArdlu='LS' DarojatThul='112' DaqiqohThul='40' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Grontalo                                          ' BaladAR='205|¾IS198|204|i•                                                                                   '
+		 DarojatArdlu='0' DaqiqohArdlu='30' ArahArdlu='LU' DarojatThul='123' DaqiqohThul='5' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Gunungsitoli                                      ' BaladAR='â205|161|211|o–205|198|205|•                                                                        '
+		 DarojatArdlu='1' DaqiqohArdlu='19' ArahArdlu='LU' DarojatThul='97' DaqiqohThul='36' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Indramayu                                         ' BaladAR='205|210|I194|Hhe198|B                                                                               '
+		 DarojatArdlu='6' DaqiqohArdlu='20' ArahArdlu='LS' DarojatThul='108' DaqiqohThul='18' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='J. Kebayoran                                      ' BaladAR='196|Hh205|210|IM186|                                                                                '
+		 DarojatArdlu='6' DaqiqohArdlu='14' ArahArdlu='LS' DarojatThul='106' DaqiqohThul='45' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='J. kota                                           ' BaladAR='IRhI186|IZ                                                                                          '
+		 DarojatArdlu='6' DaqiqohArdlu='10' ArahArdlu='LS' DarojatThul='106' DaqiqohThul='49' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='J. Tanjungpriok                                   ' BaladAR='¸205|211|210|i»–205|ˆIR                                                                             '
+		 DarojatArdlu='6' DaqiqohArdlu='6' ArahArdlu='LS' DarojatThul='106' DaqiqohThul='53' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Jakartajati                                       ' BaladAR='209|RIZIRhI186|IZ                                                                                   '
+		 DarojatArdlu='6' DaqiqohArdlu='15' ArahArdlu='LS' DarojatThul='106' DaqiqohThul='52' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Jambe                                             ' BaladAR='229|194|IZ                                                                                          '
+		 DarojatArdlu='1' DaqiqohArdlu='36' ArahArdlu='LS' DarojatThul='103' DaqiqohThul='38' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Jayapura                                          ' BaladAR='Hh205|245|I210|IZ                                                                                   '
+		 DarojatArdlu='2' DaqiqohArdlu='28' ArahArdlu='LS' DarojatThul='140' DaqiqohThul='38' ArahThul='BT' ZonaTime='9'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Jember                                            ' BaladAR='iM÷                                                                                                 '
+		 DarojatArdlu='8' DaqiqohArdlu='10' ArahArdlu='LS' DarojatThul='113' DaqiqohThul='42' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Jeneponto                                         ' BaladAR='205|S198|205|240|199|Z                                                                              '
+		 DarojatArdlu='5' DaqiqohArdlu='41' ArahArdlu='LS' DarojatThul='119' DaqiqohThul='43' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Jepara                                            ' BaladAR='HhI240|Z                                                                                            '
+		 DarojatArdlu='6' DaqiqohArdlu='36' ArahArdlu='LS' DarojatThul='110' DaqiqohThul='39' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Jombang                                           ' BaladAR='154|IM198|205|Z                                                                                     '
+		 DarojatArdlu='7' DaqiqohArdlu='32' ArahArdlu='LS' DarojatThul='112' DaqiqohThul='13' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kabonjahe                                         ' BaladAR='209|202|Iˆ205|LI186|                                                                                '
+		 DarojatArdlu='3' DaqiqohArdlu='7' ArahArdlu='LU' DarojatThul='98' DaqiqohThul='28' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kalabahi                                          ' BaladAR='209|202|IL216|I186|                                                                                 '
+		 DarojatArdlu='8' DaqiqohArdlu='12' ArahArdlu='LS' DarojatThul='124' DaqiqohThul='32' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kandangan                                         ' BaladAR='196|I–He198|I186|                                                                                   '
+		 DarojatArdlu='2' DaqiqohArdlu='47' ArahArdlu='LS' DarojatThul='115' DaqiqohThul='20' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Karanganyar                                       ' BaladAR='hI210|I–HhI186|                                                                                     '
+		 DarojatArdlu='7' DaqiqohArdlu='36' ArahArdlu='LS' DarojatThul='110' DaqiqohThul='57' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Karangasem                                        ' BaladAR='193|nI–HhI186|                                                                                      '
+		 DarojatArdlu='8' DaqiqohArdlu='27' ArahArdlu='LS' DarojatThul='115' DaqiqohThul='36' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Karawang                                          ' BaladAR='154|H204|HhI186|                                                                                    '
+		 DarojatArdlu='6' DaqiqohArdlu='18' ArahArdlu='LS' DarojatThul='107' DaqiqohThul='18' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kasongan                                          ' BaladAR='196|I–205|nI186|                                                                                    '
+		 DarojatArdlu='1' DaqiqohArdlu='56' ArahArdlu='LS' DarojatThul='113' DaqiqohThul='19' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kayuagung                                         ' BaladAR='154|205|•H205|210|I186|                                                                             '
+		 DarojatArdlu='3' DaqiqohArdlu='24' ArahArdlu='LS' DarojatThul='104' DaqiqohThul='12' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kebumen                                           ' BaladAR='ë194|205|M186|                                                                                      '
+		 DarojatArdlu='7' DaqiqohArdlu='40' ArahArdlu='LS' DarojatThul='109' DaqiqohThul='39' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kediri                                            ' BaladAR='208|i210|e186|                                                                                      '
+		 DarojatArdlu='7' DaqiqohArdlu='49' ArahArdlu='LS' DarojatThul='112' DaqiqohThul='2' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kefamenano                                        ' BaladAR='205|198|I199|194|I240|186|                                                                          '
+		 DarojatArdlu='9' DaqiqohArdlu='23' ArahArdlu='LS' DarojatThul='124' DaqiqohThul='35' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kelaten                                           ' BaladAR='ëR217|186|                                                                                          '
+		 DarojatArdlu='7' DaqiqohArdlu='42' ArahArdlu='LS' DarojatThul='110' DaqiqohThul='35' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kenaliasem                                        ' BaladAR='193|n&#x3e;211|¾I199|186|                                                                                '
+		 DarojatArdlu='1' DaqiqohArdlu='44' ArahArdlu='LS' DarojatThul='103' DaqiqohThul='12' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kendal                                            ' BaladAR='¼He199|186|                                                                                         '
+		 DarojatArdlu='6' DaqiqohArdlu='57' ArahArdlu='LS' DarojatThul='110' DaqiqohThul='13' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kendari                                           ' BaladAR='208|hHe199|186|                                                                                     '
+		 DarojatArdlu='3' DaqiqohArdlu='57' ArahArdlu='LS' DarojatThul='122' DaqiqohThul='35' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Ketapang                                          ' BaladAR='154|I245|IS186|                                                                                     '
+		 DarojatArdlu='1' DaqiqohArdlu='52' ArahArdlu='LS' DarojatThul='110' DaqiqohThul='5' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kisaran                                           ' BaladAR='196|HhIo211|186|                                                                                    '
+		 DarojatArdlu='2' DaqiqohArdlu='57' ArahArdlu='LU' DarojatThul='99' DaqiqohThul='35' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kolaka                                            ' BaladAR='205|186|216|205|186|                                                                                '
+		 DarojatArdlu='4' DaqiqohArdlu='2' ArahArdlu='LS' DarojatThul='122' DaqiqohThul='37' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kotabaru                                          ' BaladAR='204|hILIR205|186|                                                                                   '
+		 DarojatArdlu='3' DaqiqohArdlu='17' ArahArdlu='LS' DarojatThul='116' DaqiqohThul='15' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kotabumi                                          ' BaladAR='209|194|205|LIR205|186|                                                                             '
+		 DarojatArdlu='4' DaqiqohArdlu='50' ArahArdlu='LS' DarojatThul='104' DaqiqohThul='54' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kotacane                                          ' BaladAR='209|198|IZIR205|186|                                                                                '
+		 DarojatArdlu='3' DaqiqohArdlu='30' ArahArdlu='LU' DarojatThul='97' DaqiqohThul='51' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kotamubago                                        ' BaladAR='205|186|IL205|194|IR205|186|                                                                        '
+		 DarojatArdlu='0' DaqiqohArdlu='44' ArahArdlu='LU' DarojatThul='124' DaqiqohThul='21' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kualakapuas                                       ' BaladAR='lH205|245|I186|216|H205|186|                                                                        '
+		 DarojatArdlu='2' DaqiqohArdlu='52' ArahArdlu='LS' DarojatThul='114' DaqiqohThul='24' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kualakurun                                        ' BaladAR='196|204|h205|186|216|H205|186|                                                                      '
+		 DarojatArdlu='1' DaqiqohArdlu='5' ArahArdlu='LS' DarojatThul='113' DaqiqohThul='55' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kualapembuang                                     ' BaladAR='154|H205|M195|245|216|H205|186|                                                                     '
+		 DarojatArdlu='3' DaqiqohArdlu='23' ArahArdlu='LS' DarojatThul='112' DaqiqohThul='32' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kualatungkal                                      ' BaladAR='¼I­–205|R216|H205|186|                                                                              '
+		 DarojatArdlu='0' DaqiqohArdlu='7' ArahArdlu='LS' DarojatThul='103' DaqiqohThul='25' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kudus                                             ' BaladAR='l204|d205|186|                                                                                      '
+		 DarojatArdlu='6' DaqiqohArdlu='50' ArahArdlu='LS' DarojatThul='110' DaqiqohThul='50' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kuningan                                          ' BaladAR='196|I—211|198|205|186|                                                                              '
+		 DarojatArdlu='6' DaqiqohArdlu='58' ArahArdlu='LS' DarojatThul='108' DaqiqohThul='28' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kupang                                            ' BaladAR='154|I245|205|186|                                                                                   '
+		 DarojatArdlu='10' DaqiqohArdlu='12' ArahArdlu='LS' DarojatThul='124' DaqiqohThul='20' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Lamongan                                          ' BaladAR='196|I–205|194|216|                                                                                  '
+		 DarojatArdlu='7' DaqiqohArdlu='8' ArahArdlu='LS' DarojatThul='112' DaqiqohThul='25' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Langsa                                            ' BaladAR='Io–216|                                                                                             '
+		 DarojatArdlu='4' DaqiqohArdlu='31' ArahArdlu='LU' DarojatThul='97' DaqiqohThul='58' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Larantuka                                         ' BaladAR='I186|205|S198|Hh216|                                                                                '
+		 DarojatArdlu='8' DaqiqohArdlu='18' ArahArdlu='LS' DarojatThul='122' DaqiqohThul='58' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Lhokseumawe                                       ' BaladAR='208|204|I194|205|o•205|¾                                                                            '
+		 DarojatArdlu='5' DaqiqohArdlu='15' ArahArdlu='LU' DarojatThul='97' DaqiqohThul='7' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Liquica                                           ' BaladAR='I#H205|·211|¾                                                                                       '
+		 DarojatArdlu='8' DaqiqohArdlu='33' ArahArdlu='LS' DarojatThul='125' DaqiqohThul='22' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Lomboklinggau                                     ' BaladAR='204|I»—211|191|186|205|M194|205|¾                                                                   '
+		 DarojatArdlu='3' DaqiqohArdlu='13' ArahArdlu='LS' DarojatThul='102' DaqiqohThul='54' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Lospalos                                          ' BaladAR='l205|¾205|240|n205|¾                                                                                '
+		 DarojatArdlu='8' DaqiqohArdlu='30' ArahArdlu='LS' DarojatThul='126' DaqiqohThul='59' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Lubuksikapuang                                    ' BaladAR='154|H205|245|I»211|o186|205|L205|¾                                                                  '
+		 DarojatArdlu='0' DaqiqohArdlu='5' ArahArdlu='LU' DarojatThul='100' DaqiqohThul='10' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Lumajang                                          ' BaladAR='154|IZI194|205|¾                                                                                    '
+		 DarojatArdlu='8' DaqiqohArdlu='8' ArahArdlu='LS' DarojatThul='113' DaqiqohThul='14' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Luwuk                                             ' BaladAR='¸204|205|¾                                                                                          '
+		 DarojatArdlu='0' DaqiqohArdlu='54' ArahArdlu='LS' DarojatThul='122' DaqiqohThul='51' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Madiun                                            ' BaladAR='196|205|210|dI194|                                                                                  '
+		 DarojatArdlu='7' DaqiqohArdlu='37' ArahArdlu='LS' DarojatThul='111' DaqiqohThul='32' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Magelang                                          ' BaladAR='154|217|•I194|                                                                                      '
+		 DarojatArdlu='7' DaqiqohArdlu='30' ArahArdlu='LS' DarojatThul='110' DaqiqohThul='12' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Magetan                                           ' BaladAR='196|IS•I194|                                                                                        '
+		 DarojatArdlu='7' DaqiqohArdlu='38' ArahArdlu='LS' DarojatThul='111' DaqiqohThul='21' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Majalengka                                        ' BaladAR='I»—211|¾IZI194|                                                                                     '
+		 DarojatArdlu='6' DaqiqohArdlu='50' ArahArdlu='LS' DarojatThul='108' DaqiqohThul='12' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Majene                                            ' BaladAR='éZI194|                                                                                             '
+		 DarojatArdlu='3' DaqiqohArdlu='33' ArahArdlu='LS' DarojatThul='118' DaqiqohThul='59' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Makale                                            ' BaladAR='âI186|I194|                                                                                         '
+		 DarojatArdlu='3' DaqiqohArdlu='8' ArahArdlu='LS' DarojatThul='119' DaqiqohThul='51' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Makkah                                            ' BaladAR='O194|i»254|H O»194|                                                                                 '
+		 DarojatArdlu='21' DaqiqohArdlu='30' ArahArdlu='LU' DarojatThul='39' DaqiqohThul='57' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Malang                                            ' BaladAR='154|216|I194|                                                                                       '
+		 DarojatArdlu='7' DaqiqohArdlu='59' ArahArdlu='LS' DarojatThul='112' DaqiqohThul='36' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Mamuju                                            ' BaladAR='205|Z205|194|I194|                                                                                  '
+		 DarojatArdlu='2' DaqiqohArdlu='43' ArahArdlu='LS' DarojatThul='118' DaqiqohThul='54' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Manado                                            ' BaladAR='204|dI198|I194|                                                                                     '
+		 DarojatArdlu='1' DaqiqohArdlu='33' ArahArdlu='LU' DarojatThul='124' DaqiqohThul='53' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Manatuto                                          ' BaladAR='205|R205|RI198|I194|                                                                                '
+		 DarojatArdlu='8' DaqiqohArdlu='29' ArahArdlu='LS' DarojatThul='126' DaqiqohThul='0' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Manua                                             ' BaladAR='H205|198|I194|                                                                                      '
+		 DarojatArdlu='4' DaqiqohArdlu='23' ArahArdlu='LS' DarojatThul='102' DaqiqohThul='54' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Manukwari                                         ' BaladAR='208|hH205|186|205|198|I194|                                                                         '
+		 DarojatArdlu='1' DaqiqohArdlu='0' ArahArdlu='LS' DarojatThul='134' DaqiqohThul='0' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Marabahan                                         ' BaladAR='196|I202|ILHhI194|                                                                                  '
+		 DarojatArdlu='3' DaqiqohArdlu='2' ArahArdlu='LS' DarojatThul='114' DaqiqohThul='44' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Maros                                             ' BaladAR='l204|hI194|                                                                                         '
+		 DarojatArdlu='5' DaqiqohArdlu='0' ArahArdlu='LS' DarojatThul='119' DaqiqohThul='35' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Martapura                                         ' BaladAR='Hh205|245|IRhI194|                                                                                  '
+		 DarojatArdlu='3' DaqiqohArdlu='23' ArahArdlu='LS' DarojatThul='114' DaqiqohThul='52' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Masohi                                            ' BaladAR='209|202|205|nI194|                                                                                  '
+		 DarojatArdlu='3' DaqiqohArdlu='23' ArahArdlu='LS' DarojatThul='128' DaqiqohThul='59' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Mataram                                           ' BaladAR='192|HhIRI194|                                                                                       '
+		 DarojatArdlu='8' DaqiqohArdlu='36' ArahArdlu='LS' DarojatThul='116' DaqiqohThul='8' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Maumere                                           ' BaladAR='208|ê194|204|I194|                                                                                  '
+		 DarojatArdlu='8' DaqiqohArdlu='40' ArahArdlu='LS' DarojatThul='122' DaqiqohThul='18' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Medan                                             ' BaladAR='196|He211|194|                                                                                      '
+		 DarojatArdlu='3' DaqiqohArdlu='38' ArahArdlu='LU' DarojatThul='98' DaqiqohThul='38' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Mempawah                                          ' BaladAR='200|H204|I240|195|211|194|                                                                          '
+		 DarojatArdlu='0' DaqiqohArdlu='9' ArahArdlu='LU' DarojatThul='109' DaqiqohThul='5' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Meolaboh                                          ' BaladAR='200|205|L216|205|211|194|                                                                           '
+		 DarojatArdlu='4' DaqiqohArdlu='11' ArahArdlu='LU' DarojatThul='96' DaqiqohThul='7' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Merak                                             ' BaladAR='¸Hi194|                                                                                             '
+		 DarojatArdlu='5' DaqiqohArdlu='57' ArahArdlu='LS' DarojatThul='106' DaqiqohThul='1' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Merauke                                           ' BaladAR='209|186|204|Hê194|                                                                                  '
+		 DarojatArdlu='9' DaqiqohArdlu='30' ArahArdlu='LS' DarojatThul='140' DaqiqohThul='27' ArahThul='BT' ZonaTime='9'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Metro                                             ' BaladAR='204|230|211|194|                                                                                    '
+		 DarojatArdlu='5' DaqiqohArdlu='6' ArahArdlu='LS' DarojatThul='105' DaqiqohThul='20' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Mojokerto                                         ' BaladAR='205|Ri186|205|Z205|194|                                                                             '
+		 DarojatArdlu='7' DaqiqohArdlu='25' ArahArdlu='LS' DarojatThul='112' DaqiqohThul='26' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Muarabungo                                        ' BaladAR='205|–205|LHhH205|194|                                                                               '
+		 DarojatArdlu='1' DaqiqohArdlu='31' ArahArdlu='LS' DarojatThul='102' DaqiqohThul='4' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Muaratewe                                         ' BaladAR='208|i210|204|HhH205|194|                                                                            '
+		 DarojatArdlu='1' DaqiqohArdlu='3' ArahArdlu='LS' DarojatThul='114' DaqiqohThul='54' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Muarrainem                                        ' BaladAR='193|211|199|210|hhH205|194|                                                                         '
+		 DarojatArdlu='3' DaqiqohArdlu='38' ArahArdlu='LS' DarojatThul='103' DaqiqohThul='47' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Negara                                            ' BaladAR='HhI­198|                                                                                            '
+		 DarojatArdlu='8' DaqiqohArdlu='23' ArahArdlu='LS' DarojatThul='114' DaqiqohThul='35' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Nganjuk                                           ' BaladAR='¸205|ˆI–                                                                                            '
+		 DarojatArdlu='7' DaqiqohArdlu='38' ArahArdlu='LS' DarojatThul='111' DaqiqohThul='53' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Ngawi                                             ' BaladAR='208|204|I–                                                                                          '
+		 DarojatArdlu='7' DaqiqohArdlu='26' ArahArdlu='LS' DarojatThul='111' DaqiqohThul='26' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Pacitan                                           ' BaladAR='196|IS211|#I245|                                                                                    '
+		 DarojatArdlu='8' DaqiqohArdlu='12' ArahArdlu='LS' DarojatThul='111' DaqiqohThul='6' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Padang                                            ' BaladAR='154|HdI245|                                                                                         '
+		 DarojatArdlu='0' DaqiqohArdlu='27' ArahArdlu='LS' DarojatThul='100' DaqiqohThul='21' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Padangpanjang                                     ' BaladAR='154|IˆI240|–HdI245|                                                                                 '
+		 DarojatArdlu='0' DaqiqohArdlu='27' ArahArdlu='LS' DarojatThul='100' DaqiqohThul='23' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Padangsidampuan                                   ' BaladAR='196|H205|240|194|He211|o–HdI245|                                                                    '
+		 DarojatArdlu='1' DaqiqohArdlu='25' ArahArdlu='LU' DarojatThul='99' DaqiqohThul='14' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Painan                                            ' BaladAR='196|I199|210|I245|                                                                                  '
+		 DarojatArdlu='0' DaqiqohArdlu='20' ArahArdlu='LS' DarojatThul='100' DaqiqohThul='33' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Palangkaraya                                      ' BaladAR='I210|HhI»–216|I245|                                                                                 '
+		 DarojatArdlu='2' DaqiqohArdlu='19' ArahArdlu='LS' DarojatThul='113' DaqiqohThul='56' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Palembang                                         ' BaladAR='154|IM195|211|¾I245|                                                                                '
+		 DarojatArdlu='2' DaqiqohArdlu='59' ArahArdlu='LS' DarojatThul='104' DaqiqohThul='47' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Palihari                                          ' BaladAR='208|hI203|211|¾I245|                                                                                '
+		 DarojatArdlu='2' DaqiqohArdlu='51' ArahArdlu='LS' DarojatThul='115' DaqiqohThul='26' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Palo                                              ' BaladAR='205|¾I245|                                                                                          '
+		 DarojatArdlu='0' DaqiqohArdlu='57' ArahArdlu='LS' DarojatThul='120' DaqiqohThul='0' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Palopo                                            ' BaladAR='205|245|205|¾I245|                                                                                  '
+		 DarojatArdlu='3' DaqiqohArdlu='1' ArahArdlu='LS' DarojatThul='120' DaqiqohThul='12' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Pamekasan                                         ' BaladAR='196|InI»194|I245|                                                                                   '
+		 DarojatArdlu='7' DaqiqohArdlu='9' ArahArdlu='LS' DarojatThul='113' DaqiqohThul='30' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Pandegelang                                       ' BaladAR='154|217|•e198|I245|                                                                                 '
+		 DarojatArdlu='6' DaqiqohArdlu='19' ArahArdlu='LS' DarojatThul='106' DaqiqohThul='6' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Pangkajene                                        ' BaladAR='é211|ZI»–I245|                                                                                      '
+		 DarojatArdlu='4' DaqiqohArdlu='50' ArahArdlu='LS' DarojatThul='119' DaqiqohThul='34' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Pangkalambun                                      ' BaladAR='196|205|M194|216|I»–I245|                                                                           '
+		 DarojatArdlu='2' DaqiqohArdlu='40' ArahArdlu='LS' DarojatThul='111' DaqiqohThul='45' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Pangkalpinang                                     ' BaladAR='154|I199|211|240|¾I»–I245|                                                                          '
+		 DarojatArdlu='2' DaqiqohArdlu='7' ArahArdlu='LS' DarojatThul='106' DaqiqohThul='10' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Parepare                                          ' BaladAR='208|hI240|210|hI245|                                                                                '
+		 DarojatArdlu='4' DaqiqohArdlu='1' ArahArdlu='LS' DarojatThul='119' DaqiqohThul='40' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Pariaman                                          ' BaladAR='196|I194|&#x3e;210|hI245|                                                                                '
+		 DarojatArdlu='0' DaqiqohArdlu='37' ArahArdlu='LS' DarojatThul='100' DaqiqohThul='7' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Pasuruan                                          ' BaladAR='196|H204|inIL                                                                                       '
+		 DarojatArdlu='7' DaqiqohArdlu='39' ArahArdlu='LS' DarojatThul='112' DaqiqohThul='56' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Pati                                              ' BaladAR='209|RI245|                                                                                          '
+		 DarojatArdlu='6' DaqiqohArdlu='38' ArahArdlu='LS' DarojatThul='111' DaqiqohThul='3' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Payakumbu                                         ' BaladAR='205|M194|205|186|I210|I245|                                                                         '
+		 DarojatArdlu='0' DaqiqohArdlu='13' ArahArdlu='LS' DarojatThul='100' DaqiqohThul='37' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Pekalongan                                        ' BaladAR='196|I–205|¾I»245|                                                                                   '
+		 DarojatArdlu='6' DaqiqohArdlu='53' ArahArdlu='LS' DarojatThul='109' DaqiqohThul='41' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Pekanbaru                                         ' BaladAR='204|hIM198|I»245|                                                                                   '
+		 DarojatArdlu='0' DaqiqohArdlu='30' ArahArdlu='LU' DarojatThul='101' DaqiqohThul='28' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Pelabuhanratu                                     ' BaladAR='205|RHi198|I202|205|L217|245|                                                                       '
+		 DarojatArdlu='7' DaqiqohArdlu='3' ArahArdlu='LS' DarojatThul='106' DaqiqohThul='25' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Pemalang                                          ' BaladAR='154|216|I195|245|                                                                                   '
+		 DarojatArdlu='6' DaqiqohArdlu='54' ArahArdlu='LS' DarojatThul='109' DaqiqohThul='23' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Pematangsiantar                                   ' BaladAR='hIS198|I211|o–IRI195|245|                                                                           '
+		 DarojatArdlu='2' DaqiqohArdlu='58' ArahArdlu='LU' DarojatThul='99' DaqiqohThul='2' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Pinrang                                           ' BaladAR='154|Hi199|211|245|                                                                                  '
+		 DarojatArdlu='3' DaqiqohArdlu='47' ArahArdlu='LS' DarojatThul='119' DaqiqohThul='40' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Polewali                                          ' BaladAR='âH205|211|¾205|245|                                                                                 '
+		 DarojatArdlu='3' DaqiqohArdlu='25' ArahArdlu='LS' DarojatThul='119' DaqiqohThul='22' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Ponorgo                                           ' BaladAR='205|•204|h205|198|205|245|                                                                          '
+		 DarojatArdlu='7' DaqiqohArdlu='53' ArahArdlu='LS' DarojatThul='111' DaqiqohThul='29' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Pontianak                                         ' BaladAR='¸I198|I211|S198|205|245|                                                                            '
+		 DarojatArdlu='0' DaqiqohArdlu='5' ArahArdlu='LU' DarojatThul='109' DaqiqohThul='22' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Poso                                              ' BaladAR='205|n205|245|                                                                                       '
+		 DarojatArdlu='1' DaqiqohArdlu='28' ArahArdlu='LS' DarojatThul='120' DaqiqohThul='53' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Prabumulih                                        ' BaladAR='201|211|¾205|194|205|LHi245|                                                                        '
+		 DarojatArdlu='3' DaqiqohArdlu='30' ArahArdlu='LS' DarojatThul='104' DaqiqohThul='13' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Praya                                             ' BaladAR='I210|Hi245|                                                                                         '
+		 DarojatArdlu='8' DaqiqohArdlu='48' ArahArdlu='LS' DarojatThul='116' DaqiqohThul='13' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Probolinggo                                       ' BaladAR='I—199|211|¾205|L204|i245|                                                                           '
+		 DarojatArdlu='7' DaqiqohArdlu='45' ArahArdlu='LS' DarojatThul='113' DaqiqohThul='13' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Purbalinggo                                       ' BaladAR='I—199|211|¾ILh205|245|                                                                              '
+		 DarojatArdlu='7' DaqiqohArdlu='23' ArahArdlu='LS' DarojatThul='109' DaqiqohThul='22' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Purukcahu                                         ' BaladAR='205|202|I[186|204|h205|245|                                                                         '
+		 DarojatArdlu='2' DaqiqohArdlu='39' ArahArdlu='LS' DarojatThul='114' DaqiqohThul='33' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Purwodadi                                         ' BaladAR='208|dHdH204|h205|245|                                                                               '
+		 DarojatArdlu='7' DaqiqohArdlu='5' ArahArdlu='LS' DarojatThul='110' DaqiqohThul='54' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Purwokerto jabar                                  ' BaladAR='205|Ri186|H204|h205|245|                                                                            '
+		 DarojatArdlu='7' DaqiqohArdlu='25' ArahArdlu='LS' DarojatThul='109' DaqiqohThul='13' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Purwokerto jateng                                 ' BaladAR='205|Ri186|H204|h205|245|                                                                            '
+		 DarojatArdlu='6' DaqiqohArdlu='36' ArahArdlu='LS' DarojatThul='107' DaqiqohThul='27' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Purworejo                                         ' BaladAR='205|ZhH204|h205|245|                                                                                '
+		 DarojatArdlu='7' DaqiqohArdlu='28' ArahArdlu='LS' DarojatThul='109' DaqiqohThul='59' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Putussibau                                        ' BaladAR='204|IM211|on205|R205|245|                                                                           '
+		 DarojatArdlu='0' DaqiqohArdlu='49' ArahArdlu='LU' DarojatThul='112' DaqiqohThul='56' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Raba                                              ' BaladAR='ILHh                                                                                                '
+		 DarojatArdlu='8' DaqiqohArdlu='30' ArahArdlu='LS' DarojatThul='118' DaqiqohThul='48' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Raha                                              ' BaladAR='I202|Hh                                                                                             '
+		 DarojatArdlu='4' DaqiqohArdlu='50' ArahArdlu='LS' DarojatThul='122' DaqiqohThul='45' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Rahat                                             ' BaladAR='PI202|Hh                                                                                            '
+		 DarojatArdlu='3' DaqiqohArdlu='47' ArahArdlu='LS' DarojatThul='103' DaqiqohThul='32' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Rangkaspitung                                     ' BaladAR='154|205|S211|240|nI»–Hh                                                                             '
+		 DarojatArdlu='6' DaqiqohArdlu='22' ArahArdlu='LS' DarojatThul='106' DaqiqohThul='38' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Rantau                                            ' BaladAR='204|IS198|Hh                                                                                        '
+		 DarojatArdlu='2' DaqiqohArdlu='55' ArahArdlu='LS' DarojatThul='115' DaqiqohThul='9' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Rantauprapat                                      ' BaladAR='PI245|Hi245|204|IS198|Hh                                                                            '
+		 DarojatArdlu='2' DaqiqohArdlu='7' ArahArdlu='LU' DarojatThul='99' DaqiqohThul='50' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Rembang                                           ' BaladAR='154|IM194|h                                                                                         '
+		 DarojatArdlu='6' DaqiqohArdlu='39' ArahArdlu='LS' DarojatThul='111' DaqiqohThul='29' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Rengat                                            ' BaladAR='PI–h                                                                                                '
+		 DarojatArdlu='0' DaqiqohArdlu='23' ArahArdlu='LS' DarojatThul='102' DaqiqohThul='34' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Ruteng                                            ' BaladAR='152|R204|h                                                                                          '
+		 DarojatArdlu='8' DaqiqohArdlu='36' ArahArdlu='LS' DarojatThul='120' DaqiqohThul='3' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sabang                                            ' BaladAR='154|ILIn                                                                                            '
+		 DarojatArdlu='5' DaqiqohArdlu='54' ArahArdlu='LU' DarojatThul='95' DaqiqohThul='27' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Salatiga                                          ' BaladAR='I­211|R216|In                                                                                       '
+		 DarojatArdlu='7' DaqiqohArdlu='20' ArahArdlu='LS' DarojatThul='110' DaqiqohThul='29' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Samarinda                                         ' BaladAR='He199|210|hI194|In                                                                                  '
+		 DarojatArdlu='0' DaqiqohArdlu='28' ArahArdlu='LS' DarojatThul='117' DaqiqohThul='11' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Same                                              ' BaladAR='209|194|In                                                                                          '
+		 DarojatArdlu='8' DaqiqohArdlu='58' ArahArdlu='LS' DarojatThul='125' DaqiqohThul='37' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sampang                                           ' BaladAR='154|I240|194|In                                                                                     '
+		 DarojatArdlu='7' DaqiqohArdlu='11' ArahArdlu='LS' DarojatThul='113' DaqiqohThul='15' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sampit                                            ' BaladAR='Q211|240|194|In                                                                                     '
+		 DarojatArdlu='2' DaqiqohArdlu='32' ArahArdlu='LS' DarojatThul='112' DaqiqohThul='58' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sanggau                                           ' BaladAR='204|I»–In                                                                                           '
+		 DarojatArdlu='0' DaqiqohArdlu='8' ArahArdlu='LU' DarojatThul='110' DaqiqohThul='43' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sawahlunto                                        ' BaladAR='205|S198|205|191|202|H204|In                                                                        '
+		 DarojatArdlu='0' DaqiqohArdlu='40' ArahArdlu='LS' DarojatThul='100' DaqiqohThul='46' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sekayu                                            ' BaladAR='205|210|I»n                                                                                         '
+		 DarojatArdlu='2' DaqiqohArdlu='51' ArahArdlu='LS' DarojatThul='103' DaqiqohThul='47' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Selong                                            ' BaladAR='154|205|191|n                                                                                       '
+		 DarojatArdlu='8' DaqiqohArdlu='38' ArahArdlu='LS' DarojatThul='116' DaqiqohThul='30' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Semarang                                          ' BaladAR='154|HhI250|                                                                                         '
+		 DarojatArdlu='6' DaqiqohArdlu='56' ArahArdlu='LS' DarojatThul='110' DaqiqohThul='24' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sengkang                                          ' BaladAR='154|I»—n                                                                                            '
+		 DarojatArdlu='4' DaqiqohArdlu='6' ArahArdlu='LS' DarojatThul='120' DaqiqohThul='4' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Serang                                            ' BaladAR='154|Hên                                                                                             '
+		 DarojatArdlu='6' DaqiqohArdlu='8' ArahArdlu='LS' DarojatThul='106' DaqiqohThul='9' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Serui                                             ' BaladAR='208|Hin                                                                                             '
+		 DarojatArdlu='1' DaqiqohArdlu='51' ArahArdlu='LS' DarojatThul='136' DaqiqohThul='27' ArahThul='BT' ZonaTime='9'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sibolga                                           ' BaladAR='205|»¾205|M211|n                                                                                    '
+		 DarojatArdlu='1' DaqiqohArdlu='47' ArahArdlu='LU' DarojatThul='98' DaqiqohThul='46' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sidikalang                                        ' BaladAR='154|216|I»210|e211|n                                                                                '
+		 DarojatArdlu='2' DaqiqohArdlu='45' ArahArdlu='LU' DarojatThul='98' DaqiqohThul='46' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sidoarjo                                          ' BaladAR='205|ZhH204|e211|n                                                                                   '
+		 DarojatArdlu='7' DaqiqohArdlu='29' ArahArdlu='LS' DarojatThul='112' DaqiqohThul='57' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sigli                                             ' BaladAR='209|191|—211|n                                                                                      '
+		 DarojatArdlu='5' DaqiqohArdlu='24' ArahArdlu='LU' DarojatThul='95' DaqiqohThul='57' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sijunjung                                         ' BaladAR='154|205|ˆ205|[211|n                                                                                 '
+		 DarojatArdlu='0' DaqiqohArdlu='41' ArahArdlu='LS' DarojatThul='100' DaqiqohThul='58' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Simahi                                            ' BaladAR='209|202|I195|211|n                                                                                  '
+		 DarojatArdlu='6' DaqiqohArdlu='56' ArahArdlu='LS' DarojatThul='107' DaqiqohThul='32' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sindenreng                                        ' BaladAR='152|210|i198|e199|211|n                                                                             '
+		 DarojatArdlu='4' DaqiqohArdlu='0' ArahArdlu='LS' DarojatThul='119' DaqiqohThul='55' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Singaraja                                         ' BaladAR='IZHhI—211|n                                                                                         '
+		 DarojatArdlu='8' DaqiqohArdlu='8' ArahArdlu='LS' DarojatThul='115' DaqiqohThul='5' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Singkawang                                        ' BaladAR='154|H204|I»—211|n                                                                                   '
+		 DarojatArdlu='0' DaqiqohArdlu='52' ArahArdlu='LU' DarojatThul='109' DaqiqohThul='0' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sinjau                                            ' BaladAR='208|I[199|211|n                                                                                     '
+		 DarojatArdlu='4' DaqiqohArdlu='8' ArahArdlu='LS' DarojatThul='120' DaqiqohThul='16' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sintang                                           ' BaladAR='154|IS199|211|n                                                                                     '
+		 DarojatArdlu='0' DaqiqohArdlu='6' ArahArdlu='LU' DarojatThul='111' DaqiqohThul='34' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Situbondo                                         ' BaladAR='204|e198|205|L205|S211|n                                                                            '
+		 DarojatArdlu='7' DaqiqohArdlu='44' ArahArdlu='LS' DarojatThul='114' DaqiqohThul='1' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Slawi                                             ' BaladAR='208|204|217|n                                                                                       '
+		 DarojatArdlu='6' DaqiqohArdlu='58' ArahArdlu='LS' DarojatThul='109' DaqiqohThul='9' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sleman                                            ' BaladAR='196|I195|211|191|n                                                                                  '
+		 DarojatArdlu='7' DaqiqohArdlu='43' ArahArdlu='LS' DarojatThul='110' DaqiqohThul='22' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Soasiu                                            ' BaladAR='205|211|nH205|n                                                                                     '
+		 DarojatArdlu='1' DaqiqohArdlu='38' ArahArdlu='LU' DarojatThul='127' DaqiqohThul='26' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Soe                                               ' BaladAR='208|205|n                                                                                           '
+		 DarojatArdlu='9' DaqiqohArdlu='52' ArahArdlu='LS' DarojatThul='124' DaqiqohThul='20' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Solok                                             ' BaladAR='¸205|¾205|n                                                                                         '
+		 DarojatArdlu='0' DaqiqohArdlu='47' ArahArdlu='LS' DarojatThul='100' DaqiqohThul='38' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sorong                                            ' BaladAR='154|204|h205|n                                                                                      '
+		 DarojatArdlu='0' DaqiqohArdlu='50' ArahArdlu='LS' DarojatThul='131' DaqiqohThul='15' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sragen                                            ' BaladAR='ë–Hin                                                                                               '
+		 DarojatArdlu='7' DaqiqohArdlu='26' ArahArdlu='LS' DarojatThul='110' DaqiqohThul='1' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Suai                                              ' BaladAR='208|H205|n                                                                                          '
+		 DarojatArdlu='8' DaqiqohArdlu='17' ArahArdlu='LS' DarojatThul='125' DaqiqohThul='18' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Subang                                            ' BaladAR='154|IL205|n                                                                                         '
+		 DarojatArdlu='6' DaqiqohArdlu='34' ArahArdlu='LS' DarojatThul='107' DaqiqohThul='46' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sukabumi                                          ' BaladAR='209|194|205|LI186|205|n                                                                             '
+		 DarojatArdlu='6' DaqiqohArdlu='56' ArahArdlu='LS' DarojatThul='106' DaqiqohThul='55' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sukoharjo                                         ' BaladAR='205|ZhH205|186|205|n                                                                                '
+		 DarojatArdlu='7' DaqiqohArdlu='42' ArahArdlu='LS' DarojatThul='110' DaqiqohThul='50' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sumbawabesar                                      ' BaladAR='hIoLH204|IM194|205|n                                                                                '
+		 DarojatArdlu='8' DaqiqohArdlu='30' ArahArdlu='LS' DarojatThul='117' DaqiqohThul='45' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sumenep                                           ' BaladAR='’199|194|205|n                                                                                      '
+		 DarojatArdlu='7' DaqiqohArdlu='3' ArahArdlu='LS' DarojatThul='114' DaqiqohThul='53' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sungailiat                                        ' BaladAR='PI211|191|210|I–205|n                                                                               '
+		 DarojatArdlu='2' DaqiqohArdlu='0' ArahArdlu='LS' DarojatThul='106' DaqiqohThul='0' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sungguminassa                                     ' BaladAR='IonI199|211|194|205|»–205|n                                                                         '
+		 DarojatArdlu='5' DaqiqohArdlu='12' ArahArdlu='LS' DarojatThul='119' DaqiqohThul='30' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Sungipenuh                                        ' BaladAR='200|205|199|240|210|I–205|n                                                                         '
+		 DarojatArdlu='2' DaqiqohArdlu='4' ArahArdlu='LS' DarojatThul='101' DaqiqohThul='24' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Surabaya                                          ' BaladAR='I210|ILHh205|n                                                                                      '
+		 DarojatArdlu='7' DaqiqohArdlu='15' ArahArdlu='LS' DarojatThul='112' DaqiqohThul='45' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Surakarta                                         ' BaladAR='IRhI186|Hh205|n                                                                                     '
+		 DarojatArdlu='7' DaqiqohArdlu='46' ArahArdlu='LS' DarojatThul='110' DaqiqohThul='50' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tabanan                                           ' BaladAR='196|I198|ILIR                                                                                       '
+		 DarojatArdlu='8' DaqiqohArdlu='32' ArahArdlu='LS' DarojatThul='115' DaqiqohThul='7' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tahuna / limboto                                  ' BaladAR='I198|205|202|IR                                                                                     '
+		 DarojatArdlu='0' DaqiqohArdlu='37' ArahArdlu='LU' DarojatThul='122' DaqiqohThul='58' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Takalar                                           ' BaladAR='hIRI186|IR                                                                                          '
+		 DarojatArdlu='5' DaqiqohArdlu='30' ArahArdlu='LS' DarojatThul='119' DaqiqohThul='25' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Takangon                                          ' BaladAR='196|205|–I186|IR                                                                                    '
+		 DarojatArdlu='4' DaqiqohArdlu='43' ArahArdlu='LU' DarojatThul='96' DaqiqohThul='50' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tambilahan                                        ' BaladAR='196|I202|217|211|M194|IR                                                                            '
+		 DarojatArdlu='0' DaqiqohArdlu='16' ArahArdlu='LS' DarojatThul='103' DaqiqohThul='14' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tamianglawang                                     ' BaladAR='154|H204|217|—210|hIR                                                                               '
+		 DarojatArdlu='2' DaqiqohArdlu='19' ArahArdlu='LS' DarojatThul='114' DaqiqohThul='59' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tanah grogot                                      ' BaladAR='P205|186|204|i»202|I198|IR                                                                          '
+		 DarojatArdlu='1' DaqiqohArdlu='52' ArahArdlu='LS' DarojatThul='116' DaqiqohThul='13' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tangerang                                         ' BaladAR='196|Hi–IR                                                                                           '
+		 DarojatArdlu='6' DaqiqohArdlu='12' ArahArdlu='LS' DarojatThul='106' DaqiqohThul='38' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tanggul                                           ' BaladAR='¼205|­–IR                                                                                           '
+		 DarojatArdlu='8' DaqiqohArdlu='10' ArahArdlu='LS' DarojatThul='113' DaqiqohThul='42' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tangjungpandan                                    ' BaladAR='196|He198|I240|–205|ˆIR                                                                             '
+		 DarojatArdlu='2' DaqiqohArdlu='38' ArahArdlu='LS' DarojatThul='107' DaqiqohThul='40' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tanjung                                           ' BaladAR='154|204|e198|IR                                                                                     '
+		 DarojatArdlu='2' DaqiqohArdlu='8' ArahArdlu='LS' DarojatThul='115' DaqiqohThul='21' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tanjungbalai                                      ' BaladAR='208|216|IM–205|ˆIR                                                                                  '
+		 DarojatArdlu='2' DaqiqohArdlu='58' ArahArdlu='LU' DarojatThul='99' DaqiqohThul='44' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tanjungpinang                                     ' BaladAR='154|I199|211|240|–205|ˆIR                                                                           '
+		 DarojatArdlu='0' DaqiqohArdlu='55' ArahArdlu='LU' DarojatThul='104' DaqiqohThul='29' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tanjungredep                                      ' BaladAR='‡di–205|ˆIR                                                                                         '
+		 DarojatArdlu='2' DaqiqohArdlu='8' ArahArdlu='LU' DarojatThul='117' DaqiqohThul='28' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tanjungselor                                      ' BaladAR='h205|191|o–205|ˆIR                                                                                  '
+		 DarojatArdlu='2' DaqiqohArdlu='46' ArahArdlu='LU' DarojatThul='117' DaqiqohThul='22' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tapaktuan                                         ' BaladAR='196|H205|S186|I245|IR                                                                               '
+		 DarojatArdlu='3' DaqiqohArdlu='18' ArahArdlu='LU' DarojatThul='97' DaqiqohThul='10' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tarakan                                           ' BaladAR='196|I186|HhIR                                                                                       '
+		 DarojatArdlu='3' DaqiqohArdlu='23' ArahArdlu='LU' DarojatThul='117' DaqiqohThul='31' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tarutung                                          ' BaladAR='154|205|R204|hIR                                                                                    '
+		 DarojatArdlu='1' DaqiqohArdlu='58' ArahArdlu='LU' DarojatThul='98' DaqiqohThul='55' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tasikmalaya                                       ' BaladAR='I210|216|I195|»211|nIR                                                                              '
+		 DarojatArdlu='7' DaqiqohArdlu='27' ArahArdlu='LS' DarojatThul='108' DaqiqohThul='13' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tebingtinggi                                      ' BaladAR='209|­—211|S—211|MR                                                                                  '
+		 DarojatArdlu='3' DaqiqohArdlu='22' ArahArdlu='LU' DarojatThul='99' DaqiqohThul='7' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tegal                                             ' BaladAR='¼I­R                                                                                                '
+		 DarojatArdlu='6' DaqiqohArdlu='51' ArahArdlu='LS' DarojatThul='109' DaqiqohThul='9' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Telukbetung                                       ' BaladAR='154|205|SL205|191|R                                                                                 '
+		 DarojatArdlu='5' DaqiqohArdlu='26' ArahArdlu='LS' DarojatThul='105' DaqiqohThul='17' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Temanggung                                        ' BaladAR='154|205|­–Iô                                                                                        '
+		 DarojatArdlu='7' DaqiqohArdlu='22' ArahArdlu='LS' DarojatThul='109' DaqiqohThul='8' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tenggarong                                        ' BaladAR='154|204|hI­—R                                                                                       '
+		 DarojatArdlu='0' DaqiqohArdlu='22' ArahArdlu='LS' DarojatThul='116' DaqiqohThul='6' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Ternate                                           ' BaladAR='209|RIô                                                                                             '
+		 DarojatArdlu='1' DaqiqohArdlu='46' ArahArdlu='LU' DarojatThul='127' DaqiqohThul='24' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tolitoli                                          ' BaladAR='â205|S211|¾205|R                                                                                    '
+		 DarojatArdlu='1' DaqiqohArdlu='2' ArahArdlu='LU' DarojatThul='120' DaqiqohThul='52' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tondano                                           ' BaladAR='205|198|He198|205|R                                                                                 '
+		 DarojatArdlu='1' DaqiqohArdlu='18' ArahArdlu='LU' DarojatThul='124' DaqiqohThul='55' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Trenggalek                                        ' BaladAR='¹211|¾I­–iR                                                                                         '
+		 DarojatArdlu='8' DaqiqohArdlu='4' ArahArdlu='LS' DarojatThul='111' DaqiqohThul='44' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tual                                              ' BaladAR='¼H205|R                                                                                             '
+		 DarojatArdlu='5' DaqiqohArdlu='38' ArahArdlu='LS' DarojatThul='132' DaqiqohThul='23' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tuban                                             ' BaladAR='196|IL205|R                                                                                         '
+		 DarojatArdlu='6' DaqiqohArdlu='56' ArahArdlu='LS' DarojatThul='112' DaqiqohThul='4' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Tulungagung                                       ' BaladAR='154|205|•I–205|¾205|R                                                                               '
+		 DarojatArdlu='8' DaqiqohArdlu='5' ArahArdlu='LS' DarojatThul='111' DaqiqohThul='54' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Ujung pangkah                                     ' BaladAR='200|I»–I240|–205|Z204|&#x3c;                                                                             '
+		 DarojatArdlu='6' DaqiqohArdlu='54' ArahArdlu='LS' DarojatThul='112' DaqiqohThul='36' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Ujungkodok                                        ' BaladAR='¸204|d205|»–205|Z204|&#x3c;                                                                              '
+		 DarojatArdlu='6' DaqiqohArdlu='52' ArahArdlu='LS' DarojatThul='112' DaqiqohThul='25' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Ujungpandang                                      ' BaladAR='154|He198|I240|–205|Z204|&#x3c;                                                                          '
+		 DarojatArdlu='5' DaqiqohArdlu='8' ArahArdlu='LS' DarojatThul='119' DaqiqohThul='27' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Ungaran                                           ' BaladAR='196|HhI–204|&#x3c;                                                                                       '
+		 DarojatArdlu='7' DaqiqohArdlu='8' ArahArdlu='LS' DarojatThul='110' DaqiqohThul='19' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Viqueque                                          ' BaladAR='208|205|·210|205|·211|245|                                                                          '
+		 DarojatArdlu='8' DaqiqohArdlu='48' ArahArdlu='LS' DarojatThul='126' DaqiqohThul='20' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Waingapu                                          ' BaladAR='205|245|I—210|H204|                                                                                 '
+		 DarojatArdlu='9' DaqiqohArdlu='36' ArahArdlu='LS' DarojatThul='120' DaqiqohThul='19' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Wakaibubak                                        ' BaladAR='¸ILIM210|I186|H204|                                                                                 '
+		 DarojatArdlu='9' DaqiqohArdlu='30' ArahArdlu='LS' DarojatThul='119' DaqiqohThul='25' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Wamana                                            ' BaladAR='I198|I194|H204|                                                                                     '
+		 DarojatArdlu='3' DaqiqohArdlu='47' ArahArdlu='LS' DarojatThul='139' DaqiqohThul='52' ArahThul='BT' ZonaTime='9'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Watanpone                                         ' BaladAR='209|198|205|240|198|IRH204|                                                                         '
+		 DarojatArdlu='4' DaqiqohArdlu='34' ArahArdlu='LS' DarojatThul='120' DaqiqohThul='20' ArahThul='BT' ZonaTime='8'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Watansoppeng                                      ' BaladAR='152|211|240|245|205|o198|IRH204|                                                                    '
+		 DarojatArdlu='4' DaqiqohArdlu='20' ArahArdlu='LS' DarojatThul='119' DaqiqohThul='55' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Wates                                             ' BaladAR='mRH204|                                                                                             '
+		 DarojatArdlu='7' DaqiqohArdlu='52' ArahArdlu='LS' DarojatThul='110' DaqiqohThul='8' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Wonogiri                                          ' BaladAR='208|ê•205|198|H204|                                                                                 '
+		 DarojatArdlu='7' DaqiqohArdlu='50' ArahArdlu='LS' DarojatThul='110' DaqiqohThul='55' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Wonosari                                          ' BaladAR='208|hIn205|198|H204|                                                                                '
+		 DarojatArdlu='7' DaqiqohArdlu='58' ArahArdlu='LS' DarojatThul='110' DaqiqohThul='35' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Wonosobo                                          ' BaladAR='205|L205|n205|198|H204|                                                                             '
+		 DarojatArdlu='7' DaqiqohArdlu='24' ArahArdlu='LS' DarojatThul='109' DaqiqohThul='56' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Yogyakarta                                        ' BaladAR='IRhI186|I211|186|205|210|                                                                           '
+		 DarojatArdlu='7' DaqiqohArdlu='48' ArahArdlu='LS' DarojatThul='110' DaqiqohThul='23' ArahThul='BT' ZonaTime='7'
+		 Ketinggian='0'/>
+	<z:row BaladIN='Kakkah                                            ' BaladAR='O194|i»195|¾H O»194|                                                                                '
+		 DarojatArdlu='21' DaqiqohArdlu='30' ArahArdlu='LU' DarojatThul='39' DaqiqohThul='57' ArahThul='BT' ZonaTime='3'
+		 Ketinggian='0'/>
+</rs:data>
+</xml>

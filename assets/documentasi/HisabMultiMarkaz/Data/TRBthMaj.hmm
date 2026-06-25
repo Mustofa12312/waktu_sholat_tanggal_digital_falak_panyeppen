@@ -1,0 +1,114 @@
+<xml xmlns:s='uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882'
+	xmlns:dt='uuid:C2F41010-65B3-11d1-A29F-00AA00C14882'
+	xmlns:rs='urn:schemas-microsoft-com:rowset'
+	xmlns:z='#RowsetSchema'>
+<s:Schema id='RowsetSchema'>
+	<s:ElementType name='row' content='eltOnly' rs:updatable='true'>
+		<s:AttributeType name='Cari' rs:number='1' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT1' rs:number='2' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT2' rs:number='3' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT3' rs:number='4' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT4' rs:number='5' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT5' rs:number='6' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT6' rs:number='7' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT7' rs:number='8' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT8' rs:number='9' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT9' rs:number='10' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT10' rs:number='11' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT11' rs:number='12' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT12' rs:number='13' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT13' rs:number='14' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT14' rs:number='15' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT15' rs:number='16' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT16' rs:number='17' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT17' rs:number='18' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT18' rs:number='19' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT19' rs:number='20' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT20' rs:number='21' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT21' rs:number='22' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT22' rs:number='23' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT23' rs:number='24' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='DT24' rs:number='25' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:extends type='rs:rowbase'/>
+	</s:ElementType>
+</s:Schema>
+<rs:data>
+	<z:row Cari='SN        ' DT1='7' DT2='14' DT3='4' DT4='9' DT5='16' DT6='33' DT7='10' DT8='26' DT9='13' DT10='6'
+		 DT11='1' DT12='10' DT13='2' DT14='23' DT15='14' DT16='0' DT17='0' DT18='0' DT19='0' DT20='0' DT21='0' DT22='0'
+		 DT23='0' DT24='0'/>
+	<z:row Cari='FR        ' DT1='3' DT2='10' DT3='58' DT4='8' DT5='28' DT6='18' DT7='6' DT8='44' DT9='33' DT10='8'
+		 DT11='12' DT12='13' DT13='4' DT14='21' DT15='19' DT16='0' DT17='0' DT18='0' DT19='0' DT20='0' DT21='0' DT22='0'
+		 DT23='0' DT24='0'/>
+	<z:row Cari='TZ        ' DT1='5' DT2='24' DT3='37' DT4='33' DT5='10' DT6='24' DT7='38' DT8='10' DT9='4' DT10='29'
+		 DT11='31' DT12='3' DT13='8' DT14='20' DT15='48' DT16='12' DT17='2' DT18='6' DT19='11' DT20='40' DT21='0' DT22='0'
+		 DT23='0' DT24='0'/>
+	<z:row Cari='IDB1      ' DT1='622' DT2='8' DT3='7' DT4='5' DT5='5' DT6='3' DT7='12' DT8='11' DT9='18' DT10='46'
+		 DT11='3' DT12='27' DT13='22' DT14='3' DT15='20' DT16='12' DT17='1' DT18='3' DT19='59' DT20='0' DT21='0' DT22='0'
+		 DT23='0' DT24='0'/>
+	<z:row Cari='KW1       ' DT1='2' DT2='12' DT3='8' DT4='7' DT5='14' DT6='45' DT7='8' DT8='12' DT9='47' DT10='4'
+		 DT11='21' DT12='32' DT13='0' DT14='0' DT15='0' DT16='0' DT17='0' DT18='0' DT19='0' DT20='0' DT21='0' DT22='0'
+		 DT23='0' DT24='0'/>
+	<z:row Cari='FK        ' DT1='622' DT2='8' DT3='7' DT4='5' DT5='5' DT6='3' DT7='14' DT8='27' DT9='11' DT10='18'
+		 DT11='45' DT12='34' DT13='3' DT14='27' DT15='22' DT16='24' DT17='3' DT18='20' DT19='10' DT20='54' DT21='1' DT22='3'
+		 DT23='58' DT24='40'/>
+	<z:row Cari='SNKsQ     ' DT1='6' DT2='19' DT3='42' DT4='3' DT5='5' DT6='42' DT7='4' DT8='16' DT9='13' DT10='5'
+		 DT11='16' DT12='37' DT13='2' DT14='23' DT15='14' DT16='0' DT17='0' DT18='0' DT19='0' DT20='0' DT21='0' DT22='0'
+		 DT23='0' DT24='0'/>
+	<z:row Cari='          ' DT1='0' DT2='0' DT3='0' DT4='0' DT5='0' DT6='0' DT7='0' DT8='0' DT9='0' DT10='0' DT11='0'
+		 DT12='0' DT13='0' DT14='0' DT15='0' DT16='0' DT17='0' DT18='0' DT19='0' DT20='0' DT21='0' DT22='0' DT23='0' DT24='0'/>
+	<z:row Cari='          ' DT1='0' DT2='0' DT3='0' DT4='0' DT5='0' DT6='0' DT7='0' DT8='0' DT9='0' DT10='0' DT11='0'
+		 DT12='0' DT13='0' DT14='0' DT15='0' DT16='0' DT17='0' DT18='0' DT19='0' DT20='0' DT21='0' DT22='0' DT23='0' DT24='0'/>
+	<z:row Cari='          ' DT1='0' DT2='0' DT3='0' DT4='0' DT5='0' DT6='0' DT7='0' DT8='0' DT9='0' DT10='0' DT11='0'
+		 DT12='0' DT13='0' DT14='0' DT15='0' DT16='0' DT17='0' DT18='0' DT19='0' DT20='0' DT21='0' DT22='0' DT23='0' DT24='0'/>
+</rs:data>
+</xml>

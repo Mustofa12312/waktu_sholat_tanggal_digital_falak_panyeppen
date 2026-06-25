@@ -1,0 +1,107 @@
+<xml xmlns:s='uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882'
+	xmlns:dt='uuid:C2F41010-65B3-11d1-A29F-00AA00C14882'
+	xmlns:rs='urn:schemas-microsoft-com:rowset'
+	xmlns:z='#RowsetSchema'>
+<s:Schema id='RowsetSchema'>
+	<s:ElementType name='row' content='eltOnly' rs:updatable='true'>
+		<s:AttributeType name='IsiText' rs:number='1' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='45' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:extends type='rs:rowbase'/>
+	</s:ElementType>
+</s:Schema>
+<rs:data>
+	<z:row IsiText='Awal Bulan |AwlBln                           '/>
+	<z:row IsiText='Ijtima&#x27; : |Ijtm                              '/>
+	<z:row IsiText='Waktu Ijtima&#x27; : |Wktij                       '/>
+	<z:row IsiText='Azimut Matahari : |AzmtS                     '/>
+	<z:row IsiText='Azimut Hilal : |AzmtQ                        '/>
+	<z:row IsiText='Kemiringan : |Mrig                           '/>
+	<z:row IsiText='Arah Hilal : |Arh                            '/>
+	<z:row IsiText='Tinggi Hilal : |Tnggi                        '/>
+	<z:row IsiText='Lama Hilal : |Lmh                            '/>
+	<z:row IsiText='Cahaya Hilal : |Cahaya                       '/>
+	<z:row IsiText='Tinggi Hilal Haqiqi : |IrtfHqq               '/>
+	<z:row IsiText='Tinggi Hilal Marii : |IrtfMri                '/>
+	<z:row IsiText='Matahari Terbenam : |WktGrb                  '/>
+	<z:row IsiText='Matahari Terbit : |WktThlu                   '/>
+	<z:row IsiText='Markaz Kitab : |MrzKtb                       '/>
+	<z:row IsiText='Markaz Garapan : |MrzGrp                     '/>
+	<z:row IsiText='Terjadi Pada : |GerBln                       '/>
+	<z:row IsiText='Ukuran Gerhana : |Ukran                      '/>
+	<z:row IsiText='Mulai Gerhana : |MulGer                      '/>
+	<z:row IsiText='Mulai Gelap : |MulGlap                       '/>
+	<z:row IsiText='Pertengahan Gerhana : |TegalGer              '/>
+	<z:row IsiText='Akhir Gerhana : |AkrGer                      '/>
+	<z:row IsiText='Terang Kembali : |Trag                       '/>
+	<z:row IsiText='Lama Gerhana : |LamaGer                      '/>
+	<z:row IsiText='Lama Gelap : |LamGlap                        '/>
+	<z:row IsiText='Warna Gehana : |WrnGer                       '/>
+	<z:row IsiText='Piringan yang tertutup :|PrngnTtp            '/>
+	<z:row IsiText='Piringan yang terang :|PrngnTrng             '/>
+	<z:row IsiText='01.  Muharrom|BlnH1                          '/>
+	<z:row IsiText='02.  Shofar|BlnH2                            '/>
+	<z:row IsiText='03.  R. Awal|BlnH3                           '/>
+	<z:row IsiText='04.  R. Tsani|BlnH4                          '/>
+	<z:row IsiText='05.  J. Ula|BlnH5                            '/>
+	<z:row IsiText='06.  J. Tsaniyah|BlnH6                       '/>
+	<z:row IsiText='07.  Rojab|BlnH7                             '/>
+	<z:row IsiText='08.  Sya&#x27;ban|BlnH8                           '/>
+	<z:row IsiText='09.  Romadlon|BlnH9                          '/>
+	<z:row IsiText='10.  Syawal|BlnH10                           '/>
+	<z:row IsiText='11.  Dzulqo&#x27;dah|BlnH11                       '/>
+	<z:row IsiText='12.  Dzulhijjah|BlnH12                       '/>
+	<z:row IsiText='JANUARI|BlnM1                                '/>
+	<z:row IsiText='PEBRUARI|BlnM2                               '/>
+	<z:row IsiText='MARET|BlnM3                                  '/>
+	<z:row IsiText='APRIL|BlnM4                                  '/>
+	<z:row IsiText='MEI|BlnM5                                    '/>
+	<z:row IsiText='JUNI|BlnM6                                   '/>
+	<z:row IsiText='JULI|BlnM7                                   '/>
+	<z:row IsiText='AGUSTUS|BlnM8                                '/>
+	<z:row IsiText='SEPTEMBER|BlnM9                              '/>
+	<z:row IsiText='OKTOBER|BlnM10                               '/>
+	<z:row IsiText='NOVEMBER|BlnM11                              '/>
+	<z:row IsiText='DESEMBER|BlnM12                              '/>
+	<z:row IsiText='Ahad|Har1                                    '/>
+	<z:row IsiText='Senin|Har2                                   '/>
+	<z:row IsiText='Selasa|Har3                                  '/>
+	<z:row IsiText='Rabu|Har4                                    '/>
+	<z:row IsiText='Kamis|Har5                                   '/>
+	<z:row IsiText='Ju&#x27;mat|Har6                                  '/>
+	<z:row IsiText='Sabtu|Har7                                   '/>
+	<z:row IsiText='Legi|Pas1                                    '/>
+	<z:row IsiText='Pahing|Pas2                                  '/>
+	<z:row IsiText='Pon|Pas3                                     '/>
+	<z:row IsiText='Wage|Pas4                                    '/>
+	<z:row IsiText='Kliwon|Pas5                                  '/>
+	<z:row IsiText='SN_|Ktb1                                     '/>
+	<z:row IsiText='FR_|Ktb2                                     '/>
+	<z:row IsiText='IDB1_|Ktb3                                   '/>
+	<z:row IsiText='SH_|Ktb4                                     '/>
+	<z:row IsiText='TI_|Ktb5                                     '/>
+	<z:row IsiText='KW1_|Ktb6                                    '/>
+	<z:row IsiText='FK_|Ktb7                                     '/>
+	<z:row IsiText='BM_|Ktb8                                     '/>
+	<z:row IsiText='MNA_|Ktb9                                    '/>
+	<z:row IsiText='IDB2_|Ktb10                                  '/>
+	<z:row IsiText='NA_|Ktb11                                    '/>
+	<z:row IsiText='KW2_|Ktb12                                   '/>
+	<z:row IsiText='IM_|Ktb13                                    '/>
+	<z:row IsiText='EP_|Ktb14                                    '/>
+	<z:row IsiText='TA_|Ktb15                                    '/>
+	<z:row IsiText='Metode Sullam al-Nairoin|SN                  '/>
+	<z:row IsiText='Metode Fathu al-Ro &#x27;uf|FR                    '/>
+	<z:row IsiText='Metode Ittifaqu Dzati al-Bain|IDB            '/>
+	<z:row IsiText='Metode Syamsu al-Hilal|SH                    '/>
+	<z:row IsiText='Metode Tadzkiroh al-Ikhwan|TZ                '/>
+	<z:row IsiText='Metode Faidlu al-Karim al-Ro&#x27;uf|FK           '/>
+	<z:row IsiText='Metode Badi&#x27;atu al-Mitsal|BM                 '/>
+	<z:row IsiText='Metode Muntaha Nataiji al-Aqwal|MA           '/>
+	<z:row IsiText='Metode Nuru al-Anwar|NA                      '/>
+	<z:row IsiText='Metode Irsyad al-Murid|IM                    '/>
+	<z:row IsiText='Metode al-Khulashoh al-Wafiyah|KW            '/>
+	<z:row IsiText='Metode Ephemeres|ER                          '/>
+	<z:row IsiText='Metode Tsamrotu al-Afkar|TA                  '/>
+</rs:data>
+</xml>

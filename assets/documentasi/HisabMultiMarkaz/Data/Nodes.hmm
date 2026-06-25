@@ -1,0 +1,125 @@
+<xml xmlns:s='uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882'
+	xmlns:dt='uuid:C2F41010-65B3-11d1-A29F-00AA00C14882'
+	xmlns:rs='urn:schemas-microsoft-com:rowset'
+	xmlns:z='#RowsetSchema'>
+<s:Schema id='RowsetSchema'>
+	<s:ElementType name='row' content='eltOnly' rs:updatable='true'>
+		<s:AttributeType name='Text' rs:number='1' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='75' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='CodeKitab' rs:number='2' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='6' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='CodeGarapan' rs:number='3' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='6' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:extends type='rs:rowbase'/>
+	</s:ElementType>
+</s:Schema>
+<rs:data>
+	<z:row Text='Sullam al-Nairoin (Taqribi)                                                ' CodeKitab='SN    '
+		 CodeGarapan='      '/>
+	<z:row Text='Ijtima&#x27;                                                                    ' CodeKitab='      '
+		 CodeGarapan='SN    '/>
+	<z:row Text='Khusufu al-Qomar                                                           ' CodeKitab='      '
+		 CodeGarapan='SN    '/>
+	<z:row Text='Kusufu al-Syams                                                            ' CodeKitab='      '
+		 CodeGarapan='SN    '/>
+	<z:row Text='Fathu al-Ro&#x27;uf (Taqribi)                                                   ' CodeKitab='FR    '
+		 CodeGarapan='      '/>
+	<z:row Text='Ijtima&#x27;                                                                    ' CodeKitab='      '
+		 CodeGarapan='FR    '/>
+	<z:row Text='Khusufu al-Qomar                                                           ' CodeKitab='      '
+		 CodeGarapan='FR    '/>
+	<z:row Text='Kusufu al-Syams                                                            ' CodeKitab='      '
+		 CodeGarapan='FR    '/>
+	<z:row Text='Ittifaqu Dzati al-Bain                                                     ' CodeKitab='IT    '
+		 CodeGarapan='      '/>
+	<z:row Text='Taqribi                                                                    ' CodeKitab='IDB1  '
+		 CodeGarapan='IT    '/>
+	<z:row Text='Ijtima&#x27;                                                                    ' CodeKitab='      '
+		 CodeGarapan='IDB1  '/>
+	<z:row Text='Khusufu al-Qomar                                                           ' CodeKitab='      '
+		 CodeGarapan='IDB1  '/>
+	<z:row Text='Kusufu al-Syams                                                            ' CodeKitab='      '
+		 CodeGarapan='IDB1  '/>
+	<z:row Text='Tahqiqi                                                                    ' CodeKitab='IDB2  '
+		 CodeGarapan='IT    '/>
+	<z:row Text='Ijtima&#x27;                                                                    ' CodeKitab='      '
+		 CodeGarapan='IDB2  '/>
+	<z:row Text='Khusufu al-Qomar                                                           ' CodeKitab='      '
+		 CodeGarapan='IDB2  '/>
+	<z:row Text='Kusufu al-Syams                                                            ' CodeKitab='      '
+		 CodeGarapan='IDB2  '/>
+	<z:row Text='Syamsu al-Hilal (Taqribi)                                                  ' CodeKitab='SH    '
+		 CodeGarapan='      '/>
+	<z:row Text='Ijtima&#x27;                                                                    ' CodeKitab='      '
+		 CodeGarapan='SH    '/>
+	<z:row Text='Khusufu al-Qomar                                                           ' CodeKitab='      '
+		 CodeGarapan='SH    '/>
+	<z:row Text='Kusufu al-Syams                                                            ' CodeKitab='      '
+		 CodeGarapan='SH    '/>
+	<z:row Text='Tadzkiroh al-Ikhwan (Taqribi)                                              ' CodeKitab='TZ    '
+		 CodeGarapan='      '/>
+	<z:row Text='Ijtima&#x27;                                                                    ' CodeKitab='      '
+		 CodeGarapan='TZ    '/>
+	<z:row Text='Khusufu al-Qomar                                                           ' CodeKitab='      '
+		 CodeGarapan='TZ    '/>
+	<z:row Text='Kusufu al-Syams                                                            ' CodeKitab='      '
+		 CodeGarapan='TZ    '/>
+	<z:row Text='Faidlu al-Karim al-Ro&#x27;uf (Taqribi)                                         ' CodeKitab='FK    '
+		 CodeGarapan='      '/>
+	<z:row Text='Ijtima&#x27;                                                                    ' CodeKitab='      '
+		 CodeGarapan='FK    '/>
+	<z:row Text='Khusufu al-Qomar                                                           ' CodeKitab='      '
+		 CodeGarapan='FK    '/>
+	<z:row Text='Kusufu al-Syams                                                            ' CodeKitab='      '
+		 CodeGarapan='FK    '/>
+	<z:row Text='Badi&#x27;atul Mitsal (Tahqiqi)                                                 ' CodeKitab='BM    '
+		 CodeGarapan='      '/>
+	<z:row Text='Ijtima&#x27;                                                                    ' CodeKitab='      '
+		 CodeGarapan='BM    '/>
+	<z:row Text='Al-Khulashoh al-Wafiyah                                                    ' CodeKitab='KW    '
+		 CodeGarapan='      '/>
+	<z:row Text='Taqribi                                                                    ' CodeKitab='KW1   '
+		 CodeGarapan='KW    '/>
+	<z:row Text='Ijtima&#x27;                                                                    ' CodeKitab='      '
+		 CodeGarapan='KW1   '/>
+	<z:row Text='Tahqiqi                                                                    ' CodeKitab='KW2   '
+		 CodeGarapan='KW    '/>
+	<z:row Text='Ijtima&#x27;                                                                    ' CodeKitab='      '
+		 CodeGarapan='KW2   '/>
+	<z:row Text='Khusufu al-Qomar                                                           ' CodeKitab='      '
+		 CodeGarapan='KW2   '/>
+	<z:row Text='Muntaha Nataiji al-Aqwal (Tahqiqi)                                         ' CodeKitab='MA    '
+		 CodeGarapan='      '/>
+	<z:row Text='Ijtima&#x27;                                                                    ' CodeKitab='      '
+		 CodeGarapan='MA    '/>
+	<z:row Text='Nuru al-Anwar (Tahqiqi)                                                    ' CodeKitab='NA    '
+		 CodeGarapan='      '/>
+	<z:row Text='Ijtima&#x27;                                                                    ' CodeKitab='      '
+		 CodeGarapan='NA    '/>
+	<z:row Text='Khusufu al-Qomar                                                           ' CodeKitab='      '
+		 CodeGarapan='NA    '/>
+	<z:row Text='Kusufu al-Syams                                                            ' CodeKitab='      '
+		 CodeGarapan='NA    '/>
+	<z:row Text='Irsyadu al-Murid (Tahqiqi)                                                 ' CodeKitab='IM    '
+		 CodeGarapan='      '/>
+	<z:row Text='Ijtima&#x27;                                                                    ' CodeKitab='      '
+		 CodeGarapan='IM    '/>
+	<z:row Text='Khusufu al-Qomar                                                           ' CodeKitab='      '
+		 CodeGarapan='IM    '/>
+	<z:row Text='Ephemeres (Tahqiqi)                                                        ' CodeKitab='ER    '
+		 CodeGarapan='      '/>
+	<z:row Text='Ijtima&#x27;                                                                    ' CodeKitab='      '
+		 CodeGarapan='ER    '/>
+	<z:row Text='Khusufu al-Qomar                                                           ' CodeKitab='      '
+		 CodeGarapan='ER    '/>
+	<z:row Text='Tsamrotu al-Afkar (Taqribi dan Tahqiqi)                                    ' CodeKitab='TA    '
+		 CodeGarapan='      '/>
+	<z:row Text='Ijtima&#x27;                                                                    ' CodeKitab='      '
+		 CodeGarapan='TA    '/>
+	<z:row Text='Khusufu al-Qomar                                                           ' CodeKitab='      '
+		 CodeGarapan='TA    '/>
+</rs:data>
+</xml>

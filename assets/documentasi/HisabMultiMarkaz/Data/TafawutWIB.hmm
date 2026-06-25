@@ -1,0 +1,201 @@
+<xml xmlns:s='uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882'
+	xmlns:dt='uuid:C2F41010-65B3-11d1-A29F-00AA00C14882'
+	xmlns:rs='urn:schemas-microsoft-com:rowset'
+	xmlns:z='#RowsetSchema'>
+<s:Schema id='RowsetSchema'>
+	<s:ElementType name='row' content='eltOnly' rs:updatable='true'>
+		<s:AttributeType name='tgl' rs:number='1' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Jan1' rs:number='2' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Jan2' rs:number='3' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Peb1' rs:number='4' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Peb2' rs:number='5' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Mar1' rs:number='6' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Mar2' rs:number='7' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Apr1' rs:number='8' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Apr2' rs:number='9' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Mei1' rs:number='10' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Mei2' rs:number='11' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='juni1' rs:number='12' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='juni2' rs:number='13' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='juli1' rs:number='14' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='juli2' rs:number='15' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Agus1' rs:number='16' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Agus2' rs:number='17' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sept1' rs:number='18' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sept2' rs:number='19' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Okt1' rs:number='20' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Okt2' rs:number='21' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='nop1' rs:number='22' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='nop2' rs:number='23' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='des1' rs:number='24' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='des2' rs:number='25' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Us' rs:number='26' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Yaum' rs:number='27' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='50' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Pasaran' rs:number='28' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='50' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:extends type='rs:rowbase'/>
+	</s:ElementType>
+</s:Schema>
+<rs:data>
+	<z:row tgl='1' Jan1='3' Jan2='16' Peb1='13' Peb2='38' Mar1='12' Mar2='42' Apr1='4' Apr2='10' Mei1='2' Mei2='54'
+		 juni1='2' juni2='33' juli1='3' juli2='25' Agus1='6' Agus2='10' Sept1='0' Sept2='11' Okt1='10' Okt2='3' nop1='16'
+		 nop2='18' des1='11' des2='9' Us='1' Yaum='ë199|V214|H                                       ' Pasaran='PAHING                                            '/>
+	<z:row tgl='2' Jan1='3' Jan2='44' Peb1='13' Peb2='46' Mar1='12' Mar2='31' Apr1='3' Apr2='52' Mei1='3' Mei2='2'
+		 juni1='2' juni2='24' juli1='3' juli2='36' Agus1='6' Agus2='7' Sept1='0' Sept2='8' Okt1='10' Okt2='23' nop1='16'
+		 nop2='20' des1='10' des2='46' Us='2' Yaum=';IV217|W¾H                                        ' Pasaran='PON                                               '/>
+	<z:row tgl='3' Jan1='4' Jan2='12' Peb1='13' Peb2='54' Mar1='12' Mar2='18' Apr1='3' Apr2='34' Mei1='3' Mei2='9'
+		 juni1='2' juni2='15' juli1='3' juli2='48' Agus1='6' Agus2='3' Sept1='0' Sept2='27' Okt1='10' Okt2='42' nop1='16'
+		 nop2='21' des1='10' des2='12' Us='3' Yaum=';I©Lh212|H                                        ' Pasaran='WAGE                                              '/>
+	<z:row tgl='4' Jan1='4' Jan2='40' Peb1='14' Peb2='1' Mar1='12' Mar2='6' Apr1='3' Apr2='16' Mei1='3' Mei2='15'
+		 juni1='2' juni2='5' juli1='3' juli2='59' Agus1='5' Agus2='58' Sept1='0' Sept2='47' Okt1='11' Okt2='1' nop1='16'
+		 nop2='21' des1='10' des2='1' Us='4' Yaum='m211|195|253|H                                    ' Pasaran='KLIWON                                            '/>
+	<z:row tgl='5' Jan1='5' Jan2='8' Peb1='14' Peb2='6' Mar1='11' Mar2='53' Apr1='2' Apr2='59' Mei1='3' Mei2='22'
+		 juni1='1' juni2='55' juli1='4' juli2='10' Agus1='5' Agus2='53' Sept1='1' Sept2='6' Okt1='11' Okt2='19' nop1='16'
+		 nop2='20' des1='9' des2='34' Us='5' Yaum='O©195|ûH                                          ' Pasaran='LEGI                                              '/>
+	<z:row tgl='6' Jan1='5' Jan2='35' Peb1='14' Peb2='11' Mar1='11' Mar2='39' Apr1='2' Apr2='41' Mei1='3' Mei2='28'
+		 juni1='1' juni2='45' juli1='4' juli2='21' Agus1='5' Agus2='47' Sept1='1' Sept2='26' Okt1='11' Okt2='37' nop1='16'
+		 nop2='19' des1='9' des2='11' Us='6' Yaum='QMo¾H                                             ' Pasaran='PAHING                                            '/>
+	<z:row tgl='7' Jan1='6' Jan2='1' Peb1='14' Peb2='16' Mar1='11' Mar2='25' Apr1='2' Apr2='23' Mei1='3' Mei2='32'
+		 juni1='1' juni2='34' juli1='4' juli2='30' Agus1='5' Agus2='41' Sept1='1' Sept2='46' Okt1='11' Okt2='55' nop1='16'
+		 nop2='16' des1='8' des2='46' Us='7' Yaum='e^212|H                                           ' Pasaran='PON                                               '/>
+	<z:row tgl='8' Jan1='6' Jan2='27' Peb1='14' Peb2='19' Mar1='11' Mar2='11' Apr1='2' Apr2='6' Mei1='3' Mei2='36'
+		 juni1='1' juni2='23' juli1='4' juli2='40' Agus1='5' Agus2='34' Sept1='2' Sept2='7' Okt1='12' Okt2='12' nop1='16'
+		 nop2='13' des1='8' des2='21' Us='8' Yaum='ë199|V214|H                                       ' Pasaran='WAGE                                              '/>
+	<z:row tgl='9' Jan1='6' Jan2='53' Peb1='14' Peb2='22' Mar1='10' Mar2='56' Apr1='1' Apr2='49' Mei1='3' Mei2='40'
+		 juni1='1' juni2='12' juli1='4' juli2='49' Agus1='5' Agus2='26' Sept1='2' Sept2='27' Okt1='12' Okt2='29' nop1='16'
+		 nop2='8' des1='7' des2='53' Us='9' Yaum=';IV217|W¾H                                        ' Pasaran='KLIWON                                            '/>
+	<z:row tgl='10' Jan1='7' Jan2='18' Peb1='14' Peb2='24' Mar1='10' Mar2='41' Apr1='1' Apr2='22' Mei1='3' Mei2='44'
+		 juni1='1' juni2='1' juli1='4' juli2='58' Agus1='5' Agus2='18' Sept1='2' Sept2='48' Okt1='12' Okt2='45' nop1='16'
+		 nop2='4' des1='7' des2='27' Us='10' Yaum=';I©Lh212|H                                        ' Pasaran='LEGI                                              '/>
+	<z:row tgl='11' Jan1='7' Jan2='43' Peb1='14' Peb2='25' Mar1='10' Mar2='26' Apr1='1' Apr2='16' Mei1='3' Mei2='46'
+		 juni1='0' juni2='49' juli1='5' juli2='7' Agus1='5' Agus2='10' Sept1='3' Sept2='8' Okt1='13' Okt2='1' nop1='15'
+		 nop2='58' des1='6' des2='59' Us='11' Yaum='m211|195|253|H                                    ' Pasaran='PAHING                                            '/>
+	<z:row tgl='12' Jan1='8' Jan2='7' Peb1='14' Peb2='25' Mar1='10' Mar2='10' Apr1='1' Apr2='0' Mei1='3' Mei2='48'
+		 juni1='0' juni2='37' juli1='5' juli2='15' Agus1='5' Agus2='0' Sept1='3' Sept2='29' Okt1='13' Okt2='15' nop1='15'
+		 nop2='51' des1='6' des2='32' Us='12' Yaum='O©195|ûH                                          ' Pasaran='PON                                               '/>
+	<z:row tgl='13' Jan1='8' Jan2='30' Peb1='14' Peb2='25' Mar1='9' Mar2='54' Apr1='0' Apr2='44' Mei1='3' Mei2='50'
+		 juni1='0' juni2='24' juli1='5' juli2='23' Agus1='4' Agus2='50' Sept1='3' Sept2='50' Okt1='13' Okt2='31' nop1='15'
+		 nop2='44' des1='6' des2='4' Us='13' Yaum='QMo¾H                                             ' Pasaran='WAGE                                              '/>
+	<z:row tgl='14' Jan1='8' Jan2='53' Peb1='14' Peb2='24' Mar1='9' Mar2='38' Apr1='0' Apr2='28' Mei1='3' Mei2='51'
+		 juni1='0' juni2='12' juli1='5' juli2='30' Agus1='4' Agus2='40' Sept1='4' Sept2='11' Okt1='13' Okt2='45' nop1='15'
+		 nop2='35' des1='5' des2='25' Us='14' Yaum='e^212|H                                           ' Pasaran='KLIWON                                            '/>
+	<z:row tgl='15' Jan1='9' Jan2='15' Peb1='14' Peb2='24' Mar1='9' Mar2='21' Apr1='0' Apr2='13' Mei1='3' Mei2='51'
+		 juni1='0' juni2='0' juli1='5' juli2='37' Agus1='4' Agus2='29' Sept1='4' Sept2='32' Okt1='13' Okt2='59' nop1='15'
+		 nop2='26' des1='5' des2='6' Us='15' Yaum='ë199|V214|H                                       ' Pasaran='LEGI                                              '/>
+	<z:row tgl='16' Jan1='9' Jan2='37' Peb1='14' Peb2='19' Mar1='9' Mar2='4' Apr1='0' Apr2='2' Mei1='3' Mei2='51'
+		 juni1='0' juni2='13' juli1='5' juli2='43' Agus1='4' Agus2='17' Sept1='4' Sept2='53' Okt1='14' Okt2='13' nop1='15'
+		 nop2='16' des1='4' des2='37' Us='16' Yaum=';IV217|W¾H                                        ' Pasaran='PAHING                                            '/>
+	<z:row tgl='17' Jan1='9' Jan2='58' Peb1='14' Peb2='16' Mar1='8' Mar2='48' Apr1='0' Apr2='17' Mei1='3' Mei2='50'
+		 juni1='0' juni2='26' juli1='5' juli2='49' Agus1='4' Agus2='6' Sept1='5' Sept2='15' Okt1='14' Okt2='25' nop1='15'
+		 nop2='5' des1='4' des2='8' Us='17' Yaum=';I©Lh212|H                                        ' Pasaran='PON                                               '/>
+	<z:row tgl='18' Jan1='10' Jan2='18' Peb1='14' Peb2='12' Mar1='8' Mar2='30' Apr1='0' Apr2='31' Mei1='3' Mei2='48'
+		 juni1='0' juni2='39' juli1='5' juli2='55' Agus1='3' Agus2='53' Sept1='5' Sept2='36' Okt1='14' Okt2='37' nop1='14'
+		 nop2='53' des1='3' des2='39' Us='18' Yaum='m211|195|253|H                                    ' Pasaran='WAGE                                              '/>
+	<z:row tgl='19' Jan1='10' Jan2='37' Peb1='14' Peb2='7' Mar1='8' Mar2='12' Apr1='0' Apr2='44' Mei1='3' Mei2='46'
+		 juni1='0' juni2='52' juli1='5' juli2='59' Agus1='3' Agus2='40' Sept1='5' Sept2='57' Okt1='14' Okt2='49' nop1='14'
+		 nop2='40' des1='3' des2='9' Us='19' Yaum='O©195|ûH                                          ' Pasaran='KLIWON                                            '/>
+	<z:row tgl='20' Jan1='10' Jan2='56' Peb1='14' Peb2='1' Mar1='7' Mar2='55' Apr1='0' Apr2='58' Mei1='3' Mei2='44'
+		 juni1='1' juni2='5' juli1='6' juli2='4' Agus1='3' Agus2='27' Sept1='6' Sept2='18' Okt1='15' Okt2='0' nop1='14'
+		 nop2='27' des1='2' des2='39' Us='20' Yaum='QMo¾H                                             ' Pasaran='LEGI                                              '/>
+	<z:row tgl='21' Jan1='11' Jan2='14' Peb1='13' Peb2='55' Mar1='7' Mar2='37' Apr1='1' Apr2='11' Mei1='3' Mei2='41'
+		 juni1='1' juni2='18' juli1='6' juli2='7' Agus1='3' Agus2='13' Sept1='6' Sept2='29' Okt1='15' Okt2='10' nop1='14'
+		 nop2='13' des1='2' des2='9' Us='21' Yaum='e^212|H                                           ' Pasaran='PAHING                                            '/>
+	<z:row tgl='22' Jan1='11' Jan2='31' Peb1='13' Peb2='48' Mar1='7' Mar2='15' Apr1='1' Apr2='23' Mei1='3' Mei2='37'
+		 juni1='1' juni2='31' juli1='6' juli2='11' Agus1='2' Agus2='58' Sept1='7' Sept2='1' Okt1='15' Okt2='20' nop1='13'
+		 nop2='58' des1='1' des2='39' Us='22' Yaum='ë199|V214|H                                       ' Pasaran='PON                                               '/>
+	<z:row tgl='23' Jan1='11' Jan2='41' Peb1='13' Peb2='40' Mar1='6' Mar2='57' Apr1='1' Apr2='36' Mei1='3' Mei2='33'
+		 juni1='1' juni2='44' juli1='6' juli2='13' Agus1='2' Agus2='44' Sept1='7' Sept2='21' Okt1='15' Okt2='29' nop1='13'
+		 nop2='42' des1='1' des2='9' Us='23' Yaum=';IV217|W¾H                                        ' Pasaran='WAGE                                              '/>
+	<z:row tgl='24' Jan1='12' Jan2='3' Peb1='13' Peb2='32' Mar1='6' Mar2='39' Apr1='1' Apr2='47' Mei1='3' Mei2='28'
+		 juni1='1' juni2='57' juli1='6' juli2='16' Agus1='2' Agus2='28' Sept1='7' Sept2='42' Okt1='15' Okt2='37' nop1='13'
+		 nop2='25' des1='0' des2='39' Us='24' Yaum=';I©Lh212|H                                        ' Pasaran='KLIWON                                            '/>
+	<z:row tgl='25' Jan1='12' Jan2='18' Peb1='13' Peb2='24' Mar1='6' Mar2='19' Apr1='1' Apr2='58' Mei1='3' Mei2='23'
+		 juni1='2' juni2='10' juli1='6' juli2='17' Agus1='2' Agus2='12' Sept1='8' Sept2='3' Okt1='15' Okt2='45' nop1='13'
+		 nop2='8' des1='0' des2='9' Us='25' Yaum='m211|195|253|H                                    ' Pasaran='LEGI                                              '/>
+	<z:row tgl='26' Jan1='12' Jan2='32' Peb1='13' Peb2='14' Mar1='6' Mar2='1' Apr1='2' Apr2='8' Mei1='3' Mei2='17'
+		 juni1='2' juni2='23' juli1='6' juli2='18' Agus1='1' Agus2='56' Sept1='8' Sept2='23' Okt1='15' Okt2='52' nop1='12'
+		 nop2='50' des1='0' des2='20' Us='26' Yaum='O©195|ûH                                          ' Pasaran='PAHING                                            '/>
+	<z:row tgl='27' Jan1='12' Jan2='45' Peb1='13' Peb2='4' Mar1='5' Mar2='43' Apr1='2' Apr2='18' Mei1='3' Mei2='11'
+		 juni1='2' juni2='36' juli1='6' juli2='18' Agus1='1' Agus2='40' Sept1='8' Sept2='44' Okt1='15' Okt2='58' nop1='12'
+		 nop2='31' des1='0' des2='50' Us='27' Yaum='QMo¾H                                             ' Pasaran='PON                                               '/>
+	<z:row tgl='28' Jan1='12' Jan2='57' Peb1='12' Peb2='53' Mar1='5' Mar2='24' Apr1='2' Apr2='28' Mei1='3' Mei2='4'
+		 juni1='2' juni2='48' juli1='6' juli2='18' Agus1='1' Agus2='23' Sept1='9' Sept2='4' Okt1='16' Okt2='2' nop1='12'
+		 nop2='11' des1='1' des2='20' Us='28' Yaum='e^212|H                                           ' Pasaran='WAGE                                              '/>
+	<z:row tgl='29' Jan1='13' Jan2='9' Peb1='12' Peb2='53' Mar1='5' Mar2='6' Apr1='2' Apr2='37' Mei1='2' Mei2='57'
+		 juni1='3' juni2='1' juli1='6' juli2='17' Agus1='1' Agus2='5' Sept1='9' Sept2='24' Okt1='16' Okt2='8' nop1='11'
+		 nop2='51' des1='1' des2='49' Us='29' Yaum='ë199|V214|H                                       ' Pasaran='KLIWON                                            '/>
+	<z:row tgl='30' Jan1='13' Jan2='19' Peb1='0' Peb2='0' Mar1='5' Mar2='4' Apr1='2' Apr2='46' Mei1='2' Mei2='49'
+		 juni1='3' juni2='13' juli1='6' juli2='15' Agus1='0' Agus2='47' Sept1='9' Sept2='44' Okt1='16' Okt2='12' nop1='11'
+		 nop2='30' des1='2' des2='19' Us='30' Yaum=';IV217|W¾H                                        ' Pasaran='LEGI                                              '/>
+	<z:row tgl='31' Jan1='13' Jan2='29' Peb1='0' Peb2='0' Mar1='4' Mar2='29' Apr1='0' Apr2='0' Mei1='2' Mei2='41'
+		 juni1='0' juni2='0' juli1='6' juli2='13' Agus1='0' Agus2='29' Sept1='0' Sept2='0' Okt1='16' Okt2='16' nop1='0'
+		 nop2='0' des1='2' des2='47' Us='31' Yaum=';I©Lh212|H                                        ' Pasaran='PAHING                                            '/>
+	<z:row tgl='0' Jan1='0' Jan2='0' Peb1='0' Peb2='0' Mar1='0' Mar2='0' Apr1='0' Apr2='0' Mei1='0' Mei2='0' juni1='0'
+		 juni2='0' juli1='0' juli2='0' Agus1='0' Agus2='0' Sept1='0' Sept2='0' Okt1='0' Okt2='0' nop1='0' nop2='0' des1='0'
+		 des2='0' Us='32' Yaum='m211|195|253|H                                    ' Pasaran='PON                                               '/>
+	<z:row tgl='0' Jan1='0' Jan2='0' Peb1='0' Peb2='0' Mar1='0' Mar2='0' Apr1='0' Apr2='0' Mei1='0' Mei2='0' juni1='0'
+		 juni2='0' juli1='0' juli2='0' Agus1='0' Agus2='0' Sept1='0' Sept2='0' Okt1='0' Okt2='0' nop1='0' nop2='0' des1='0'
+		 des2='0' Us='33' Yaum='O©195|ûH                                          ' Pasaran='WAGE                                              '/>
+	<z:row tgl='0' Jan1='0' Jan2='0' Peb1='0' Peb2='0' Mar1='0' Mar2='0' Apr1='0' Apr2='0' Mei1='0' Mei2='0' juni1='0'
+		 juni2='0' juli1='0' juli2='0' Agus1='0' Agus2='0' Sept1='0' Sept2='0' Okt1='0' Okt2='0' nop1='0' nop2='0' des1='0'
+		 des2='0' Us='34' Yaum='QMo¾H                                             ' Pasaran='KLIWON                                            '/>
+	<z:row tgl='0' Jan1='0' Jan2='0' Peb1='0' Peb2='0' Mar1='0' Mar2='0' Apr1='0' Apr2='0' Mei1='0' Mei2='0' juni1='0'
+		 juni2='0' juli1='0' juli2='0' Agus1='0' Agus2='0' Sept1='0' Sept2='0' Okt1='0' Okt2='0' nop1='0' nop2='0' des1='0'
+		 des2='0' Us='35' Yaum='e^212|H                                           ' Pasaran='LEGI                                              '/>
+</rs:data>
+</xml>

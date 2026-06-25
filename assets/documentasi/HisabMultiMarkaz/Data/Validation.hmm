@@ -1,0 +1,247 @@
+<xml xmlns:s='uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882'
+	xmlns:dt='uuid:C2F41010-65B3-11d1-A29F-00AA00C14882'
+	xmlns:rs='urn:schemas-microsoft-com:rowset'
+	xmlns:z='#RowsetSchema'>
+<s:Schema id='RowsetSchema'>
+	<s:ElementType name='row' content='eltOnly' rs:updatable='true'>
+		<s:AttributeType name='BM' rs:number='1' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='MA' rs:number='2' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='IDB2' rs:number='3' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='NA' rs:number='4' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='KW2' rs:number='5' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='IM' rs:number='6' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='ER' rs:number='7' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='IDB2GB' rs:number='8' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='NAGB' rs:number='9' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='KW2GB' rs:number='10' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='IMGB' rs:number='11' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='ERGB' rs:number='12' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='NAGM' rs:number='13' rs:write='true'>
+			<s:datatype dt:type='string' rs:dbtype='str' dt:maxLength='10' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:extends type='rs:rowbase'/>
+	</s:ElementType>
+</s:Schema>
+<rs:data>
+	<z:row BM='AC3       ' MA='AC3       ' IDB2='AG3       ' NA='Z3        ' KW2='AC3       ' IM='A3        ' ER='U3        '
+		 IDB2GB='AC19      ' NAGB='Z3        ' KW2GB='AE3       ' IMGB='A3        ' ERGB='T3        ' NAGM='Z3        '/>
+	<z:row BM='AC5       ' MA='AC5       ' IDB2='AG5       ' NA='Z5        ' KW2='AC5       ' IM='A4        ' ER='U4        '
+		 IDB2GB='AC20      ' NAGB='Z9        ' KW2GB='AE9       ' IMGB='A4        ' ERGB='T4        ' NAGM='Z9        '/>
+	<z:row BM='AC6       ' MA='AC6       ' IDB2='AG6       ' NA='Z6        ' KW2='AC6       ' IM='A5        ' ER='U5        '
+		 IDB2GB='AC22      ' NAGB='Z10       ' KW2GB='AE10      ' IMGB='A5        ' ERGB='T5        ' NAGM='Z10       '/>
+	<z:row BM='AC7       ' MA='AC7       ' IDB2='AG7       ' NA='Z7        ' KW2='AC7       ' IM='A6        ' ER='U6        '
+		 IDB2GB='AC23      ' NAGB='Z11       ' KW2GB='AE11      ' IMGB='A6        ' ERGB='T6        ' NAGM='Z11       '/>
+	<z:row BM='AC8       ' MA='AC10      ' IDB2='AG8       ' NA='Z8        ' KW2='AC8       ' IM='A7        ' ER='U7        '
+		 IDB2GB='AC24      ' NAGB='Z12       ' KW2GB='AE12      ' IMGB='A7        ' ERGB='T7        ' NAGM='Z12       '/>
+	<z:row BM='AC9       ' MA='AC11      ' IDB2='AG10      ' NA='Z10       ' KW2='AC9       ' IM='A8        ' ER='U8        '
+		 IDB2GB='AC25      ' NAGB='Z13       ' KW2GB='AE13      ' IMGB='A8        ' ERGB='T8        ' NAGM='Z13       '/>
+	<z:row BM='AC11      ' MA='AC12      ' IDB2='AG12      ' NA='Z12       ' KW2='AC10      ' IM='A9        ' ER='U9        '
+		 IDB2GB='AC26      ' NAGB='Z14       ' KW2GB='AE14      ' IMGB='A9        ' ERGB='T9        ' NAGM='Z14       '/>
+	<z:row BM='AC13      ' MA='AC13      ' IDB2='AG13      ' NA='Z13       ' KW2='AC11      ' IM='A10       ' ER='U10       '
+		 IDB2GB='AC27      ' NAGB='Z15       ' KW2GB='AE15      ' IMGB='A10       ' ERGB='T10       ' NAGM='Z15       '/>
+	<z:row BM='AC14      ' MA='AC14      ' IDB2='AG14      ' NA='Z14       ' KW2='AC13      ' IM='A11       ' ER='U11       '
+		 IDB2GB='AC28      ' NAGB='Z16       ' KW2GB='AE16      ' IMGB='A11       ' ERGB='T11       ' NAGM='Z16       '/>
+	<z:row BM='AC15      ' MA='AC15      ' IDB2='AG15      ' NA='Z15       ' KW2='AC14      ' IM='A12       ' ER='U12       '
+		 IDB2GB='AC29      ' NAGB='Z17       ' KW2GB='AE17      ' IMGB='A12       ' ERGB='T12       ' NAGM='Z17       '/>
+	<z:row BM='AC16      ' MA='AC16      ' IDB2='AG16      ' NA='Z16       ' KW2='AC16      ' IM='A13       ' ER='U13       '
+		 IDB2GB='AC30      ' NAGB='Z18       ' KW2GB='AE18      ' IMGB='A13       ' ERGB='T17       ' NAGM='Z18       '/>
+	<z:row BM='AC17      ' MA='AC17      ' IDB2='AG17      ' NA='Z17       ' KW2='AC17      ' IM='A14       ' ER='U14       '
+		 IDB2GB='AC31      ' NAGB='Z19       ' KW2GB='AE19      ' IMGB='A14       ' ERGB='T18       ' NAGM='Z19       '/>
+	<z:row BM='AC18      ' MA='AC18      ' IDB2='AG18      ' NA='Z18       ' KW2='AC18      ' IM='A15       ' ER='U15       '
+		 IDB2GB='AC32      ' NAGB='Z20       ' KW2GB='AE20      ' IMGB='A15       ' ERGB='T19       ' NAGM='Z20       '/>
+	<z:row BM='AC19      ' MA='AC19      ' IDB2='AG19      ' NA='Z19       ' KW2='AC19      ' IM='A16       ' ER='U16       '
+		 IDB2GB='AC33      ' NAGB='Z21       ' KW2GB='AE21      ' IMGB='A16       ' ERGB='T20       ' NAGM='Z21       '/>
+	<z:row BM='AC20      ' MA='AC20      ' IDB2='AG20      ' NA='Z20       ' KW2='AC20      ' IM='A17       ' ER='U17       '
+		 IDB2GB='AC34      ' NAGB='Z22       ' KW2GB='AE22      ' IMGB='A17       ' ERGB='T21       ' NAGM='Z22       '/>
+	<z:row BM='AC21      ' MA='AC21      ' IDB2='AG21      ' NA='Z21       ' KW2='AC21      ' IM='A18       ' ER='U18       '
+		 IDB2GB='AC35      ' NAGB='Z23       ' KW2GB='AE23      ' IMGB='A18       ' ERGB='T22       ' NAGM='Z23       '/>
+	<z:row BM='AC22      ' MA='AC22      ' IDB2='AG22      ' NA='Z22       ' KW2='AC22      ' IM='A19       ' ER='U19       '
+		 IDB2GB='AC36      ' NAGB='Z24       ' KW2GB='AE24      ' IMGB='A19       ' ERGB='T23       ' NAGM='Z24       '/>
+	<z:row BM='AC23      ' MA='AC23      ' IDB2='AG23      ' NA='Z23       ' KW2='AC23      ' IM='A20       ' ER='U20       '
+		 IDB2GB='AC37      ' NAGB='Z25       ' KW2GB='AE25      ' IMGB='A20       ' ERGB='F3        ' NAGM='Z25       '/>
+	<z:row BM='AC24      ' MA='AC24      ' IDB2='AG24      ' NA='Z24       ' KW2='AC24      ' IM='A21       ' ER='U21       '
+		 IDB2GB='AC38      ' NAGB='Z26       ' KW2GB='AE26      ' IMGB='A21       ' ERGB='F4        ' NAGM='Z26       '/>
+	<z:row BM='AC25      ' MA='AC25      ' IDB2='AG25      ' NA='Z25       ' KW2='AC25      ' IM='A22       ' ER='U22       '
+		 IDB2GB='          ' NAGB='Z27       ' KW2GB='AE27      ' IMGB='K3        ' ERGB='F5        ' NAGM='Z27       '/>
+	<z:row BM='AC26      ' MA='AC26      ' IDB2='AG27      ' NA='Z26       ' KW2='AC26      ' IM='A23       ' ER='U23       '
+		 IDB2GB='          ' NAGB='Z28       ' KW2GB='AE28      ' IMGB='K4        ' ERGB='F6        ' NAGM='Z28       '/>
+	<z:row BM='AC27      ' MA='AC27      ' IDB2='AG28      ' NA='Z27       ' KW2='AC27      ' IM='A24       ' ER='U24       '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='K5        ' ERGB='F7        ' NAGM='Z29       '/>
+	<z:row BM='AC28      ' MA='AC28      ' IDB2='AG29      ' NA='Z28       ' KW2='AC28      ' IM='A25       ' ER='U25       '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='K6        ' ERGB='F8        ' NAGM='Z30       '/>
+	<z:row BM='AC29      ' MA='AC29      ' IDB2='AG30      ' NA='Z29       ' KW2='AC29      ' IM='A26       ' ER='U26       '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='K7        ' ERGB='F9        ' NAGM='Z31       '/>
+	<z:row BM='AC30      ' MA='AC30      ' IDB2='AG31      ' NA='Z30       ' KW2='AC30      ' IM='A27       ' ER='U27       '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='K8        ' ERGB='F10       ' NAGM='Z32       '/>
+	<z:row BM='AC31      ' MA='AC31      ' IDB2='AG32      ' NA='          ' KW2='AC31      ' IM='A28       ' ER='F3        '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='K9        ' ERGB='F11       ' NAGM='Z33       '/>
+	<z:row BM='AC32      ' MA='AC32      ' IDB2='          ' NA='          ' KW2='AC32      ' IM='A29       ' ER='F4        '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='K10       ' ERGB='F12       ' NAGM='Z34       '/>
+	<z:row BM='AC33      ' MA='AC33      ' IDB2='          ' NA='          ' KW2='AC33      ' IM='A30       ' ER='F5        '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='K11       ' ERGB='F13       ' NAGM='Z35       '/>
+	<z:row BM='          ' MA='AC34      ' IDB2='          ' NA='          ' KW2='AC34      ' IM='A31       ' ER='F6        '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='K12       ' ERGB='F14       ' NAGM='Z36       '/>
+	<z:row BM='          ' MA='AC35      ' IDB2='          ' NA='          ' KW2='          ' IM='A32       ' ER='F7        '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='K13       ' ERGB='F15       ' NAGM='Z37       '/>
+	<z:row BM='          ' MA='AC36      ' IDB2='          ' NA='          ' KW2='          ' IM='A33       ' ER='F8        '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='K14       ' ERGB='F16       ' NAGM='Z38       '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='A34       ' ER='F9        '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='K15       ' ERGB='F17       ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='A35       ' ER='F10       '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='K16       ' ERGB='F18       ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='A36       ' ER='F11       '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='K17       ' ERGB='F19       ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K3        ' ER='F12       '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='K18       ' ERGB='F20       ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K4        ' ER='F13       '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='K19       ' ERGB='F21       ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K5        ' ER='F14       '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='K20       ' ERGB='F22       ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K6        ' ER='F15       '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='K21       ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K7        ' ER='F16       '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='U3        ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K8        ' ER='F17       '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='U4        ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K9        ' ER='F18       '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='U5        ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K10       ' ER='F19       '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='U6        ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K11       ' ER='F20       '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='U7        ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K12       ' ER='F21       '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='U8        ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K13       ' ER='F22       '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='U9        ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K14       ' ER='F23       '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='U10       ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K15       ' ER='F24       '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='U11       ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K16       ' ER='F25       '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='U12       ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K17       ' ER='F26       '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='U13       ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K18       ' ER='F27       '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='U14       ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K19       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='U15       ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K20       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='U16       ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K21       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='U17       ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K22       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='U18       ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K23       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='U19       ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K24       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='U20       ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K25       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='U21       ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K26       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='U22       ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K27       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K28       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K29       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K30       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K31       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K32       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K33       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K34       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K35       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='K36       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U3        ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U4        ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U5        ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U6        ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U7        ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U8        ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U9        ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U10       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U11       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U12       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U13       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U14       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U15       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U16       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U17       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U18       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U19       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U20       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U21       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U22       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U23       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U24       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U25       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U26       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U27       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U28       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U29       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U30       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U31       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+	<z:row BM='          ' MA='          ' IDB2='          ' NA='          ' KW2='          ' IM='U32       ' ER='          '
+		 IDB2GB='          ' NAGB='          ' KW2GB='          ' IMGB='          ' ERGB='          ' NAGM='          '/>
+</rs:data>
+</xml>

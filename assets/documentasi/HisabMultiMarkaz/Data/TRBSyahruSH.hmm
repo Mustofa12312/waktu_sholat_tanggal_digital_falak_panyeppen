@@ -1,0 +1,75 @@
+<xml xmlns:s='uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882'
+	xmlns:dt='uuid:C2F41010-65B3-11d1-A29F-00AA00C14882'
+	xmlns:rs='urn:schemas-microsoft-com:rowset'
+	xmlns:z='#RowsetSchema'>
+<s:Schema id='RowsetSchema'>
+	<s:ElementType name='row' content='eltOnly' rs:updatable='true'>
+		<s:AttributeType name='Cari' rs:number='1' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Hari' rs:number='2' rs:write='true'>
+			<s:datatype dt:type='r4' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Alamah' rs:number='3' rs:write='true'>
+			<s:datatype dt:type='r4' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Hishshoh' rs:number='4' rs:write='true'>
+			<s:datatype dt:type='r4' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Wasath' rs:number='5' rs:write='true'>
+			<s:datatype dt:type='r4' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Khossyoh' rs:number='6' rs:write='true'>
+			<s:datatype dt:type='r4' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Markaz' rs:number='7' rs:write='true'>
+			<s:datatype dt:type='r4' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='HariGB' rs:number='8' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='AlamahGB' rs:number='9' rs:write='true'>
+			<s:datatype dt:type='r4' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='HishshohGB' rs:number='10' rs:write='true'>
+			<s:datatype dt:type='r4' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='WasathGB' rs:number='11' rs:write='true'>
+			<s:datatype dt:type='r4' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='KhossyohGB' rs:number='12' rs:write='true'>
+			<s:datatype dt:type='r4' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='MarkazGB' rs:number='13' rs:write='true'>
+			<s:datatype dt:type='r4' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:extends type='rs:rowbase'/>
+	</s:ElementType>
+</s:Schema>
+<rs:data>
+	<z:row Cari='1' Hari='1' Alamah='12.734' Hishshoh='30.671' Wasath='29.107' Khossyoh='25.816' Markaz='29.106001'
+		 HariGB='0' AlamahGB='18.367001' HishshohGB='195.33501' WasathGB='14.553' KhossyohGB='192.908' MarkazGB='14.553'/>
+	<z:row Cari='2' Hari='3' Alamah='1.4680001' Hishshoh='61.341' Wasath='58.213001' Khossyoh='51.632999' Markaz='58.210999'
+		 HariGB='2' AlamahGB='7.1009998' HishshohGB='226.006' WasathGB='43.66' KhossyohGB='218.72501' MarkazGB='43.658001'/>
+	<z:row Cari='3' Hari='4' Alamah='14.202' Hishshoh='92.012001' Wasath='87.32' Khossyoh='77.448997' Markaz='87.317001'
+		 HariGB='3' AlamahGB='19.834999' HishshohGB='256.67599' WasathGB='72.766998' KhossyohGB='244.541' MarkazGB='72.764'/>
+	<z:row Cari='4' Hari='6' Alamah='2.9360001' Hishshoh='122.682' Wasath='116.427' Khossyoh='103.266' Markaz='116.422'
+		 HariGB='5' AlamahGB='8.5690002' HishshohGB='287.34698' WasathGB='101.873' KhossyohGB='270.358' MarkazGB='101.869'/>
+	<z:row Cari='5' Hari='7' Alamah='15.67' Hishshoh='153.353' Wasath='145.533' Khossyoh='129.082' Markaz='145.58'
+		 HariGB='6' AlamahGB='21.302999' HishshohGB='318.01901' WasathGB='130.98' KhossyohGB='296.17401' MarkazGB='130.97501'/>
+	<z:row Cari='6' Hari='2' Alamah='4.4039998' Hishshoh='184.02299' Wasath='174.64' Khossyoh='154.899' Markaz='174.633'
+		 HariGB='1' AlamahGB='10.037' HishshohGB='348.68799' WasathGB='160.87' KhossyohGB='321.991' MarkazGB='160.08099'/>
+	<z:row Cari='7' Hari='3' Alamah='17.138' Hishshoh='214.694' Wasath='203.74699' Khossyoh='180.716' Markaz='203.74899'
+		 HariGB='2' AlamahGB='22.771' HishshohGB='19.358999' WasathGB='189.19299' KhossyohGB='347.80701' MarkazGB='189.186'/>
+	<z:row Cari='8' Hari='5' Alamah='5.8720002' Hishshoh='245.364' Wasath='232.853' Khossyoh='206.532' Markaz='232.84399'
+		 HariGB='4' AlamahGB='11.505' HishshohGB='50.028999' WasathGB='218.3' KhossyohGB='13.624' MarkazGB='218.29201'/>
+	<z:row Cari='9' Hari='6' Alamah='18.606001' Hishshoh='276.035' Wasath='261.95999' Khossyoh='232.349' Markaz='261.95001'
+		 HariGB='6' AlamahGB='0.23899999' HishshohGB='80.699997' WasathGB='247.407' KhossyohGB='39.441002' MarkazGB='247.397'/>
+	<z:row Cari='10' Hari='1' Alamah='7.3400002' Hishshoh='306.70599' Wasath='291.06699' Khossyoh='258.16501' Markaz='291.056'
+		 HariGB='7' AlamahGB='12.973' HishshohGB='111.37' WasathGB='276.513' KhossyohGB='65.257004' MarkazGB='276.50299'/>
+	<z:row Cari='11' Hari='2' Alamah='20.073999' Hishshoh='337.37601' Wasath='320.173' Khossyoh='283.98199' Markaz='320.16101'
+		 HariGB='2' AlamahGB='1.707' HishshohGB='142.041' WasathGB='305.57001' KhossyohGB='91.073997' MarkazGB='305.608'/>
+	<z:row Cari='12' Hari='4' Alamah='8.8079996' Hishshoh='8.0469999' Wasath='349.28' Khossyoh='309.798' Markaz='349.267'
+		 HariGB='3' AlamahGB='14.441' HishshohGB='172.711' WasathGB='334.72699' KhossyohGB='116.89' MarkazGB='334.71399'/>
+</rs:data>
+</xml>

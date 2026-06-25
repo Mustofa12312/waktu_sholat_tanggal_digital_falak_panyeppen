@@ -1,0 +1,132 @@
+<xml xmlns:s='uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882'
+	xmlns:dt='uuid:C2F41010-65B3-11d1-A29F-00AA00C14882'
+	xmlns:rs='urn:schemas-microsoft-com:rowset'
+	xmlns:z='#RowsetSchema'>
+<s:Schema id='RowsetSchema'>
+	<s:ElementType name='row' content='eltOnly' rs:updatable='true'>
+		<s:AttributeType name='Cari' rs:number='1' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='mshTh' rs:number='2' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='mshBln' rs:number='3' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='mshTgl' rs:number='4' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Pasaran' rs:number='5' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='Hari' rs:number='6' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='wsBrjS' rs:number='7' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='wsJahS' rs:number='8' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='wsQohS' rs:number='9' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='wsNiiS' rs:number='10' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='ksBrjS' rs:number='11' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='ksJahS' rs:number='12' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='ksQohS' rs:number='13' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='ksNiiS' rs:number='14' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='wsBrjQ' rs:number='15' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='wsJahQ' rs:number='16' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='wsQohQ' rs:number='17' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='wsNiiQ' rs:number='18' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='ksBrjQ' rs:number='19' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='ksJahQ' rs:number='20' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='ksQohQ' rs:number='21' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='ksNiiQ' rs:number='22' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='uqdBrjQ' rs:number='23' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='uqdJahQ' rs:number='24' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='uqdQohQ' rs:number='25' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:AttributeType name='uqdNiiQ' rs:number='26' rs:write='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='0' rs:fixedlength='true' rs:maybenull='false'/>
+		</s:AttributeType>
+		<s:extends type='rs:rowbase'/>
+	</s:ElementType>
+</s:Schema>
+<rs:data>
+	<z:row Cari='1' mshTh='0' mshBln='0' mshTgl='30' Pasaran='5' Hari='2' wsBrjS='0' wsJahS='29' wsQohS='34' wsNiiS='10'
+		 ksBrjS='0' ksJahS='29' ksQohS='34' ksNiiS='5' wsBrjQ='1' wsJahQ='5' wsQohQ='17' wsNiiQ='31' ksBrjQ='1' ksJahQ='1'
+		 ksQohQ='56' ksNiiQ='59' uqdBrjQ='0' uqdJahQ='1' uqdQohQ='35' uqdNiiQ='19'/>
+	<z:row Cari='2' mshTh='0' mshBln='1' mshTgl='29' Pasaran='4' Hari='3' wsBrjS='1' wsJahS='28' wsQohS='9' wsNiiS='11'
+		 ksBrjS='1' ksJahS='28' ksQohS='9' ksNiiS='0' wsBrjQ='1' wsJahQ='27' wsQohQ='24' wsNiiQ='27' ksBrjQ='1' ksJahQ='20'
+		 ksQohQ='50' ksNiiQ='4' uqdBrjQ='0' uqdJahQ='3' uqdQohQ='7' uqdNiiQ='28'/>
+	<z:row Cari='3' mshTh='0' mshBln='2' mshTgl='29' Pasaran='4' Hari='5' wsBrjS='2' wsJahS='27' wsQohS='43' wsNiiS='21'
+		 ksBrjS='2' ksJahS='27' ksQohS='43' ksNiiS='5' wsBrjQ='3' wsJahQ='2' wsQohQ='41' wsNiiQ='57' ksBrjQ='2' ksJahQ='22'
+		 ksQohQ='47' ksNiiQ='2' uqdBrjQ='0' uqdJahQ='4' uqdQohQ='42' uqdNiiQ='47'/>
+	<z:row Cari='4' mshTh='0' mshBln='3' mshTgl='28' Pasaran='3' Hari='6' wsBrjS='3' wsJahS='26' wsQohS='18' wsNiiS='23'
+		 ksBrjS='3' ksJahS='26' ksQohS='18' ksNiiS='2' wsBrjQ='3' wsJahQ='24' wsQohQ='48' wsNiiQ='53' ksBrjQ='3' ksJahQ='11'
+		 ksQohQ='40' ksNiiQ='7' uqdBrjQ='0' uqdJahQ='6' uqdQohQ='14' uqdNiiQ='55'/>
+	<z:row Cari='5' mshTh='0' mshBln='4' mshTgl='28' Pasaran='3' Hari='1' wsBrjS='4' wsJahS='25' wsQohS='52' wsNiiS='33'
+		 ksBrjS='4' ksJahS='25' ksQohS='52' ksNiiS='6' wsBrjQ='5' wsJahQ='0' wsQohQ='6' wsNiiQ='24' ksBrjQ='4' ksJahQ='13'
+		 ksQohQ='37' ksNiiQ='6' uqdBrjQ='0' uqdJahQ='7' uqdQohQ='50' uqdNiiQ='14'/>
+	<z:row Cari='6' mshTh='0' mshBln='5' mshTgl='27' Pasaran='2' Hari='2' wsBrjS='5' wsJahS='24' wsQohS='27' wsNiiS='34'
+		 ksBrjS='5' ksJahS='24' ksQohS='27' ksNiiS='2' wsBrjQ='5' wsJahQ='22' wsQohQ='13' wsNiiQ='20' ksBrjQ='5' ksJahQ='2'
+		 ksQohQ='30' ksNiiQ='11' uqdBrjQ='0' uqdJahQ='9' uqdQohQ='22' uqdNiiQ='22'/>
+	<z:row Cari='7' mshTh='0' mshBln='6' mshTgl='27' Pasaran='2' Hari='4' wsBrjS='6' wsJahS='24' wsQohS='1' wsNiiS='44'
+		 ksBrjS='6' ksJahS='24' ksQohS='1' ksNiiS='8' wsBrjQ='6' wsJahQ='27' wsQohQ='30' wsNiiQ='51' ksBrjQ='6' ksJahQ='4'
+		 ksQohQ='27' ksNiiQ='10' uqdBrjQ='0' uqdJahQ='10' uqdQohQ='57' uqdNiiQ='42'/>
+	<z:row Cari='8' mshTh='0' mshBln='7' mshTgl='26' Pasaran='1' Hari='5' wsBrjS='7' wsJahS='22' wsQohS='36' wsNiiS='46'
+		 ksBrjS='7' ksJahS='22' ksQohS='36' ksNiiS='4' wsBrjQ='7' wsJahQ='19' wsQohQ='37' wsNiiQ='46' ksBrjQ='6' ksJahQ='23'
+		 ksQohQ='20' ksNiiQ='14' uqdBrjQ='0' uqdJahQ='12' uqdQohQ='29' uqdNiiQ='51'/>
+	<z:row Cari='9' mshTh='0' mshBln='8' mshTgl='26' Pasaran='1' Hari='7' wsBrjS='8' wsJahS='22' wsQohS='10' wsNiiS='56'
+		 ksBrjS='8' ksJahS='22' ksQohS='10' ksNiiS='8' wsBrjQ='8' wsJahQ='24' wsQohQ='55' wsNiiQ='17' ksBrjQ='7' ksJahQ='25'
+		 ksQohQ='17' ksNiiQ='13' uqdBrjQ='0' uqdJahQ='14' uqdQohQ='5' uqdNiiQ='10'/>
+	<z:row Cari='10' mshTh='0' mshBln='9' mshTgl='25' Pasaran='5' Hari='1' wsBrjS='9' wsJahS='20' wsQohS='45' wsNiiS='57'
+		 ksBrjS='9' ksJahS='20' ksQohS='45' ksNiiS='4' wsBrjQ='9' wsJahQ='17' wsQohQ='2' wsNiiQ='13' ksBrjQ='8' ksJahQ='14'
+		 ksQohQ='10' ksNiiQ='18' uqdBrjQ='0' uqdJahQ='15' uqdQohQ='37' uqdNiiQ='18'/>
+	<z:row Cari='11' mshTh='0' mshBln='10' mshTgl='25' Pasaran='5' Hari='3' wsBrjS='10' wsJahS='20' wsQohS='20'
+		 wsNiiS='7' ksBrjS='10' ksJahS='20' ksQohS='19' ksNiiS='9' wsBrjQ='10' wsJahQ='22' wsQohQ='19' wsNiiQ='44' ksBrjQ='9'
+		 ksJahQ='16' ksQohQ='7' ksNiiQ='17' uqdBrjQ='0' uqdJahQ='17' uqdQohQ='12' uqdNiiQ='37'/>
+	<z:row Cari='12' mshTh='0' mshBln='11' mshTgl='24' Pasaran='4' Hari='4' wsBrjS='11' wsJahS='18' wsQohS='55'
+		 wsNiiS='9' ksBrjS='11' ksJahS='18' ksQohS='54' ksNiiS='5' wsBrjQ='11' wsJahQ='14' wsQohQ='26' wsNiiQ='40' ksBrjQ='10'
+		 ksJahQ='5' ksQohQ='0' ksNiiQ='22' uqdBrjQ='0' uqdJahQ='18' uqdQohQ='44' uqdNiiQ='46'/>
+	<z:row Cari='13' mshTh='0' mshBln='11' mshTgl='25' Pasaran='5' Hari='5' wsBrjS='11' wsJahS='19' wsQohS='54'
+		 wsNiiS='17' ksBrjS='11' ksJahS='19' ksQohS='53' ksNiiS='14' wsBrjQ='11' wsJahQ='27' wsQohQ='37' wsNiiQ='15' ksBrjQ='10'
+		 ksJahQ='18' ksQohQ='4' ksNiiQ='16' uqdBrjQ='0' uqdJahQ='18' uqdQohQ='47' uqdNiiQ='57'/>
+	<z:row Cari='14' mshTh='0' mshBln='0' mshTgl='14' Pasaran='0' Hari='0' wsBrjS='0' wsJahS='0' wsQohS='0' wsNiiS='0'
+		 ksBrjS='0' ksJahS='0' ksQohS='0' ksNiiS='0' wsBrjQ='0' wsJahQ='0' wsQohQ='0' wsNiiQ='0' ksBrjQ='0' ksJahQ='0'
+		 ksQohQ='0' ksNiiQ='0' uqdBrjQ='0' uqdJahQ='0' uqdQohQ='0' uqdNiiQ='0'/>
+</rs:data>
+</xml>

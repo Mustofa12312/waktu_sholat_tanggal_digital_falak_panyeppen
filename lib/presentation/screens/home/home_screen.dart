@@ -373,33 +373,32 @@ class _LocationBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(12),
-        color: AppColors.glassWhite,
-        border: Border.all(color: AppColors.glassBorder),
-      ),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
       child: Row(
         children: [
           Icon(
             Icons.location_on_rounded,
-            size: 16,
+            size: 20,
             color: AppColors.accent,
           ),
-          const SizedBox(width: 6),
+          const SizedBox(width: 8),
           Expanded(
             child: Text(
               city.isEmpty ? 'Jakarta, Indonesia' : city,
-              style: AppTypography.labelMedium
-                  .copyWith(color: AppColors.textPrimary),
+              style: AppTypography.titleMedium.copyWith(
+                color: AppColors.textPrimary,
+                fontWeight: FontWeight.w600,
+              ),
               overflow: TextOverflow.ellipsis,
             ),
           ),
           Text(
             DateFormat('EEE, d MMM', 'id').format(date),
-            style:
-                AppTypography.labelSmall.copyWith(color: AppColors.textMuted),
+            style: AppTypography.bodyMedium.copyWith(
+              color: AppColors.textSecondary,
+              fontWeight: FontWeight.w500,
+            ),
           ),
         ],
       ),

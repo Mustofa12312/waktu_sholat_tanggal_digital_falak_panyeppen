@@ -61,10 +61,43 @@ class LocationService {
         position.longitude,
       ).timeout(const Duration(seconds: 5));
       if (placemarks.isNotEmpty) {
-        city = placemarks.first.locality ??
-            placemarks.first.subAdministrativeArea ??
-            '';
-        country = placemarks.first.country ?? 'Indonesia';
+        final pm = placemarks.first;
+        
+        // Debugging placemark
+        print('--- PLACEMARK DATA ---');
+        print('Name: ${pm.name}');
+        print('Street: ${pm.street}');
+        print('ISO Country Code: ${pm.isoCountryCode}');
+        print('Country: ${pm.country}');
+        print('Postal Code: ${pm.postalCode}');
+        print('Administrative Area: ${pm.administrativeArea}');
+        print('Sub Administrative Area: ${pm.subAdministrativeArea}');
+        print('Locality: ${pm.locality}');
+        print('Sub Locality: ${pm.subLocality}');
+        print('Thoroughfare: ${pm.thoroughfare}');
+        print('Sub Thoroughfare: ${pm.subThoroughfare}');
+        print('----------------------');
+
+        String desa = pm.subLocality ?? '';
+        if (desa.isEmpty) {
+          // Fallback if subLocality is empty on Android
+          if (pm.name != null && pm.name!.isNotEmpty && !RegExp(r'^[0-9+A-Z \-]+$').hasMatch(pm.name!)) {
+            desa = pm.name!;
+          } else if (pm.street != null && pm.street!.isNotEmpty && !RegExp(r'^[0-9+A-Z \-]+$').hasMatch(pm.street!)) {
+            desa = pm.street!;
+          }
+        }
+
+        final locality = pm.locality ?? pm.subAdministrativeArea ?? '';
+        
+        if (desa.isNotEmpty && locality.isNotEmpty && desa != locality) {
+          city = '$desa, $locality';
+        } else if (desa.isNotEmpty) {
+          city = desa;
+        } else {
+          city = locality;
+        }
+        country = pm.country ?? 'Indonesia';
       }
     } catch (_) {}
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'dart:ui' as ui;
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:hijri/hijri_calendar.dart';
@@ -9,6 +10,7 @@ import '../../blocs/prayer/prayer_event.dart';
 import '../../blocs/prayer/prayer_state.dart';
 import '../../blocs/theme/theme_cubit.dart';
 import '../../widgets/azan_lottie_indicator.dart';
+import '../../widgets/mosque_silhouette.dart';
 // import 'widgets/solar_gradient_bg.dart';
 import 'widgets/next_prayer_countdown.dart';
 import 'widgets/prayer_card.dart';
@@ -49,29 +51,41 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.transparent,
         extendBodyBehindAppBar: true,
         appBar: _buildAppBar(context, settings.hijriOffset),
-        body: Container(
-          decoration: BoxDecoration(
-            gradient: _getDynamicGradient(),
-          ),
-          child: BlocBuilder<PrayerBloc, PrayerState>(
-            builder: (context, state) {
-              if (state is PrayerLoading) {
-                return const _LoadingView();
-              }
-              if (state is PrayerError) {
-                return _ErrorView(
-                  message: state.message,
-                  onRetry: () => context.read<PrayerBloc>().add(
-                        const LoadPrayerTimes(),
-                      ),
-                );
-              }
-              if (state is PrayerLoaded) {
-                return _LoadedView(state: state);
-              }
-              return const SizedBox.shrink();
-            },
-          ),
+        body: Stack(
+          children: [
+            Container(
+              decoration: BoxDecoration(
+                gradient: _getDynamicGradient(),
+              ),
+            ),
+            Positioned(
+              bottom: 0,
+              left: 0,
+              right: 0,
+              child: MosqueSilhouette(
+                color: _getSilhouetteColor(),
+              ),
+            ),
+            BlocBuilder<PrayerBloc, PrayerState>(
+              builder: (context, state) {
+                if (state is PrayerLoading) {
+                  return const _LoadingView();
+                }
+                if (state is PrayerError) {
+                  return _ErrorView(
+                    message: state.message,
+                    onRetry: () => context.read<PrayerBloc>().add(
+                          const LoadPrayerTimes(),
+                        ),
+                  );
+                }
+                if (state is PrayerLoaded) {
+                  return _LoadedView(state: state);
+                }
+                return const SizedBox.shrink();
+              },
+            ),
+          ],
         ),
       ),
     );
@@ -189,6 +203,15 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       );
     }
+  }
+
+  Color _getSilhouetteColor() {
+    final now = DateTime.now();
+    final hour = now.hour;
+    if (hour >= 4 && hour < 6) return Colors.black.withOpacity(0.2);
+    else if (hour >= 6 && hour < 15) return Colors.black.withOpacity(0.08);
+    else if (hour >= 15 && hour < 19) return Colors.black.withOpacity(0.15);
+    else return Colors.black.withOpacity(0.4);
   }
 }
 
@@ -313,6 +336,11 @@ class _LoadedView extends StatelessWidget {
               timeUntilNext: state.timeUntilNext,
             ),
 
+            const SizedBox(height: 16),
+            
+            // Fasting Badge
+            Center(child: _buildSunnahFastingBadge(state.date)),
+
             const SizedBox(height: 28),
 
             // Section title
@@ -361,6 +389,50 @@ class _LoadedView extends StatelessWidget {
     if (now.isAfter(t.maghrib) && now.isBefore(t.isha)) return true;
     return false;
   }
+
+  Widget _buildSunnahFastingBadge(DateTime currentDate) {
+    final tomorrow = currentDate.add(const Duration(days: 1));
+    final hijriTomorrow = HijriCalendar.fromDate(tomorrow);
+    
+    String badgeText = '';
+    
+    // Check Ayyamul Bidh
+    if (hijriTomorrow.hDay == 13 || hijriTomorrow.hDay == 14 || hijriTomorrow.hDay == 15) {
+      badgeText = 'Besok adalah puasa sunnah Ayyamul Bidh';
+    } 
+    // Check Senin Kamis
+    else if (tomorrow.weekday == DateTime.monday || tomorrow.weekday == DateTime.thursday) {
+      badgeText = 'Besok adalah puasa sunnah ${tomorrow.weekday == DateTime.monday ? 'Senin' : 'Kamis'}';
+    }
+
+    if (badgeText.isEmpty) return const SizedBox.shrink();
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      decoration: BoxDecoration(
+        color: AppColors.accent.withOpacity(0.15),
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: AppColors.accent.withOpacity(0.3)),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(Icons.info_outline_rounded, size: 16, color: AppColors.accent),
+          const SizedBox(width: 8),
+          Flexible(
+            child: Text(
+              badgeText,
+              style: AppTypography.labelMedium.copyWith(
+                color: AppColors.textPrimary,
+                fontWeight: FontWeight.w600,
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ),
+        ],
+      ),
+    ).animate().fadeIn(duration: 400.ms).slideY(begin: 0.1);
+  }
 }
 
 // ─── Location Bar ─────────────────────────────────────────────────────────────
@@ -373,34 +445,45 @@ class _LocationBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
-      child: Row(
-        children: [
-          Icon(
-            Icons.location_on_rounded,
-            size: 20,
-            color: AppColors.accent,
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(16),
+      child: BackdropFilter(
+        filter: ui.ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+          decoration: BoxDecoration(
+            color: AppColors.white.withOpacity(0.12),
+            borderRadius: BorderRadius.circular(16),
+            border: Border.all(color: AppColors.white.withOpacity(0.2), width: 1),
           ),
-          const SizedBox(width: 8),
-          Expanded(
-            child: Text(
-              city.isEmpty ? 'Jakarta, Indonesia' : city,
-              style: AppTypography.titleMedium.copyWith(
-                color: AppColors.textPrimary,
-                fontWeight: FontWeight.w600,
+          child: Row(
+            children: [
+              Icon(
+                Icons.location_on_rounded,
+                size: 20,
+                color: AppColors.accent,
               ),
-              overflow: TextOverflow.ellipsis,
-            ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  city.isEmpty ? 'Jakarta, Indonesia' : city,
+                  style: AppTypography.titleMedium.copyWith(
+                    color: AppColors.textPrimary,
+                    fontWeight: FontWeight.w600,
+                  ),
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+              Text(
+                DateFormat('EEE, d MMM', 'id').format(date),
+                style: AppTypography.bodyMedium.copyWith(
+                  color: AppColors.textSecondary,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ],
           ),
-          Text(
-            DateFormat('EEE, d MMM', 'id').format(date),
-            style: AppTypography.bodyMedium.copyWith(
-              color: AppColors.textSecondary,
-              fontWeight: FontWeight.w500,
-            ),
-          ),
-        ],
+        ),
       ),
     );
   }
